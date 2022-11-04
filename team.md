@@ -32,7 +32,7 @@ members:
   -
     name: "Cecilia Delgado-Solorzano"
     title: "Research Assistant"
-    image: "images/assets/ceclia.jpg" 
+    image: "images/assets/ceclia.jpeg" 
   -
     name: "Ravindu Tharanga Perera"
     title: "Volunteer Researcher"
