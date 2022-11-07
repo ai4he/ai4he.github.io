@@ -4,23 +4,15 @@ title: Empowerment
 
 empowerment_concept: 
   -
-    title: "The Empowerment Concept"
+    title: "Empowerment"
     content: "
-      The Empowerment Concept focuses on how artificial 
-      intelligence can assist individuals in becoming more powerful. 
-      This term is frequently used to explain how AI can assist individuals 
-      in becoming more self-sufficient and productive. 
-      The objective of the Empowerment Concept is to make it simpler for
-       people to become power players in their life and to enhance 
-       their potential to influence the world around them.
+      We refer as empowerment to the degree of autonomy and self-determination in people and in communities.
+      We study how AI can assist individuals in becoming more self-sufficient and help them to advance in their goals. 
+      The objective is to help people to become more confident in controlling their life and to enhance their potential to influence the world around them.
        <br>
-      In 2012, Google introduced the Empowerment Concept for 
-      the first time. The purpose of the concept is to make it 
-      simpler for people to have greater control over their life 
-      and to enhance their ability to get their way in the world. 
-      The notion can be utilized to assist individuals become more influential 
-      in their personal lives, to boost their ability to complete tasks, 
-      and to raise their influence in the community."
+      On the algorithmic approach, our work expands on the knowledge of AI Empowerment that explores the potential an agent perceives that it has to influence its environment. 
+      We explore how different machine learning approaches can help agents to identify and learn from human interactions and adapt according to the immediate bennefit for humans.
+      The evaluation of the AI outcomes is a key component of our technology to promote Trustworthy AI solutions."
     image: "images/assets/empowerment_1.png"
 
   
