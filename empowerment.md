@@ -40,12 +40,10 @@ well_being :
 well_being_content :
   -
     value: "
-      Mutually beneficial artificial intelligence is advantageous because it fosters cooperation between humans and artificial intelligence. Together, they       can work to better the world for everyone's benefit. Artificial intelligence can assist us in making better decisions and in comprehending                  information. It can help us discover innovative ways to enhance the quality of life for all individuals.
-      A potential advantage of mutually beneficial artificial intelligence is that it could assist individuals in automating their life, enabling them to         complete more work without losing focus. Additionally, mutually beneficial artificial intelligence could be employed to increase the productivity of      persons completing work with it, resulting in enhanced performance.
-     "
+      Mutually beneficial artificial intelligence is advantageous because it fosters cooperation between humans and artificial intelligence. Together, they       can work to better the world for everyone's benefit. Artificial intelligence can assist us in making better decisions and in comprehending                  information. It can help us discover innovative ways to enhance the quality of life for all individuals."
   -
     value: "
-      The use of artificial intelligence may also assist people in developing a deeper understanding of themselves as well as the dynamics of their               interpersonal connections. The use of artificial intelligence may assist people in making choices and doing activities that they are already               acquainted with in a more effective manner. The human race may also benefit from the use of artificial intelligence by enhancing their ability to            remember and comprehend information.The development of self-awareness and the pursuit of purpose in one's life may both be facilitated by the use          of artificial intelligence."
+      A potential advantage of mutually beneficial artificial intelligence is that it could assist individuals in automating their life, enabling them to         complete more work without losing focus. Additionally, mutually beneficial artificial intelligence could be employed to increase the productivity of      persons completing work with it, resulting in enhanced performance."
 
 
 evaluating_in_real_life_settings : 
