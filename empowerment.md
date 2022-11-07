@@ -19,22 +19,30 @@ empowerment_concept:
   
 mutually_beneficial : 
   -
-    title: "Mutually beneficial"
+    title: "Well-being"
     content: "
-      Mutually beneficial artificial intelligence is advantageous because it fosters cooperation between humans and artificial intelligence. Together, they       can work to better the world for everyone's benefit. Artificial intelligence can assist us in making better decisions and in comprehending                  information. It can help us discover innovative ways to enhance the quality of life for all individuals.
-      A potential advantage of mutually beneficial artificial intelligence is that it could assist individuals in automating their life, enabling them to         complete more work without losing focus. Additionally, mutually beneficial artificial intelligence could be employed to increase the productivity of      persons completing work with it, resulting in enhanced performance."
+    We study how AI can intervene in our daily lives to promote wellness in different dimentions such as the mental, physical, economic, amd emotional well-being.
+    We focus in understanding how to measure and parametrize well-being measurements that algorithms can use to optimize their outcome.
+    Our group explores how machine learning models that learn from subjective factors can gradually improve their perceived performance.
+     <br>
+    Our approach starts from applying quantified-self method where humans are willing to understand how they are performing periodically.
+    Humans can assist algorithms to understand the meaning of the collected data and how these digital traces can be linked to a direct bennefit for them.
+    We develop technology to track these digital traces to train algorithms that can help individuals towards their goals.
+      "
     image: "images/assets/empowerment_2.png"
 
   
 well_being : 
   -
-    title: "Well-being"
+    title: "Mutually beneficial"
     image: "images/assets/empowerment_3.png"
     
 well_being_content :
   -
     value: "
-      The ability of artificial intelligence to assist people in comprehending and adapting to new ways of life is one manner in which AI contributes to          the well-being of humans. This has the potential to assist enhance the overall quality of life for people, as well as making them feel more               comfortable and successful in their lives. Artificial intelligence has the potential to bestow a great number of advantages onto human beings. The          use of artificial intelligence may assist people in gaining a deeper understanding of their environment as well as in expanding their knowledge           base. Humans may benefit from artificial intelligence not just in terms of their ability to enhance their communication abilities but also in terms          of their ability to better grasp the world around them."
+      Mutually beneficial artificial intelligence is advantageous because it fosters cooperation between humans and artificial intelligence. Together, they       can work to better the world for everyone's benefit. Artificial intelligence can assist us in making better decisions and in comprehending                  information. It can help us discover innovative ways to enhance the quality of life for all individuals.
+      A potential advantage of mutually beneficial artificial intelligence is that it could assist individuals in automating their life, enabling them to         complete more work without losing focus. Additionally, mutually beneficial artificial intelligence could be employed to increase the productivity of      persons completing work with it, resulting in enhanced performance.
+     "
   -
     value: "
       The use of artificial intelligence may also assist people in developing a deeper understanding of themselves as well as the dynamics of their               interpersonal connections. The use of artificial intelligence may assist people in making choices and doing activities that they are already               acquainted with in a more effective manner. The human race may also benefit from the use of artificial intelligence by enhancing their ability to            remember and comprehend information.The development of self-awareness and the pursuit of purpose in one's life may both be facilitated by the use          of artificial intelligence."
