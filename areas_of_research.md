@@ -3,24 +3,34 @@ title: Areas_of_research
 
 trustworthy_ai: 
   -
-    title: "Trustworthy AI"
+    title: "Human-Centered AI"
     content: "
-      When it comes to making judgments and providing responses to inquiries, artificial intelligence systems are trustworthy because they are trustworthy.       They are also reliable in terms of comprehending and reacting to human contact, which is a crucial aspect of this field. There are a lot of different       applications for artificial intelligence that may be used to make judgments, and some of those applications are more likely to produce conclusions         that are in accordance with human values and preferences than others are.
-      artificial intelligence is used to make decisions based on data that has been collected about human behavior, for instance, then it is more likely to       produce results that are in line with human values and preferences. On the other hand, if artificial intelligence is used to make decisions based           solely on logic or reasoning, then it is less likely to produce results that are compatible with human values and preferences." 
+      We study methods to involve humans in all the different processes of the machine learning pipelines.
+      Our approach include different stages such as the design, data production (collection and labeling), model training, and deployment.
+      Detection and reducing bias in data are essential components of our methodology.
+      <br>
+      The implementation of socio-technical system allows us to design and evaluate systems with the different stakeholders.
+      We conduct ethnographic studies to understand how people expect to interact with smart agents and align the solution to their expectations.
+      The resulting human-centric solutions are usually published as open source tools so the community can adopt them." 
     image: "images/assets/trustworthy.png"
     
 active_learning: 
   -
-    title: "Active Learning"
+    title: "AI For Social Good"
     content: "
-      Artificial Intelligence learning by themselves will someday learn how to grow and evolve itself, surpassing humans in intelligence. It is unclear           whether or when this will occur, despite the fact that it is theoretically feasible. It is also crucial to note that even if AI becomes smarter than       humans, one of the most critical and difficult tasks that AI must perform in order to be able to comprehend the world is to acquire a global               perspective. To grow more intelligent, AI must be used in an environment where it can learn and develop on its own. Training, exposure, and practice       may do this. It is essential to highlight, however, that not all AI jobs are instantly mastered. Certain activities, like natural language                 processing, need time and effort to master.
-      When teaching AI, it is crucial to exercise patience and use a variety of ways. One of the primary advantages of using AI for activities such as           decision-making is that it can do them more efficiently. Using AI for activities such as decision-making, it is feasible to construct an artificial         intelligence system that is more streamlined and reliable than humans. This is conceivable because AI is supposed to learn and improve; yet, it is         not flawless. Therefore, perfecting AI requires time and effort. It is feasible to construct an artificial intelligence system that is more                 consistent and precise than humans, which is one of the advantages of utilizing AI for activities like decision-making. This is conceivable because         AI is supposed to learn and improve; yet, it is not flawless. Therefore, perfecting AI requires time and effort."
+      We study methodologies on how AI-powered systems can promote a bennefit to society.
+      Our approach involves the design and development of interventional tools that can interact with people within communities.
+      The mediated communication principle help up to promote frictionless interactions and reduce power imbalances.
+      <br>
+      Social networks help us to understand how these tools can intervene in multiple contexts.
+      We analyze data from social network to understand patterns in the interactions.
+      Our interventional approach help us to moderate and promote safe spaces."
     image: "images/assets/active_learning.png"
 
   
 ai_for_social_good : 
   -
-    title: "AI For Social Good"
+    title: "Trustworthy AI"
     image: "images/assets/social_good.png"
     
 ai_for_social_good_content :
