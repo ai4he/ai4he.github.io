@@ -9,19 +9,19 @@ our_history:
   -
     title: "Our History"
     content: "
-      Except to obtain some advantage from it? But who has any right to find fault with a consequences."
+      We started in 2022 in the Human-Centered Computing division at the School of Computing at Clemson University."
       
 our_mission : 
   -
     title: "Our Mission"
     content: "
-      Except to obtain some advantage from it? But who has any right to find fault with a consequences."
+      Our mission is to understand how AI-powered tools can empower individuals."
       
 our_vission : 
   -
-    title: "Our Vission"
+    title: "Our Vision"
     content: "
-      Except to obtain some advantage from it? But who has any right to find fault with a consequences."
+      We envision to identify the human factors that machines can learn to help us to achieve our goals."
      
     
 members: 
