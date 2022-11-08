@@ -3,7 +3,7 @@ title:
 
 group_image: 
   -
-    image: "images/assets/group.jpg" 
+    image: "images/assets/team.png" 
     
 our_history: 
   -
