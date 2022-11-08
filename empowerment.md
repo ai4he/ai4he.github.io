@@ -25,7 +25,7 @@ mutually_beneficial :
     We focus in understanding how to measure and parametrize well-being measurements that algorithms can use to optimize their outcome.
     Our group explores how machine learning models that learn from subjective factors can gradually improve their perceived performance.
      <br>
-    Our approach starts from applying quantified-self method where humans are willing to understand how they are performing periodically.
+    Our approach starts from applying quantified-self method where users are willing to understand how they are performing periodically.
     Humans can assist algorithms to understand the meaning of the collected data and how these digital traces can be linked to a direct bennefit for them.
     We develop technology to track these digital traces to train algorithms that can help individuals towards their goals.
       "
@@ -34,16 +34,20 @@ mutually_beneficial :
   
 well_being : 
   -
-    title: "Mutually beneficial"
+    title: "Applications"
     image: "images/assets/empowerment_3.png"
     
 well_being_content :
   -
     value: "
-      Mutually beneficial artificial intelligence is advantageous because it fosters cooperation between humans and artificial intelligence. Together, they       can work to better the world for everyone's benefit. Artificial intelligence can assist us in making better decisions and in comprehending                  information. It can help us discover innovative ways to enhance the quality of life for all individuals."
+      Education: Smart tools can help people to develop the skills required to obtain new opportunities."
   -
     value: "
-      A potential advantage of mutually beneficial artificial intelligence is that it could assist individuals in automating their life, enabling them to         complete more work without losing focus. Additionally, mutually beneficial artificial intelligence could be employed to increase the productivity of      persons completing work with it, resulting in enhanced performance."
+      Trainings: Assisted trainings can help people to better prepare to apply for opportunities."
+ities."
+  -
+    value: "
+      Health: Virtual agents can help to monitor the body signals and control conditions such as stress and anxiety."
 
 
 evaluating_in_real_life_settings : 
