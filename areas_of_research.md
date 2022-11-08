@@ -56,10 +56,16 @@ crowdsourcing :
 crowdsourcing_content:
   -
     value: "
-      According to the findings of new research, AI could one day be able to instruct humans in the art of independent thought. According to the findings         of a study that was carried out by a group of academics at MIT, it is possible that AI might provide people a means by which they can learn how to         think for themselves and make judgments independently. The research included the use of an algorithm for machine learning to the process of training       a model that could be utilized to think about issues and come up with answers. The model was able to address challenges that entailed how to make a         choice, how to store data, and how to find a solution to the problem."
+      We apply the wisdom of the crowd as a main principle to enhance human and algorithmic capabilities."
   -
     value: "
-       This project is the first of its type to ever employ AI to teach people how to think independently for themselves. The study group thinks that this        might be a means for people to become more informed and effective in the field of decision-making, and they feel that this could be accomplished by        using artificial intelligence."
+      Our approach includes human-in-the-loop techniques to develop complex workflows where humans can assist."
+  -
+    value: "
+      Our aim is to help crowd workers to improve their opportunities by developing tools and skill development mechanisms."
+  -
+    value: "
+      The technology developed can help to give more transparency and recognition to crowd workers."
 
 footer:
    - 
