@@ -51,7 +51,7 @@ well_being_content :
 
 evaluating_in_real_life_settings : 
   -
-    title: "Evaluations"
+    title: "Evaluation"
     image: "images/assets/empowerment_4.png"
     
 evaluating_in_real_life_settings_content:
