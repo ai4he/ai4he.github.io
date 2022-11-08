@@ -51,7 +51,7 @@ well_being_content :
 
 evaluating_in_real_life_settings : 
   -
-    title: "Evaluation"
+    title: "Knowledge"
     image: "images/assets/empowerment_4.png"
     
 evaluating_in_real_life_settings_content:
@@ -61,6 +61,9 @@ evaluating_in_real_life_settings_content:
   -
     value: "
       Our solutions collect constant feedback from users and adapt to user evolving preferences."
+  -
+    value: "
+      The main goal is to learn from users' goals and help them to achieve them."
   -
     value: "
       Anonymized datasets are shared to help community to analyze performance data."
