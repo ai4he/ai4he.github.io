@@ -39,16 +39,11 @@ well_being :
     
 well_being_content :
   -
-    value: "
-      Education: Smart tools can help people to develop the skills required to obtain new opportunities."
+    value: "Education, Smart tools can help people to develop the skills required to obtain new opportunities."
   -
-    value: "
-      Trainings: Assisted trainings can help people to better prepare to apply for opportunities."
-ities."
+    value: "Trainings, Assisted trainings can help people to better prepare to apply for opportunities."
   -
-    value: "
-      Health: Virtual agents can help to monitor the body signals and control conditions such as stress and anxiety."
-
+    value: "Health, Virtual agents can help to monitor the body signals and control conditions such as stress and anxiety."
 
 evaluating_in_real_life_settings : 
   -
