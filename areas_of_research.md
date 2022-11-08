@@ -36,10 +36,16 @@ ai_for_social_good :
 ai_for_social_good_content :
   -
     value: "
-      The application of artificial intelligence to problems relating to the growth of society might result in a number of positive outcomes, each of which       could be beneficial in their own right. One of the possible applications is that it might teach individuals how to form connections with others who         are different from themselves. Another possible use for artificial intelligence is to improve people's ability to comprehend one another and to             assist them in automating tasks that are essential to their daily lives."
+      We study and apply Ethical AI principles for the design and deployment of our solutions."
   -
     value: "
-      Additionally, there is a possibility that artificial intelligence may improve society in the sense that it will assist individuals in more                 effectively communicating with one another and in developing more effective organizational structures. Individuals may be assisted in their                 comprehension of other cultures and languages via the use of artificial intelligence, which can also be used to help people comprehend other cultures       and languages."
+      Our approach considers robustness and fairness as essential components of AI solutions."
+  -
+    value: "
+      We study and promote mechanisms that promotes explainability on the automatic decisions."
+  -
+    value: "
+      The level of autonomy and control in our systems is always considered as key factors."
 
 
 crowdsourcing : 
