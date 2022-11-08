@@ -51,26 +51,19 @@ well_being_content :
 
 evaluating_in_real_life_settings : 
   -
-    title: "Evaluating in real-life settings"
+    title: "Evaluations"
     image: "images/assets/empowerment_4.png"
     
 evaluating_in_real_life_settings_content:
   -
     value: "
-      Analyses of real-world situations performed by 
-      artificial intelligence. In many instances, the environments used to 
-      evaluate artificial intelligence will be analogous to real-world environments,
-      with the exception of the use of distinct techniques and technology. An assessment 
-      of artificial intelligence is conducted with the objectives of determining whether
-      or not AI is successful and efficient, choosing the appropriate tool for the 
-      task at hand, and determining whether or not training is required."
+      We evaluate our tools in real-word settings to undertsand the real impact of AI-powered tools."
   -
     value: "
-       A practical assessment of AI would include 
-       picking a problem to solve that involved avoiding and navigating obstacles, 
-       deciding which tool was best suited for the task at hand, and evaluating 
-      the AI's level of efficiency and effectiveness. would have to be done in 
-      order to decide whether training is required."
+      Our solutions collect constant feedback from users and adapt to user evolving preferences."
+  -
+    value: "
+      Anonymized datasets are shared to help community to analyze performance data."
 
 footer:
    - 
