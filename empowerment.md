@@ -39,11 +39,15 @@ well_being :
     
 well_being_content :
   -
-    value: "Education, Smart tools can help people to develop the skills required to obtain new opportunities."
+    value: "Smart workplace tooling can increase workers' wage and satisfaction (performance)"
   -
-    value: "Trainings, Assisted trainings can help people to better prepare to apply for opportunities."
+    value: "Algorithmic unions can combat digital unfair practices of platforms (justice)"
   -
-    value: "Health, Virtual agents can help to monitor the body signals and control conditions such as stress and anxiety."
+    value: "Smart upskilling can provide a direct learning path to achieve a goal (education)"
+  -
+    value: "Smart interview trainers can prepare candidates to get a job position (recruitment)"
+  -
+    value: "Smart mentorship can guide novices and connect them with human mentors (mentoring)"
 
 evaluating_in_real_life_settings : 
   -
