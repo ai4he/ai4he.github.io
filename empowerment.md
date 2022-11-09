@@ -9,7 +9,7 @@ empowerment_concept:
       We refer as empowerment to the degree of autonomy and self-determination in people and in communities.
       We study how AI can assist individuals in becoming more self-sufficient and help them to advance in their goals. 
       The objective is to help people to become more confident in controlling their life and to enhance their potential to influence the world around them.
-       <br>
+       <br><br>
       On the algorithmic approach, our work expands on the knowledge of AI Empowerment that explores the potential an agent perceives that it has to influence its environment. 
       We explore how different machine learning approaches can help agents to identify and learn from human interactions and adapt according to the immediate bennefit for humans.
       The evaluation of the AI outcomes is a key component of our technology to promote Trustworthy AI solutions."
@@ -24,7 +24,7 @@ mutually_beneficial :
     We study how AI can intervene in our daily lives to promote wellness in different dimentions such as the mental, physical, economic, amd emotional well-being.
     We focus in understanding how to measure and parametrize well-being measurements that algorithms can use to optimize their outcome.
     Our group explores how machine learning models that learn from subjective factors can gradually improve their perceived performance.
-     <br>
+     <br><br>
     Our approach starts from applying quantified-self method where users are willing to understand how they are performing periodically.
     Humans can assist algorithms to understand the meaning of the collected data and how these digital traces can be linked to a direct bennefit for them.
     We develop technology to track these digital traces to train algorithms that can help individuals towards their goals.
