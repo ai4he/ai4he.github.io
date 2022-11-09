@@ -19,6 +19,12 @@ contact :
     content: "hello@haielab.org"
     icon: "images/icon/icon_19.svg"
     
+    
+blue_banner :
+  -  
+    title: "Having any Query? Book an appointment."
+    button_text: "Send Us Message"
+    
 footer:
    - 
      logo: "images/logo/HAIE_ LOGO_PRE.png"
