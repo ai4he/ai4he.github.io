@@ -88,7 +88,7 @@ human_centric_approach_content:
 news:
  
   -
-    title: "Musk predicts AI will be superior to humans within five years"
+    title: "Participating at HCOMP"
     date: "11 OCT, 2022"
     image: "images/assets/news1.jpg"
     link: "blog-details.html"
@@ -98,8 +98,8 @@ news:
     image: "images/assets/news2.jpg"
     link: "blog-details.html"
   -
-    title: "OpenAI removes waitlist for DALL-E text-to-image generator"
-    date: "11 OCT, 2022"
+    title: "HAIE Lab at Clemson University"
+    date: "15 AUG, 2022"
     image: "images/assets/news3.jpg"
     link: "blog-details.html"
           
@@ -121,7 +121,7 @@ right_white_box:
 footer:
    - 
      logo: " images/logo/HCAI_LOGO_MAIN-03.png"
-     content: "We will assist you in becoming more successful."
+     content: "Human-AI Expowerment Lab"
      facebook: " "
      twitter: " "
      linkdin: " "
