@@ -22,7 +22,7 @@ contact :
 footer:
    - 
      logo: "images/logo/HAIE_ LOGO_PRE.png"
-     content: "We will assist you in becoming more successful."
+     content: "Human-AI Empowerment."
      facebook: " "
      twitter: " "
      linkdin: " "
