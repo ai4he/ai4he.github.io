@@ -51,7 +51,7 @@ well_being_content :
 
 evaluating_in_real_life_settings : 
   -
-    title: "Knowledge"
+    title: "Knowledge Base"
     image: "images/assets/empowerment_4.png"
     
 evaluating_in_real_life_settings_content:
@@ -71,7 +71,7 @@ evaluating_in_real_life_settings_content:
 footer:
    - 
      logo: "images/logo/HAIE_ LOGO_PRE.png"
-     content: "We will assist you in becoming more successful."
+     content: "Human-AI Empowerment."
      facebook: " "
      twitter: " "
      linkdin: " "
