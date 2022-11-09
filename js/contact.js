@@ -1,3 +1,30 @@
+document.querySelector("#contact-form").addEventListener("submit",submitForm);
+
+function submitForm(e){
+    e.preventDefault();
+    console.log(123);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $(function(){
     $("#Areas_of_research_1").on("click",function(){
