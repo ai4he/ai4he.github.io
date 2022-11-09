@@ -6,7 +6,11 @@ function submitForm(e){
     let name= document.querySelector(".name").value;
     let email= document.querySelector(".email").value;
     let message= document.querySelector(".message").value;
-    console.log(name,email,message)
+    console.log(name)
+    console.log(email)
+
+    console.log(message)
+
 
 
 
