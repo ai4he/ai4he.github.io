@@ -2,7 +2,6 @@ document.querySelector("#contact-form").addEventListener("submit",submitForm);
 
 function submitForm(e){
     e.preventDefault();
-    console.log(123);
     
     let name= document.querySelector(".name").value;
     let email= document.querySelector(".email").value;
