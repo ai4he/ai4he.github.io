@@ -27,10 +27,7 @@ function submitForm(e) {
 
   saveContactInfo(name, email, message);
     
-  function msgSent() {
-            document.getElementById('msgSent').innerHTML
-                = 'Message Sent Successfully';
-        }
+  msgSent();
 
   document.querySelector("#contact-form").reset();
 }
@@ -44,4 +41,7 @@ function saveContactInfo(name, email, message) {
     email: email,
     message: message,
   });
+}
+function msgSent() {
+    document.getElementById('msgSent').innerHTML = 'Message Sent Successfully';
 }
