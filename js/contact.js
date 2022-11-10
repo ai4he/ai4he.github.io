@@ -26,6 +26,11 @@ function submitForm(e) {
   console.log(name, email, message);
 
   saveContactInfo(name, email, message);
+    
+  function msgSent() {
+            document.getElementById('msgSent').innerHTML
+                = 'Message Sent Successfully';
+        }
 
   document.querySelector("#contact-form").reset();
 }
