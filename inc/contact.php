@@ -14,7 +14,7 @@ $subject = 'New message from Sinco';
 
 // form field names and their translations.
 // array variable name => Text to appear in the email
-$fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); 
+// $fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); 
 
 // message that will be displayed when everything is OK :)
 $okMessage = 'Thank you, We will get back to you soon!';
