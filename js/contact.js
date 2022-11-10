@@ -25,6 +25,18 @@ function submitForm(e) {
   let message = document.querySelector(".message").value;
   console.log(name, email, message);
 
-  
+  saveContactInfo(name, email, message);
+
+  document.querySelector(".contact-form").reset();
 }
 
+// Save infos to Firebase
+function saveContactInfo(name, email, message) {
+  let newContactInfo = contactInfo.push();
+
+  newContactInfo.set({
+    name: name,
+    email: email,
+    message: message,
+  });
+}
