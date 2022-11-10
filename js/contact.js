@@ -16,19 +16,19 @@ let contactInfo = firebase.database().ref("HAIE");
 // Listen for a submit
 document.querySelector("#contact-form").addEventListener("submit", submitForm);
 
-function submitForm(e) {
+function validateForm(e) {
   e.preventDefault();
 
   //   Get input Values
   let name = document.querySelector(".name").value;
   let email = document.querySelector(".email").value;
   let message = document.querySelector(".message").value;
-  console.log(name, email, message);
     
-//   if(name == " " || email == " " || message== " ") {
-//         alert("Plese fill the areas");
-//         return false;
-//     }
+  if (name == "" || email == "" || message == "") {
+    alert("Must be filled out");
+    return false;
+  } 
+
 
   saveContactInfo(name, email, message);
     
@@ -51,17 +51,17 @@ function msgSent() {
     document.getElementById('msgSent').innerHTML = 'Message Sent Successfully';
 }
 
-function validateForm() {
-  let x = document.forms["myForm"]["name"].value;
-  let y = document.forms["myForm"]["email"].value;
-  let z = document.forms["myForm"]["message"].value;
+// function validateForm() {
+//   let x = document.forms["myForm"]["name"].value;
+//   let y = document.forms["myForm"]["email"].value;
+//   let z = document.forms["myForm"]["message"].value;
 
 
-  if (x == "" || y == "" || z == "") {
-    alert("Must be filled out");
-    return false;
-  }
-}
+//   if (x == "" || y == "" || z == "") {
+//     alert("Must be filled out");
+//     return false;
+//   }
+// }
 
 
 
