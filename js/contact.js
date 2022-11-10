@@ -33,7 +33,7 @@ function submitForm(e) {
 
   saveContactInfo(name, email, message);
 
-  document.querySelector(".contact-form").reset();
+  document.querySelector("#contact-form").reset();
 }
 
 // Save infos to Firebase
