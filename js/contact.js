@@ -42,9 +42,9 @@ function saveContactInfo(name,email,message){
     
     newContactInfo.set({
     
-        name =name,
-        email=email,
-        message:message,
+        name = name,
+        email = email,
+        message = message,
     
     });
 
