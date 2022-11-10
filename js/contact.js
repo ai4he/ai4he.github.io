@@ -25,7 +25,7 @@ function submitForm(e) {
   let message = document.querySelector(".message").value;
   console.log(name, email, message);
     
-  if(name == "" or email=="" or message="") {
+  if(name == "" || email=="" || message="") {
         alert("Plese fill the areas");
         return false;
     }
