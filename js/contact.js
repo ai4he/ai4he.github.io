@@ -32,6 +32,7 @@ function submitForm(e){
     let message= document.querySelector(".message").value;
     
     saveContactInfo(name,email,message);
+    console.log(name,email,message);
 
 
 
