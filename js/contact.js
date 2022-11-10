@@ -1,23 +1,17 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDnJtRzH8A9oShfneVufo_w_m0W8zvy5UM",
-  authDomain: "haie-68cc6.firebaseapp.com",
-  projectId: "haie-68cc6",
-  storageBucket: "haie-68cc6.appspot.com",
-  messagingSenderId: "309164652738",
-  appId: "1:309164652738:web:37d9c3aa467678e969e35b"
-};
+    apiKey: "AIzaSyBOCyN-cIeyooxE0-6PEaEU2QCiwq2aNZU",
+    authDomain: "haie-3ca3b.firebaseapp.com",
+    databaseURL: "https://haie-3ca3b-default-rtdb.firebaseio.com",
+    projectId: "haie-3ca3b",
+    storageBucket: "haie-3ca3b.appspot.com",
+    messagingSenderId: "247177631427",
+    appId: "1:247177631427:web:871240f70e29212f0eb476"
+  };
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 // Refernece contactInfo collections
-let contactInfo = firebase.database().ref("infos");
+let contactInfo = firebase.database().ref("HAIE");
 
 // Listen for a submit
 document.querySelector("#contact-form").addEventListener("submit", submitForm);
