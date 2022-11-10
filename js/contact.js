@@ -50,3 +50,18 @@ function saveContactInfo(name, email, message) {
 function msgSent() {
     document.getElementById('msgSent').innerHTML = 'Message Sent Successfully';
 }
+
+function validateForm() {
+  let x = document.forms["myForm"]["name"].value;
+  let y = document.forms["myForm"]["email"].value;
+  let z = document.forms["myForm"]["message"].value;
+
+
+  if (x == "" || y == "" || z == "") {
+    alert("Must be filled out");
+    return false;
+  }
+}
+
+
+
