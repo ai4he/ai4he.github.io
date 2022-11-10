@@ -24,6 +24,11 @@ function submitForm(e) {
   let email = document.querySelector(".email").value;
   let message = document.querySelector(".message").value;
   console.log(name, email, message);
+    
+  if(name == "" or email=="" or message="") {
+        alert("Plese fill the areas");
+        return false;
+    }
 
   saveContactInfo(name, email, message);
     
