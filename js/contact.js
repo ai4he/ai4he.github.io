@@ -14,7 +14,7 @@ firebase.initializeApp(firebaseConfig);
 let contactInfo = firebase.database().ref("HAIE");
 
 // Listen for a submit
-document.querySelector("#contact-form").addEventListener("submit", submitForm);
+document.querySelector("#contact-form").addEventListener("submit", validateForm);
 
 function validateForm(e) {
   e.preventDefault();
