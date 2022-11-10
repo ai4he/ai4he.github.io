@@ -1,3 +1,27 @@
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+apiKey: "AIzaSyDnJtRzH8A9oShfneVufo_w_m0W8zvy5UM",
+authDomain: "haie-68cc6.firebaseapp.com",
+projectId: "haie-68cc6",
+storageBucket: "haie-68cc6.appspot.com",
+messagingSenderId: "309164652738",
+appId: "1:309164652738:web:37d9c3aa467678e969e35b"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+
+let contactInfo = firebase.database().ref("infos");
+
+
+
 document.querySelector("#contact-form").addEventListener("submit",submitForm);
 
 function submitForm(e){
@@ -6,16 +30,26 @@ function submitForm(e){
     let name= document.querySelector(".name").value;
     let email= document.querySelector(".email").value;
     let message= document.querySelector(".message").value;
-    console.log(name);
-    console.log(email);
-
-    console.log(message);
-
+    
+    saveContactInfo(name,email,message);
 
 
 
 }
 
+function saveContactInfo(name,email,message){
+    let newContactInfo = contactInfo.push();
+    
+    newContactInfo.set({
+    
+        name =name,
+        email=email,
+        message:message,
+    
+    });
+
+
+}
 
 
 
