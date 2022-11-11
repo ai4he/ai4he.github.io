@@ -23,7 +23,7 @@ contact :
 blue_banner :
   -  
     title: "Having any Query? Book an appointment."
-    button_text: "Send Us Message"
+    button_text: "Schedule a meeting"
     
 footer:
    - 
