@@ -8,7 +8,7 @@ trustworthy_ai:
       We study methods to involve humans in all the different processes of the machine learning pipelines.
       Our approach include different stages such as the design, data production (collection and labeling), model training, and deployment.
       Detection and reducing bias in data are essential components of our methodology.
-      <br>
+      <br><br>
       The implementation of socio-technical system allows us to design and evaluate systems with the different stakeholders.
       We conduct ethnographic studies to understand how people expect to interact with smart agents and align the solution to their expectations.
       The resulting human-centric solutions are usually published as open source tools so the community can adopt them." 
@@ -21,7 +21,7 @@ active_learning:
       We study methodologies on how AI-powered systems can promote a bennefit to society.
       Our approach involves the design and development of interventional tools that can interact with people within communities.
       The mediated communication principle help up to promote frictionless interactions and reduce power imbalances.
-      <br>
+      <br><br>
       Social networks help us to understand how these tools can intervene in multiple contexts.
       We analyze data from social network to understand patterns in the interactions.
       Our interventional approach help us to moderate and promote safe spaces."
