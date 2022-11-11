@@ -2851,7 +2851,7 @@ body .btn-eight:hover {
   border: none;
   color: #fff;
 }
-.theme-basic-footer.footer-style-three .newsletter form button {background: rgba(255, 255, 255, 0.25);}
+/* .theme-basic-footer.footer-style-three .newsletter form button {background: rgba(255, 255, 255, 0.25);} */
 .theme-basic-footer.footer-style-three .newsletter form button:hover {background: var(--prime-two);}
 .theme-basic-footer.footer-style-three .newsletter form ::placeholder {color: rgba(255,255,255, 0.7);opacity: 1; /* Firefox */}
 .theme-basic-footer.footer-style-three .newsletter form :-ms-input-placeholder {color: rgba(255,255,255, 0.7);}
