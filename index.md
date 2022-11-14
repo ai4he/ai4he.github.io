@@ -42,9 +42,9 @@ what_we_do:
     image: "images/assets/data_analysis.png"
     title: "What we do"
     discription: "
-     Our group conducts studies to investigate how the use of artificial intelligence can enhance the performance of human activities and promote well-being. We seek to use artificial intelligence from different modalities such as audio, images, text, and telemetry data to understand human behavior from natural interactions. We collect and analyze data in the workplace for identifying trends and patterns that help machines to recommend better strategies to achieve our goals. This can assist humans in the decision-making process to make judgments that are more accurately based on data.
+     Our group conducts studies to investigate how the use of artificial intelligence can enhance the performance of human activities and promote well-being. We seek to use artificial intelligence from different modalities, such as audio, images, text, and telemetry data, to understand human behavior from natural interactions. We collect and analyze data in the workplace to identify trends and patterns that help machines recommend better strategies to achieve our goals. This can assist humans in decision-making by helping them make judgments that are more accurately based on data.
       <br><br>
-      We perform experiments in real-world settings to identify the feasibility of current technologies in the wild. We explore the limitations of technology and define mitigation strategies to create accountable solutions. These tools are evaluated by users whose feedback feed the systems for continious improvement. The main goal of our research is understand how smart tools can help people to reach new opportunities and improve their lives."
+      We perform real-world experiments to identify current technologies' feasibility in the wild. We explore the limitations of technology and define mitigation strategies to create accountable solutions. These tools are evaluated by users, whose feedback feeds the systems for continuous improvement. The main goal of our research is to understand how smart tools can help people to reach new opportunities and improve their lives."
              
 
 
