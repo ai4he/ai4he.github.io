@@ -14,13 +14,9 @@ active_learning:
   -
     title: "AI For Social Good"
     content: "
-      We study methodologies on how AI-powered systems can promote a bennefit to society.
-      Our approach involves the design and development of interventional tools that can interact with people within communities.
-      The mediated communication principle help up to promote frictionless interactions and reduce power imbalances.
+      We study methodologies on how AI-powered systems can promote a benefit to society. Our approach involves designing and developing interventional tools that can interact with people within communities. The mediated communication principle helps to promote frictionless interactions and reduce power imbalances.
       <br><br>
-      Social networks help us to understand how these tools can intervene in multiple contexts.
-      We analyze data from social network to understand patterns in the interactions.
-      Our interventional approach help us to moderate and promote safe spaces."
+      Social networks help us understand how these tools can intervene in multiple contexts. We analyze data from social networks to understand patterns in interactions. Our interventional approach helps us to moderate and promote safe spaces."
     image: "images/assets/active_learning.png"
 
   
