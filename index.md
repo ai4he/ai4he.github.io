@@ -121,7 +121,7 @@ right_white_box:
 footer:
    - 
      logo: " images/logo/HCAI_LOGO_MAIN-03.png"
-     content: "Human-AI Expowerment Lab"
+     content: "Human-AI Expowerment Lab. The website was co-created using AI technologies such as MidJourney (image generation), OpenAI GPT3 (text generation), GitHub Copilot (code generation), and Quilbot (paraphrasing)."
      facebook: " "
      twitter: " "
      linkdin: " "
