@@ -28,16 +28,16 @@ ai_for_social_good :
 ai_for_social_good_content :
   -
     value: "
-      We study and apply Ethical AI principles for the design and deployment of our solutions."
+      We study and apply ethical AI principles to design and deploy our solutions."
   -
     value: "
       Our approach considers robustness and fairness as essential components of AI solutions."
   -
     value: "
-      We study and promote mechanisms that promotes explainability on the automatic decisions."
+      We study and promote mechanisms that promote explainability in automatic decisions."
   -
     value: "
-      The level of autonomy and control in our systems is always considered as key factors."
+      Our systems' level of autonomy and control are always considered key factors."
 
 
 crowdsourcing : 
