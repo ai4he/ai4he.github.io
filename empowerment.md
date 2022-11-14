@@ -49,16 +49,16 @@ evaluating_in_real_life_settings :
 evaluating_in_real_life_settings_content:
   -
     value: "
-      We evaluate our tools in real-word settings to undertsand the real impact of AI-powered tools."
+      We evaluate our tools in real-world settings to understand the real impact of AI-powered tools."
   -
     value: "
-      Our solutions collect constant feedback from users and adapt to user evolving preferences."
+      Our solutions collect constant feedback from users and adapt to users evolving preferences."
   -
     value: "
       The main goal is to learn from users' goals and help them to achieve them."
   -
     value: "
-      Anonymized datasets are shared to help community to analyze performance data."
+      Anonymized datasets are shared to help the community to analyze performance data."
 
 footer:
    - 
