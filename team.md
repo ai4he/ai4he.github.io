@@ -21,13 +21,13 @@ our_vission :
   -
     title: "Our Vision"
     content: "
-      We envision to identify the human factors that machines can learn to help us to achieve our goals."
+      We envision identifying the human factors that machines can learn to help us achieve our goals."
      
     
 members: 
   -
     name: "Carlos Toxtli-Hernandez"
-    title: "Assistant Professor"
+    title: "Director"
     image: "images/assets/carlos1.jpg"
   -
     name: "Cecilia Delgado-Solorzano"
