@@ -43,7 +43,7 @@ ai_for_social_good_content :
 crowdsourcing : 
   -
     title: "Crowdsourcing"
-    image: "images/assets/active_learning.png"
+    image: "images/assets/workers1.png"
     
 crowdsourcing_content:
   -
