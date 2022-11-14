@@ -48,16 +48,16 @@ crowdsourcing :
 crowdsourcing_content:
   -
     value: "
-      We apply the wisdom of the crowd as a main principle to enhance human and algorithmic capabilities."
+      We apply the Wisdom of the Crowd as our primary principle to enhance human and algorithmic capabilities."
   -
     value: "
       Our approach includes human-in-the-loop techniques to develop complex workflows where humans can assist."
   -
     value: "
-      Our aim is to help crowd workers to improve their opportunities by developing tools and skill development mechanisms."
+      We aim to help crowd workers improve their opportunities by developing tools and skill development mechanisms."
   -
     value: "
-      The technology developed can help to give more transparency and recognition to crowd workers."
+      The technology developed can help give more transparency and recognition to crowd workers."
 
 footer:
    - 
