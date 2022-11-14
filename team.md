@@ -43,7 +43,7 @@ members:
 footer:
    - 
      logo: "images/logo/HAIE_ LOGO_PRE.png"
-     content: "Human-AI Empowerment."
+     content: "Human-AI Empowerment. The website was co-created using AI technologies such as MidJourney (image generation), OpenAI GPT3 (text generation), GitHub Copilot (code generation), and Quilbot (paraphrasing)."
      facebook: " "
      twitter: " "
      linkdin: " "
