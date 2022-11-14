@@ -31,9 +31,9 @@ well_being :
     
 well_being_content :
   -
-    value: "Smart workplace tooling can increase workers' wage and satisfaction (performance)"
+    value: "Smart workplace tooling can increase workers' wages and satisfaction (performance)"
   -
-    value: "Algorithmic unions can combat digital unfair practices of platforms (justice)"
+    value: "Algorithmic unions can combat unfair digital practices of platforms (justice)"
   -
     value: "Smart upskilling can provide a direct learning path to achieve a goal (education)"
   -
