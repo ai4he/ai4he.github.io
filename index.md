@@ -59,7 +59,7 @@ use_inspired_content:
       Our technology is designed to provide solutions to common challenges in multiple contexts."
   -
     value: "
-      We identify scenarios in which decision making can be assisted by AI technologies."
+      We identify scenarios in which AI technologies can assist decision-making."
   -
     value: "
       Our approach provides the perspectives of the different stakeholders in a process."
