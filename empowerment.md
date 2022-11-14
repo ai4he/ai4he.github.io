@@ -15,15 +15,11 @@ empowerment_concept:
   
 mutually_beneficial : 
   -
-    title: "Well-being"
+    title: "Well-Being"
     content: "
-    We study how AI can intervene in our daily lives to promote wellness in different dimentions such as the mental, physical, economic, amd emotional well-being.
-    We focus in understanding how to measure and parametrize well-being measurements that algorithms can use to optimize their outcome.
-    Our group explores how machine learning models that learn from subjective factors can gradually improve their perceived performance.
+    We study how AI can intervene in our daily lives to promote wellness in different dimensions, such as mental, physical, economic, and emotional well-being. We focus on understanding how to measure and parametrize well-being measurements that algorithms can use to optimize their outcomes. Our group explores how machine learning models that learn from subjective factors can gradually improve their perceived performance.
      <br><br>
-    Our approach starts from applying quantified-self method where users are willing to understand how they are performing periodically.
-    Humans can assist algorithms to understand the meaning of the collected data and how these digital traces can be linked to a direct bennefit for them.
-    We develop technology to track these digital traces to train algorithms that can help individuals towards their goals.
+    Our approach starts with applying the quantified-self method, where users are willing to understand how they perform periodically. Humans can assist algorithms in understanding the meaning of the collected data and how these digital traces can be linked to a direct benefit for them. We develop technology to track these digital traces to train algorithms to help individuals achieve their goals.
       "
     image: "images/assets/empowerment_2.png"
 
