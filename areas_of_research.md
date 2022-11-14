@@ -8,7 +8,7 @@ trustworthy_ai:
       We study methods to involve humans in all the different processes of machine learning pipelines. Our approach includes different stages such as design, data production (collection and labeling), model training, and deployment. Detection and reducing bias in data are essential components of our methodology.
       <br><br>
       Implementing socio-technical systems allows us to design and evaluate systems with different stakeholders. We conduct ethnographic studies to understand how people expect to interact with smart agents and align the solution with their expectations. The resulting human-centric solutions are usually published as open-source tools so the community can adopt them." 
-    image: "images/assets/trustworthy.png"
+    image: "images/assets/crowd.png"
     
 active_learning: 
   -
@@ -17,13 +17,13 @@ active_learning:
       We study methodologies on how AI-powered systems can promote a benefit to society. Our approach involves designing and developing interventional tools that can interact with people within communities. The mediated communication principle helps to promote frictionless interactions and reduce power imbalances.
       <br><br>
       Social networks help us understand how these tools can intervene in multiple contexts. We analyze data from social networks to understand patterns in interactions. Our interventional approach helps us to moderate and promote safe spaces."
-    image: "images/assets/active_learning.png"
+    image: "images/assets/social_good.png"
 
   
 ai_for_social_good : 
   -
     title: "Trustworthy AI"
-    image: "images/assets/social_good.png"
+    image: "images/assets/trustworthy.png"
     
 ai_for_social_good_content :
   -
@@ -43,7 +43,7 @@ ai_for_social_good_content :
 crowdsourcing : 
   -
     title: "Crowdsourcing"
-    image: "images/assets/crowd.png"
+    image: "images/assets/active_learning.png"
     
 crowdsourcing_content:
   -
