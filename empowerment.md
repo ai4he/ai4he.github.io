@@ -9,7 +9,7 @@ empowerment_concept:
       We refer to empowerment as the degree of autonomy and self-determination in people and communities. We study how AI can help individuals become more self-sufficient and advance in their goals. The objective is to help people become more confident in controlling their lives and enhance their potential to influence the world around them.
        <br><br>
       On the algorithmic approach, our work expands on the knowledge of AI empowerment that explores the potential an agent perceives that it has to influence its environment. We explore how different machine-learning approaches can help agents identify and learn from human interactions and adapt according to the immediate benefit for humans. Evaluating the AI outcomes is a crucial component of our technology to promote Trustworthy AI solutions."
-    image: "images/assets/empowerment_1.png"
+    image: "images/assets/empowerment_3.png"
 
   
   
@@ -27,7 +27,7 @@ mutually_beneficial :
 well_being : 
   -
     title: "Applications"
-    image: "images/assets/empowerment_3.png"
+    image: "images/assets/empowerment_4.png"
     
 well_being_content :
   -
@@ -44,7 +44,7 @@ well_being_content :
 evaluating_in_real_life_settings : 
   -
     title: "Knowledge Base"
-    image: "images/assets/empowerment_4.png"
+    image: "images/assets/empowerment_1.png"
     
 evaluating_in_real_life_settings_content:
   -
