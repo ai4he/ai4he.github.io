@@ -50,7 +50,7 @@ what_we_do:
 
 use_inspired:
   -
-    image: "images/assets/main_3.png"
+    image: "images/assets/main_4.png"
     title: "Use Inspired AI"
 
 use_inspired_content:
@@ -70,7 +70,7 @@ use_inspired_content:
 human_centric_approach:
   -
     title: "Human-Centric Approach"
-    image: "images/assets/main_4.png"
+    image: "images/assets/main_3.png"
   
 human_centric_approach_content:
   -
