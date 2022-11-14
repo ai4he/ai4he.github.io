@@ -81,7 +81,7 @@ human_centric_approach_content:
       Our approach uses participatory design to include the opinion of multiple actors."
   -
     value: "
-      We use Human-Centered AI design principles to define solutions that aligns to our interests."
+      We use Human-Centered AI design principles to define solutions that align with our interests."
       
  
       
