@@ -64,7 +64,7 @@ footer:
      logo: "images/logo/HAIE_ LOGO_PRE.png"
      content: "Human-AI Empowerment. The website was co-created using AI technologies such as MidJourney (image generation), OpenAI GPT3 (text generation), GitHub Copilot (code generation), and Quilbot (paraphrasing)."
      facebook: " "
-     twitter: " "
+     twitter: "https://twitter.com/ClemsonAI"
      linkdin: " "
  
 layout: areas_of_research
