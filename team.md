@@ -43,7 +43,15 @@ members:
     title: "Undergraduate Researcher"
     image: "images/team/claire.jpeg" 
     
-  
+  -
+    name: "Ryan Philip Hirt"
+    title: "Undergraduate Researcher"
+    image: "images/team/ryan.jpeg" 
+    
+  -
+    name: "Uchenna William Maduno"
+    title: "Undergraduate Researcher"
+    image: "images/team/uchenna.jpeg"  
     
     
 footer:
