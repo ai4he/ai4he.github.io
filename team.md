@@ -36,7 +36,13 @@ members:
   -
     name: "Ravindu Tharanga Perera"
     title: "Volunteer Researcher"
-    image: "images/assets/ravindu.jpg"  
+    image: "images/assets/ravindu.jpg"
+    
+  -
+    name: "Claire Gendron"
+    title: "Undergraduate Researcher"
+    image: "images/team/claire.jpg" 
+    
   
     
     
