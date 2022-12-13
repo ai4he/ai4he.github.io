@@ -52,7 +52,10 @@ members:
     name: "Uchenna William Maduno"
     title: "Undergraduate Researcher"
     image: "images/team/uchenna.jpeg"  
-    
+  -
+    name: "Owen Patrick Duggan"
+    title: "Undergraduate Researcher"
+    image: "images/team/owen.jpeg" 
     
 footer:
    - 
