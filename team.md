@@ -41,7 +41,7 @@ members:
   -
     name: "Claire Gendron"
     title: "Undergraduate Researcher"
-    image: "images/team/claire.jpg" 
+    image: "images/team/claire.jpeg" 
     
   
     
