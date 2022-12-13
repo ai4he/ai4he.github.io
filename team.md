@@ -39,6 +39,17 @@ members:
     image: "images/assets/ravindu.jpg"
     
   -
+    name: "Alberto Campos Hernández"
+    title: "Researcher"
+    image: "images/team/alberto.jpeg"
+    
+  -
+    name: "Victor Rios Muñoz"
+    title: "Researcher"
+    image: "images/team/victor.jpeg"  
+   
+    
+  -
     name: "Claire Gendron"
     title: "Undergraduate Researcher"
     image: "images/team/claire.jpeg" 
@@ -64,14 +75,7 @@ members:
     name: "Nicholas Joseph Berns"
     title: "Undergraduate Researcher"
     image: "images/team/nicholas.jpeg"   
-  -
-    name: "Victor Rios Muñoz"
-    title: "Researcher"
-    image: "images/team/victor.jpeg"  
-  -
-    name: "Alberto Campos Hernández"
-    title: "Researcher"
-    image: "images/team/alberto.jpeg"  
+    
     
 footer:
    - 
