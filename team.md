@@ -56,6 +56,16 @@ members:
     name: "Owen Patrick Duggan"
     title: "Undergraduate Researcher"
     image: "images/team/owen.jpeg" 
+  -
+    name: "Sumanth Pandiri"
+    title: "Undergraduate Researcher"
+    image: "images/team/sumanth.jpeg"   
+  -
+    name: "Nicholas Joseph Berns"
+    title: "Undergraduate Researcher"
+    image: "images/team/nicholas.jpeg"   
+    
+    
     
 footer:
    - 
