@@ -319,15 +319,14 @@ html {
 }
 
 #researh_link{
-    position: relative;
-    padding: 20px 25px 20px 95px;
-    font-size: 18px;
-    line-height: 29px;
-    color: #0b3c6a;
-    margin-top: 30px;
-    background: white !important;
-    box-shadow: -20px 20px 50px rgb(0 19 120 / 3%);
-    border-radius: 10px;
+text-align:center;
+font-size: 18px;
+line-height: 29px;
+color: #0b3c6a;
+margin-top: 30px;
+background: white !important;
+box-shadow: -20px 20px 50px rgb(0 19 120 / 3%);
+border-radius: 10px;
 }
 
 
