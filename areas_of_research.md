@@ -1,6 +1,14 @@
 ---
 title: Areas_of_research
 
+
+
+research_link:
+  -
+    text : "In this section, we describe the areas of research on which we focus."
+    link_text: "You can find the list of publications in this link"
+    link : "https://www.researchgate.net/lab/Human-AI-Empowerment-Lab-Carlos-Toxtli"
+
 trustworthy_ai: 
   -
     title: "Human-Centered AI"
