@@ -74,7 +74,28 @@ members:
   -
     name: "Nicholas Joseph Berns"
     title: "Undergraduate Researcher"
-    image: "images/team/nicholas.jpeg"   
+    image: "images/team/nicholas.jpeg"
+  -
+    name: "Nicholas Joseph Berns"
+    title: "Undergraduate Researcher"
+    image: "images/team/nicholas.jpeg"
+  -
+    name: "Nicholas Joseph Berns"
+    title: "Undergraduate Researcher"
+    image: "images/team/nicholas.jpeg"  
+  -
+    name: "Nicholas Joseph Berns"
+    title: "Undergraduate Researcher"
+    image: "images/team/nicholas.jpeg"
+  -
+    name: "Nicholas Joseph Berns"
+    title: "Undergraduate Researcher"
+    image: "images/team/nicholas.jpeg"  
+  
+    
+    
+    
+    
     
     
 footer:
