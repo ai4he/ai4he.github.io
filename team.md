@@ -70,7 +70,7 @@ members:
   -
     name: "Sumanth Pandiri"
     title: "Undergraduate Researcher"
-    image: "images/team/sumanth.jpeg"   
+    image: "images/team/sumanth.JPG"   
   -
     name: "Nicholas Joseph Berns"
     title: "Undergraduate Researcher"
