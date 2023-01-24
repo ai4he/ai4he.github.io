@@ -76,27 +76,26 @@ members:
     title: "Undergraduate Researcher"
     image: "images/team/nicholas.jpeg"
   -
-    name: "Nicholas Joseph Berns"
-    title: "Undergraduate Researcher"
-    image: "images/team/nicholas.jpeg"
+    name: "Matthew Rogers"
+    title: "Graduate Researcher"
+    image: "images/team/matthew.jpeg"
   -
-    name: "Nicholas Joseph Berns"
+    name: "Adam Pickeral"
     title: "Undergraduate Researcher"
-    image: "images/team/nicholas.jpeg"  
+    image: "images/team/adam.jpeg"  
   -
-    name: "Nicholas Joseph Berns"
-    title: "Undergraduate Researcher"
-    image: "images/team/nicholas.jpeg"
+    name: "Namrata Surve"
+    title: "Graduate Researcher"
+    image: "images/team/namrata.jpeg"
   -
-    name: "Nicholas Joseph Berns"
+    name: "Mary Gurrieri"
     title: "Undergraduate Researcher"
-    image: "images/team/nicholas.jpeg"  
-  
-    
-    
-    
-    
-    
+    image: "images/team/mary.jpeg"  
+  -
+    name: "Manasa Thatipamula"
+    title: "Graduate Researcher"
+    image: "images/team/manasa.jpeg"
+       
     
 footer:
    - 
