@@ -95,6 +95,11 @@ members:
     name: "Manasa Thatipamula"
     title: "Graduate Researcher"
     image: "images/team/manasa.jpeg"
+  -
+    name: "Amogh Singh"
+    title: "Graduate Researcher"
+    image: "images/team/amogh.jpeg"
+    
        
     
 footer:
