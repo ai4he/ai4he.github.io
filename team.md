@@ -106,7 +106,7 @@ members:
   -
     name: "Anuja Patil"
     title: "Graduate Researcher"
-    image: "images/team/anuja.JPG"
+    image: "images/team/anuja.png"
     
        
     
