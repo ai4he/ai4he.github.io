@@ -99,6 +99,14 @@ members:
     name: "Amogh Singh"
     title: "Graduate Researcher"
     image: "images/team/amogh.jpeg"
+  -
+    name: "Sandali Nemmaniwar"
+    title: "Graduate Researcher"
+    image: "images/team/sandali.png"  
+  -
+    name: "Anuja Patil"
+    title: "Graduate Researcher"
+    image: "images/team/anuja.JPG"
     
        
     
