@@ -121,7 +121,7 @@ members:
     image: "images/team/vincent.png"
   -
     name: "Sandya Rani Prasadam"
-    title: "Undergraduate Researcher"
+    title: "Graduate Researcher"
     image: "images/team/sandya.png"
     
     
