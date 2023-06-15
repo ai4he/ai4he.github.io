@@ -107,6 +107,24 @@ members:
     name: "Anuja Patil"
     title: "Graduate Researcher"
     image: "images/team/anuja.png"
+  -
+    name: "Shivani Dashrath Dere"
+    title: "Graduate Researcher"
+    image: "images/team/shivani.png"
+  -
+    name: "Ashish Chittimilla"
+    title: "Graduate Researcher"
+    image: "images/team/ashish.png"
+  -
+    name: "Vincent Hung"
+    title: "Undergraduate Researcher"
+    image: "images/team/vincent.png"
+  -
+    name: "Sandya Rani Prasadam"
+    title: "Undergraduate Researcher"
+    image: "images/team/sandya.png"
+    
+    
     
        
     
