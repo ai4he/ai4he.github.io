@@ -122,7 +122,7 @@ members:
   -
     name: "Sandya Rani Prasadam"
     title: "Graduate Researcher"
-    image: "images/team/sandya.png"
+    image: "images/team/sandya.jpg"
     
     
     
