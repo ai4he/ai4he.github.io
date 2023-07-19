@@ -30,6 +30,10 @@ members:
     title: "Director"
     image: "images/assets/carlos1.jpg"
   -
+    name: "Manuel Delaflor Rodríguez"
+    title: "Research Associate"
+    image: "images/team/manuel.jpeg" 
+  -
     name: "Cecilia Delgado-Solorzano"
     title: "Research Assistant"
     image: "images/assets/ceclia.jpeg" 
