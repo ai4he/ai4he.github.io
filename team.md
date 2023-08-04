@@ -39,7 +39,7 @@ members:
     image: "images/assets/ceclia.jpeg" 
   -
     name: "Ravindu Tharanga Perera"
-    title: "Volunteer Researcher"
+    title: "Research Assistant"
     image: "images/assets/ravindu.jpg"
     
   -
