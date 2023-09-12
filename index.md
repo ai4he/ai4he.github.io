@@ -29,7 +29,7 @@ three_elements:
      
 who_we_are:
  -
-    image: "images/assets/who_we_are.png"
+    image: "images/assets/whoweare.png"
     title: "Who we are"
     discription: "
      The Human-AI Empowerment research group at Clemson University was founded in 2022 to study the use of Artificial Intelligence (AI) to help humans achieve their goals. We conduct a Use-Inspired AI approach to understand how AI can be used in different contexts.
