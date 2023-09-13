@@ -70,7 +70,7 @@ use_inspired_content:
 human_centric_approach:
   -
     title: "Human-Centric Approach"
-    image: "images/assets/main_3.png"
+    image: "images/assets/human_centric_approach.png"
   
 human_centric_approach_content:
   -
