@@ -44,7 +44,7 @@ well_being_content :
 evaluating_in_real_life_settings : 
   -
     title: "Knowledge Base"
-    image: "images/assets/empowerment_1.png"
+    image: "images/assets/brain_storm.png"
     
 evaluating_in_real_life_settings_content:
   -
