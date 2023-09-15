@@ -16,7 +16,7 @@ trustworthy_ai:
       We study methods to involve humans in all the different processes of machine learning pipelines. Our approach includes different stages such as design, data production (collection and labeling), model training, and deployment. Detection and reducing bias in data are essential components of our methodology.
       <br><br>
       Implementing socio-technical systems allows us to design and evaluate systems with different stakeholders. We conduct ethnographic studies to understand how people expect to interact with smart agents and align the solution with their expectations. The resulting human-centric solutions are usually published as open-source tools so the community can adopt them." 
-    image: "images/assets/crowd.png"
+    image: "images/assets/human_centered.png"
     
 active_learning: 
   -
