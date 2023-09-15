@@ -31,7 +31,7 @@ active_learning:
 ai_for_social_good : 
   -
     title: "Trustworthy AI"
-    image: "images/assets/trustworthy.png"
+    image: "images/assets/chatbot.png"
     
 ai_for_social_good_content :
   -
