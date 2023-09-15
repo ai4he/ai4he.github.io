@@ -39,7 +39,7 @@ who_we_are:
      
 what_we_do:
  -
-    image: "images/assets/data_analysis.png"
+    image: "images/assets/wedo.png"
     title: "What we do"
     discription: "
      Our group conducts studies to investigate how the use of artificial intelligence can enhance the performance of human activities and promote well-being. We seek to use artificial intelligence from different modalities, such as audio, images, text, and telemetry data, to understand human behavior from natural interactions. We collect and analyze data in the workplace to identify trends and patterns that help machines recommend better strategies to achieve our goals. This can assist humans in decision-making by helping them make judgments that are more accurately based on data.
