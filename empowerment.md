@@ -27,7 +27,7 @@ mutually_beneficial :
 well_being : 
   -
     title: "Applications"
-    image: "images/assets/empowerment_4.png"
+    image: "images/assets/well.png"
     
 well_being_content :
   -
