@@ -21,13 +21,13 @@ mutually_beneficial :
      <br><br>
     Our approach starts with applying the quantified-self method, where users are willing to understand how they perform periodically. Humans can assist algorithms in understanding the meaning of the collected data and how these digital traces can be linked to a direct benefit for them. We develop technology to track these digital traces to train algorithms to help individuals achieve their goals.
       "
-    image: "images/assets/empowerment_2.png"
+    image: "images/assets/well.png"
 
   
 well_being : 
   -
     title: "Applications"
-    image: "images/assets/well.png"
+    image: "images/assets/chatbot.png"
     
 well_being_content :
   -
