@@ -50,7 +50,7 @@ what_we_do:
 
 use_inspired:
   -
-    image: "images/assets/main_4.png"
+    image: "images/assets/application.png"
     title: "Use Inspired AI"
 
 use_inspired_content:
