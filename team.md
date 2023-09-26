@@ -37,7 +37,7 @@ members:
   -  
     name: "Wangfan Li"
     title: "Research Assistant"
-    image: "images/assets/wangfan.jpeg" 
+    image: "images/assets/wanfan.jpeg" 
   -
     name: "Ravindu Tharanga Perera"
     title: "Research Assistant"
