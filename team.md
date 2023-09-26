@@ -29,19 +29,31 @@ members:
     name: "Carlos Toxtli-Hernandez"
     title: "Director"
     image: "images/assets/carlos1.jpg"
-  -
-    name: "Manuel Delaflor Rodríguez"
-    title: "Research Associate"
-    image: "images/team/manuel.jpeg" 
+ 
   -
     name: "Cecilia Delgado-Solorzano"
     title: "Research Assistant"
-    image: "images/assets/ceclia.jpeg" 
+    image: "images/assets/ceclia.jpeg"
+  -  
+    name: "Cecilia Delgado-Solorzano"
+    title: "Research Assistant"
+    image: "images/assets/ceclia.jpeg"
+  -  
+    name: "Wangfan"
+    title: "Research Assistant"
+    image: "images/assets/wangfan.jpeg" 
   -
     name: "Ravindu Tharanga Perera"
     title: "Research Assistant"
     image: "images/assets/ravindu.jpg"
-    
+  -
+    name: "Manuel Delaflor Rodríguez"
+    title: "Researcher"
+    image: "images/team/manuel.jpeg" 
+  -
+    name: "David Shapiro"
+    title: "Researcher"
+    image: "images/team/david.jpg" 
   -
     name: "Alberto Campos Hernández"
     title: "Researcher"
