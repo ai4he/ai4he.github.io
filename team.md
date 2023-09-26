@@ -35,7 +35,7 @@ members:
     title: "Research Assistant"
     image: "images/assets/ceclia.jpeg"
   -  
-    name: "Wangfan"
+    name: "Wangfan Li"
     title: "Research Assistant"
     image: "images/assets/wangfan.jpeg" 
   -
