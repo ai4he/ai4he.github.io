@@ -35,10 +35,6 @@ members:
     title: "Research Assistant"
     image: "images/assets/ceclia.jpeg"
   -  
-    name: "Cecilia Delgado-Solorzano"
-    title: "Research Assistant"
-    image: "images/assets/ceclia.jpeg"
-  -  
     name: "Wangfan"
     title: "Research Assistant"
     image: "images/assets/wangfan.jpeg" 
