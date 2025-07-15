@@ -54,7 +54,14 @@ members:
     name: "Alberto Campos Hernández"
     title: "Researcher"
     image: "images/team/alberto.jpeg"
-    
+  -
+    name: "Sravani Pati"
+    title: "Graduate Researcher"
+    image: "images/team/Sravani_Pati.jpg"
+  -
+    name: "Vamsi Krishna Pasam"
+    title: "Graduate Researcher"
+    image: "images/team/Vamsi_Krishna_Pasam.jpeg" 
   -
     name: "Victor Rios Muñoz"
     title: "Researcher"
