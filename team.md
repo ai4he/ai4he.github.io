@@ -57,11 +57,11 @@ members:
   -
     name: "Sravani Pati"
     title: "Graduate Researcher"
-    image: "images/team/Sravani_Pati.jpg"
+    image: "images/team/Sravani_Pati.png"
   -
     name: "Vamsi Krishna Pasam"
     title: "Graduate Researcher"
-    image: "images/team/Vamsi_Krishna_Pasam.jpeg" 
+    image: "images/team/Vamsi_Krishna_Pasam.png" 
   -
     name: "Victor Rios Muñoz"
     title: "Researcher"
