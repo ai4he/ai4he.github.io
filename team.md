@@ -63,6 +63,10 @@ members:
     title: "Graduate Researcher"
     image: "images/team/Vamsi_Krishna_Pasam.png" 
   -
+    name: "Pratyush Singh"
+    title: "Graduate Researcher"
+    image: "images/team/pratyush.jpg" 
+  -
     name: "Victor Rios Muñoz"
     title: "Researcher"
     image: "images/team/victor.jpeg"  
