@@ -32,11 +32,11 @@ members:
  
   -
     name: "Cecilia Delgado-Solorzano"
-    title: "Research Assistant"
+    title: "PhD Student"
     image: "images/assets/ceclia.jpeg"
   -  
     name: "Wangfan Li"
-    title: "Research Assistant"
+    title: "PhD Student"
     image: "images/team/wanfan.jpeg" 
   -
     name: "Ravindu Tharanga Perera"
