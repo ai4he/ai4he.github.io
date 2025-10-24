@@ -43,6 +43,10 @@ members:
     title: "Research Assistant"
     image: "images/assets/ravindu.jpg"
   -
+    name: "Austin LaHue"
+    title: "PhD Student"
+    image: "images/assets/austin_lahue.png"
+  -
     name: "Manuel Delaflor Rodríguez"
     title: "Researcher"
     image: "images/team/manuel.jpeg" 
