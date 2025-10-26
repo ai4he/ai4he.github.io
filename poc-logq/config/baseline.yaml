@@ -1,0 +1,35 @@
+random_seed: 42
+
+p_adc_share: 0.85
+enob_baseline_bits: 8
+delta_bits_log_mean: 1.25
+delta_bits_log_std: 0.35
+bins_per_decade: 12
+sample_rate_ksps: 5000
+n_channels: 1024
+duty_cycle: 0.6
+
+adc_e0_pj: 1.0
+dac_e0_pj: 1.0
+include_dac: true
+
+acc_drop_at_1bit: 0.10
+acc_drop_k: 0.15
+acc_drop_cap: 1.0
+
+baseline_inferences_per_sec: 100000
+utilization: 0.5
+
+electricity_price_per_kwh: 0.12
+hw_cost_baseline_usd: 200000
+hw_cost_logq_usd: 220000
+r_and_d_nonrecurring_usd: 1000000
+discount_rate_annual: 0.12
+lifetime_years: 3
+residual_value_fraction: 0.15
+
+price_per_1k_inferences_usd: 0.07
+accuracy_penalty_to_revenue: 0.5
+
+mc_trials: 2000
+
