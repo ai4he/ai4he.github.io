@@ -403,8 +403,25 @@ code, pre { font-family: var(--font-mono); font-size: .86em; }
 .team-tile { display: flex; flex-direction: column; align-items: center; gap: 8px; color: var(--ink-2); font-size: .84rem; font-weight: 600; text-decoration: none !important; }
 .team-tile .avatar { box-shadow: var(--shadow); transition: transform .2s ease; }
 .team-tile:hover .avatar { transform: translateY(-4px); }
-.sponsor-strip { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-.sponsor { display: grid; place-items: center; height: 84px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); font: 700 1.2rem var(--font-serif); letter-spacing: .02em; color: var(--ink); }
+/* Organization logos sit on white tiles in both themes so official
+   full-color marks stay legible; --k (from build.py) balances wide wordmarks
+   against square seals. */
+.org-logo { display: block; height: calc(var(--logo-h, 56px) * var(--k, 1)); width: auto; max-width: 100%; object-fit: contain; }
+.logo-wall { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; }
+.logo-wall li { display: grid; gap: 8px; align-content: start; text-align: center; }
+.logo-tile { display: grid; place-items: center; height: 112px; padding: 16px 18px; border-radius: var(--radius); background: #fff; border: 1px solid var(--line); transition: transform .2s ease, box-shadow .2s ease; }
+a.logo-tile:hover, a.logo-tile:focus-visible { transform: translateY(-2px); box-shadow: var(--shadow); }
+.logo-tile--text { font: 700 1.2rem var(--font-serif); color: #1b2130; }
+.logo-cap { font-size: .78rem; line-height: 1.35; color: var(--muted); }
+.logo-wall--sponsors { --logo-h: 76px; }
+.logo-wall--partners { --logo-h: 54px; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); gap: 12px; }
+.logo-wall--partners .logo-tile { height: 92px; padding: 12px; }
+.logo-wall-h { margin: 34px 0 14px; font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.logo-chip { display: inline-grid; place-items: center; height: 34px; min-width: 52px; padding: 4px 8px; border-radius: 8px; background: #fff; border: 1px solid var(--line); flex: none; --logo-h: 28px; }
+.logo-chip--lg { height: 58px; min-width: 96px; padding: 8px 12px; --logo-h: 46px; }
+.inst-logo { display: grid; place-items: center; height: 84px; margin-bottom: 14px; padding: 12px; border-radius: calc(var(--radius) - 4px); background: #fff; border: 1px solid var(--line); --logo-h: 52px; }
+.inst-card--home .inst-logo { width: min(320px, 100%); }
+.funding-logos { margin-top: 22px; }
 .sponsor-tag { display: inline-flex; align-items: center; padding: 3px 8px; border-radius: 6px; background: var(--ink); color: var(--bg); font-size: .7rem; font-weight: 700; letter-spacing: .03em; white-space: nowrap; flex: none; }
 .sponsor-tag--lg { font-size: .8rem; padding: 5px 10px; }
 
@@ -519,7 +536,7 @@ code, pre { font-family: var(--font-mono); font-size: .86em; }
 .plain-list { list-style: none; display: grid; gap: 8px; font-size: .9rem; color: var(--ink-2); }
 .plain-list--lg { gap: 14px; font-size: .95rem; }
 .fund-mini { list-style: none; display: grid; gap: 10px; font-size: .86rem; color: var(--ink-2); }
-.fund-mini li { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.fund-mini li { display: flex; gap: 10px; align-items: center; }
 
 /* ---------- Prose ---------- */
 .prose { color: var(--ink-2); font-size: 1.02rem; }

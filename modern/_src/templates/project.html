@@ -49,7 +49,7 @@
       <h3 class="side-h">Funding</h3>
       <ul class="fund-mini">
         {% for f in pr.funding_list %}
-        <li><span class="sponsor-tag">{{ f.sponsor_short }}</span>{% if f.award_number %}<a href="{{ f.url }}" target="_blank" rel="noopener">Award #{{ f.award_number }}</a>{% else %}{{ f.program or f.sponsor }}{% endif %}{% if f.amount %} · {{ f.amount_fmt }}{% endif %}{% if f.role %} · {{ f.role }}{% endif %}</li>
+        <li>{{ m.sponsor_mark(f, root) }}<span>{% if f.award_number %}<a href="{{ f.url }}" target="_blank" rel="noopener">Award #{{ f.award_number }}</a>{% else %}{{ f.program or f.sponsor }}{% endif %}{% if f.amount %} · {{ f.amount_fmt }}{% endif %}{% if f.role %} · {{ f.role }}{% endif %}</span></li>
         {% endfor %}
       </ul>
       {% endif %}

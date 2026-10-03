@@ -21,7 +21,7 @@ modern/
     │   ├── funding.yaml   ← awarded grants
     │   ├── news.yaml      ← news & milestones
     │   ├── overrides.yaml ← per-publication curation (thrusts, featured, venue label, code links)
-    │   ├── collaborators.yaml, teaching.yaml, software.yaml
+    │   ├── collaborators.yaml, logos.yaml, teaching.yaml, software.yaml
     ├── templates/*.html   ← Jinja2 page templates
     └── scripts/sync.py, build.py, check.py
 ```
@@ -76,6 +76,7 @@ update weekly or on demand from the repository's **Actions** tab.
 | Project image | put an image in `assets/img/projects/` and set `image:` in `projects.yaml` |
 | Hide or force-include a paper | `exclude: true` / `include: true` in `overrides.yaml` |
 | New grant | `data/funding.yaml` |
+| Sponsor or partner logo | add the file to `assets/img/logos/` (color version for light backgrounds) and an entry in `data/logos.yaml`; the build lists sponsors and partners still missing a logo |
 | News item | `data/news.yaml` (`pinned: true` also shows it on the About timeline) |
 | Navigation / address / email | `config.yaml` |
 | Colors, fonts, spacing | tokens at the top of `assets/css/site.css` |

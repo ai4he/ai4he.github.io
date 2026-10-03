@@ -28,6 +28,7 @@
     <div class="inst-grid">
       {% for c in collabs %}
       <article class="inst-card inst-card--{{ c.kind }}">
+        {% if c.logo %}<a class="inst-logo" href="{{ c.logo.url }}" target="_blank" rel="noopener" title="{{ c.name }}">{{ m.org_logo(c.logo, root, c.name) }}</a>{% endif %}
         <h3 class="inst-name">{{ c.name }}</h3>
         <p class="inst-place">{{ m.icon('pin') }}{{ c.place }}</p>
         {% if c.people %}<ul class="inst-people">{% for pp in c.people %}<li>{{ pp }}</li>{% endfor %}</ul>{% endif %}
@@ -35,6 +36,7 @@
       </article>
       {% endfor %}
     </div>
+    <p class="muted small acknowledge">Logos are trademarks of their respective organizations and are shown to identify research partners; they do not imply endorsement.</p>
   </div>
 </section>
 

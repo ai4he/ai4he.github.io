@@ -111,9 +111,7 @@
 <section class="section section--tint">
   <div class="wrap">
     {{ m.section_head("Funding", "Supported by", "Active sponsored research totaling " ~ stats.funding_compact ~ " across " ~ stats.awards ~ " awards, with the lab director as PI or Co-PI.", "funding/", "Funding details", root) }}
-    <ul class="sponsor-strip">
-      {% for s in sponsors %}<li class="sponsor">{{ s }}</li>{% endfor %}
-    </ul>
+    {{ m.logo_wall(sponsors, root, 'sponsors') }}
   </div>
 </section>
 
@@ -121,6 +119,8 @@
   <div class="wrap">
     {{ m.section_head("Collaborations", "A network across disciplines and borders", "We work with human-factors engineers, physicists, mathematicians, hydrologists and security researchers at Clemson, and with partners across the United States, Mexico and Europe.", "collaborators/", "Explore collaborations", root) }}
     <div class="map-frame map-frame--home">{{ map_svg }}</div>
+    <h3 class="logo-wall-h">Partner institutions</h3>
+    {{ m.logo_wall(collabs|rejectattr('kind', 'in', ['home', 'network'])|list, root, 'partners') }}
   </div>
 </section>
 

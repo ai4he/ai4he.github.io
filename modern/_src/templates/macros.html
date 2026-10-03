@@ -182,3 +182,20 @@
 {% endfor %}
 </ul>
 {%- endmacro %}
+
+{# Organization logo (sponsor or partner) from data/logos.yaml #}
+{% macro org_logo(logo, root, name=None) -%}
+<img class="org-logo" src="{{ root }}{{ logo.src }}" alt="{{ name or logo.label }}" style="--k: {{ logo.k }}" loading="lazy" decoding="async">
+{%- endmacro %}
+
+{% macro sponsor_mark(f, root, size='') -%}
+{% if f.logo %}<span class="logo-chip{% if size %} logo-chip--{{ size }}{% endif %}" title="{{ f.sponsor }}">{{ org_logo(f.logo, root, f.sponsor) }}</span>{% else %}<span class="sponsor-tag{% if size %} sponsor-tag--{{ size }}{% endif %}">{{ f.sponsor_short }}</span>{% endif %}
+{%- endmacro %}
+
+{% macro logo_wall(orgs, root, cls) -%}
+<ul class="logo-wall logo-wall--{{ cls }}">
+  {% for o in orgs %}
+  <li>{% if o.logo %}<a class="logo-tile" href="{{ o.logo.url }}" target="_blank" rel="noopener" title="{{ o.name }}">{{ org_logo(o.logo, root, o.name) }}</a><span class="logo-cap">{{ o.logo.label }}</span>{% else %}<span class="logo-tile logo-tile--text">{{ o.short or o.name }}</span>{% endif %}</li>
+  {% endfor %}
+</ul>
+{%- endmacro %}

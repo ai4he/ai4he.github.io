@@ -130,6 +130,48 @@ def load_auto(name, default=None):
     return json.loads(p.read_text(encoding="utf-8"))
 
 
+class Logos:
+    """Sponsor and partner logos (data/logos.yaml), matched by organization name."""
+
+    def __init__(self, entries):
+        self.entries = []
+        for e in entries or []:
+            f = OUT / "assets" / "img" / "logos" / e["file"]
+            if not f.exists():
+                print(f"  ! logo file missing: assets/img/logos/{e['file']}")
+                continue
+            w, h = image_size(f)
+            ratio = (w / h) if w and h else 1.0
+            # Optical size: wide wordmarks render shorter than square marks so
+            # every logo carries a similar visual weight in a row.
+            k = max(0.4, min(1.0, ratio ** -0.35))
+            self.entries.append({**e, "src": f"assets/img/logos/{e['file']}", "k": round(k, 3)})
+
+    def find(self, *names):
+        for n in names:
+            if not n:
+                continue
+            n = n.lower()
+            for e in self.entries:
+                if any(n == m.lower() or n.startswith(m.lower()) for m in e.get("match", [])):
+                    return e
+        return None
+
+
+def image_size(path):
+    if path.suffix == ".svg":
+        head = path.read_text(encoding="utf-8", errors="ignore")[:4000]
+        m = re.search(r'viewBox="\s*[-\d.]+[\s,]+[-\d.]+[\s,]+([\d.]+)[\s,]+([\d.]+)', head)
+        if m:
+            return float(m.group(1)), float(m.group(2))
+        w = re.search(r'<svg[^>]*\swidth="([\d.]+)', head)
+        h = re.search(r'<svg[^>]*\sheight="([\d.]+)', head)
+        return (float(w.group(1)), float(h.group(1))) if w and h else (None, None)
+    from PIL import Image
+    with Image.open(path) as im:
+        return im.size
+
+
 def slugify(s, maxlen=70):
     s = re.sub(r"[\u2010-\u2015]", "-", s)
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
@@ -807,6 +849,7 @@ def main():
     collabs = load_yaml("collaborators.yaml", [])
     teaching = load_yaml("teaching.yaml", {})
     software = load_yaml("software.yaml", [])
+    logos = Logos(load_yaml("logos.yaml", []))
     auto_grants = load_auto("grants", [])
     # Professional service only (entries with a role); older personal
     # volunteering on the personal site is not lab-era service.
@@ -823,10 +866,18 @@ def main():
     external = [f for f in funding if not f.get("internal")]
     fund_total = sum(f.get("amount") or 0 for f in external)
     pi_total = sum(f.get("amount") or 0 for f in external if f.get("role") == "PI")
+    for f in funding:
+        f["logo"] = logos.find(f["sponsor_short"], f.get("sponsor"))
+        if not f["logo"]:
+            print(f"  ! no logo for sponsor '{f['sponsor_short']}' (add it to logos.yaml)")
     sponsors = []
     for f in external:
-        if f["sponsor_short"] not in sponsors:
-            sponsors.append(f["sponsor_short"])
+        if f["sponsor_short"] not in [x["short"] for x in sponsors]:
+            sponsors.append({"short": f["sponsor_short"], "name": f["sponsor"], "logo": f["logo"]})
+    for c in collabs:
+        c["logo"] = logos.find(c["name"])
+        if not c["logo"]:
+            print(f"  ! no logo for partner '{c['name']}' (add it to logos.yaml)")
     # Warn about grants listed on the personal site but missing here.
     known = " ".join(f["title"].lower() for f in funding)
     for g in auto_grants:

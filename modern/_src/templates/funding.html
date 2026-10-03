@@ -14,8 +14,9 @@
     <div class="stat"><dt>Active awards (total value)</dt><dd>{{ stats.funding_compact }}</dd></div>
     <div class="stat"><dt>Active awards</dt><dd>{{ external|length }}</dd></div>
     <div class="stat"><dt>Led by the lab as PI</dt><dd>{{ stats.pi_total_compact }}</dd><span class="stat-note">NSF AIMing</span></div>
-    <div class="stat"><dt>Sponsors</dt><dd>{{ sponsors|length }}</dd><span class="stat-note">{{ sponsors|join(' · ') }}</span></div>
+    <div class="stat"><dt>Sponsors</dt><dd>{{ sponsors|length }}</dd><span class="stat-note">{{ sponsors|map(attribute='short')|join(' · ') }}</span></div>
   </dl>
+  <div class="funding-logos">{{ m.logo_wall(sponsors, root, 'sponsors') }}</div>
 </div>
 
 <section class="section">
@@ -42,7 +43,7 @@
       {% for f in funding %}
       <article class="grant-card{% if f.role == 'PI' %} grant-card--pi{% endif %}">
         <div class="grant-head">
-          <span class="sponsor-tag sponsor-tag--lg">{{ f.sponsor_short }}</span>
+          {{ m.sponsor_mark(f, root, 'lg') }}
           {% if f.role %}<span class="role-badge{% if f.role == 'PI' %} role-badge--pi{% endif %}">{{ f.role }}</span>{% endif %}
         </div>
         <h3 class="grant-title">{{ f.title }}</h3>
@@ -61,7 +62,7 @@
       </article>
       {% endfor %}
     </div>
-    <p class="muted small acknowledge">Any opinions, findings, and conclusions or recommendations expressed in the lab's work are those of the authors and do not necessarily reflect the views of the sponsors.</p>
+    <p class="muted small acknowledge">Any opinions, findings, and conclusions or recommendations expressed in the lab's work are those of the authors and do not necessarily reflect the views of the sponsors. Logos are trademarks of their respective organizations and are shown to acknowledge funding.</p>
   </div>
 </section>
 {% endblock %}
