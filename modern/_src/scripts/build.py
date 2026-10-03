@@ -789,43 +789,6 @@ def build_network(pubs, people):
 
 
 # =========================================================================== #
-# Charts (single-series; validated color = accent token)
-# =========================================================================== #
-def chart_columns(series, label="Publications", unit="publications"):
-    """series: list of (x_label, value, tooltip). Single series -> no legend."""
-    if not series:
-        return Markup("")
-    W, H = 640, 260
-    left, right, top, bottom = 36, 12, 28, 34
-    vmax = max(v for _, v, _ in series) or 1
-    step = next(st for st in (1, 2, 5, 10, 20, 25, 50, 100) if vmax / st <= 5)
-    ymax = step * math.ceil(vmax / step)
-    ticks = [step * i for i in range(int(ymax / step) + 1)]
-    band = (W - left - right) / len(series)
-    bw = min(24 * 1.6, band * 0.5)
-    out = [f'<svg class="chart" viewBox="0 0 {W} {H}" role="img" aria-label="{esc(label)} per year">']
-    for t in ticks:
-        y = top + (H - top - bottom) * (1 - t / ymax)
-        out.append(f'<line class="chart-grid" x1="{left}" x2="{W - right}" y1="{y:.1f}" y2="{y:.1f}"/>')
-        out.append(f'<text class="chart-tick" x="{left - 8}" y="{y + 4:.1f}" text-anchor="end">{int(t)}</text>')
-    for i, (xl, v, tip) in enumerate(series):
-        x = left + band * i + (band - bw) / 2
-        h = (H - top - bottom) * (v / ymax)
-        y = H - bottom - h
-        r = min(4, h / 2)
-        path = (f"M{x:.1f} {H - bottom:.1f}V{y + r:.1f}Q{x:.1f} {y:.1f} {x + r:.1f} {y:.1f}"
-                f"H{x + bw - r:.1f}Q{x + bw:.1f} {y:.1f} {x + bw:.1f} {y + r:.1f}V{H - bottom:.1f}Z") if h > 0 else ""
-        out.append(f'<g class="chart-col" data-tip="{esc(tip)}" tabindex="0">'
-                   f'<rect class="chart-hit" x="{left + band * i:.1f}" y="{top}" width="{band:.1f}" height="{H - top - bottom}"/>'
-                   f'<path class="chart-bar" d="{path}"/>'
-                   f'<text class="chart-value" x="{x + bw / 2:.1f}" y="{y - 7:.1f}" text-anchor="middle">{v}</text>'
-                   f'<text class="chart-tick" x="{x + bw / 2:.1f}" y="{H - bottom + 20}" text-anchor="middle">{esc(xl)}</text></g>')
-    out.append(f'<line class="chart-axis" x1="{left}" x2="{W - right}" y1="{H - bottom}" y2="{H - bottom}"/>')
-    out.append("</svg>")
-    return Markup("".join(out))
-
-
-# =========================================================================== #
 # Main build
 # =========================================================================== #
 def main():
@@ -955,8 +918,6 @@ def main():
 
     # ------------------------------------------------------------ stats
     years = sorted({p["year"] for p in pubs if p.get("year")})
-    per_year = [(str(y), sum(1 for p in pubs if p["year"] == y),
-                 f"{y}: {sum(1 for p in pubs if p['year'] == y)} publications" + (" (Aug-Dec)" if y == 2022 else "")) for y in years]
     type_counts = [(TYPE_LABELS[t], sum(1 for p in pubs if p["type"] == t), t) for t in TYPE_ORDER if any(p["type"] == t for p in pubs)]
     lab_members = [p for p in people.list if p["group"] != "director"]
     venues = sorted({re.sub(r"\s+\d{4}$", "", p["venue_short"]) for p in pubs if p["type"] in PEER_REVIEWED and p["type"] != "book"})
@@ -985,7 +946,6 @@ def main():
 
     network_svg, net_stats = build_network(pubs, people)
     map_svg = build_map(collabs)
-    chart_years = chart_columns(per_year)
 
     # ------------------------------------------------------------ render
     env = Environment(loader=FileSystemLoader(str(TPL)), autoescape=select_autoescape(["html", "xml"]),
@@ -1034,7 +994,7 @@ def main():
     pub_years = sorted({p["year"] for p in pubs}, reverse=True)
     members_with_pubs = sorted([p for p in people.list if p["pubs"]], key=lambda p: p["name"])
     render("publications.html", "publications/index.html", title="Publications", active="publications",
-           pubs=pubs, pub_years=pub_years, type_counts=type_counts, chart_years=chart_years,
+           pubs=pubs, pub_years=pub_years, type_counts=type_counts,
            members_with_pubs=members_with_pubs, books=books,
            description=f"{len(pubs)} publications from the Human-AI Empowerment Lab since 2022, with abstracts, BibTeX and links.")
     for p in pubs:

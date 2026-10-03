@@ -191,6 +191,11 @@
       if (fp.value) p.set("person", fp.value);
       var qs = p.toString();
       history.replaceState(null, "", window.location.pathname + (qs ? "?" + qs : "") + window.location.hash);
+      $$("[data-set-type]").forEach(function (b) {
+        var on = b.dataset.setType === ft.value;
+        b.classList.toggle("is-active", on);
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+      });
     }
     [fy, ft, fa, fp].forEach(function (s) { s.addEventListener("change", apply); });
     var timer;

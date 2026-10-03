@@ -6,21 +6,9 @@
     <p class="eyebrow">Publications</p>
     <h1 class="page-title">Publications</h1>
     <p class="page-lead">{{ pubs|length }} publications since the lab's founding in August 2022: books, journal articles, conference and workshop papers, posters and demos. Lab members are highlighted; every entry links to an abstract, BibTeX and the paper.</p>
-    <div class="pub-overview">
-      <figure class="chart-card">
-        <figcaption><strong>Publications per year</strong><span>Since the lab's founding in August 2022</span></figcaption>
-        {{ chart_years }}
-      </figure>
-      <div class="type-breakdown">
-        <p class="type-breakdown-h">By type</p>
-        <ul>
-          {% set tmax = type_counts|map(attribute=1)|max %}
-          {% for label, n, key in type_counts %}
-          <li><button type="button" data-set-type="{{ key }}"><span class="tb-label">{{ label }}</span><span class="tb-bar"><span style="width: {{ (n / tmax * 100)|round(1) }}%"></span></span><span class="tb-n">{{ n }}</span></button></li>
-          {% endfor %}
-        </ul>
-        <a class="text-link" href="{{ root }}publications.bib" download>{{ m.icon('quote') }} Download all BibTeX</a>
-      </div>
+    <div class="pub-types">
+      {% for label, n, key in type_counts %}<button type="button" class="filter-chip" data-set-type="{{ key }}" aria-pressed="false">{{ label }}<span class="filter-chip-n">{{ n }}</span></button>{% endfor %}
+      <a class="text-link pub-types-bib" href="{{ root }}publications.bib" download>{{ m.icon('quote') }} Download all BibTeX</a>
     </div>
   </div>
 </section>
