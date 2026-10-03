@@ -609,6 +609,22 @@ a.logo-tile:hover, a.logo-tile:focus-visible { transform: translateY(-2px); box-
 .profile-facts { list-style: none; display: grid; gap: 7px; margin-bottom: 18px; color: var(--ink-2); font-size: .93rem; }
 .profile-facts li { display: flex; align-items: center; gap: 9px; }
 .profile-facts .icon { color: var(--muted); }
+/* Whole-card link via the name; network icons stay clickable above it. */
+.person-tile, .alum { position: relative; }
+.stretched-link { color: inherit; text-decoration: none !important; }
+.stretched-link::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.stretched-link:focus-visible { outline: none; }
+.stretched-link:focus-visible::after { outline: 2px solid var(--accent); outline-offset: 2px; }
+.net-links { list-style: none; display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; position: relative; z-index: 1; }
+.net-links a { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); transition: color .15s ease, border-color .15s ease; }
+.net-links a:hover, .net-links a:focus-visible { color: var(--accent); border-color: var(--accent); text-decoration: none; }
+.net-links .icon { width: 16px; height: 16px; }
+.net-links--lg { gap: 7px; margin: 4px 0 18px; }
+.net-links--lg a { width: 38px; height: 38px; border-radius: 10px; }
+.net-links--lg .icon { width: 19px; height: 19px; }
+.net-links--sm { gap: 4px; margin-top: 6px; }
+.net-links--sm a { width: 26px; height: 26px; border-radius: 7px; }
+.net-links--sm .icon { width: 14px; height: 14px; }
 .profile-links { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
 .profile-links a { display: inline-flex; align-items: center; gap: 7px; padding: 7px 12px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line-2); color: var(--ink); font-size: .85rem; font-weight: 600; text-decoration: none !important; }
 .profile-links a:hover { border-color: var(--accent); color: var(--accent); }

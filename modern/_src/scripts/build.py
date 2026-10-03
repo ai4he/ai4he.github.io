@@ -172,6 +172,19 @@ def image_size(path):
         return im.size
 
 
+# Profile links (people.yaml `links:`), in display order. Keys not listed
+# here still render, after these, with a generic icon.
+LINK_ORDER = ["email", "website", "cv", "scholar", "orcid", "linkedin", "github", "researchgate",
+              "semantic_scholar", "dblp", "acm", "acl", "twitter", "youtube", "medium"]
+LINK_LABELS = {"email": "Email", "website": "Website", "cv": "CV", "scholar": "Google Scholar", "orcid": "ORCID",
+               "linkedin": "LinkedIn", "github": "GitHub", "researchgate": "ResearchGate",
+               "semantic_scholar": "Semantic Scholar", "dblp": "DBLP", "acm": "ACM Digital Library",
+               "acl": "ACL Anthology", "twitter": "X / Twitter", "youtube": "YouTube", "medium": "Medium"}
+# Contact entries on the personal site -> link keys.
+PROFILE_KEYS = {"clemson": "email", "google scholar": "scholar", "semantic scholar": "semantic_scholar",
+                "research gate": "researchgate", "x": "twitter"}
+
+
 def slugify(s, maxlen=70):
     s = re.sub(r"[\u2010-\u2015]", "-", s)
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
@@ -915,6 +928,13 @@ def main():
             al.sort(key=lambda p: (-len(p["pubs"]), p["name"]))
             alumni_groups.append({"key": key, "label": label, "people": al})
     director = people.by_slug.get("carlos-toxtli")
+    # The director's networks come from the personal site's Contact section,
+    # so new profiles added there appear here on the next sync.
+    if director is not None:
+        director["links"] = dict(director.get("links") or {})
+        for k, url in (load_auto("director_profiles", {}) or {}).items():
+            key = PROFILE_KEYS.get(k.strip().lower(), re.sub(r"\W+", "_", k.strip().lower()))
+            director["links"].setdefault(key, url.replace("mailto:", "") if key == "email" else url)
 
     # ------------------------------------------------------------ stats
     years = sorted({p["year"] for p in pubs if p.get("year")})
@@ -957,6 +977,7 @@ def main():
     env.globals.update(cfg=cfg, site=cfg["site"], areas=areas, area_by=area_by, stats=stats,
                        synced=synced, build_date=build_date, asset_hash=asset_hash, type_labels=TYPE_LABELS,
                        palette=PALETTE, year=int(build_date[:4]), director=director, people_by=people.by_slug,
+                       link_order=LINK_ORDER, link_labels=LINK_LABELS,
                        nav=cfg["nav"], source=cfg["source"])
 
     # Remove previously generated pages so deleted items do not linger.

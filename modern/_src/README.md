@@ -70,6 +70,7 @@ update weekly or on demand from the repository's **Actions** tab.
 |---|---|
 | Add a student / update a bio, links, job-market note | `data/people.yaml` (`seeking: "On the job market for 2027 industry research roles"` shows a badge) |
 | Add a photo | save a square JPG as `assets/img/people/<slug>.jpg` |
+| Network links | `links:` in `data/people.yaml` (website, cv, scholar, orcid, linkedin, github, researchgate, semantic_scholar, dblp, acm, acl, twitter, youtube, medium); they show on the profile and as icons on the People page. The director's links also come from the personal site's Contact section on every sync |
 | Move someone to alumni | set `status: alumni`, add `until:` and optionally `next:` (where they went) |
 | New project page | `data/projects.yaml` (link papers by title fragment) |
 | Paper teaser figure | put an image in `assets/img/papers/` and set `image: file.jpg` in `overrides.yaml` |

@@ -22,6 +22,7 @@
         <p class="director-title">{{ person.title }}</p>
         <div class="prose prose--sm">{{ person.bio_lead }}</div>
         <div class="chip-row chip-row--wrap">{% for t in person.interests %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+        {{ m.net_icons(person.links, person.name, 'net-links--lg') }}
         <a class="text-link" href="{{ root }}{{ person.url }}">Full profile {{ m.icon('arrow') }}</a>
       </div>
     </article>
@@ -34,17 +35,18 @@
     <h2 class="group-h">{{ g.label }} <span class="count">{{ g.people|length }}</span></h2>
     <div class="people-grid{% if g.key == 'phd' %} people-grid--lg{% endif %}">
       {% for person in g.people %}
-      <a class="person-tile" href="{{ root }}{{ person.url }}">
+      <article class="person-tile">
         {{ m.avatar(person, root, 'lg') }}
         <span class="person-tile-body">
-          <span class="person-card-name">{{ person.name }}</span>
+          <a class="person-card-name stretched-link" href="{{ root }}{{ person.url }}">{{ person.name }}</a>
           <span class="person-card-title">{{ person.title }}</span>
           {% if person.affiliation %}<span class="person-card-meta">{{ person.affiliation }}</span>{% endif %}
           {% if person.since or person.expected_graduation %}<span class="person-card-meta">{% if person.since %}Since {{ person.since }}{% endif %}{% if person.expected_graduation %} · Expected {{ person.expected_graduation }}{% endif %}</span>{% endif %}
           {% if person.interests %}<span class="tag-row">{% for t in person.interests[:3] %}<span class="tag tag--sm">{{ t }}</span>{% endfor %}</span>{% endif %}
           {% if person.pubs %}<span class="person-card-stat">{{ person.pubs|length }} publication{{ 's' if person.pubs|length != 1 }}{% if person.first_author %} · {{ person.first_author|length }} as first author{% endif %}</span>{% endif %}
+          {{ m.net_icons(person.links, person.name) }}
         </span>
-      </a>
+      </article>
       {% endfor %}
     </div>
   </div>
@@ -61,10 +63,10 @@
     </div>
     <div class="alumni-grid" id="alumni-grid">
       {% for g in alumni_groups %}{% for person in g.people %}
-      <a class="alum" href="{{ root }}{{ person.url }}" data-group="{{ g.key }}">
+      <article class="alum" data-group="{{ g.key }}">
         {{ m.avatar(person, root, 'sm') }}
-        <span><span class="alum-name">{{ person.name }}</span><span class="alum-role">{{ person.title }}{% if person.until %} · {{ person.until }}{% endif %}</span>{% if person.pubs %}<span class="alum-meta">{{ person.pubs|length }} publication{{ 's' if person.pubs|length != 1 }}</span>{% endif %}{% if person.next %}<span class="alum-meta">Now: {{ person.next }}</span>{% endif %}</span>
-      </a>
+        <span><a class="alum-name stretched-link" href="{{ root }}{{ person.url }}">{{ person.name }}</a><span class="alum-role">{{ person.title }}{% if person.until %} · {{ person.until }}{% endif %}</span>{% if person.pubs %}<span class="alum-meta">{{ person.pubs|length }} publication{{ 's' if person.pubs|length != 1 }}</span>{% endif %}{% if person.next %}<span class="alum-meta">Now: {{ person.next }}</span>{% endif %}{{ m.net_icons(person.links, person.name, 'net-links--sm') }}</span>
+      </article>
       {% endfor %}{% endfor %}
     </div>
   </div>
