@@ -12,6 +12,13 @@
 
 - date: 2026-10
   kind: paper
+  text: "Nine papers accepted at seven **NeurIPS 2026** workshops, on auditing agent and AI evaluations, peer review in the age of AI, supervising teams of LLM agents, social simulation and mathematical reasoning, including Fateme Mazdarani's study of mathematical creativity in formal proof generation (MATH-AI)."
+  link: publications/?q=neurips%202026&type=workshop
+  people: [manuel-delaflor, fateme-mazdarani]
+  pinned: true
+
+- date: 2026-10
+  kind: paper
   text: "Three papers from the NSF AIMing project will appear at **MathNLP 2026**, co-located with EMNLP 2026 in Budapest: the NaturalPRISM premise-retrieval benchmark, a context ablation for conjecture generation, and robust procedural mathematical reasoning."
   link: projects/aiming/
   people: [austin-lahue, fateme-mazdarani]

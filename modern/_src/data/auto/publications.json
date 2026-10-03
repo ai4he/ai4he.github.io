@@ -50,6 +50,264 @@
   "section": "Books"
  },
  {
+  "key": "Toxtli2026Evidence",
+  "title": "Evidence Before Rankings: An Executable Audit Contract for Stateful Tool-Agent Evaluations",
+  "authors": [
+   "Carlos Toxtli",
+   "Manuel Delaflor"
+  ],
+  "year": 2026,
+  "month": 12,
+  "type": "poster",
+  "status": "forthcoming",
+  "venue": "Third Workshop on Agents in the Wild: Safety, Security, and Beyond (AIWILD) at NeurIPS 2026",
+  "publisher": "",
+  "volume": "",
+  "pages": "",
+  "address": "Sydney, Australia",
+  "note": "Poster; forthcoming",
+  "isbn": "",
+  "doi": null,
+  "url": "https://agentwild-workshop.github.io/neurips2026/",
+  "links": {
+   "website": "https://agentwild-workshop.github.io/neurips2026/"
+  },
+  "citation": "Toxtli, Carlos, and Manuel Delaflor. “Evidence Before Rankings: An Executable Audit Contract for Stateful Tool-Agent Evaluations.” Poster, Third Workshop on Agents in the Wild: Safety, Security, and Beyond (AIWILD) at NeurIPS 2026, Sydney, Australia, December 2026, forthcoming.",
+  "abstract": "Safety evaluations of tool agents often retain terminal scores without the trajectories needed to explain them. We contribute an executable, claim-scoped evidence contract spanning identity, path, transition, assignment, target, and discrimination, and validate it in a prospectively frozen model-only deployment sandbox with hard preconditions and rollback. The study crosses serving aliases, state dynamics, benign and injected tickets, and repeated seeds while retaining every request, raw response, parse result, retry, state transition, and endpoint. The resulting paths expose mechanisms that terminal scores conflate: generic unsafe transitions can be attempted without reaching the injected exfiltration target, whereas abort instructions mainly cause premature termination. Offline replay reproduces every retained transition. The artifact therefore supports mechanism-level diagnosis on the evaluated finite grid, but not claims about other models, policies, providers, deployments, or people. Because immutable weight and container hashes are unavailable, the identity gate also blocks claims of exact behavioral reproduction. The study uses no human experiment or human-derived label.",
+  "bibtex": "@inproceedings{Toxtli2026Evidence,\ntitle = {Evidence Before Rankings: An Executable Audit Contract for Stateful Tool-Agent Evaluations},\nauthor = {Toxtli, Carlos and Delaflor, Manuel},\nbooktitle = {Third Workshop on Agents in the Wild: Safety, Security, and Beyond (AIWILD) at NeurIPS 2026},\naddress = {Sydney, Australia},\nyear = {2026},\nmonth = dec,\nnote = {Poster; forthcoming},\nurl = {https://agentwild-workshop.github.io/neurips2026/}\n}",
+  "section": "Scientific"
+ },
+ {
+  "key": "Toxtli2026Calibration",
+  "title": "When Calibration Records Cannot Support Routing: A Denominator and Artifact Audit",
+  "authors": [
+   "Carlos Toxtli",
+   "Manuel Delaflor"
+  ],
+  "year": 2026,
+  "month": 12,
+  "type": "poster",
+  "status": "published",
+  "venue": "TAE (Trust-AI-Eval): Can We Trust AI Evaluation? Workshop at NeurIPS 2026",
+  "publisher": "",
+  "volume": "",
+  "pages": "",
+  "address": "Sydney, Australia",
+  "note": "Poster",
+  "isbn": "",
+  "doi": null,
+  "url": "https://openreview.net/forum?id=uPtp2butrm",
+  "links": {
+   "website": "https://openreview.net/forum?id=uPtp2butrm",
+   "pdf": "https://openreview.net/pdf?id=uPtp2butrm"
+  },
+  "citation": "Toxtli, Carlos, and Manuel Delaflor. “When Calibration Records Cannot Support Routing: A Denominator and Artifact Audit.” Poster, TAE (Trust-AI-Eval): Can We Trust AI Evaluation? Workshop at NeurIPS 2026, Sydney, Australia, December 2026. https://openreview.net/forum?id=uPtp2butrm",
+  "abstract": "Low calibration error does not establish that verbalized confidence can support routing. We audit the evidence needed for that decision in two retained records. The first is nearly perfectly accurate and has low aggregate calibration error, but it contains only one observed error and its joint answer-confidence coverage varies sharply by endpoint. It can describe average confidence on this finite record, but cannot establish discrimination or selective risk. The second record omits item text, answers, gold labels, raw outputs, and verification evidence. Reproducible arithmetic on its supplied correctness field therefore does not become a verified behavioral estimate. Together, the cases change the operational decision from choosing a confidence threshold to redesigning the items, interface, and evidence record before any routing evaluation. We provide a compact machine-readable audit covering denominators, artifact status, calibration, discrimination, selective risk, uncertainty, and unidentified outcomes. The contribution is a bounded workflow for deciding what a calibration record can support, not a validated benchmark or a general claim about verbalized confidence.",
+  "bibtex": "@inproceedings{Toxtli2026Calibration,\ntitle = {When Calibration Records Cannot Support Routing: A Denominator and Artifact Audit},\nauthor = {Toxtli, Carlos and Delaflor, Manuel},\nbooktitle = {TAE (Trust-AI-Eval): Can We Trust AI Evaluation? Workshop at NeurIPS 2026},\naddress = {Sydney, Australia},\nyear = {2026},\nmonth = dec,\nnote = {Poster},\nurl = {https://openreview.net/forum?id=uPtp2butrm}\n}",
+  "section": "Scientific"
+ },
+ {
+  "key": "Toxtli2026Governance",
+  "title": "Separating Governance Designation from Operational Fault in Model-Generated Incident Audits",
+  "authors": [
+   "Carlos Toxtli",
+   "Manuel Delaflor"
+  ],
+  "year": 2026,
+  "month": 12,
+  "type": "poster",
+  "status": "published",
+  "venue": "Trustworthy AI for Good Workshop (AI4GOOD) at NeurIPS 2026",
+  "publisher": "",
+  "volume": "",
+  "pages": "",
+  "address": "Paris, France",
+  "note": "Poster",
+  "isbn": "",
+  "doi": null,
+  "url": "https://openreview.net/forum?id=oZDf3mJY4F",
+  "links": {
+   "website": "https://openreview.net/forum?id=oZDf3mJY4F",
+   "pdf": "https://openreview.net/pdf?id=oZDf3mJY4F"
+  },
+  "citation": "Toxtli, Carlos, and Manuel Delaflor. “Separating Governance Designation from Operational Fault in Model-Generated Incident Audits.” Poster, Trustworthy AI for Good Workshop (AI4GOOD) at NeurIPS 2026, Paris, France, December 2026. https://openreview.net/forum?id=oZDf3mJY4F",
+  "abstract": "When a language model drafts an incident audit, it may conflate the party that caused a failure with the party a governance charter makes answerable for it. We test that distinction in a construct-separated, artifact-complete, model-only audit spanning fixed incidents, several governance descriptions, and three model families. The models consistently track the stipulated source of operational fault while assigning greater governance accountability to the explicitly designated bearer. Changing that bearer moves governance ratings in the prespecified direction without collapsing them into causal contribution or operational fault. Absolute AI designations reach a ceiling, however, so a frozen shared-versus-sole extension distinguishes a dose response for two model families but not for the third. Every request, response, failure, retry, parse, and protocol deviation is retained without repair or renormalization. The audit therefore shows how to test whether model-generated reports preserve a governance distinction under a declared rubric. It does not establish moral judgment, human agreement, legal validity, or deployment benefit.",
+  "bibtex": "@inproceedings{Toxtli2026Governance,\ntitle = {Separating Governance Designation from Operational Fault in Model-Generated Incident Audits},\nauthor = {Toxtli, Carlos and Delaflor, Manuel},\nbooktitle = {Trustworthy AI for Good Workshop (AI4GOOD) at NeurIPS 2026},\naddress = {Paris, France},\nyear = {2026},\nmonth = dec,\nnote = {Poster},\nurl = {https://openreview.net/forum?id=oZDf3mJY4F}\n}",
+  "section": "Scientific"
+ },
+ {
+  "key": "Toxtli2026Evaluator",
+  "title": "Evaluator Disagreement in AI-Assisted Manuscript Revision",
+  "authors": [
+   "Carlos Toxtli",
+   "Manuel Delaflor"
+  ],
+  "year": 2026,
+  "month": 12,
+  "type": "poster",
+  "status": "published",
+  "venue": "AI-Native Academia: Authorship, Peer Review, and Conference Governance under AI Workshop at NeurIPS 2026",
+  "publisher": "",
+  "volume": "",
+  "pages": "",
+  "address": "Atlanta, GA",
+  "note": "Poster",
+  "isbn": "",
+  "doi": null,
+  "url": "https://openreview.net/forum?id=KcjksLJoBz",
+  "links": {
+   "website": "https://openreview.net/forum?id=KcjksLJoBz",
+   "pdf": "https://openreview.net/pdf?id=KcjksLJoBz"
+  },
+  "citation": "Toxtli, Carlos, and Manuel Delaflor. “Evaluator Disagreement in AI-Assisted Manuscript Revision.” Poster, AI-Native Academia: Authorship, Peer Review, and Conference Governance under AI Workshop at NeurIPS 2026, Atlanta, GA, December 2026. https://openreview.net/forum?id=KcjksLJoBz",
+  "abstract": "Venues and vendors need a credible evaluator when they compare language-model tools that revise manuscripts from peer reviews, yet a scalar LLM judge is often used without evidence that its preferences track useful revision. We study one such judge-and-rubric pipeline on revision trajectories drawn from multiple machine-learning venue years, comparing its scores with document-level similarity to the authors' actual next versions. The two measures order the machine conditions almost oppositely. A second judge from a different model family and serving stack reproduces the condition ranking, which demonstrates stability of the shared rubric-plus-judge pipeline rather than its validity. More importantly, the method preferred by both judges emits truncated, partial manuscripts in about one in seven runs. The retained logs cannot show whether judges reward those individual failures, and formatting differences confound comparisons with author revisions. Our case study, Prompt-Level Supervisory Alignment, produces documents closer to the next author version than the alternatives, but similarity rewards unchanged text and the decisive editing controls remain absent. The supported recommendation is therefore specific: venues should validate revision evaluators on real trajectories and known completeness failures before using them to certify writing tools.",
+  "bibtex": "@inproceedings{Toxtli2026Evaluator,\ntitle = {Evaluator Disagreement in AI-Assisted Manuscript Revision},\nauthor = {Toxtli, Carlos and Delaflor, Manuel},\nbooktitle = {AI-Native Academia: Authorship, Peer Review, and Conference Governance under AI Workshop at NeurIPS 2026},\naddress = {Atlanta, GA},\nyear = {2026},\nmonth = dec,\nnote = {Poster},\nurl = {https://openreview.net/forum?id=KcjksLJoBz}\n}",
+  "section": "Scientific"
+ },
+ {
+  "key": "Delaflor2026Validation",
+  "title": "A Validation Contract for Anticipatory Peer-Review Benchmarks",
+  "authors": [
+   "Manuel Delaflor",
+   "Carlos Toxtli"
+  ],
+  "year": 2026,
+  "month": 12,
+  "type": "poster",
+  "status": "published",
+  "venue": "AI-Native Academia: Authorship, Peer Review, and Conference Governance under AI Workshop at NeurIPS 2026",
+  "publisher": "",
+  "volume": "",
+  "pages": "",
+  "address": "Atlanta, GA",
+  "note": "Poster",
+  "isbn": "",
+  "doi": null,
+  "url": "https://openreview.net/forum?id=eZbOdYHVJE",
+  "links": {
+   "website": "https://openreview.net/forum?id=eZbOdYHVJE",
+   "pdf": "https://openreview.net/pdf?id=eZbOdYHVJE"
+  },
+  "citation": "Delaflor, Manuel, and Carlos Toxtli. “A Validation Contract for Anticipatory Peer-Review Benchmarks.” Poster, AI-Native Academia: Authorship, Peer Review, and Conference Governance under AI Workshop at NeurIPS 2026, Atlanta, GA, December 2026. https://openreview.net/forum?id=eZbOdYHVJE",
+  "abstract": "Tools that anticipate peer-review concerns could help authors decide what to revise before submission or another review round. Evaluating such tools is difficult because success may mean matching one realized panel, performing well across possible panels, or improving a paper after an author follows the advice. We separate these targets formally and provide a prospective validation contract covering audit samples, adjudication, error metrics, capacity sensitivity, deterministic controls, and pass/fail rules. The motivating RevPlan-Bench pipeline produced thousands of canonicalized review issues and revision plans, but the underlying corpus and scoring artifacts do not survive in the project. Its assignment rates, model rankings, and inferred issue cascades consequently depend on unaudited extraction, a restrictive unmeasured pre-filter, and unrestricted one-to-many matching. We report them only as pipeline outputs. Because the available record satisfies none of the contract's validation requirements, it supports an estimand and a benchmark governance contribution, but no claim about review dynamics, model foresight, or author utility.",
+  "bibtex": "@inproceedings{Delaflor2026Validation,\ntitle = {A Validation Contract for Anticipatory Peer-Review Benchmarks},\nauthor = {Delaflor, Manuel and Toxtli, Carlos},\nbooktitle = {AI-Native Academia: Authorship, Peer Review, and Conference Governance under AI Workshop at NeurIPS 2026},\naddress = {Atlanta, GA},\nyear = {2026},\nmonth = dec,\nnote = {Poster},\nurl = {https://openreview.net/forum?id=eZbOdYHVJE}\n}",
+  "section": "Scientific"
+ },
+ {
+  "key": "Toxtli2026Supervisor",
+  "title": "How Many Agents Can One Supervisor Track? A Mechanistic Capacity Model and Measurement Protocol for LLM-Agent Teams",
+  "authors": [
+   "Carlos Toxtli",
+   "Manuel Delaflor"
+  ],
+  "year": 2026,
+  "month": 12,
+  "type": "workshop",
+  "status": "published",
+  "venue": "Human-AI Coevolution: Measuring Human-Agent Teams in the Agentic Era (HAIC) Workshop at NeurIPS 2026",
+  "publisher": "",
+  "volume": "",
+  "pages": "",
+  "address": "Atlanta, GA",
+  "note": "Workshop paper",
+  "isbn": "",
+  "doi": null,
+  "url": "https://openreview.net/forum?id=czINRnBTpf",
+  "links": {
+   "website": "https://openreview.net/forum?id=czINRnBTpf",
+   "pdf": "https://openreview.net/pdf?id=czINRnBTpf"
+  },
+  "citation": "Toxtli, Carlos, and Manuel Delaflor. “How Many Agents Can One Supervisor Track? A Mechanistic Capacity Model and Measurement Protocol for LLM-Agent Teams.” Workshop paper, Human-AI Coevolution: Measuring Human-Agent Teams in the Agentic Era (HAIC) Workshop at NeurIPS 2026, Atlanta, GA, December 2026. https://openreview.net/forum?id=czINRnBTpf",
+  "abstract": "Agentic deployments can assign many parallel agents to one supervisor without specifying when that supervisor can no longer recover the team's state. Human-factors research already establishes relevant constructs such as situation awareness, span of control, neglect tolerance, and multiple-resource workload, but language-model teams distribute state across text and can fail silently. This position paper translates those constructs into a measurement protocol designed for later calibration to people rather than a new human experiment. Typed event rates, isolated service costs, and a throughput budget define a nominal load-balance index; the midpoint of a separately fitted capacity curve remains an empirical quantity. Synthetic controls recover a known capacity boundary, while a seeded queue shows that deadline pressure can separate the fitted midpoint from nominal load balance. The resulting event ontology, operating envelope, executable stress tests, and preregisterable falsification criteria allow system designers to test staffing or interface interventions within a declared team-monitor channel. They do not turn synthetic behavior into evidence about human or model supervisors.",
+  "bibtex": "@inproceedings{Toxtli2026Supervisor,\ntitle = {How Many Agents Can One Supervisor Track? A Mechanistic Capacity Model and Measurement Protocol for LLM-Agent Teams},\nauthor = {Toxtli, Carlos and Delaflor, Manuel},\nbooktitle = {Human-AI Coevolution: Measuring Human-Agent Teams in the Agentic Era (HAIC) Workshop at NeurIPS 2026},\naddress = {Atlanta, GA},\nyear = {2026},\nmonth = dec,\nnote = {Workshop paper},\nurl = {https://openreview.net/forum?id=czINRnBTpf}\n}",
+  "section": "Scientific"
+ },
+ {
+  "key": "Delaflor2026Headroom",
+  "title": "Headroom Before Protocol Effects: A Decision Procedure for Human-Agent Evaluation",
+  "authors": [
+   "Manuel Delaflor",
+   "Carlos Toxtli"
+  ],
+  "year": 2026,
+  "month": 12,
+  "type": "workshop",
+  "status": "published",
+  "venue": "Human-AI Coevolution: Measuring Human-Agent Teams in the Agentic Era (HAIC) Workshop at NeurIPS 2026",
+  "publisher": "",
+  "volume": "",
+  "pages": "",
+  "address": "Atlanta, GA",
+  "note": "Workshop paper",
+  "isbn": "",
+  "doi": null,
+  "url": "https://openreview.net/forum?id=odOgsQYleZ",
+  "links": {
+   "website": "https://openreview.net/forum?id=odOgsQYleZ",
+   "pdf": "https://openreview.net/pdf?id=odOgsQYleZ"
+  },
+  "citation": "Delaflor, Manuel, and Carlos Toxtli. “Headroom Before Protocol Effects: A Decision Procedure for Human-Agent Evaluation.” Workshop paper, Human-AI Coevolution: Measuring Human-Agent Teams in the Agentic Era (HAIC) Workshop at NeurIPS 2026, Atlanta, GA, December 2026. https://openreview.net/forum?id=odOgsQYleZ",
+  "abstract": "A team protocol has no interpretable benefit without a matched no-protocol baseline and decision-relevant headroom. We present a reporting method that tests admissibility, identifies the marginal contrast, evaluates opportunity, and maps paired uncertainty to an operational action. It distinguishes exact headroom on a fixed battery from uncertain population headroom used in planning. A published meta-analysis of human-AI experiments illustrates why the estimand matters: the same evidence supports augmentation relative to humans alone but contradicts synergy relative to the better constituent. Neither comparison identifies a coordination protocol without a matched no-protocol team. An executable synthetic application further shows that a promising point estimate can remain operationally unresolved once paired uncertainty is considered, and that near-perfect pilot performance does not by itself make a modest benefit impossible. Several inherited multi-model summaries fail the method's artifact gates, so they do not validate it. This is a bounded position and reporting contribution rather than an adoption-ready standard. Human-facing claims still require direct human outcomes, and we introduce no new human experiment.",
+  "bibtex": "@inproceedings{Delaflor2026Headroom,\ntitle = {Headroom Before Protocol Effects: A Decision Procedure for Human-Agent Evaluation},\nauthor = {Delaflor, Manuel and Toxtli, Carlos},\nbooktitle = {Human-AI Coevolution: Measuring Human-Agent Teams in the Agentic Era (HAIC) Workshop at NeurIPS 2026},\naddress = {Atlanta, GA},\nyear = {2026},\nmonth = dec,\nnote = {Workshop paper},\nurl = {https://openreview.net/forum?id=odOgsQYleZ}\n}",
+  "section": "Scientific"
+ },
+ {
+  "key": "Mazdarani2026Shape",
+  "title": "The Shape of Mathematical Creativity: Measuring Mathematical Exploration in Formal Proof Generation",
+  "authors": [
+   "Fateme Mazdarani",
+   "Carlos Toxtli"
+  ],
+  "year": 2026,
+  "month": 12,
+  "type": "poster",
+  "status": "forthcoming",
+  "venue": "The 6th Workshop on Mathematical Reasoning and AI (MATH-AI) at NeurIPS 2026",
+  "publisher": "",
+  "volume": "",
+  "pages": "",
+  "address": "Atlanta, GA",
+  "note": "Poster; forthcoming",
+  "isbn": "",
+  "doi": null,
+  "url": "https://mathai-2026.github.io/",
+  "links": {
+   "website": "https://mathai-2026.github.io/"
+  },
+  "citation": "Mazdarani, Fateme, and Carlos Toxtli. “The Shape of Mathematical Creativity: Measuring Mathematical Exploration in Formal Proof Generation.” Poster, The 6th Workshop on Mathematical Reasoning and AI (MATH-AI) at NeurIPS 2026, Atlanta, GA, December 2026, forthcoming.",
+  "abstract": "Proof-generating systems return many candidates for the same theorem. Lean's kernel determines whether each candidate is correct, but not whether the candidates contain different mathematical reasoning. We study one measurable component of mathematical creativity: whether repeated successful generations explore distinct proof ideas rather than new formal expressions of the same idea. We analyze LeanRoute-216, which began with 36 kernel-verified and human-reviewed Lean proofs for 36 fixed propositions. Five additional proofs were then generated for each proposition with the goal of obtaining diverse proofs, producing 216 kernel-verified proofs in total. A graph-derived route-level review identified 61 diverse routes among the 216 distinct proof strings. This observation motivated a closer study of the distinction between formal variation and mathematical route diversity. Across the benchmark's 180 parent-candidate pairs, 25 were labeled as route changes and 155 as same-route comparisons. All pairs of candidate proofs were human-evaluated in a blinded second pass, with 95.6% agreement with the original route-change labels (κ = 0.793). Five theorem panels were used to refine the rubric and judging prompts, while the remaining 31 panels were held out for evaluation. On these 31 panels, LLM judges recognize route changes more reliably than lexical baselines, but remain substantially weaker at identifying the kind of change. These results support route diversity as an evaluation target separate from correctness and show how route-level auditing can inform proof search and the curation of synthetic reasoning data.",
+  "bibtex": "@inproceedings{Mazdarani2026Shape,\ntitle = {The Shape of Mathematical Creativity: Measuring Mathematical Exploration in Formal Proof Generation},\nauthor = {Mazdarani, Fateme and Toxtli, Carlos},\nbooktitle = {The 6th Workshop on Mathematical Reasoning and AI (MATH-AI) at NeurIPS 2026},\naddress = {Atlanta, GA},\nyear = {2026},\nmonth = dec,\nnote = {Poster; forthcoming},\nurl = {https://mathai-2026.github.io/}\n}",
+  "section": "Scientific"
+ },
+ {
+  "key": "Toxtli2026Content",
+  "title": "Content Is Not Social Attribution: An Audit Protocol for Textual LLM Social Simulation",
+  "authors": [
+   "Carlos Toxtli",
+   "Manuel Delaflor"
+  ],
+  "year": 2026,
+  "month": 12,
+  "type": "poster",
+  "status": "forthcoming",
+  "venue": "SocialAgent: Second Workshop on Large Language Models for Social Reasoning and Simulation at NeurIPS 2026",
+  "publisher": "",
+  "volume": "",
+  "pages": "",
+  "address": "Atlanta, GA",
+  "note": "Poster; forthcoming",
+  "isbn": "",
+  "doi": null,
+  "url": "https://social-llm-workshop.github.io/",
+  "links": {
+   "website": "https://social-llm-workshop.github.io/"
+  },
+  "citation": "Toxtli, Carlos, and Manuel Delaflor. “Content Is Not Social Attribution: An Audit Protocol for Textual LLM Social Simulation.” Poster, SocialAgent: Second Workshop on Large Language Models for Social Reasoning and Simulation at NeurIPS 2026, Atlanta, GA, December 2026, forthcoming.",
+  "abstract": "Textual social-agent studies often change both a proposition and its alleged speaker. The resulting output difference may reflect content, attribution, task demand, or their interaction, so “social influence” does not identify the pathway. We offer an executable methodological audit rather than an empirical case series. The protocol separates baseline, content-only, source-attributed, and attribution-only conditions; checks representation independently of the focal outcome; blocks assignment across items, models, and seeds; retains every failure; and requires either a finite-benchmark or population estimand. It also replaces a structural-social taxonomy informed by outcomes with a prospective multi-label rubric covering information access and timing, message content, social source attribution, normative or incentive stakes, and interface or embodiment. A hypothetical design illustrates the contrasts without invented observations. Researchers translating social paradigms into LLM protocols can use the audit to distinguish source-attribution sensitivity from a response to changed text. The framework does not establish human replication or mechanism equivalence.",
+  "bibtex": "@inproceedings{Toxtli2026Content,\ntitle = {Content Is Not Social Attribution: An Audit Protocol for Textual LLM Social Simulation},\nauthor = {Toxtli, Carlos and Delaflor, Manuel},\nbooktitle = {SocialAgent: Second Workshop on Large Language Models for Social Reasoning and Simulation at NeurIPS 2026},\naddress = {Atlanta, GA},\nyear = {2026},\nmonth = dec,\nnote = {Poster; forthcoming},\nurl = {https://social-llm-workshop.github.io/}\n}",
+  "section": "Scientific"
+ },
+ {
   "key": "Toxtli2026AIConsciousness",
   "title": "AI Consciousness? Attribution and Cognitive Biases",
   "authors": [

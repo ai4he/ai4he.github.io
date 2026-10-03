@@ -40,6 +40,7 @@
     - "From Recognition to Reconstruction"
     - "TREAT: Evaluating Access"
     - "Beyond the Answer Key"
+    - "The Shape of Mathematical Creativity"
   links:
     Code: https://github.com/ai4he/AIMing
     NSF award: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2434704
@@ -71,6 +72,10 @@
     - "Eliciting Fairness via Micro-Ethics"
     - "Assessing AI-Generated Workflows"
     - "Conceptual Framework for Autonomous Cognitive Entities"
+    - "How Many Agents Can One Supervisor Track"
+    - "Evaluator Disagreement in AI-Assisted Manuscript Revision"
+    - "A Validation Contract for Anticipatory Peer-Review"
+    - "Headroom Before Protocol Effects"
 
 - slug: metacognitive-ai
   title: Metacognition, Calibration and Trust in Language Models
@@ -105,6 +110,10 @@
     - "Self-Instantiated, Temporally Continuous"
     - "Resonant Attractor Networks"
     - "LLM-Judge Behavioral Coding Scheme"
+    - "When Calibration Records Cannot Support Routing"
+    - "Evidence Before Rankings"
+    - "Separating Governance Designation from Operational Fault"
+    - "Content Is Not Social Attribution"
   links:
     "Code: Sycophantic Metacognition": https://github.com/ai4he/kruger
     "Code: Qualification by Calibration": https://github.com/ai4he/qualification-by-calibration

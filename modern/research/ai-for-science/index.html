@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../assets/css/site.css?v=8012d18a3c">
+<link rel="stylesheet" href="../../assets/css/site.css?v=70106977b7">
 <script>
   (function () {
     try {
@@ -95,7 +95,7 @@
     <aside class="side-card">
       <h3 class="side-h">At a glance</h3>
       <dl class="kv">
-        <div><dt>Publications</dt><dd>11</dd></div>
+        <div><dt>Publications</dt><dd>12</dd></div>
         <div><dt>Projects</dt><dd>3</dd></div>
         <div><dt>Lab contributors</dt><dd>5</dd></div>
       </dl>
@@ -136,7 +136,7 @@
 <img class="avatar avatar--xs" src="../../assets/img/people/austin-lahue.jpg" alt="Austin LaHue" loading="lazy" width="240" height="240">
 <img class="avatar avatar--xs" src="../../assets/img/people/fateme-mazdarani.jpg" alt="Fateme Mazdarani" loading="lazy" width="240" height="240">
 </span>
-      <span class="card-foot-meta">5 papers · 2024-2027</span>
+      <span class="card-foot-meta">6 papers · 2024-2027</span>
     </div>
   </div>
 </article><article class="card project-card">
@@ -176,11 +176,37 @@
   <div class="wrap">
     <div class="section-head">
   <div>
-<p class="eyebrow">Publications</p>    <h2 class="section-title">11 publications</h2>
+<p class="eyebrow">Publications</p>    <h2 class="section-title">12 publications</h2>
   </div>
 <a class="text-link" href="../../publications/?area=ai-for-science">Filter in the full list <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     <div class="pub-list">
-<article class="pub" id="2026-naturalprism-a-natural-language-premise-retrieval-task-for"
+<article class="pub" id="2026-the-shape-of-mathematical-creativity-measuring-mathematical"
+  data-year="2026" data-type="workshop" data-areas="ai-for-science"
+  data-people="fateme-mazdarani carlos-toxtli "
+  data-search="the shape of mathematical creativity: measuring mathematical exploration in formal proof generation fateme mazdarani carlos toxtli-hernández the 6th workshop on mathematical reasoning and ai (math-ai) at neurips 2026 neurips 2026 proof-generating systems return many candidates for the same theorem. lean&#39;s kernel determines whether each candidate is correct, but not whether the candidates contain different mathematical reasoning. we study one measurable component of mathematical creativity: whether repeated successful generations explore distinct proof ideas rather than new formal expressions of the same idea. we analyze leanroute-216, which began with 36 kernel-verified and human-reviewed lean proofs for 36 fixed propositions. five additional proofs were then generated for each proposition with the goal of obtaining diverse proofs, producing 216 kernel-verified proofs in total. a graph-derived route-level review identified 61 diverse routes among the 216 distinct proof strings. this observation motivated a closer study of the distinction between formal variation and mathematical route diversity. across the benchmark&#39;s 180 parent-candidate pairs, 25 were labeled as route changes and 155 as same-route comparisons. all pairs of candidate proofs were human-evaluated in a blinded second pass, with 95.6% agreement with the original route-change labels (κ = 0.793). five theorem panels were used to refine the rubric and judging prompts, while the remaining 31 panels were held out for evaluation. on these 31 panels, llm judges recognize route changes more reliably than lexical baselines, but remain substantially weaker at identifying the kind of change. these results support route diversity as an evaluation target separate from correctness and show how route-level auditing can inform proof search and the curation of synthetic reasoning data.">
+  <a class="pub-thumb" href="../../publications/2026-the-shape-of-mathematical-creativity-measuring-mathematical/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2026-the-shape-of-mathematical-creativity-measuring-mathematical.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">NeurIPS 2026</span>
+<span class="track-badge">MATH-AI Workshop</span><span class="status-badge">Forthcoming</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2026-the-shape-of-mathematical-creativity-measuring-mathematical/">The Shape of Mathematical Creativity: Measuring Mathematical Exploration in Formal Proof Generation</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab" href="../../people/fateme-mazdarani/">Fateme Mazdarani</a>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2026-the-shape-of-mathematical-creativity-measuring-mathematical" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2026-the-shape-of-mathematical-creativity-measuring-mathematical" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://mathai-2026.github.io/" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-amber" title="AI for Mathematical &amp; Scientific Discovery"></span>    </div>
+<div class="pub-panel" id="abs-2026-the-shape-of-mathematical-creativity-measuring-mathematical" hidden><p>Proof-generating systems return many candidates for the same theorem. Lean&#39;s kernel determines whether each candidate is correct, but not whether the candidates contain different mathematical reasoning. We study one measurable component of mathematical creativity: whether repeated successful generations explore distinct proof ideas rather than new formal expressions of the same idea. We analyze LeanRoute-216, which began with 36 kernel-verified and human-reviewed Lean proofs for 36 fixed propositions. Five additional proofs were then generated for each proposition with the goal of obtaining diverse proofs, producing 216 kernel-verified proofs in total. A graph-derived route-level review identified 61 diverse routes among the 216 distinct proof strings. This observation motivated a closer study of the distinction between formal variation and mathematical route diversity. Across the benchmark&#39;s 180 parent-candidate pairs, 25 were labeled as route changes and 155 as same-route comparisons. All pairs of candidate proofs were human-evaluated in a blinded second pass, with 95.6% agreement with the original route-change labels (κ = 0.793). Five theorem panels were used to refine the rubric and judging prompts, while the remaining 31 panels were held out for evaluation. On these 31 panels, LLM judges recognize route changes more reliably than lexical baselines, but remain substantially weaker at identifying the kind of change. These results support route diversity as an evaluation target separate from correctness and show how route-level auditing can inform proof search and the curation of synthetic reasoning data.</p></div><div class="pub-panel pub-panel--code" id="bib-2026-the-shape-of-mathematical-creativity-measuring-mathematical" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2026-the-shape-of-mathematical-creativity-measuring-mathematical"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2026-the-shape-of-mathematical-creativity-measuring-mathematical">@inproceedings{Mazdarani2026Shape,
+  title = {The Shape of Mathematical Creativity: Measuring Mathematical Exploration in Formal Proof Generation},
+  author = {Mazdarani, Fateme and Toxtli, Carlos},
+  booktitle = {The 6th Workshop on Mathematical Reasoning and AI (MATH-AI) at NeurIPS 2026},
+  address = {Atlanta, GA},
+  year = {2026},
+  month = dec,
+  note = {Poster; forthcoming},
+  url = {https://mathai-2026.github.io/}
+}</pre></div>  </div>
+</article><article class="pub" id="2026-naturalprism-a-natural-language-premise-retrieval-task-for"
   data-year="2026" data-type="workshop" data-areas="ai-for-science"
   data-people="austin-lahue carlos-toxtli "
   data-search="naturalprism: a natural language premise retrieval task for research-level intermediate proof states harris proctor li an austin lahue michael burr carlos toxtli-hernández vinita gangaram jansari luis david garcia puente benjamin e. nye proceedings of the 4th workshop on mathematical natural language processing (mathnlp 2026) mathnlp @ emnlp 2026 as ai use progresses in research-level mathematics, automated information retrieval systems for constructing relevant prompts are increasingly important. existing benchmarks and datasets for identifying which prior results are necessary to prove a statement do not align well with current workflows in which a natural language proof is in progress, but it is unclear what the next step(s) should be. we introduce naturalprism, a benchmark task and dataset containing 1.7 million pairs of intermediate proof states and the premise invoked in the next step of the proof. all pairs are extracted from natural language research-level mathematics papers published on arxiv, and span all 32 subject categories. we evaluate the effect of fine-tuning retrieval models for domain-specific vs. domain-agnostic use cases, and find that the combination of sufficient training data with alignment between the training and testing distributions allows smaller specialized models to dramatically outperform larger general models.">
@@ -527,10 +553,10 @@ School of Computing, Human-Centered Computing Division<br>McAdams Hall, Clemson 
   </div>
   <div class="wrap footer-base">
     <p>© 2026 Human-AI Empowerment Lab, Clemson University.</p>
-    <p class="footer-sync">Publications, talks and grants synced from <a href="https://www.carlostoxtli.com" target="_blank" rel="noopener">carlostoxtli.com</a> · last updated 2026-10-02</p>
+    <p class="footer-sync">Publications, talks and grants synced from <a href="https://www.carlostoxtli.com" target="_blank" rel="noopener">carlostoxtli.com</a> · last updated 2026-10-03</p>
   </div>
 </footer>
 <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
-<script src="../../assets/js/site.js?v=8012d18a3c" defer></script>
+<script src="../../assets/js/site.js?v=70106977b7" defer></script>
 </body>
 </html>

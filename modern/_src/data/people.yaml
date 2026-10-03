@@ -167,12 +167,12 @@
   since: "Fall 2025"
   interests: [Reliability and robustness of AI, LLMs and mathematical reasoning, Retrieval-augmented reasoning, Worker-centered AI, Scalable machine learning]
   bio: |
-    Fateme Mazdarani is a second-year Ph.D. student in Computer Science at Clemson University, working in the Human-AI Empowerment Lab under the supervision of Dr. Carlos Toxtli. Fateme's research focuses on the reliability, robustness and interpretability of AI systems, especially how large language models access, evaluate and verify mathematical knowledge across equivalent representations and how retrieval can support more reliable reasoning. This work includes the TREAT benchmark for recognizing theorems under equivalent mathematical forms (SYNASC 2026), robust procedural mathematical reasoning (MathNLP 2026 at EMNLP) and step-level verification of non-canonical solutions (IEEE ICMLA 2026).
+    Fateme Mazdarani is a second-year Ph.D. student in Computer Science at Clemson University, working in the Human-AI Empowerment Lab under the supervision of Dr. Carlos Toxtli. Fateme's research focuses on the reliability, robustness and interpretability of AI systems, especially how large language models access, evaluate and verify mathematical knowledge across equivalent representations and how retrieval can support more reliable reasoning. This work includes the TREAT benchmark for recognizing theorems under equivalent mathematical forms (SYNASC 2026), robust procedural mathematical reasoning (MathNLP 2026 at EMNLP), step-level verification of non-canonical solutions (IEEE ICMLA 2026) and a measure of mathematical creativity in formal proof generation (MATH-AI at NeurIPS 2026).
 
     Fateme also led a study showing that transparent, explained task recommendations raise crowd workers' perceived fairness, trust and empowerment (IEEE CAI 2026), developed randomized SVD methods for spectral co-clustering of text, and contributes to the lab's Navy-funded research on autonomous underwater vehicle navigation with vision-language-action models. Fateme holds a B.Sc. in Computer Engineering from the University of Tehran and received the Dr. Robert M. Geist III Endowed Fellowship in Computing.
   highlights:
     - "Dr. Robert M. Geist III Endowed Fellowship in Computing, Clemson University (2025-2026)"
-    - "First author of five 2026 papers (IEEE CAI, IEEE ICMLA, SYNASC, MathNLP at EMNLP, arXiv)"
+    - "First author of six 2026 papers (IEEE CAI, IEEE ICMLA, SYNASC, MathNLP at EMNLP, MATH-AI at NeurIPS, arXiv)"
     - "Social Chair, School of Computing Graduate Student Association; Delegate, Clemson Graduate Student Government"
     - "Graduate teaching assistant for algorithms and human-centered computing courses"
   education:
@@ -239,7 +239,7 @@
 
     With the lab, Manuel studies sycophantic metacognition and confidence calibration in LLM self-assessment (ACM CUI 2026), the attribution of mental states and consciousness to AI (Frontiers in Psychology, 2026), the ethical consistency of LLMs under perturbation, their logic and fact-checking capabilities, and Socratic-dialogue systems such as Belief Explorer that support reflection on personal beliefs (CHI 2026). Manuel previously developed financial algorithms at Liv Capital and is also an award-winning photographer and digital artist.
   highlights:
-    - "Co-author of 15 lab publications (2023-2026), including ACM CUI, ACM IVA, HCOMP, AAAI/ACM AIES and CHI"
+    - "Co-author of more than 20 lab publications (2023-2026), including ACM CUI, ACM IVA, HCOMP, AAAI/ACM AIES, CHI and seven NeurIPS 2026 workshops"
     - "Director and Main Researcher, Metacognition Institute (U.K.), since 2023"
   links:
     website: https://www.metacognitioninstitute.com/team

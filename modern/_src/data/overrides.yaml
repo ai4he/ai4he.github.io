@@ -34,6 +34,17 @@ publications:
     venue_short: "CRC Press 2026"
     links: {Publisher: "https://www.routledge.com/Human-Centered-Automation/Toxli-Hernandez/p/book/9781041120247"}
 
+  # ------------------------- NeurIPS 2026 workshops -------------------------
+  - {match: "Evidence Before Rankings", type: workshop, areas: [trustworthy-ai, human-centered-automation], venue_short: "NeurIPS 2026", track: "AIWILD Workshop"}
+  - {match: "When Calibration Records Cannot Support Routing", type: workshop, areas: [trustworthy-ai], venue_short: "NeurIPS 2026", track: "Trust-AI-Eval Workshop"}
+  - {match: "Separating Governance Designation from Operational Fault", type: workshop, areas: [trustworthy-ai], venue_short: "NeurIPS 2026", track: "AI4GOOD Workshop"}
+  - {match: "Evaluator Disagreement in AI-Assisted Manuscript Revision", type: workshop, areas: [human-centered-automation, trustworthy-ai], venue_short: "NeurIPS 2026", track: "AI-Native Academia Workshop"}
+  - {match: "A Validation Contract for Anticipatory Peer-Review", type: workshop, areas: [human-centered-automation, trustworthy-ai], venue_short: "NeurIPS 2026", track: "AI-Native Academia Workshop"}
+  - {match: "How Many Agents Can One Supervisor Track", type: workshop, areas: [human-centered-automation, human-autonomy-teaming], featured: true, venue_short: "NeurIPS 2026", track: "HAIC Workshop"}
+  - {match: "Headroom Before Protocol Effects", type: workshop, areas: [human-autonomy-teaming, human-centered-automation], venue_short: "NeurIPS 2026", track: "HAIC Workshop"}
+  - {match: "The Shape of Mathematical Creativity", type: workshop, areas: [ai-for-science], featured: true, venue_short: "NeurIPS 2026", track: "MATH-AI Workshop"}
+  - {match: "Content Is Not Social Attribution", type: workshop, areas: [trustworthy-ai, human-centered-automation], venue_short: "NeurIPS 2026", track: "SocialAgent Workshop"}
+
   # --------------------------------- 2026 ---------------------------------
   - {match: "AI Consciousness? Attribution", areas: [trustworthy-ai], featured: true, venue_short: "Frontiers in Psychology 2026", track: "Perspective"}
   - {match: "Authentication Routines Among College Students", areas: [inclusive-ai, trustworthy-ai], venue_short: "HFES 2026", track: "Poster"}
