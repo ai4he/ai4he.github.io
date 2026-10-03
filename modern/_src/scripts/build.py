@@ -213,17 +213,6 @@ def inline_md(text):
     return Markup(re.sub(r"^<p>(.*)</p>$", r"\1", h.strip(), flags=re.S))
 
 
-def money(n, compact=False):
-    if n is None:
-        return ""
-    if compact:
-        if n >= 1_000_000:
-            return f"${n / 1_000_000:.1f}M"
-        if n >= 1000:
-            return f"${n / 1000:.0f}K"
-    return f"${n:,.0f}"
-
-
 MONTH_NAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
@@ -835,13 +824,9 @@ def main():
     # ------------------------------------------------------------ funding
     fund_by = {}
     for f in funding:
-        f["amount_fmt"] = money(f.get("amount"))
-        f["amount_compact"] = money(f.get("amount"), compact=True)
         f["period"] = (f"{f['start']}".split("-")[0] + (f"-{str(f['end']).split('-')[0]}" if f.get("end") else ("" if not f.get("duration") else f" · {f['duration']}"))) if f.get("start") else ""
         fund_by[f["slug"]] = f
     external = [f for f in funding if not f.get("internal")]
-    fund_total = sum(f.get("amount") or 0 for f in external)
-    pi_total = sum(f.get("amount") or 0 for f in external if f.get("role") == "PI")
     for f in funding:
         f["logo"] = logos.find(f["sponsor_short"], f.get("sponsor"))
         if not f["logo"]:
@@ -946,9 +931,9 @@ def main():
         "pubs": len(pubs),
         "peer": sum(1 for p in pubs if p["type"] in PEER_REVIEWED),
         "books": sum(1 for p in pubs if p["type"] == "book"),
-        "funding_total": fund_total, "funding_compact": money(fund_total, compact=True),
-        "pi_total_compact": money(pi_total, compact=True),
         "awards": len(external), "sponsors": len(sponsors),
+        "awards_pi": sum(1 for f in external if f.get("role") == "PI"),
+        "awards_copi": sum(1 for f in external if f.get("role") == "Co-PI"),
         "members": len(lab_members),
         "current": sum(1 for p in lab_members if p["status"] == "current"),
         "phd": sum(1 for p in people.list if p["group"] == "phd" and p["status"] == "current"),
@@ -970,7 +955,6 @@ def main():
     # ------------------------------------------------------------ render
     env = Environment(loader=FileSystemLoader(str(TPL)), autoescape=select_autoescape(["html", "xml"]),
                       trim_blocks=True, lstrip_blocks=True)
-    env.filters["money"] = money
     env.filters["md"] = render_md
     env.filters["imd"] = inline_md
     env.filters["slugify"] = slugify

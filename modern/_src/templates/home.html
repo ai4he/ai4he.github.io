@@ -32,7 +32,7 @@
   <div class="wrap">
     <dl class="stat-band">
       <div class="stat"><dt>Publications since 2022</dt><dd data-count="{{ stats.pubs }}">{{ stats.pubs }}</dd></div>
-      <div class="stat"><dt>Active sponsored research</dt><dd>{{ stats.funding_compact }}</dd><span class="stat-note">{{ stats.awards }} awards · NSF, NASA, Navy, Army</span></div>
+      <div class="stat"><dt>Active sponsored awards</dt><dd data-count="{{ stats.awards }}">{{ stats.awards }}</dd><span class="stat-note">NSF, NASA, Navy, Army, SRNL</span></div>
       <div class="stat"><dt>Lab members &amp; alumni</dt><dd data-count="{{ stats.members }}">{{ stats.members }}</dd></div>
       <div class="stat"><dt>Books published</dt><dd data-count="{{ stats.books }}">{{ stats.books }}</dd><span class="stat-note">CRC Press / Taylor &amp; Francis</span></div>
       <div class="stat"><dt>Partner institutions</dt><dd data-count="{{ stats.institutions }}">{{ stats.institutions }}</dd></div>
@@ -110,7 +110,7 @@
 
 <section class="section section--tint">
   <div class="wrap">
-    {{ m.section_head("Funding", "Supported by", "Active sponsored research totaling " ~ stats.funding_compact ~ " across " ~ stats.awards ~ " awards, with the lab director as PI or Co-PI.", "funding/", "Funding details", root) }}
+    {{ m.section_head("Funding", "Supported by", stats.awards ~ " active awards from " ~ stats.sponsors ~ " federal agencies and national laboratories, with the lab director as PI or Co-PI.", "funding/", "Funding details", root) }}
     {{ m.logo_wall(sponsors, root, 'sponsors') }}
   </div>
 </section>

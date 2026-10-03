@@ -6,7 +6,8 @@
 # data/auto/grants.json; `build.py` warns when a grant appears there but not
 # here, so new awards are not forgotten.
 #
-# role: PI | Co-PI        amount: total award in USD
+# role: PI | Co-PI
+# amount: total award in USD, kept for records only; the site does not show it
 # project: slug in projects.yaml (optional)
 # ---------------------------------------------------------------------------
 

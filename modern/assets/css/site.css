@@ -24,8 +24,6 @@
   --on-deep-muted: #a8b0c4;
   --orange: #f56600;
   --ok: #14966f;
-  --chart: #5524d9;
-  --chart-hover: #3f17b4;
   --shadow-sm: 0 1px 2px rgba(13, 20, 36, .06), 0 1px 1px rgba(13, 20, 36, .04);
   --shadow: 0 10px 30px -12px rgba(13, 20, 36, .18), 0 2px 6px rgba(13, 20, 36, .05);
   --shadow-lg: 0 30px 60px -20px rgba(13, 20, 36, .28);
@@ -43,7 +41,7 @@
     --bg: #0a0f1a; --surface: #0f1522; --surface-2: #141b2b; --surface-3: #1a2336;
     --ink: #eef1f8; --ink-2: #c6ccda; --muted: #8f98ad; --line: #222b3d; --line-2: #2d3850;
     --accent: #a48bff; --accent-2: #c2b2ff; --accent-soft: #221a44; --accent-ink: #0b0f1a;
-    --deep: #060a13; --deep-2: #0d1322; --chart: #a48bff; --chart-hover: #c2b2ff;
+    --deep: #060a13; --deep-2: #0d1322;
     --shadow: 0 10px 30px -12px rgba(0, 0, 0, .6); --shadow-lg: 0 30px 60px -20px rgba(0, 0, 0, .7);
     color-scheme: dark;
   }
@@ -52,7 +50,7 @@
   --bg: #0a0f1a; --surface: #0f1522; --surface-2: #141b2b; --surface-3: #1a2336;
   --ink: #eef1f8; --ink-2: #c6ccda; --muted: #8f98ad; --line: #222b3d; --line-2: #2d3850;
   --accent: #a48bff; --accent-2: #c2b2ff; --accent-soft: #221a44; --accent-ink: #0b0f1a;
-  --deep: #060a13; --deep-2: #0d1322; --chart: #a48bff; --chart-hover: #c2b2ff;
+  --deep: #060a13; --deep-2: #0d1322;
   --shadow: 0 10px 30px -12px rgba(0, 0, 0, .6); --shadow-lg: 0 30px 60px -20px rgba(0, 0, 0, .7);
   color-scheme: dark;
 }
@@ -349,25 +347,7 @@ code, pre { font-family: var(--font-mono); font-size: .86em; }
 .pub-types-bib { margin-left: auto; font-size: .88rem; }
 @media (max-width: 640px) { .pub-types-bib { margin-left: 0; flex-basis: 100%; margin-top: 6px; } }
 
-/* ---------- Charts ---------- */
-.chart-card { margin: 0; padding: 20px 22px; border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); }
-.chart-card figcaption { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; font-size: .9rem; }
-.chart-card figcaption span { color: var(--muted); font-size: .8rem; }
-.chart-card--wide { padding: 24px; }
-.hbar-chart { list-style: none; display: grid; gap: 10px; margin-top: 10px; }
-.hbar { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 16px; align-items: center; padding: 4px 0; }
-.hbar-label { display: flex; align-items: center; gap: 8px; font-size: .88rem; color: var(--ink); min-width: 0; }
-.hbar-label a { color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.hbar-track { position: relative; display: flex; align-items: center; gap: 10px; }
-.hbar-fill { height: 18px; min-width: 4px; border-radius: 0 4px 4px 0; background: color-mix(in srgb, var(--chart) 55%, var(--surface)); }
-.hbar-fill--pi { background: var(--chart); }
-.hbar:hover .hbar-fill { filter: brightness(1.1); }
-.hbar-value { font-size: .8rem; font-weight: 650; color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
-@media (max-width: 720px) { .hbar { grid-template-columns: 1fr; gap: 4px; } }
-.chart-legend { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; font-size: .8rem; color: var(--muted); margin: 16px 0 0; }
-.key { display: inline-block; width: 14px; height: 10px; border-radius: 0 3px 3px 0; margin-right: -10px; }
-.key--pi { background: var(--chart); }
-.key--copi { background: color-mix(in srgb, var(--chart) 55%, var(--surface)); }
+/* ---------- Tooltip (map, network) ---------- */
 .tooltip { position: fixed; z-index: 90; max-width: 300px; padding: 8px 11px; border-radius: 9px; background: var(--ink); color: var(--bg); font-size: .8rem; font-weight: 500; line-height: 1.4; pointer-events: none; box-shadow: var(--shadow); }
 
 /* ---------- Books ---------- */
@@ -407,7 +387,7 @@ a.logo-tile:hover, a.logo-tile:focus-visible { transform: translateY(-2px); box-
 .logo-chip--lg { height: 58px; min-width: 96px; padding: 8px 12px; --logo-h: 46px; }
 .inst-logo { display: grid; place-items: center; height: 84px; margin-bottom: 14px; padding: 12px; border-radius: calc(var(--radius) - 4px); background: #fff; border: 1px solid var(--line); --logo-h: 52px; }
 .inst-card--home .inst-logo { width: min(320px, 100%); }
-.funding-logos { margin-top: 22px; }
+.funding-logos { margin: 22px 0 56px; }
 .sponsor-tag { display: inline-flex; align-items: center; padding: 3px 8px; border-radius: 6px; background: var(--ink); color: var(--bg); font-size: .7rem; font-weight: 700; letter-spacing: .03em; white-space: nowrap; flex: none; }
 .sponsor-tag--lg { font-size: .8rem; padding: 5px 10px; }
 

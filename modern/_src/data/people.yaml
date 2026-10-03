@@ -46,7 +46,7 @@
     Before Clemson, he earned his Ph.D. in Computer Science at Northeastern University and worked at the United Nations, Google, Microsoft Research and Snap Inc., and was an Amazon Twitch Research Fellow. He serves the HCI community as an Associate Chair for ACM CHI (2025, 2026), Senior Program Committee member for ACM CHIWORK 2026 and NSF review panelist, and has given more than a hundred talks worldwide.
   highlights:
     - "Author of two single-authored books with CRC Press / Taylor & Francis (2025, 2026)"
-    - "Lead PI, NSF AIMing: Interactive Conjecture Proving ($1.2M)"
+    - "Lead PI, NSF AIMing: Interactive Conjecture Proving"
     - "Impact Award, ACM CSCW 2021"
     - "UNESCO IRCAI Global Top 100 promising AI projects (2022)"
     - "Associate Chair, ACM CHI 2025 and CHI 2026"
@@ -54,9 +54,9 @@
   honors:
     - {year: 2022, text: "IRCAI Global Top 100 promising AI projects, UNESCO International Research Centre on Artificial Intelligence"}
     - {year: 2021, text: "Impact Award, ACM CSCW, for Quantifying the Invisible Labor in Crowd Work"}
-    - {year: 2021, text: "STIR Labs City Innovate Grant ($20,000), NSF"}
-    - {year: 2020, text: "Twitch Research Fellowship ($10,000), Amazon"}
-    - {year: 2018, text: "HCOMP 2018 Travel Award ($3,500)"}
+    - {year: 2021, text: "STIR Labs City Innovate Grant, NSF"}
+    - {year: 2020, text: "Twitch Research Fellowship, Amazon"}
+    - {year: 2018, text: "HCOMP 2018 Travel Award"}
     - {year: 2013, text: "Cisco Internet of Everything Challenge, 1st prize"}
     - {year: 2013, text: "Intel Innovation Latin App, 1st prize"}
     - {year: 2012, text: "Google Apps Developer Challenge winner"}

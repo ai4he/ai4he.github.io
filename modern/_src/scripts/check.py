@@ -5,6 +5,7 @@ Quality checks for the generated site:
   * every page has a <title> and a meta description
   * people listed in projects.yaml / news.yaml exist in people.yaml
   * no em or en dashes appear anywhere on the site
+  * no dollar amounts (grant values are not shown) outside publication pages
 Exit code 1 if anything is broken.
 
 Usage:  python3 check.py
@@ -52,6 +53,8 @@ def main():
             errors.append(f"{rel}: missing meta description")
         if re.search("[\u2012\u2013\u2014\u2015]", page.read_text(encoding="utf-8")):
             errors.append(f"{rel}: contains an em/en dash")
+        if rel.parts[0] != "publications" and re.search(r"\$\s?\d", page.read_text(encoding="utf-8")):
+            errors.append(f"{rel}: contains a dollar amount (grant values are not shown on the site)")
         for ref in parser.refs:
             u = urlparse(ref)
             if u.scheme or ref.startswith(("mailto:", "tel:", "#", "//", "data:")):

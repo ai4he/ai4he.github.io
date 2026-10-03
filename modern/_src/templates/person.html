@@ -103,7 +103,7 @@
         <h2 class="paper-h">Sponsored research</h2>
         <ul class="grant-list">
           {% for f in funding %}
-          <li>{{ m.sponsor_mark(f, root) }}<span><strong>{{ f.title }}</strong><br><span class="muted">{{ f.role }}{% if f.pi and f.role != 'PI' %} (PI: {{ f.pi }}){% endif %} · {{ f.amount_fmt }} · {{ f.period }}</span></span></li>
+          <li>{{ m.sponsor_mark(f, root) }}<span><strong>{{ f.title }}</strong><br><span class="muted">{{ f.role }}{% if f.pi and f.role != 'PI' %} (PI: {{ f.pi }}){% endif %} · {{ f.period }}</span></span></li>
           {% endfor %}
         </ul>
       </section>

@@ -93,7 +93,7 @@
 
 - date: 2026-03-18
   kind: grant
-  text: "New **U.S. Army** project through Clemson's VIPR-GS center: a resilient network security architecture for next-generation military ground vehicles ($499,898; Co-PI)."
+  text: "New **U.S. Army** project through Clemson's VIPR-GS center: a resilient network security architecture for next-generation military ground vehicles (Co-PI)."
   link: funding/
 
 - date: 2026-03-09
@@ -128,12 +128,12 @@
 
 - date: 2025-08
   kind: grant
-  text: "**NASA FERMI-LLM** project begins (Fermi Guest Investigator Program, $450,000; Co-PI with Dr. Marco Ajello)."
+  text: "**NASA FERMI-LLM** project begins (Fermi Guest Investigator Program; Co-PI with Dr. Marco Ajello)."
   link: projects/fermi-llm/
 
 - date: 2025-07-29
   kind: grant
-  text: "**NSF SaTC 2.0** award *Tracking the Usability of Secure Authentication Systems* ($650,000; Co-PI with Dr. Kelly Caine)."
+  text: "**NSF SaTC 2.0** award *Tracking the Usability of Secure Authentication Systems* (Co-PI with Dr. Kelly Caine)."
   link: projects/secure-authentication/
 
 - date: 2025-07-20
@@ -166,7 +166,7 @@
 
 - date: 2024-12
   kind: grant
-  text: "**NSF HCC: Small** award on generative AI for end-user driven creative workforces begins ($599,877; Co-PI with Dr. Guo Freeman)."
+  text: "**NSF HCC: Small** award on generative AI for end-user driven creative workforces begins (Co-PI with Dr. Guo Freeman)."
   link: projects/creative-workforces/
 
 - date: 2024-11
@@ -188,7 +188,7 @@
 
 - date: 2024-09
   kind: grant
-  text: "The lab is awarded **NSF AIMing: Interactive Conjecture Proving** ($1,198,339), led by Dr. Toxtli as PI."
+  text: "The lab is awarded **NSF AIMing: Interactive Conjecture Proving**, led by Dr. Toxtli as PI."
   link: projects/aiming/
   pinned: true
 
@@ -228,12 +228,12 @@
 
 - date: 2023-10
   kind: grant
-  text: "**NSF Future of Work** award on AI and mixed reality for aviation inspection begins ($1,558,433; Co-PI with Dr. Anand Gramopadhye)."
+  text: "**NSF Future of Work** award on AI and mixed reality for aviation inspection begins (Co-PI with Dr. Anand Gramopadhye)."
   link: projects/aviation-inspection/
 
 - date: 2023
   kind: grant
-  text: "**U.S. Navy** project on human-autonomy teaming in underwater environments begins ($1,095,901; Co-PI with Dr. Nathan McNeese)."
+  text: "**U.S. Navy** project on human-autonomy teaming in underwater environments begins (Co-PI with Dr. Nathan McNeese)."
   link: projects/underwater-hat/
 
 - date: 2023-05-10

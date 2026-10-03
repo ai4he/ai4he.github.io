@@ -29,7 +29,7 @@
   stats:
     - ["1.7M", "proof-state / premise pairs in NaturalPRISM"]
     - ["793", "conjectures generated in our context ablation"]
-    - ["$1.2M", "NSF award led by the lab"]
+    - ["32", "arXiv mathematics categories in NaturalPRISM"]
   description: |
     Mathematicians increasingly ask language models for help, but a model is only useful if it is given the right context and reasons consistently. AIMing, funded by the National Science Foundation and led by the HAIE Lab, studies interactive conjecture proving: how humans and AI can work together to propose, retrieve and verify mathematical results.
 
