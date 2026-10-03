@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set p = person %}
+{% block head %}
+<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"Person","name":p.name,"jobTitle":p.title or "","affiliation":{"@type":"ResearchOrganization","name":"Human-AI Empowerment Lab, Clemson University","url":site.base_url ~ "/"},"url":canonical,"image":(site.base_url ~ "/" ~ p.photo) if p.photo else "","knowsAbout":p.interests,"sameAs":p.same_as}|tojson }}</script>
+{% endblock %}
+{% block content %}
+<section class="profile-hero">
+  <div class="wrap profile-hero-inner">
+    <div class="profile-photo">{{ m.avatar(p, root, 'xl') }}</div>
+    <div class="profile-id">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ root }}people/">People</a> <span>/</span> {{ 'Alumni' if p.status == 'alumni' else 'Team' }}</nav>
+      <h1 class="profile-name">{{ p.name }}</h1>
+      <p class="profile-title">{{ p.title }}</p>
+      <ul class="profile-facts">
+        {% if p.program %}<li>{{ m.icon('grad') }}{{ p.program }}</li>{% endif %}
+        {% if p.affiliation %}<li>{{ m.icon('pin') }}{{ p.affiliation }}</li>{% else %}<li>{{ m.icon('pin') }}Human-AI Empowerment Lab, Clemson University</li>{% endif %}
+        {% if p.since %}<li>{{ m.icon('calendar') }}In the lab since {{ p.since }}{% if p.until %} – {{ p.until }}{% endif %}</li>{% elif p.until %}<li>{{ m.icon('calendar') }}Lab member until {{ p.until }}</li>{% endif %}
+        {% if p.expected_graduation %}<li>{{ m.icon('award') }}Expected graduation: {{ p.expected_graduation }}</li>{% endif %}
+        {% if p.group not in ['director', 'researcher'] and p.status == 'current' %}<li>{{ m.icon('users') }}Advisor: <a href="{{ root }}people/carlos-toxtli/">Dr. Carlos Toxtli-Hernández</a></li>{% endif %}
+      </ul>
+      {% if p.seeking %}<p class="seeking-badge">{{ m.icon('spark') }} {{ p.seeking }}</p>{% endif %}
+      {{ m.profile_links(p.links) }}
+      <div class="profile-actions">
+        <button class="btn btn--ghost btn--sm" type="button" data-copy-text="{{ canonical }}">{{ m.icon('link') }} Copy profile link</button>
+        <button class="btn btn--ghost btn--sm" type="button" data-print>{{ m.icon('print') }} Save as PDF</button>
+      </div>
+    </div>
+  </div>
+  {% if p.pubs or p.projects %}
+  <div class="wrap">
+    <dl class="stat-band stat-band--profile">
+      <div class="stat"><dt>Publications</dt><dd>{{ p.pubs|length }}</dd></div>
+      {% if p.group != 'director' %}<div class="stat"><dt>First-authored</dt><dd>{{ p.first_author|length }}</dd></div>{% else %}<div class="stat"><dt>With lab students</dt><dd>{{ stats.student_pubs }}</dd></div>{% endif %}
+      <div class="stat"><dt>Projects</dt><dd>{{ p.projects|length }}</dd></div>
+      <div class="stat"><dt>Lab co-authors</dt><dd>{{ p.coauthors|length }}</dd></div>
+      {% if p.venues %}<div class="stat"><dt>Venues</dt><dd>{{ p.venues|length }}</dd></div>{% endif %}
+    </dl>
+  </div>
+  {% endif %}
+</section>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div class="profile-main">
+      {% if p.bio_html %}
+      <section class="profile-section">
+        <h2 class="paper-h">About</h2>
+        <div class="prose">{{ p.bio_html }}</div>
+      </section>
+      {% else %}
+      <section class="profile-section">
+        <h2 class="paper-h">About</h2>
+        <p class="prose">{{ p.name }} {{ 'is' if p.status == 'current' else 'was' }} {{ 'an' if (p.title or 'a')[0] in 'AEIOU' else 'a' }} {{ (p.title or 'member')|lower }} in the Human-AI Empowerment Lab at Clemson University.</p>
+      </section>
+      {% endif %}
+
+      {% if p.highlights %}
+      <section class="profile-section">
+        <h2 class="paper-h">Highlights</h2>
+        <ul class="highlight-list">{% for h in p.highlights %}<li>{{ h|imd }}</li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+
+      {% if p.honors %}
+      <section class="profile-section">
+        <h2 class="paper-h">Honors &amp; awards</h2>
+        <ul class="honor-list">{% for h in p.honors %}<li><span class="talk-year">{{ h.year }}</span><span>{{ h.text }}</span></li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+
+      {% if p.thesis %}
+      <section class="profile-section">
+        <h2 class="paper-h">Thesis</h2>
+        <div class="thesis-card">
+          <p class="thesis-title">{{ p.thesis.title }}</p>
+          <p class="muted">{{ p.thesis.degree }}{% if p.thesis.year %} · {{ p.thesis.year }}{% endif %}{% if p.thesis.role %} · Dr. Toxtli's role: {{ p.thesis.role }}{% endif %}</p>
+        </div>
+      </section>
+      {% endif %}
+
+      {% if books %}
+      <section class="profile-section">
+        <h2 class="paper-h">Books</h2>
+        <div class="book-row book-row--light">
+          {% for b in books %}<a class="book" href="{{ root }}{{ b.url }}"><img src="{{ root }}{{ b.image_url }}" alt="Cover of {{ b.title }}" loading="lazy"><span class="book-title">{{ b.title }}</span><span class="book-meta">{{ b.venue_short }}</span></a>{% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      {% if p.pubs %}
+      <section class="profile-section">
+        <h2 class="paper-h">Publications <span class="count">{{ p.pubs|length }}</span></h2>
+        {% if p.group == 'director' %}<p class="muted">Publications since the lab's founding (August 2022). For earlier work see <a href="{{ p.links.website }}" target="_blank" rel="noopener">carlostoxtli.com</a>.</p>{% endif %}
+        <div class="pub-list">
+          {% for pub in p.pubs %}{{ m.pub_item(pub, root) }}{% endfor %}
+        </div>
+      </section>
+      {% endif %}
+
+      {% if funding %}
+      <section class="profile-section">
+        <h2 class="paper-h">Sponsored research</h2>
+        <ul class="grant-list">
+          {% for f in funding %}
+          <li><span class="sponsor-tag">{{ f.sponsor_short }}</span><span><strong>{{ f.title }}</strong><br><span class="muted">{{ f.role }}{% if f.pi and f.role != 'PI' %} (PI: {{ f.pi }}){% endif %} · {{ f.amount_fmt }} · {{ f.period }}</span></span></li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+
+      {% if talks %}
+      <section class="profile-section">
+        <h2 class="paper-h">Recent talks</h2>
+        <ul class="talk-list">{% for t in talks[:12] %}<li><span class="talk-year">{{ t.year }}</span><span><strong>{{ t.title }}</strong>{% if t.invited %} <span class="track-badge">Invited</span>{% endif %}<br><span class="muted">{{ t.venue }}{% if t.location %} · {{ t.location }}{% endif %}</span></span></li>{% endfor %}</ul>
+        <a class="text-link" href="{{ root }}talks/">All talks and service {{ m.icon('arrow') }}</a>
+      </section>
+      {% endif %}
+
+      {% if patents %}
+      <section class="profile-section">
+        <h2 class="paper-h">Patents</h2>
+        <ul class="plain-list plain-list--lg">{% for pt in patents %}<li><strong>{% if pt.url %}<a href="{{ pt.url }}" target="_blank" rel="noopener">{{ pt.title }}</a>{% else %}{{ pt.title }}{% endif %}</strong><br><span class="muted">{{ pt.detail }}</span></li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+
+      {% if p.news %}
+      <section class="profile-section">
+        <h2 class="paper-h">In the news</h2>
+        <ul class="news-list news-list--compact">{% for n in p.news %}<li><time>{{ n.date_label }}</time><span>{{ n.html }}</span></li>{% endfor %}</ul>
+      </section>
+      {% endif %}
+    </div>
+
+    <aside class="profile-side">
+      {% if p.interests %}
+      <div class="side-card">
+        <h3 class="side-h">Research interests</h3>
+        <div class="chip-row chip-row--wrap">{% for t in p.interests %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+        {% if p.areas_list %}
+        <h3 class="side-h">Research thrusts</h3>
+        <div class="chip-row chip-row--wrap">{% for a in p.areas_list %}{{ m.area_chip(a, root, true) }}{% endfor %}</div>
+        {% endif %}
+      </div>
+      {% endif %}
+      {% if p.education %}
+      <div class="side-card">
+        <h3 class="side-h">Education</h3>
+        <ul class="plain-list">{% for e in p.education %}<li>{{ e }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+      {% if p.projects %}
+      <div class="side-card">
+        <h3 class="side-h">Projects</h3>
+        <ul class="side-projects">
+          {% for pr in p.projects %}<li><a href="{{ root }}{{ pr.url }}"><img src="{{ root }}{{ pr.image_url }}" alt="" loading="lazy"><span>{{ pr.title }}</span></a></li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% if p.coauthors %}
+      <div class="side-card">
+        <h3 class="side-h">Lab collaborators</h3>
+        <ul class="mini-people">
+          {% for c, n in p.coauthors[:12] %}<li><a href="{{ root }}{{ c.url }}">{{ m.avatar(c, root, 'xs') }}<span>{{ c.name }}<small>{{ n }} joint paper{{ 's' if n != 1 }}</small></span></a></li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% if p.venues %}
+      <div class="side-card">
+        <h3 class="side-h">Published at</h3>
+        <div class="chip-row chip-row--wrap">{% for v in p.venues %}<span class="tag tag--sm">{{ v }}</span>{% endfor %}</div>
+      </div>
+      {% endif %}
+      {% if service %}
+      <div class="side-card">
+        <h3 class="side-h">Service &amp; leadership</h3>
+        <ul class="plain-list">{% for s in service[:6] %}<li>{% if s.role %}<strong>{{ s.role }}:</strong> {% endif %}{{ s.detail }}</li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+      <div class="side-card side-card--muted">
+        <h3 class="side-h">Profile URL</h3>
+        <p class="profile-url"><code>{{ canonical }}</code></p>
+        <p class="muted small">A permanent link for CVs, applications and email signatures.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+{% endblock %}

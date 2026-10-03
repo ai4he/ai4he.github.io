@@ -1,0 +1,63 @@
+# ---------------------------------------------------------------------------
+# Teaching
+# ---------------------------------------------------------------------------
+philosophy: |
+  Teaching in the HAIE Lab combines experiential and curiosity-driven learning. In Applied Data Science, students work on real-world projects brought by research and industry partners. In Human-Centered AI, every slide links to further readings so students can follow their interests, and weekly reports connect course principles to each student's own project. Course projects are designed to end in a portfolio-ready public artifact, and several have become publications with students as co-authors.
+
+courses:
+  - code: "HCC 4600/6600"
+    title: Human-Centered AI
+    terms: "Spring 2025, Spring 2026 (on campus); Spring 2025, Fall 2025, Spring 2026, Fall 2026 (Coursera online)"
+    note: "Course created by Dr. Toxtli in 2023; its Coursera edition, also authored by Dr. Toxtli, has run every semester since Spring 2025."
+    description: >-
+      Designing AI systems around people. The course is built around hands-on
+      in-class activities, discussions, guest speakers and portfolio-ready
+      deliverables, and is updated each year with findings from the lab's
+      active grants and current AI-enabled practices.
+  - code: "CPSC 4820/6820"
+    title: Human-Centered AI
+    terms: "Fall 2023"
+    note: "New course developed in 2023."
+    description: >-
+      The first offering of the lab's Human-Centered AI course in the
+      School of Computing.
+  - code: "CPSC 4300/6300"
+    title: Applied Data Science
+    terms: "Spring 2023, Spring 2024, Fall 2024, Fall 2025"
+    description: >-
+      Experiential data science: students apply course methods to real-world
+      projects proposed by researchers and partners.
+  - code: "CPSC 2120"
+    title: Algorithms and Data Structures
+    terms: "Fall 2022"
+    description: >-
+      Fundamental data structures and algorithms and their analysis.
+
+mentoring:
+  - "Doctoral dissertation research (HCC 9910, CPSC 9910)"
+  - "Master's thesis research (CPSC 8910)"
+  - "Directed research projects (CPSC 8880, HCC 8880)"
+  - "Departmental honors theses (CPSC 4950)"
+  - "Undergraduate independent study (CPSC 4810) and Creative Inquiry teams"
+
+quotes:
+  - text: "I will forever build applications with a different thought pattern because of this course — much more human-centered."
+    source: "Student, Human-Centered AI (Coursera)"
+  - text: "The discussions were some of the best I've had in a course."
+    source: "Student, Human-Centered AI"
+  - text: "I particularly enjoyed the layout of the course where time is dedicated to practicing the material."
+    source: "Student, Applied Data Science"
+
+# Dissertation and thesis committees served on by the director
+committees:
+  completed:
+    - "Allyson Hauptman, Ph.D. (2024) — The Human Side of Adaptive Autonomy: Design Considerations for Adaptive Autonomous Teammates"
+    - "James Dominic, Ph.D. (2024) — Examining Software Developer Onboarding Efficiency"
+    - "Rohit Mallick, Ph.D."
+    - "Jorge Luis Morton Gutiérrez, Ph.D. (2025), Universidad Autónoma Metropolitana–Cuajimalpa, Mexico (external member)"
+  current:
+    - "Catherine Barwulor (Ph.D.)"
+    - "Nushrat Humaira (Ph.D.)"
+    - "Derik Pack (Ph.D.)"
+    - "Ruchi Panchanadikar (Ph.D.)"
+    - "Yang Hu (Ph.D.)"

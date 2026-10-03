@@ -1,0 +1,1208 @@
+[
+ {
+  "year": 2026,
+  "venue": "FLISOL 2026",
+  "title": "Advanced Multi-Agent Systems: Automating with Artificial Intelligence",
+  "location": "Toluca, Mexico",
+  "invited": true,
+  "link": null,
+  "raw": "FLISOL 2026, Advanced Multi-Agent Systems: Automating with Artificial Intelligence, Toluca, Mexico (invited)"
+ },
+ {
+  "year": 2025,
+  "venue": "SC EPSCoR Summer Research Experience for Teachers (RET), College of Charleston",
+  "title": "LLMs and Health Care",
+  "location": "Charleston, USA",
+  "invited": true,
+  "link": null,
+  "raw": "SC EPSCoR Summer Research Experience for Teachers (RET), College of Charleston, LLMs and Health Care, Charleston, USA (invited)"
+ },
+ {
+  "year": 2025,
+  "venue": "FLISOL 2025",
+  "title": "Harnessing the Potential of Multimodal Models",
+  "location": "Toluca, Mexico",
+  "invited": false,
+  "link": null,
+  "raw": "FLISOL 2025, Harnessing the Potential of Multimodal Models, Toluca, Mexico"
+ },
+ {
+  "year": 2024,
+  "venue": "X-Tech 4.0, SENA Tecnoparque",
+  "title": "Generative AI",
+  "location": "Bogota, Colombia",
+  "invited": false,
+  "link": null,
+  "raw": "X-Tech 4.0, SENA Tecnoparque, Generative AI, Bogota, Colombia"
+ },
+ {
+  "year": 2024,
+  "venue": "EGU General Assembly 2024",
+  "title": "Application of Advanced Deep Learning Models for Flood Image Processing and Semantic Segmentation",
+  "location": "Vienna, Austria",
+  "invited": false,
+  "link": "https://doi.org/10.5194/egusphere-egu24-22491",
+  "raw": "EGU General Assembly 2024, Application of Advanced Deep Learning Models for Flood Image Processing and Semantic Segmentation, Vienna, Austria"
+ },
+ {
+  "year": 2024,
+  "venue": "ITESM EGyTP",
+  "title": "The gig economy and the redefinition of labor law",
+  "location": "Mexico City, Mexico",
+  "invited": false,
+  "link": null,
+  "raw": "ITESM EGyTP, The gig economy and the redefinition of labor law, Mexico City, Mexico"
+ },
+ {
+  "year": 2023,
+  "venue": "MEZE",
+  "title": "From Zero to ChatGPT",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.utags.edu.mx/index.php/component/txeducation/course/tidsm",
+  "raw": "MEZE, From Zero to ChatGPT, Virtual"
+ },
+ {
+  "year": 2023,
+  "venue": "CryptyPasta",
+  "title": "Social disruption with Artificial Intelligence",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.youtube.com/@cryptypasta",
+  "raw": "CryptyPasta, Social disruption with Artificial Intelligence, Virtual"
+ },
+ {
+  "year": 2023,
+  "venue": "CU Research Symposium",
+  "title": "ChatGPT Use in Higher Education",
+  "location": "Clemson, USA",
+  "invited": false,
+  "link": "https://www.clemson.edu/research/division-of-research/resources/r-init-sub-pages/symposium.html",
+  "raw": "CU Research Symposium, ChatGPT Use in Higher Education, Clemson, USA"
+ },
+ {
+  "year": 2023,
+  "venue": "Tecnoimpacta Congress",
+  "title": "Generative AI",
+  "location": "Colombia",
+  "invited": false,
+  "link": "https://tecnoimpacta.com/",
+  "raw": "Tecnoimpacta Congress, Generative AI, Colombia"
+ },
+ {
+  "year": 2022,
+  "venue": "Spotify The cage of the N00b",
+  "title": "AI for Human Empowerment",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://open.spotify.com/show/5T4BDgdPUU8CFZ1eAMKQlm",
+  "raw": "Spotify The cage of the N00b, AI for Human Empowerment, Virtual"
+ },
+ {
+  "year": 2022,
+  "venue": "Floppy Radio",
+  "title": "Human Empowerment through AI",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.facebook.com/floppyradio",
+  "raw": "Floppy Radio, Human Empowerment through AI, Virtual"
+ },
+ {
+  "year": 2022,
+  "venue": "UTAGS",
+  "title": "Code is Power",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.utags.edu.mx/index.php/component/txeducation/course/tidsm",
+  "raw": "UTAGS, Code is Power, Virtual"
+ },
+ {
+  "year": 2022,
+  "venue": "Northeastern",
+  "title": "Artificial Intelligence Tools to Promote Social Good in Gig Markers",
+  "location": "Boston, USA",
+  "invited": false,
+  "link": "https://www.khoury.northeastern.edu/people/carlos-toxtli-hernandez/",
+  "raw": "Northeastern, Artificial Intelligence Tools to Promote Social Good in Gig Markers, Boston, USA"
+ },
+ {
+  "year": 2022,
+  "venue": "MEZE",
+  "title": "Human-AI Empowerment",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.utags.edu.mx/index.php/component/txeducation/course/tidsm",
+  "raw": "MEZE, Human-AI Empowerment, Virtual"
+ },
+ {
+  "year": 2022,
+  "venue": "5 at 5",
+  "title": "The life in the Metaverse",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.facebook.com/fundacionelcincoalascinco/posts/pfbid0CeAANc8RKxafEXE15LYqZK5M9ZLqVBRXDzrhrosz3iPJHpeetvuBCfbT3GG8vbznl?__cft__[0]=AZV-1Ky51vgb4iAkThnPYFBRzkEYe0kfzzYHZ0rFlx-ZH9NAGqWe9qYBvkxMrqyNwcL62gYpuKplOyh1xhe0aCI0fEWrS8iB_VNCzFlfKt_Am0t-E2LfJVFRCmLjOXhnAHnVUmrnUAZY2rWq5eVWjQ78ZRb0J9o53JVVMSoozj8zhCnJvcKQY7kHMePhJoXXkJFiTz1oj8WS3pDx9TRevo7u&__tn__=%2CO%2CP-R",
+  "raw": "5 at 5, The life in the Metaverse, Virtual"
+ },
+ {
+  "year": 2022,
+  "venue": "CORE",
+  "title": "Human-AI Empowerment",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.core.cic.ipn.mx/",
+  "raw": "CORE, Human-AI Empowerment, Virtual"
+ },
+ {
+  "year": 2022,
+  "venue": "EISI",
+  "title": "Tools for the Design of AI Solutions",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://drive.google.com/file/d/1nCCS6WQjJfWB-DT4PhbKnZjR3y2fIp6t/view",
+  "raw": "EISI, Tools for the Design of AI Solutions, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "X4D",
+  "title": "The future of work",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://x4d.org/",
+  "raw": "X4D, The future of work, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "World Economic Forum Davos Labs",
+  "title": "The future of inclusive work",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.globalshapers.org/news-updates/the-davos-lab-building-our-future",
+  "raw": "World Economic Forum Davos Labs, The future of inclusive work, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "British Embassy in Mexico",
+  "title": "The future of work and education",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.cminds.co/",
+  "raw": "British Embassy in Mexico, The future of work and education, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "Ministry of Innovation of the State of Jalisco",
+  "title": "Keeping digital environments safe",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://digitalfamily.mx/",
+  "raw": "Ministry of Innovation of the State of Jalisco, Keeping digital environments safe, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "R&D Iberoamerican Center for Cybersecurity",
+  "title": "Digital footprint management",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://concienciacibersegura.org/",
+  "raw": "R&D Iberoamerican Center for Cybersecurity, Digital footprint management, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "A.I. in Society",
+  "title": "Data Labeling Work in the AI Ecosystem and Opportunities for Improvement",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://sites.google.com/view/ai-society-at-nc-state/symposium?authuser=0",
+  "raw": "A.I. in Society, Data Labeling Work in the AI Ecosystem and Opportunities for Improvement, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "FoCo 2021",
+  "title": "Software Automation",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://focochihuahua.cchcp.org.mx/#programa",
+  "raw": "FoCo 2021, Software Automation, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "Azul Web",
+  "title": "Bots applied to Growth Hacking",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.azulweb.net/",
+  "raw": "Azul Web, Bots applied to Growth Hacking, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "UTAGS",
+  "title": "Code for Social Good",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.utags.edu.mx/index.php/component/txeducation/course/tidsm",
+  "raw": "UTAGS, Code for Social Good, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "NaaS.AI",
+  "title": "A.I. in the workplace, a human-centered design approach",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.naas.ai/community",
+  "raw": "NaaS.AI, A.I. in the workplace, a human-centered design approach, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "MEZE",
+  "title": "The power of Code",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.utags.edu.mx/index.php/component/txeducation/course/tidsm",
+  "raw": "MEZE, The power of Code, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "SABES",
+  "title": "Paradigms in artificial intelligence",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://sabes.edu.mx/portal/ing-tecnologia.php",
+  "raw": "SABES, Paradigms in artificial intelligence, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "Simon Bolivar University",
+  "title": "Ethical AI",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://usb.edu.mx/evento/25",
+  "raw": "Simon Bolivar University, Ethical AI, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "UACM",
+  "title": "Empowering workers with Artificial Intelligence tools",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.facebook.com/SimposioIngenieriaUACM/",
+  "raw": "UACM, Empowering workers with Artificial Intelligence tools, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "CodigoBits",
+  "title": "Human-Centered AI for the design of tools to shape the Future of Work",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.facebook.com/watch/live/?ref=notif&v=277548604249631&notif_id=1635026072915728&notif_t=live_video",
+  "raw": "CodigoBits, Human-Centered AI for the design of tools to shape the Future of Work, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "CELTI",
+  "title": "Human-AI Collaboration",
+  "location": "Virtual",
+  "invited": false,
+  "link": "https://www.celti.tech/",
+  "raw": "CELTI, Human-AI Collaboration, Virtual"
+ },
+ {
+  "year": 2021,
+  "venue": "CIC CORE 2021",
+  "title": "AI for Social Good & The Future of Work",
+  "location": "Virtual",
+  "invited": false,
+  "link": "http://www.core.cic.ipn.mx/",
+  "raw": "CIC CORE 2021, AI for Social Good & The Future of Work, Virtual"
+ },
+ {
+  "year": 2020,
+  "venue": "WWW 2020",
+  "title": "Reputation Agent: Prompting Fair Reviews in Gig Markets, Taipei, Taiwan",
+  "location": "",
+  "invited": false,
+  "link": "https://www2020.thewebconf.org/",
+  "raw": "WWW 2020, Reputation Agent: Prompting Fair Reviews in Gig Markets, Taipei, Taiwan"
+ },
+ {
+  "year": 2020,
+  "venue": "Microsoft Research AI Breakthroughs 2020",
+  "title": "Understanding Assisted Document Comments Management, Redmond, United States",
+  "location": "",
+  "invited": false,
+  "link": "https://www.microsoft.com/en-us/research/event/ai-breakthroughs-2020/",
+  "raw": "Microsoft Research AI Breakthroughs 2020, Understanding Assisted Document Comments Management, Redmond, United States"
+ },
+ {
+  "year": 2020,
+  "venue": "MTH Mediatech Conference",
+  "title": "Meta-Intelligence: What new business models will AI drive in entertainment?",
+  "location": "Potsdam-Babelsberg, Germany",
+  "invited": false,
+  "link": "https://www.mth-conference.de/",
+  "raw": "MTH Mediatech Conference, Meta-Intelligence: What new business models will AI drive in entertainment?, Potsdam-Babelsberg, Germany"
+ },
+ {
+  "year": 2020,
+  "venue": "ACHI 2020",
+  "title": "Enabling Expert Critique at Scale with Chatbots and Micro Guidance",
+  "location": "Valencia, Spain",
+  "invited": false,
+  "link": "https://www.iaria.org/conferences/ACHI.html",
+  "raw": "ACHI 2020, Enabling Expert Critique at Scale with Chatbots and Micro Guidance, Valencia, Spain"
+ },
+ {
+  "year": 2020,
+  "venue": "LatamDev 2020",
+  "title": "Reproducibility in AI",
+  "location": "Bogota, Colombia",
+  "invited": false,
+  "link": "https://www.youtube.com/watch?v=AcMSvIEB9Kc",
+  "raw": "LatamDev 2020, Reproducibility in AI,,Bogota, Colombia"
+ },
+ {
+  "year": 2020,
+  "venue": "Huawei Sessions",
+  "title": "Replicability in AI",
+  "location": "Bogota, Colombia",
+  "invited": false,
+  "link": "https://www.facebook.com/watch/live/?v=669557787106021",
+  "raw": "Huawei Sessions, Replicability in AI, Bogota, Colombia"
+ },
+ {
+  "year": 2020,
+  "venue": "DiSol 10",
+  "title": "Artificial Intelligence and Open Source",
+  "location": "Puebla, Mexico",
+  "invited": false,
+  "link": "https://disol.dev/schedule",
+  "raw": "DiSol 10, Artificial Intelligence and Open Source, Puebla, Mexico"
+ },
+ {
+  "year": 2020,
+  "venue": "FLISOL 2020",
+  "title": "Explainable AI",
+  "location": "Toluca, Mexico",
+  "invited": false,
+  "link": "https://flisol.info/",
+  "raw": "FLISOL 2020, Explainable AI, Toluca, Mexico"
+ },
+ {
+  "year": 2020,
+  "venue": "HAI 2020",
+  "title": "Customizing the customer experience with the help of artificial intelligence",
+  "location": "Mexico City, Mexico",
+  "invited": false,
+  "link": "http://info.gus.chat/hai2020",
+  "raw": "HAI 2020, Customizing the customer experience with the help of artificial intelligence, Mexico City, Mexico"
+ },
+ {
+  "year": 2020,
+  "venue": "Anahuac University",
+  "title": "Building businesses based on Artificial Intelligence",
+  "location": "Mexico City, Mexico",
+  "invited": false,
+  "link": "https://www.anahuac.mx/",
+  "raw": "Anahuac University, Building businesses based on Artificial Intelligence, Mexico City, Mexico"
+ },
+ {
+  "year": 2020,
+  "venue": "Innova Sonora",
+  "title": "Learning Paths for the Future of Work",
+  "location": "Sonora, Mexico",
+  "invited": false,
+  "link": "http://www.innovasonora.mx/",
+  "raw": "Innova Sonora, Learning Paths for the Future of Work, Sonora, Mexico"
+ },
+ {
+  "year": 2020,
+  "venue": "iForums",
+  "title": "Empowering the workforce to face future challenges",
+  "location": "Sonora, Mexico",
+  "invited": false,
+  "link": "http://iforums.mx/",
+  "raw": "iForums, Empowering the workforce to face future challenges, Sonora, Mexico"
+ },
+ {
+  "year": 2020,
+  "venue": "SiencexYoung",
+  "title": "Building the Future of Work with A.I.",
+  "location": "Celaya, Mexico",
+  "invited": false,
+  "link": "https://www.facebook.com/sienceforyoung/",
+  "raw": "SiencexYoung, Building the Future of Work with A.I., Celaya, Mexico"
+ },
+ {
+  "year": 2020,
+  "venue": "CORE 2020",
+  "title": "The future of robotics and the world after the pandemic",
+  "location": "Mexico City, Mexico",
+  "invited": false,
+  "link": "http://www.core.ipn.mx/",
+  "raw": "CORE 2020, The future of robotics and the world after the pandemic, Mexico City, Mexico"
+ },
+ {
+  "year": 2020,
+  "venue": "Creating Spaces",
+  "title": "Technopolitics",
+  "location": "Mexico City, Mexico",
+  "invited": false,
+  "link": "https://www.creandoespacios.org/",
+  "raw": "Creating Spaces, Technopolitics, Mexico City, Mexico"
+ },
+ {
+  "year": 2019,
+  "venue": "CI 2019",
+  "title": "“Understanding the Crowd Markets that Workers and Requesters Imagine”",
+  "location": "Pittsburgh, USA",
+  "invited": false,
+  "link": "https://ci.acm.org/2019/#/",
+  "raw": "CI 2019, “Understanding the Crowd Markets that Workers and Requesters Imagine”, Pittsburgh, USA"
+ },
+ {
+  "year": 2019,
+  "venue": "City.AI",
+  "title": "“Changing paradigms in AI prototyping”",
+  "location": "New York, USA",
+  "invited": false,
+  "link": "https://city.ai/",
+  "raw": "City.AI, “Changing paradigms in AI prototyping”, New York, USA"
+ },
+ {
+  "year": 2019,
+  "venue": "DL. “Multimodal Affect Recognition at utterance-level with spatio-temporal feature fusion by using Face",
+  "title": "Audio, Text [, and Body] features”",
+  "location": "Morgantown, USA",
+  "invited": false,
+  "link": "https://lcsee.statler.wvu.edu/",
+  "raw": "DL. “Multimodal Affect Recognition at utterance-level with spatio-temporal feature fusion by using Face, Audio, Text [,and Body] features”, Morgantown, USA"
+ },
+ {
+  "year": 2019,
+  "venue": "DL",
+  "title": "“AutomEditor: Video blooper recognition and localization for automatic monologue video editing”",
+  "location": "Morgantown, USA",
+  "invited": false,
+  "link": "https://lcsee.statler.wvu.edu/",
+  "raw": "DL, “AutomEditor: Video blooper recognition and localization for automatic monologue video editing”, Morgantown, USA"
+ },
+ {
+  "year": 2019,
+  "venue": "MyBotsLATAM",
+  "title": "“Implementing Bots in real-world settings”",
+  "location": "Online",
+  "invited": false,
+  "link": "https://www.facebook.com/MyBotsLatam/",
+  "raw": "MyBotsLATAM, “Implementing Bots in real-world settings”, Online"
+ },
+ {
+  "year": 2019,
+  "venue": "SISeI",
+  "title": "“How to implement Artificial Intelligence solutions”",
+  "location": "Culiacan, Mexico",
+  "invited": false,
+  "link": "https://www.facebook.com/Simposio.SISeI/",
+  "raw": "SISeI,“How to implement Artificial Intelligence solutions”, Culiacan, Mexico"
+ },
+ {
+  "year": 2019,
+  "venue": "RIIAA",
+  "title": "“AI for the future of work”",
+  "location": "Mexico City",
+  "invited": false,
+  "link": "https://riiaa.org/",
+  "raw": "RIIAA, “AI for the future of work”, Mexico City"
+ },
+ {
+  "year": 2019,
+  "venue": "PIURA",
+  "title": "“Seminar on Artificial Intelligence”",
+  "location": "Lima, Peru",
+  "invited": false,
+  "link": "http://udep.edu.pe/",
+  "raw": "PIURA, “Seminar on Artificial Intelligence”, Lima, Peru"
+ },
+ {
+  "year": 2019,
+  "venue": "Ford Ingenious Minds",
+  "title": "“Bots in Robotic Process Automation”",
+  "location": "Mexico City, Mexico",
+  "invited": false,
+  "link": "https://www.pscp.tv/w/1RDGlNmDgnlxL",
+  "raw": "Ford Ingenious Minds, “Bots in Robotic Process Automation”, Mexico City, Mexico"
+ },
+ {
+  "year": 2018,
+  "venue": "CHI 2018",
+  "title": "“Understanding Chatbot-Mediated Task Management”",
+  "location": "Montreal, Canada",
+  "invited": false,
+  "link": "https://dl.acm.org/citation.cfm?id=3173574.3173632",
+  "raw": "CHI 2018, “Understanding Chatbot-Mediated Task Management”, Montreal, Canada"
+ },
+ {
+  "year": 2018,
+  "venue": "HCOMP 2018",
+  "title": "“Bots for Crowds”, Zurich, Switzerland",
+  "location": "",
+  "invited": false,
+  "link": "https://www.humancomputation.com/2018/",
+  "raw": "HCOMP 2018, “Bots for Crowds”, Zurich, Switzerland"
+ },
+ {
+  "year": 2018,
+  "venue": "RightsCon 2018",
+  "title": "“Understanding Political Manipulation and Botnets”",
+  "location": "Toronto, Canada",
+  "invited": false,
+  "link": "https://rightscon2018.sched.com/event/EHoM/some-like-it-bot-can-ai-strengthen-global-democracy",
+  "raw": "RightsCon 2018, “Understanding Political Manipulation and Botnets”, Toronto, Canada"
+ },
+ {
+  "year": 2018,
+  "venue": "SmartData 2018",
+  "title": "“ExperTwin: An Alter Ego in Cyberspace forKnowledge Workers”",
+  "location": "Halifax, Canada",
+  "invited": false,
+  "link": "http://cse.stfx.ca/~SmartData2018/",
+  "raw": "SmartData 2018, “ExperTwin: An Alter Ego in Cyberspace forKnowledge Workers”, Halifax, Canada"
+ },
+ {
+  "year": 2018,
+  "venue": "CI 2018",
+  "title": "“Enabling Expert Critique with Chatbots and Micro Guidance”, Zurich, Switzerland",
+  "location": "",
+  "invited": false,
+  "link": "https://ci.acm.org/2018/",
+  "raw": "CI 2018, “Enabling Expert Critique with Chatbots and Micro Guidance”, Zurich, Switzerland"
+ },
+ {
+  "year": 2018,
+  "venue": "UTR",
+  "title": "“Education 3.0. Megatrends”",
+  "location": "Aguascalientes, Mexico",
+  "invited": false,
+  "link": "https://www.utr.edu.mx",
+  "raw": "UTR, “Education 3.0. Megatrends”, Aguascalientes, Mexico"
+ },
+ {
+  "year": 2018,
+  "venue": "BT7",
+  "title": "“Artificial Intelligence From Zero To Hero”",
+  "location": "Lima, Peru",
+  "invited": false,
+  "link": "https://bt7festival.com/peru/",
+  "raw": "BT7, “Artificial Intelligence From Zero To Hero”, Lima, Peru"
+ },
+ {
+  "year": 2017,
+  "venue": "Campus Party",
+  "title": "“Jobs that are already being replaced by bots and the future of Robotic Process Automation”, Guadalajara, Jalisco",
+  "location": "",
+  "invited": false,
+  "link": "http://campuse.ro/events/campus-party-mexico-2017/talk/empleos-que-ya-estan-siendo-reemplazados-por-bots-y-el-futuro-del-rpa-robotic-process-automation-carlos-toxtli-feelthefuture/",
+  "raw": "Campus Party, “Jobs that are already being replaced by bots and the future of Robotic Process Automation”, Guadalajara,Jalisco"
+ },
+ {
+  "year": 2017,
+  "venue": "Epicentro",
+  "title": "“The future of employment in Latin America”, Guadalajara, Jalisco",
+  "location": "",
+  "invited": false,
+  "link": "https://epicentrofestival.com/",
+  "raw": "Epicentro, “The future of employment in Latin America”, Guadalajara,Jalisco"
+ },
+ {
+  "year": 2017,
+  "venue": "Wayra",
+  "title": "“Technological strategies of accelerated growth for startups”",
+  "location": "Mexico City, Mexico",
+  "invited": false,
+  "link": "https://www.openfuture.org/es/space/wayra-ciudad-de-mexico",
+  "raw": "Wayra, “Technological strategies of accelerated growth for startups”, Mexico City, Mexico"
+ },
+ {
+  "year": 2017,
+  "venue": "Bots LATAM",
+  "title": "“Chatbots + RPA (Robotic Process Automation)”",
+  "location": "Mexico City, Mexico",
+  "invited": false,
+  "link": "https://www.facebook.com/groups/botsLATAM/",
+  "raw": "Bots LATAM, “Chatbots + RPA (Robotic Process Automation)”, Mexico City, Mexico"
+ },
+ {
+  "year": 2017,
+  "venue": "CertificaTIC",
+  "title": "“Robotic Process Automation (RPA)”",
+  "location": "Virtual Conference",
+  "invited": false,
+  "link": "https://www.certificatic.org/",
+  "raw": "CertificaTIC, “Robotic Process Automation (RPA)”, Virtual Conference"
+ },
+ {
+  "year": 2017,
+  "venue": "DeKids",
+  "title": "“What programming has brought to my life”",
+  "location": "Mexico City, Mexico",
+  "invited": false,
+  "link": "http://dekids.com.mx/",
+  "raw": "DeKids, “What programming has brought to my life”, Mexico City, Mexico"
+ },
+ {
+  "year": 2016,
+  "venue": "Colombia 4.0",
+  "title": "“The future of programming, predictions to 10 years”",
+  "location": "Bogota, Colombia",
+  "invited": false,
+  "link": "http://col40.co/638/w3-article-19381.html",
+  "raw": "Colombia 4.0, “The future of programming, predictions to 10 years”, Bogota, Colombia"
+ },
+ {
+  "year": 2016,
+  "venue": "Campus Party",
+  "title": "“The future of programming, predictions to 10 years”",
+  "location": "Guadalajara, Mexico",
+  "invited": false,
+  "link": "http://campuse.ro/events/Campus_Party_Mexico_2016/talk/programacion-del-futuro-profecias-a-10-anos-carlos-toxtli-cpmx7-developer/",
+  "raw": "Campus Party, “The future of programming, predictions to 10 years”, Guadalajara, Mexico"
+ },
+ {
+  "year": 2016,
+  "venue": "Connect",
+  "title": "“The future of programming, predictions to 10 years”",
+  "location": "Monterrey, Mexico",
+  "invited": false,
+  "link": "https://siscti.com/",
+  "raw": "Connect, “The future of programming, predictions to 10 years”, Monterrey, Mexico"
+ },
+ {
+  "year": 2016,
+  "venue": "ITHH",
+  "title": "“The future of programming, predictions to 10 years”",
+  "location": "Hidalgo, Mexico",
+  "invited": false,
+  "link": "http://www.uthh.edu.mx/Accesible/index.php?val=cHJlbnNhX2RldGFsbGUucGhw&c=Nzc0&M=NDg=&CvMenu=48",
+  "raw": "ITHH, “The future of programming, predictions to 10 years”, Hidalgo, Mexico"
+ },
+ {
+  "year": 2016,
+  "venue": "CiComp",
+  "title": "“The future of programming, predictions to 10 years”",
+  "location": "Baja California, Mexico",
+  "invited": false,
+  "link": "http://www.cicomp.org/cicomp-2016.html",
+  "raw": "CiComp, “The future of programming, predictions to 10 years”, Baja California, Mexico"
+ },
+ {
+  "year": 2016,
+  "venue": "SiSel10",
+  "title": "“The future of programming, predictions to 10 years”",
+  "location": "Sonora, Mexico",
+  "invited": false,
+  "link": "http://www.sisei.com.mx/",
+  "raw": "SiSel10, “The future of programming, predictions to 10 years”, Sonora, Mexico"
+ },
+ {
+  "year": 2016,
+  "venue": "Clickfest",
+  "title": "“Sentimental computing”",
+  "location": "Guanajuato, Mexico",
+  "invited": false,
+  "link": "http://www.clickfest.mx/",
+  "raw": "Clickfest, “Sentimental computing”, Guanajuato, Mexico"
+ },
+ {
+  "year": 2016,
+  "venue": "The Data Pub",
+  "title": "“Social Media, Civic Engagement, and the Slacktivism Hypothesis”",
+  "location": "Mexico City",
+  "invited": false,
+  "link": "http://thedata.pub/",
+  "raw": "The Data Pub, “Social Media, Civic Engagement, and the Slacktivism Hypothesis”, Mexico City"
+ },
+ {
+  "year": 2015,
+  "venue": "TEDx",
+  "title": "“Undertaking by knowing your brain”, Mexico, Monterrey",
+  "location": "",
+  "invited": false,
+  "link": "https://www.ted.com/tedx/events/16758",
+  "raw": "TEDx, “Undertaking by knowing your brain”, Mexico, Monterrey"
+ },
+ {
+  "year": 2015,
+  "venue": "SxSWedu",
+  "title": "“SSO overview”, USA, Texas",
+  "location": "",
+  "invited": false,
+  "link": "https://www.sxswedu.com/",
+  "raw": "SxSWedu, “SSO overview”, USA, Texas"
+ },
+ {
+  "year": 2015,
+  "venue": "BigData Day",
+  "title": "“Introduction to Data Science”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "http://bigdataconf.mx/",
+  "raw": "BigData Day, “Introduction to Data Science”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "UNAM",
+  "title": "“Google’s educational tools”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "http://www.ingenieria.unam.mx/",
+  "raw": "UNAM, “Google’s educational tools”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "Hittco",
+  "title": "“I do not start to see if it works, because it will work I start”, Mexico, Yucatan",
+  "location": "",
+  "invited": false,
+  "link": "http://hittco.mx/",
+  "raw": "Hittco, “I do not start to see if it works, because it will work I start”, Mexico, Yucatan"
+ },
+ {
+  "year": 2015,
+  "venue": "UPQ",
+  "title": "“Human 2.0 - The future of human augmentation”, Mexico, Queretaro",
+  "location": "",
+  "invited": false,
+  "link": "http://www.upq.mx/",
+  "raw": "UPQ, “Human 2.0 - The future of human augmentation”, Mexico, Queretaro"
+ },
+ {
+  "year": 2015,
+  "venue": "ITESM",
+  "title": "“NeuroPsicoEntrepreneurship”, Mexico, Tamaulipas",
+  "location": "",
+  "invited": false,
+  "link": "http://www.itesm.mx/",
+  "raw": "ITESM, “NeuroPsicoEntrepreneurship”, Mexico, Tamaulipas"
+ },
+ {
+  "year": 2015,
+  "venue": "ITT",
+  "title": "“Growth Hacking”, Mexico, E.M.",
+  "location": "",
+  "invited": false,
+  "link": "https://flisol.info/",
+  "raw": "ITT, “Growth Hacking”, Mexico, E.M."
+ },
+ {
+  "year": 2015,
+  "venue": "ITSCH",
+  "title": "“Quantum Programming”, Mexico, Michoacan",
+  "location": "",
+  "invited": false,
+  "link": "http://www.itsch.edu.mx/notas/3jornadasistemas/index",
+  "raw": "ITSCH, “Quantum Programming”, Mexico, Michoacan"
+ },
+ {
+  "year": 2015,
+  "venue": "IPN",
+  "title": "“Google for Students”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "http://www.escom.ipn.mx/",
+  "raw": "IPN, “Google for Students”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "Startup Chiapas",
+  "title": "“Entrepreneurship with innovation”, Mexico, Chiapas",
+  "location": "",
+  "invited": false,
+  "link": "https://www.facebook.com/StartupWChiapas/",
+  "raw": "Startup Chiapas, “Entrepreneurship with innovation”, Mexico, Chiapas"
+ },
+ {
+  "year": 2015,
+  "venue": "UVQ",
+  "title": "“NeuroPsicoEntrepreneurship”, Mexico, Michoacan",
+  "location": "",
+  "invited": false,
+  "link": "http://www.uvaq.edu.mx/uvaq/index.php",
+  "raw": "UVQ, “NeuroPsicoEntrepreneurship”, Mexico, Michoacan"
+ },
+ {
+  "year": 2015,
+  "venue": "Startup Chiapas",
+  "title": "“Innovation and Entrepreneurship”, Mexico, Chiapas",
+  "location": "",
+  "invited": false,
+  "link": "https://www.facebook.com/StartupWChiapas/",
+  "raw": "Startup Chiapas, “Innovation and Entrepreneurship”, Mexico, Chiapas"
+ },
+ {
+  "year": 2015,
+  "venue": "ITSON",
+  "title": "“Digital Strategies”, Mexico, Sonora",
+  "location": "",
+  "invited": false,
+  "link": "http://www.itson.mx/Paginas/index.aspx",
+  "raw": "ITSON, “Digital Strategies”, Mexico, Sonora"
+ },
+ {
+  "year": 2015,
+  "venue": "DeKids",
+  "title": "“The importance of knowing how to program”, Mexico, E.M.",
+  "location": "",
+  "invited": false,
+  "link": "http://dekids.com.mx/",
+  "raw": "DeKids, “The importance of knowing how to program”, Mexico, E.M."
+ },
+ {
+  "year": 2015,
+  "venue": "UTHH",
+  "title": "“Ok, I’m studing CS, and then?”, Mexico, Hidalgo",
+  "location": "",
+  "invited": false,
+  "link": "https://medium.com/@lalongooo/uthh-conference-el-pretexto-perfecto-para-compartir-y-recibir-al-mismo-tiempo-de9affdc596e",
+  "raw": "UTHH, “Ok, I’m studing CS, and then?”, Mexico, Hidalgo"
+ },
+ {
+  "year": 2015,
+  "venue": "Dev.f",
+  "title": "“I’m learning how to program, and then?”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "https://www.devf.mx/allguides",
+  "raw": "Dev.f, “I’m learning how to program, and then?”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "Chilango Django",
+  "title": "“Google Cloud Platform and Python”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "https://www.meetup.com/es/Chilango-Django/",
+  "raw": "Chilango Django, “Google Cloud Platform and Python”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "Nestle",
+  "title": "“Tools of the future, today”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "https://www.nestleusacareers.com/search-jobs/United%20States%20(Country)?orgIds=1823&ac=50620&alp=6252001&alt=2&ascf=[%7B%22Key%22:%22ALL%22,%22Value%22:null%7D]",
+  "raw": "Nestle, “Tools of the future, today”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "HackerTalk",
+  "title": "“How to innovate with technology”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "https://www.youtube.com/channel/UCCuYZ8U62Pnyo2PH6s4I2zw",
+  "raw": "HackerTalk, “How to innovate with technology”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "ITT",
+  "title": "“Sentimental Computing”, Mexico, E.M.",
+  "location": "",
+  "invited": false,
+  "link": "https://flisol.info/",
+  "raw": "ITT, “Sentimental Computing”, Mexico, E.M."
+ },
+ {
+  "year": 2015,
+  "venue": "Dev.f",
+  "title": "“Science fiction and programming”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "https://www.devf.mx/allguides",
+  "raw": "Dev.f, “Science fiction and programming”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "Software Guru",
+  "title": "“Sentimental computing”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "https://sg.com.mx/sgvirtual",
+  "raw": "Software Guru, “Sentimental computing”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "UAS",
+  "title": "“NeuroPsicoEntrepreneurship”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "https://allevents.in/mexico%20city/feria-de-reclutamiento-and-emprendimiento-talento-an%C3%A1huac-2015/1597830403837749",
+  "raw": "UAS, “NeuroPsicoEntrepreneurship”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "Week of Code",
+  "title": "“The Dark Side of Programming”, Mexico, Monterrey",
+  "location": "",
+  "invited": false,
+  "link": "https://www.facebook.com/events/1123914460971571/",
+  "raw": "Week of Code, “The Dark Side of Programming”, Mexico, Monterrey"
+ },
+ {
+  "year": 2015,
+  "venue": "CETIEM",
+  "title": "“Startup Entrepreneurship”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "https://www.facebook.com/CETIEM",
+  "raw": "CETIEM, “Startup Entrepreneurship”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "Techstars",
+  "title": "“Marketing for Startups”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "https://www.techstars.com/",
+  "raw": "Techstars, “Marketing for Startups”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "Entrepreneur Week",
+  "title": "“NeuroPsicoEntrepreneurship”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "http://semanadelemprendedor.gob.mx/",
+  "raw": "Entrepreneur Week, “NeuroPsicoEntrepreneurship”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "Entrepreneur Week",
+  "title": "“I do not start to see if it works, because it will work I start”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "http://semanadelemprendedor.gob.mx/",
+  "raw": "Entrepreneur Week, “I do not start to see if it works, because it will work I start”, Mexico, DF"
+ },
+ {
+  "year": 2015,
+  "venue": "UVAQ",
+  "title": "“Agile Development Tools”, Mexico, Michoacan",
+  "location": "",
+  "invited": false,
+  "link": "http://www.uvaq.edu.mx/uvaq/index.php",
+  "raw": "UVAQ, “Agile Development Tools”, Mexico, Michoacan"
+ },
+ {
+  "year": 2014,
+  "venue": "COOP 2014",
+  "title": "“Visualizing Targeted Audiences”, France, Nice",
+  "location": "",
+  "invited": false,
+  "link": "https://coop2014.wordpress.com/",
+  "raw": "COOP 2014, “Visualizing Targeted Audiences”, France, Nice"
+ },
+ {
+  "year": 2014,
+  "venue": "QBIT",
+  "title": "“Quantum Programming”, Mexico, Queretaro",
+  "location": "",
+  "invited": false,
+  "link": "http://identidad.queretaro.itesm.mx/2014/10/alumnos-de-ingenieria-en-sistemas-computacionales-realizaran-congreso-qbit/",
+  "raw": "QBIT, “Quantum Programming”, Mexico, Queretaro"
+ },
+ {
+  "year": 2014,
+  "venue": "ITT",
+  "title": "“Cognitive Computing”, Mexico, E.M.",
+  "location": "",
+  "invited": false,
+  "link": "https://flisol.info/",
+  "raw": "ITT, “Cognitive Computing”, Mexico, E.M."
+ },
+ {
+  "year": 2014,
+  "venue": "NI04",
+  "title": "“Internet of Everything”",
+  "location": "Virtual Conference",
+  "invited": false,
+  "link": "https://sg.com.mx/sgvirtual",
+  "raw": "NI04, “Internet of Everything”, Virtual Conference"
+ },
+ {
+  "year": 2014,
+  "venue": "SG",
+  "title": "“Wearable Devices Programming”",
+  "location": "Virtual Conference",
+  "invited": false,
+  "link": "https://sg.com.mx/sgvirtual",
+  "raw": "SG, “Wearable Devices Programming”, Virtual Conference"
+ },
+ {
+  "year": 2014,
+  "venue": "Entrepreneur Week",
+  "title": "“Innovation on Entrepreneurship”, Mexico, DF",
+  "location": "",
+  "invited": false,
+  "link": "http://semanadelemprendedor.gob.mx/",
+  "raw": "Entrepreneur Week, “Innovation on Entrepreneurship”, Mexico, DF"
+ },
+ {
+  "year": 2014,
+  "venue": "UPN",
+  "title": "“Quantum Programming”, Mexico, Guerrero",
+  "location": "",
+  "invited": false,
+  "link": "http://guerrero.upn.mx/",
+  "raw": "UPN, “Quantum Programming”, Mexico, Guerrero"
+ },
+ {
+  "year": 2014,
+  "venue": "FLISOL",
+  "title": "“BigData for Beginners”, Mexico, Queretaro",
+  "location": "",
+  "invited": false,
+  "link": "http://www.flisolqro.org/",
+  "raw": "FLISOL, “BigData for Beginners”, Mexico, Queretaro"
+ },
+ {
+  "year": 2014,
+  "venue": "FLISOL",
+  "title": "\"Ubiquitous Computing\", Mexico, Queretaro",
+  "location": "",
+  "invited": false,
+  "link": "http://www.flisolqro.org/",
+  "raw": "FLISOL, \"Ubiquitous Computing\", Mexico, Queretaro"
+ },
+ {
+  "year": 2014,
+  "venue": "CECyTEM",
+  "title": "\"Why study systems?\", Mexico, Morelos",
+  "location": "",
+  "invited": false,
+  "link": "http://cecytem.edomex.gob.mx/",
+  "raw": "CECyTEM, \"Why study systems?\", Mexico, Morelos"
+ },
+ {
+  "year": 2014,
+  "venue": "ITESM",
+  "title": "“Introducing to Javascript”, Mexico, Monterrey",
+  "location": "",
+  "invited": false,
+  "link": "http://tec.mx/es",
+  "raw": "ITESM, “Introducing to Javascript”, Mexico, Monterrey"
+ },
+ {
+  "year": 2013,
+  "venue": "UAEM",
+  "title": "\"NFC, What is?\", Mexico, Morelos",
+  "location": "",
+  "invited": false,
+  "link": "http://www.uaem.mx/",
+  "raw": "UAEM, \"NFC, What is?\", Mexico, Morelos"
+ },
+ {
+  "year": 2013,
+  "venue": "GDG",
+  "title": "\"All the Google APIs\", Mexico, Guadalajara",
+  "location": "",
+  "invited": false,
+  "link": "https://developers.google.com/groups/?hl=es",
+  "raw": "GDG, \"All the Google APIs\", Mexico, Guadalajara"
+ },
+ {
+  "year": 2013,
+  "venue": "ITT FLISOL 13",
+  "title": "\"3D Sensors\"",
+  "location": "Mexico E.M",
+  "invited": false,
+  "link": "https://flisol.info/",
+  "raw": "ITT FLISOL 13, \"3D Sensors\", Mexico E.M"
+ },
+ {
+  "year": 2013,
+  "venue": "IPVT SS 13",
+  "title": "\"Drone Programming\"",
+  "location": "Mexico E.M.",
+  "invited": false,
+  "link": "http://upvt.edomex.gob.mx/",
+  "raw": "IPVT SS 13, \"Drone Programming\", Mexico E.M."
+ },
+ {
+  "year": 2013,
+  "venue": "ITESM",
+  "title": "\"NFC, What is?\", Mexico, Monterrey",
+  "location": "",
+  "invited": false,
+  "link": "http://tec.mx/es",
+  "raw": "ITESM, \"NFC, What is?\", Mexico, Monterrey"
+ },
+ {
+  "year": 2012,
+  "venue": "UIST 2012",
+  "title": "\"ForcePad web 3D touch\", USA, Massachusetts",
+  "location": "",
+  "invited": false,
+  "link": "https://uist.acm.org/uist2012/",
+  "raw": "UIST 2012, \"ForcePad web 3D touch\", USA, Massachusetts"
+ },
+ {
+  "year": 2012,
+  "venue": "SG",
+  "title": "\"HTML5 for mobiles\"",
+  "location": "Virtual Conference",
+  "invited": false,
+  "link": "https://sg.com.mx/sgvirtual",
+  "raw": "SG, \"HTML5 for mobiles\", Virtual Conference,"
+ },
+ {
+  "year": 2012,
+  "venue": "ITT CCT",
+  "title": "\"HTML5 VS Flash\"",
+  "location": "Mexico E.M",
+  "invited": false,
+  "link": "http://www.ittoluca.edu.mx/",
+  "raw": "ITT CCT, \"HTML5 VS Flash\", Mexico E.M"
+ },
+ {
+  "year": 2012,
+  "venue": "UV",
+  "title": "\"Brain Computer Interface\", Mexico, Veracruz",
+  "location": "",
+  "invited": false,
+  "link": "https://www.uv.mx/",
+  "raw": "UV, \"Brain Computer Interface\", Mexico, Veracruz"
+ },
+ {
+  "year": 2011,
+  "venue": "ITT SIME 11",
+  "title": "\"3D Audio and 3D Video\"",
+  "location": "Mexico E.M.",
+  "invited": false,
+  "link": "http://www.ittoluca.edu.mx/",
+  "raw": "ITT SIME 11, \"3D Audio and 3D Video\", Mexico E.M."
+ },
+ {
+  "year": 2011,
+  "venue": "UIST 2011",
+  "title": "\"TouchMouse DJ Interface\"",
+  "location": "USA California",
+  "invited": false,
+  "link": "https://uist.acm.org/uist2011/",
+  "raw": "UIST 2011, \"TouchMouse DJ Interface\", USA California"
+ },
+ {
+  "year": 2011,
+  "venue": "ITT",
+  "title": "FLISOL 11, \"Abuntool\", Mexico, E.M.",
+  "location": "",
+  "invited": false,
+  "link": "https://flisol.info/",
+  "raw": "ITT, FLISOL 11, \"Abuntool\", Mexico, E.M."
+ },
+ {
+  "year": 2010,
+  "venue": "Campus Party",
+  "title": "\"Hacking for Something Better\"",
+  "location": "Mexico D.F",
+  "invited": false,
+  "link": "http://www.lineadirectaportal.com/modulos/imprimir.php?noticia=44898",
+  "raw": "Campus Party, \"Hacking for Something Better\", Mexico D.F"
+ }
+]

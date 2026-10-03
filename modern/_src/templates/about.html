@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">About</p>
+    <h1 class="page-title">About the lab</h1>
+    <p class="page-lead">The Human-AI Empowerment (HAIE) Lab was founded in August 2022 in the Human-Centered Computing Division of Clemson University's School of Computing. We study how artificial intelligence can help people achieve their goals — and how to design AI that people can understand, supervise and trust.</p>
+  </div>
+</section>
+
+<section class="section section--flush">
+  <div class="wrap mvv">
+    <div class="mvv-item"><span class="mvv-k">Mission</span><p>Understand how AI-powered tools can empower individuals and communities, and turn that understanding into systems that measurably expand people's opportunities.</p></div>
+    <div class="mvv-item"><span class="mvv-k">Vision</span><p>Identify the human factors that machines can learn from in order to help us achieve our goals — so that humans and AI empower each other through mutually beneficial goals.</p></div>
+    <div class="mvv-item"><span class="mvv-k">Empowerment</span><p>We define empowerment as the degree of autonomy and self-determination of people and communities. AI should help people become more self-sufficient, more confident in controlling their lives, and more able to influence the world around them.</p></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div class="prose prose--lead">
+      <h2>Our approach</h2>
+      <p>We take a <strong>human-centered</strong> approach to the design of AI: people are involved in every step of the workflow, from defining goals and producing data to evaluating outcomes. Our work is <strong>use-inspired</strong> — projects start from concrete settings where AI can provide value, from crowd work platforms and research laboratories to search-and-rescue teams and classrooms. And it aims at <strong>social good</strong>: technology designed to rebalance power, reduce friction and promote well-being.</p>
+      <p>We develop models and methods that let machines learn from humans while accounting for cognitive biases and preferences, and we optimize AI systems according to human feedback. We perform real-world experiments to test the feasibility of current technologies in the wild, explore their limitations, and define mitigation strategies to create accountable solutions.</p>
+      <p>The lab's framing is developed in the director's book {% set hb = books|selectattr('title', 'equalto', 'Human-AI Empowerment: An Interdisciplinary Perspective')|first %}<a href="{{ root }}{{ hb.url if hb else 'publications/' }}">Human-AI Empowerment: An Interdisciplinary Perspective</a> (CRC Press, 2025), which proposes methods for studying and optimizing AI's long-term impact on human empowerment, and extended to automation in <em>Human-Centered Automation</em> (CRC Press, 2026).</p>
+    </div>
+    <aside class="side-card">
+      <h3 class="side-h">Lab at a glance</h3>
+      <dl class="kv kv--stack">
+        <div><dt>Founded</dt><dd>{{ site.founded }}</dd></div>
+        <div><dt>Home</dt><dd>{{ site.department }} Division, {{ site.school }}, {{ site.university }}</dd></div>
+        <div><dt>Director</dt><dd><a href="{{ root }}people/carlos-toxtli/">Carlos Toxtli-Hernández</a></dd></div>
+        <div><dt>Publications</dt><dd>{{ stats.pubs }} since 2022</dd></div>
+        <div><dt>Active sponsored research</dt><dd>{{ stats.funding_compact }} ({{ stats.awards }} awards)</dd></div>
+        <div><dt>Contact</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd></div>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    {{ m.section_head("Milestones", "Our story so far", None, "news/", "All news", root) }}
+    <ol class="milestones">
+      {% for n in news|selectattr('pinned')|list|reverse %}
+      <li><time>{{ n.date_label }}</time><p>{{ n.html }}</p></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap explore-grid">
+    <a class="explore-card" href="{{ root }}collaborators/">{{ m.icon('globe') }}<h3>Collaborations</h3><p>Partners, co-authorship network and map.</p></a>
+    <a class="explore-card" href="{{ root }}funding/">{{ m.icon('money') }}<h3>Funding</h3><p>Sponsored research from NSF, NASA, Navy, Army and SRNL.</p></a>
+    <a class="explore-card" href="{{ root }}teaching/">{{ m.icon('grad') }}<h3>Teaching &amp; mentoring</h3><p>Courses, mentoring and committees.</p></a>
+    <a class="explore-card" href="{{ root }}talks/">{{ m.icon('spark') }}<h3>Talks &amp; service</h3><p>Invited talks and community leadership.</p></a>
+  </div>
+</section>
+
+<section class="section section--flush">
+  <div class="wrap visit">
+    <div>
+      <h2 class="group-h">Visit &amp; contact</h2>
+      <address class="visit-address">{% for line in site.address %}{{ line }}<br>{% endfor %}</address>
+      <p><a class="btn btn--primary" href="mailto:{{ site.email }}">{{ m.icon('mail') }} {{ site.email }}</a></p>
+    </div>
+    <div class="visit-art" aria-hidden="true">{{ m.logo_mark('logo-mark logo-mark--xl') }}</div>
+  </div>
+</section>
+{% endblock %}

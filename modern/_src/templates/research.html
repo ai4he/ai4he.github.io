@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Research</p>
+    <h1 class="page-title">How can AI empower people over the long term?</h1>
+    <p class="page-lead">We study empowerment as the degree of autonomy and self-determination that people and communities have — and ask how AI systems can expand it rather than erode it. Our work combines system building, controlled experiments, field deployments and participatory design across six research thrusts.</p>
+  </div>
+</section>
+
+<section class="section section--flush">
+  <div class="wrap">
+    <div class="approach-grid">
+      <div class="approach"><span class="approach-n">01</span><h3>Human-centered</h3><p>People are involved at every step of the AI pipeline — from defining goals and producing data to evaluating and correcting systems.</p></div>
+      <div class="approach"><span class="approach-n">02</span><h3>Use-inspired</h3><p>Projects start from concrete settings — crowd platforms, research labs, rescue teams, classrooms — where AI can provide measurable value.</p></div>
+      <div class="approach"><span class="approach-n">03</span><h3>Evaluated in the wild</h3><p>We test our tools with real users and field experiments, and release code and benchmarks so others can build on them.</p></div>
+      <div class="approach"><span class="approach-n">04</span><h3>Accountable</h3><p>We audit the limits of AI — calibration, fairness, ethical consistency — and design mitigation and oversight mechanisms.</p></div>
+    </div>
+  </div>
+</section>
+
+{% for a in areas %}
+<section class="section area-block tone-{{ a.color }}" id="{{ a.slug }}">
+  <div class="wrap area-row{% if loop.index is even %} area-row--flip{% endif %}">
+    <a class="area-media" href="{{ root }}{{ a.url }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ root }}{{ a.image_url }}" alt="" loading="lazy">
+      <span class="area-media-icon">{{ m.icon(a.icon) }}</span>
+    </a>
+    <div class="area-copy">
+      <p class="eyebrow eyebrow--tone">Thrust 0{{ loop.index }}</p>
+      <h2 class="section-title"><a href="{{ root }}{{ a.url }}">{{ a.name }}</a></h2>
+      <p class="section-lead">{{ a.summary }}</p>
+      <ul class="question-list">
+        {% for q in a.questions %}<li>{{ q }}</li>{% endfor %}
+      </ul>
+      <div class="area-facts">
+        <span><strong>{{ a.pubs|length }}</strong> publications</span>
+        <span><strong>{{ a.projects|length }}</strong> projects</span>
+        <span><strong>{{ a.people_list|length }}</strong> lab contributors</span>
+      </div>
+      <a class="btn btn--tone" href="{{ root }}{{ a.url }}">Explore {{ a.short }} {{ m.icon('arrow') }}</a>
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+<section class="section section--tint">
+  <div class="wrap">
+    {{ m.section_head("Open science", "Software, benchmarks and artifacts", "We release research code, benchmarks and systems alongside our papers.", "software/", "Browse software", root) }}
+  </div>
+</section>
+{% endblock %}

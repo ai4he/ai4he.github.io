@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set p = pub %}
+{% block head %}
+<meta name="citation_title" content="{{ p.title }}">
+{% for a in p.authors_list %}<meta name="citation_author" content="{{ a.name }}">
+{% endfor %}
+<meta name="citation_publication_date" content="{{ p.year }}{% if p.month %}/{{ '%02d'|format(p.month) }}{% endif %}">
+{% if p.type == 'journal' %}<meta name="citation_journal_title" content="{{ p.venue }}">{% elif p.type == 'book' %}<meta name="citation_publisher" content="{{ p.publisher }}">{% elif p.type == 'chapter' %}<meta name="citation_inbook_title" content="{{ p.venue }}">{% else %}<meta name="citation_conference_title" content="{{ p.venue }}">{% endif %}
+{% if p.doi %}<meta name="citation_doi" content="{{ p.doi }}">{% endif %}
+{% if p.isbn %}<meta name="citation_isbn" content="{{ p.isbn }}">{% endif %}
+{% if p.links.pdf %}<meta name="citation_pdf_url" content="{{ p.links.pdf }}">{% endif %}
+{% if p.abstract %}<meta name="citation_abstract" content="{{ p.abstract|truncate(1200) }}">{% endif %}
+<script type="application/ld+json">{{ {"@context":"https://schema.org","@type":"Book" if p.type == "book" else "ScholarlyArticle","headline":p.title,"name":p.title,"author":p.authors_list|map(attribute="name")|map("string")|list,"datePublished":p.year|string,"isPartOf":p.venue,"abstract":p.abstract or "","sameAs":("https://doi.org/" ~ p.doi) if p.doi else (p.primary_link or "")}|tojson }}</script>
+{% endblock %}
+{% block content %}
+<article class="paper">
+  <header class="paper-hero">
+    <div class="wrap paper-hero-inner">
+      <div>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ root }}publications/">Publications</a> <span>/</span> {{ p.year }}</nav>
+        <div class="pub-meta pub-meta--lg">
+          <span class="venue-badge">{{ p.venue_short }}</span>
+          <span class="track-badge">{{ p.type_label }}</span>
+          {% if p.track %}<span class="track-badge">{{ p.track }}</span>{% endif %}
+          {% if p.forthcoming %}<span class="status-badge">Forthcoming</span>{% endif %}
+        </div>
+        <h1 class="paper-title">{{ p.title }}</h1>
+        <p class="paper-authors">{{ m.authors(p, root) }}</p>
+        <p class="paper-venue">{{ p.venue }}{% if p.year %}, {{ p.year }}{% endif %}{% if p.pages %} · pp. {{ p.pages|replace('--', '–') }}{% endif %}</p>
+        <div class="link-row">
+          {% for label, href in p.link_list %}
+          <a class="btn {{ 'btn--primary' if loop.first else 'btn--ghost' }}" href="{{ href }}" target="_blank" rel="noopener">{{ m.icon({'PDF':'pdf','DOI':'doi','Code':'code'}.get(label, 'external')) }} {{ label }}</a>
+          {% endfor %}
+          <button class="btn btn--ghost" type="button" data-copy="#cite-text">{{ m.icon('quote') }} Copy citation</button>
+        </div>
+      </div>
+      <div class="paper-art{% if p.has_photo %} paper-art--book{% endif %}"><img src="{{ root }}{{ p.image_url }}" alt="{{ 'Cover of ' ~ p.title if p.has_photo else '' }}"></div>
+    </div>
+  </header>
+
+  <section class="section"><div class="wrap two-col">
+    <div>
+      {% if p.abstract %}
+      <section class="paper-section">
+        <h2 class="paper-h">Abstract</h2>
+        <p class="paper-abstract">{{ p.abstract }}</p>
+      </section>
+      {% endif %}
+      <section class="paper-section">
+        <h2 class="paper-h">Cite this work</h2>
+        <p class="cite-box" id="cite-text">{{ p.cite_text }}</p>
+        {% if p.bibtex %}
+        <div class="code-box"><button class="copy-btn" type="button" data-copy="#bibtex">{{ m.icon('copy') }} Copy BibTeX</button><pre id="bibtex">{{ p.bibtex }}</pre></div>
+        {% endif %}
+      </section>
+    </div>
+    <aside class="side-card">
+      {% if p.areas %}
+      <h3 class="side-h">Research thrusts</h3>
+      <div class="chip-row chip-row--wrap">{% for a in p.areas if a in area_by %}{{ m.area_chip(area_by[a], root) }}{% endfor %}</div>
+      {% endif %}
+      {% set lab = p.authors_list|selectattr('slug')|list %}
+      {% if lab %}
+      <h3 class="side-h">Lab authors</h3>
+      <ul class="mini-people">
+        {% for a in lab %}{% set person = people_by[a.slug] %}
+        <li><a href="{{ root }}{{ person.url }}">{{ m.avatar(person, root, 'xs') }}<span>{{ person.name }}<small>{{ person.title }}</small></span></a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% if p.projects %}
+      <h3 class="side-h">Project</h3>
+      <ul class="plain-list">{% for pr in p.projects %}<li><a href="{{ root }}{{ pr.url }}">{{ pr.title }}</a></li>{% endfor %}</ul>
+      {% endif %}
+      <h3 class="side-h">Details</h3>
+      <dl class="kv kv--stack">
+        <div><dt>Type</dt><dd>{{ p.type_label }}</dd></div>
+        <div><dt>Year</dt><dd>{{ p.year }}</dd></div>
+        {% if p.publisher %}<div><dt>Publisher</dt><dd>{{ p.publisher }}</dd></div>{% endif %}
+        {% if p.doi %}<div><dt>DOI</dt><dd><a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">{{ p.doi }}</a></dd></div>{% endif %}
+        {% if p.isbn %}<div><dt>ISBN</dt><dd>{{ p.isbn }}</dd></div>{% endif %}
+      </dl>
+    </aside>
+  </div></section>
+
+  {% if related %}
+  <section class="section section--tint">
+    <div class="wrap">
+      {{ m.section_head("Related", "Related publications", None, None, None, root) }}
+      <div class="card-grid card-grid--4">{% for q in related %}{{ m.pub_card(q, root) }}{% endfor %}</div>
+    </div>
+  </section>
+  {% endif %}
+</article>
+{% endblock %}

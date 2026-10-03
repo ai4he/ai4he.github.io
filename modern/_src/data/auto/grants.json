@@ -1,0 +1,50 @@
+[
+ {
+  "title": "Resilient Vehicle Network Security Architecture for Next-Generation Military Ground Vehicle",
+  "sponsor": "U.S. Army DEVCOM Ground Vehicle Systems Center (Clemson VIPR-GS)",
+  "amount": 499898,
+  "period": "2026"
+ },
+ {
+  "title": "CU-SRNL GSS: Physics-informed deep learning for water quantity and quality simulations across Savannah River Basin",
+  "sponsor": "Clemson University / Savannah River National Laboratory",
+  "amount": 75580,
+  "period": "2026"
+ },
+ {
+  "title": "FERMI-LLM: A Large Language Model for the Analysis of FERMI-LAT Data",
+  "sponsor": "NASA Fermi Guest Investigator Program",
+  "amount": 450000,
+  "period": "2025–2028"
+ },
+ {
+  "title": "SaTC 2.0: RES: Tracking the Usability of Secure Authentication Systems",
+  "sponsor": "National Science Foundation",
+  "amount": 650000,
+  "period": "2025–2028"
+ },
+ {
+  "title": "HCC: Small: Towards Leveraging Generative AI to Support End-User Driven Creative Workforces in Technology",
+  "sponsor": "National Science Foundation",
+  "amount": 599877,
+  "period": "2024–2027"
+ },
+ {
+  "title": "AIMing: Interactive Conjecture Proving",
+  "sponsor": "National Science Foundation",
+  "amount": 1198339,
+  "period": "2024–2027"
+ },
+ {
+  "title": "FW-HTF-RL: The Future of Aviation Inspection: Artificial Intelligence and Mixed Reality as Agents of Transformation",
+  "sponsor": "National Science Foundation",
+  "amount": 1558433,
+  "period": "2023–2027"
+ },
+ {
+  "title": "Human-Autonomy Teaming in Underwater Environments: Minimizing the Impact of Cognitive and Physical Limitations",
+  "sponsor": "Department of the Navy",
+  "amount": 1095901,
+  "period": "3-year award, starting 2023"
+ }
+]

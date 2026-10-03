@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Publications</p>
+    <h1 class="page-title">Publications</h1>
+    <p class="page-lead">{{ pubs|length }} publications since the lab's founding in August 2022 — books, journal articles, conference and workshop papers, posters and demos. Lab members are highlighted; every entry links to an abstract, BibTeX and the paper.</p>
+    <div class="pub-overview">
+      <figure class="chart-card">
+        <figcaption><strong>Publications per year</strong><span>Since the lab's founding in August 2022</span></figcaption>
+        {{ chart_years }}
+      </figure>
+      <div class="type-breakdown">
+        <p class="type-breakdown-h">By type</p>
+        <ul>
+          {% set tmax = type_counts|map(attribute=1)|max %}
+          {% for label, n, key in type_counts %}
+          <li><button type="button" data-set-type="{{ key }}"><span class="tb-label">{{ label }}</span><span class="tb-bar"><span style="width: {{ (n / tmax * 100)|round(1) }}%"></span></span><span class="tb-n">{{ n }}</span></button></li>
+          {% endfor %}
+        </ul>
+        <a class="text-link" href="{{ root }}publications.bib" download>{{ m.icon('quote') }} Download all BibTeX</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--flush" id="search">
+  <div class="wrap">
+    <div class="pub-toolbar" role="search">
+      <label class="search-box">{{ m.icon('search') }}<input id="pub-search" type="search" placeholder="Search titles, authors, venues, abstracts…" autocomplete="off" aria-label="Search publications"></label>
+      <select id="pub-year" aria-label="Year"><option value="">All years</option>{% for y in pub_years %}<option value="{{ y }}">{{ y }}</option>{% endfor %}</select>
+      <select id="pub-type" aria-label="Type"><option value="">All types</option>{% for label, n, key in type_counts %}<option value="{{ key }}">{{ label }} ({{ n }})</option>{% endfor %}</select>
+      <select id="pub-area" aria-label="Research thrust"><option value="">All thrusts</option>{% for a in areas %}<option value="{{ a.slug }}">{{ a.short }}</option>{% endfor %}</select>
+      <select id="pub-person" aria-label="Lab member"><option value="">All lab members</option>{% for p in members_with_pubs %}<option value="{{ p.slug }}">{{ p.name }} ({{ p.pubs|length }})</option>{% endfor %}</select>
+    </div>
+    <p class="pub-count" id="pub-count" aria-live="polite">Showing all {{ pubs|length }} publications</p>
+    <div class="pub-list" id="pub-list">
+      {% for y in pub_years %}
+      <div class="year-group" data-year-group="{{ y }}">
+        <h2 class="year-h"><span>{{ y }}</span></h2>
+        {% for p in pubs if p.year == y %}{{ m.pub_item(p, root) }}{% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    <p class="empty-state" id="pub-empty" hidden>No publications match these filters.</p>
+  </div>
+</section>
+{% endblock %}

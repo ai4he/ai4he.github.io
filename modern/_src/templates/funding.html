@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Funding</p>
+    <h1 class="page-title">Sponsored research</h1>
+    <p class="page-lead">The lab's research is supported by federal agencies and national laboratories. Below are the active awards on which lab director Carlos Toxtli-Hernández serves as Principal Investigator or Co-Principal Investigator.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <dl class="stat-band">
+    <div class="stat"><dt>Active awards (total value)</dt><dd>{{ stats.funding_compact }}</dd></div>
+    <div class="stat"><dt>Active awards</dt><dd>{{ external|length }}</dd></div>
+    <div class="stat"><dt>Led by the lab as PI</dt><dd>{{ stats.pi_total_compact }}</dd><span class="stat-note">NSF AIMing</span></div>
+    <div class="stat"><dt>Sponsors</dt><dd>{{ sponsors|length }}</dd><span class="stat-note">{{ sponsors|join(' · ') }}</span></div>
+  </dl>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <figure class="chart-card chart-card--wide">
+      <figcaption><strong>Award value by project</strong><span>Total award amount in USD; lab role shown beside each bar</span></figcaption>
+      {% set fmax = external|map(attribute='amount')|max %}
+      <ul class="hbar-chart" role="list">
+        {% for f in external|sort(attribute='amount', reverse=true) %}
+        <li class="hbar" data-tip="{{ f.title }} — {{ f.amount_fmt }} ({{ f.role }})" tabindex="0">
+          <span class="hbar-label"><span class="sponsor-tag">{{ f.sponsor_short }}</span>{% if f.project_obj %}<a href="{{ root }}{{ f.project_obj.url }}">{{ f.project_obj.title|truncate(46) }}</a>{% else %}{{ f.title|truncate(46) }}{% endif %}</span>
+          <span class="hbar-track"><span class="hbar-fill{% if f.role == 'PI' %} hbar-fill--pi{% endif %}" style="width: {{ (f.amount / fmax * 100)|round(1) }}%"></span><span class="hbar-value">{{ f.amount_compact }} · {{ f.role }}</span></span>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="chart-legend"><span class="key key--pi"></span>Lab director is PI <span class="key key--copi"></span>Lab director is Co-PI</p>
+    </figure>
+  </div>
+</section>
+
+<section class="section section--flush">
+  <div class="wrap">
+    <div class="grant-grid">
+      {% for f in funding %}
+      <article class="grant-card{% if f.role == 'PI' %} grant-card--pi{% endif %}">
+        <div class="grant-head">
+          <span class="sponsor-tag sponsor-tag--lg">{{ f.sponsor_short }}</span>
+          {% if f.role %}<span class="role-badge{% if f.role == 'PI' %} role-badge--pi{% endif %}">{{ f.role }}</span>{% endif %}
+        </div>
+        <h3 class="grant-title">{{ f.title }}</h3>
+        <p class="grant-summary">{{ f.summary }}</p>
+        <dl class="kv kv--grant">
+          <div><dt>Sponsor</dt><dd>{{ f.sponsor }}{% if f.program %}<br><span class="muted">{{ f.program }}</span>{% endif %}</dd></div>
+          {% if f.amount %}<div><dt>Award</dt><dd>{{ f.amount_fmt }}</dd></div>{% endif %}
+          {% if f.period %}<div><dt>Period</dt><dd>{{ f.period }}</dd></div>{% endif %}
+          {% if f.pi and f.role != 'PI' %}<div><dt>PI</dt><dd>{{ f.pi }}</dd></div>{% endif %}
+          {% if f.team %}<div><dt>Team</dt><dd>{{ f.team }}</dd></div>{% endif %}
+        </dl>
+        <div class="grant-links">
+          {% if f.project_obj %}<a class="text-link" href="{{ root }}{{ f.project_obj.url }}">Project page {{ m.icon('arrow') }}</a>{% endif %}
+          {% if f.url %}<a class="text-link" href="{{ f.url }}" target="_blank" rel="noopener">Award #{{ f.award_number }} {{ m.icon('external') }}</a>{% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="muted small acknowledge">Any opinions, findings, and conclusions or recommendations expressed in the lab's work are those of the authors and do not necessarily reflect the views of the sponsors.</p>
+  </div>
+</section>
+{% endblock %}

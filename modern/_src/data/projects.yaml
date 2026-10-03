@@ -1,0 +1,309 @@
+# ---------------------------------------------------------------------------
+# Projects
+# ---------------------------------------------------------------------------
+# Each project gets a page at projects/<slug>/.
+#   areas         research thrust slugs (research.yaml)
+#   people        lab member slugs (people.yaml)
+#   collaborators free text "Name (Affiliation)"
+#   funding       funding slugs (funding.yaml)
+#   papers        list of title fragments; every publication whose title
+#                 contains one of them (case-insensitive) is listed
+#   links         label -> URL (Code, Demo, Dataset, Video, ...)
+#   image         optional teaser image in assets/img/projects/ (else generated art)
+#   stats         up to 4 headline numbers [value, label]
+# ---------------------------------------------------------------------------
+
+- slug: aiming
+  title: "AIMing: Interactive Conjecture Proving"
+  short: Human–AI collaboration for research-level mathematics.
+  status: active
+  years: "2024–2027"
+  featured: true
+  areas: [ai-for-science, trustworthy-ai]
+  people: [carlos-toxtli, austin-lahue, fateme-mazdarani]
+  collaborators:
+    - "Luis David Garcia Puente (Colorado College)"
+    - "Michael Burr (Clemson University)"
+    - "Vinita Gangaram Jansari (Clemson University)"
+  funding: [nsf-aiming]
+  stats:
+    - ["1.7M", "proof-state / premise pairs in NaturalPRISM"]
+    - ["793", "conjectures generated in our context ablation"]
+    - ["$1.2M", "NSF award led by the lab"]
+  description: |
+    Mathematicians increasingly ask language models for help, but a model is only useful if it is given the right context and reasons consistently. AIMing, funded by the National Science Foundation and led by the HAIE Lab, studies interactive conjecture proving: how humans and AI can work together to propose, retrieve and verify mathematical results.
+
+    The project contributes benchmarks and empirical studies. NaturalPRISM is a premise-retrieval task with 1.7 million pairs of intermediate proof states and the premise used in the next step, extracted from arXiv papers across all 32 mathematics categories. A paired ablation over 61 theorems shows which kinds of mathematical context — definitions, objects, assumptions, constructions — let a model recover the result a paper actually proves. TREAT and related studies test whether models recognize known theorems and reconstruct procedural routes when the same mathematics is written in equivalent forms, and whether LLM judges can verify valid but non-canonical solution steps.
+  papers:
+    - "NaturalPRISM"
+    - "Which Mathematical Context Supports"
+    - "From Recognition to Reconstruction"
+    - "TREAT: Evaluating Access"
+    - "Beyond the Answer Key"
+  links:
+    Code: https://github.com/ai4he/AIMing
+    NSF award: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2434704
+
+- slug: supervisory-ai
+  title: Supervisory Control for LLMs and Autonomous Agents
+  short: Grounding AI oversight in the science of human supervisory control.
+  status: active
+  years: "2023–present"
+  featured: true
+  areas: [human-centered-automation, trustworthy-ai]
+  people: [carlos-toxtli, wangfan-li, athish-venkatachalam, jackson-bowen, claire-gendron, sofia-campos-hernandez]
+  stats:
+    - ["23,256", "revision plans scored in RevPlan-Bench"]
+    - ["10", "venue-years of real peer reviews analyzed"]
+  description: |
+    As LLMs revise documents, operate computers and execute workflows, users need principled ways to plan, monitor and intervene. This line of work, led by Ph.D. student Wangfan Li, imports Supervisory Control Theory — developed to describe how humans oversee automated systems — into the design of LLM prompting and agent interfaces.
+
+    Prompt-Level Supervisory Alignment (PLSA) structures LLM revision as planning, monitoring and intervention, producing revisions with higher fidelity to real author revisions across ICLR, NeurIPS and CoRL review cycles (ACM CAIS 2026), and extends to anticipating concerns raised in later review rounds with RevPlan-Bench (HFES 2026). Earlier systems include a sandboxed virtual machine for human oversight of autonomous task execution (IEEE CAI 2025, ACM CHIWORK 2024), ReActIn for infusing human feedback into intermediate reasoning steps, LLM-generated BPMN workflows for robotic process automation, Requirement Bot for human–AI co-authoring of software requirements (ACM SAC 2026), and micro-ethics nudges that reduce unfair models in no-code ML tools.
+  papers:
+    - "Supervisory Control Theory for LLM Revision"
+    - "Prompt-Level Supervisory Alignment"
+    - "Requirement Bot"
+    - "Human Oversight Over Autonomous Task Execution"
+    - "Human Oversight Mechanisms over Autonomous Task Execution"
+    - "Automating Automation"
+    - "Infusing Human Feedback"
+    - "ReActIn"
+    - "Eliciting Fairness via Micro-Ethics"
+    - "Assessing AI-Generated Workflows"
+    - "Conceptual Framework for Autonomous Cognitive Entities"
+
+- slug: metacognitive-ai
+  title: Metacognition, Calibration and Trust in Language Models
+  short: Do language models know what they know — and should we believe them?
+  status: active
+  years: "2023–present"
+  featured: true
+  areas: [trustworthy-ai, human-centered-automation]
+  people: [carlos-toxtli, manuel-delaflor, cecilia-delgado-solorzano]
+  collaborators:
+    - "Metacognition Institute (U.K.)"
+  stats:
+    - ["24", "LLMs audited for ethical consistency"]
+    - ["25,200", "queries in our perturbation study"]
+    - ["6", "LLMs tested for sycophantic metacognition"]
+  description: |
+    In partnership with the Metacognition Institute, the lab investigates the gap between how language models present their reasoning and how they actually behave. We introduced *sycophantic metacognition*: confidence reports that track the surface form of authority rather than accuracy, tested across six LLMs, four domains and multiple pressure conditions (ACM CUI 2026). A companion perspective explains why users nonetheless attribute understanding and even consciousness to these systems (Frontiers in Psychology, 2026).
+
+    The project also audits LLM ethical consistency under perturbation (25,200 queries across 24 models), syllogistic reasoning and fact-checking against human participants, errors in the MMLU benchmark detected by frontier-model consensus, readable qualification tests for model workers (HCOMP 2026), portrayals of neurodivergent people (AIES 2026), and the behavior of multi-agent LLM groups in classic hidden-profile decision tasks. On the design side, Belief Explorer uses Socratic dialogue and multi-perspective analysis to help people examine their own beliefs (CHI 2026).
+  papers:
+    - "Sycophantic Metacognition"
+    - "AI Consciousness? Attribution"
+    - "Can We Trust Them"
+    - "Assessing the Syllogistic Logic"
+    - "Automatic Detection of Errors in LLM"
+    - "Qualification by Calibration"
+    - "Auditing LLM Portrayals"
+    - "Hidden Profile Decision Making"
+    - "Personality-Profiled Virtual Agents"
+    - "Belief Explorer"
+    - "Multi-Perspective AI Framework for Mitigating Disinformation"
+    - "Self-Instantiated, Temporally Continuous"
+    - "Resonant Attractor Networks"
+    - "LLM-Judge Behavioral Coding Scheme"
+  links:
+    "Code: Sycophantic Metacognition": https://github.com/ai4he/kruger
+    "Code: Qualification by Calibration": https://github.com/ai4he/qualification-by-calibration
+    "Code: Belief Explorer": https://github.com/ai4he/belief-explorer
+
+- slug: worker-centered-ai
+  title: Worker-Centered AI for Crowd Work
+  short: Transparent, culturally aware tools that empower digital workers.
+  status: active
+  years: "2022–present"
+  featured: true
+  areas: [future-of-work, inclusive-ai]
+  people: [carlos-toxtli, fateme-mazdarani, alberto-campos-hernandez, cecilia-delgado-solorzano]
+  collaborators:
+    - "Saiph Savage (Northeastern University)"
+    - "Christopher Curtis (Northeastern University)"
+  stats:
+    - ["55", "workers from 24 countries in the CultureFit field experiment"]
+    - ["40", "participants in the transparent recommendation study"]
+  description: |
+    Crowd work powers machine learning, content moderation and scientific discovery, yet workers face opaque algorithms and interfaces designed for a single culture and language. This project designs AI that works on behalf of workers.
+
+    CultureFit adapts the workplace to monochronic and polychronic work styles; in a field experiment with 55 workers from 24 countries it improved the earnings of workers from cultural backgrounds often overlooked in design (ACM CSCW 2024). A simulated crowd platform showed that transparent, explained task recommendations raise perceived fairness, trust, empowerment and usability without changing the underlying algorithm (IEEE CAI 2026). We study how AI language tools help workers who complete tasks outside their primary language, synthesize the evidence on AI's impact on crowdwork into a multidimensional empowerment framework, and examine power imbalances on digital labor platforms.
+  papers:
+    - "Culturally-Aware AI Tool for Crowdworkers"
+    - "Worker-Centered AI"
+    - "Empowering the Crowd"
+    - "AI-powered Language Tools in Crowdsourcing"
+    - "Designing AI Tools to Address Power Imbalances"
+  links:
+    "Code: CultureFit": https://github.com/ai4he/toloka-cultural-assistant
+
+- slug: underwater-hat
+  title: Human–Autonomy Teaming in Underwater Environments
+  short: Autonomous teammates for underwater search and rescue.
+  status: active
+  years: "2023–present"
+  featured: true
+  areas: [human-autonomy-teaming]
+  people: [carlos-toxtli, cecilia-delgado-solorzano]
+  collaborators:
+    - "Nathan McNeese (Clemson University)"
+    - "Christopher Flathmann (Clemson University)"
+    - "Kapil Chalil Madathil (Clemson University)"
+    - "Anand Gramopadhye (Clemson University)"
+    - "Jeff Bertrand (Clemson University)"
+    - "Chase Guynup (Clemson University)"
+  funding: [navy-underwater-hat]
+  stats:
+    - ["17", "search-and-rescue professionals interviewed"]
+    - ["20", "hazardous-environment team interviews"]
+    - ["3", "visibility levels in our underwater vision benchmark"]
+  description: |
+    Underwater search and rescue combines extreme physical demands, poor visibility and high stakes. Funded by the U.S. Department of the Navy, this interdisciplinary project develops human–autonomy teams in which autonomous systems relieve the cognitive and physical limitations of human divers — and humans compensate for the limitations of autonomy.
+
+    Qualitative studies with search-and-rescue professionals and hazardous-environment teams identify where autonomous teammates are needed and how tasks should be delineated (HFES 2025, IEEE CogSIMA 2026). Led by Ph.D. student Cecilia Delgado Solorzano, the lab compared a specialized open-vocabulary detector (YOLO-World) with a multimodal vision-language model (Gemini 2.5 Pro) for object presence detection across low, medium and high visibility in a synthetic underwater simulator, showing when each paradigm should be deployed (ICECET 2026).
+  papers:
+    - "Automating Underwater Search and Rescue"
+    - "Working in a Heartbeat"
+    - "Expanding the Roster"
+
+- slug: fermi-llm
+  title: "FERMI-LLM: Language Models for Gamma-Ray Astrophysics"
+  short: From a plain-English request to a verified Fermi-LAT analysis.
+  status: active
+  years: "2025–2028"
+  featured: true
+  areas: [ai-for-science, human-centered-automation]
+  people: [carlos-toxtli, weber-whelan]
+  collaborators:
+    - "Marco Ajello (Clemson University, Physics and Astronomy)"
+  funding: [nasa-fermi-llm, cu-fellows-postdoc]
+  description: |
+    Analyzing data from NASA's Fermi Large Area Telescope requires expert knowledge of specialized tools. Funded by NASA's Fermi Guest Investigator Program, FERMI-LLM builds a language-model platform that turns a plain-English request into a real Fermi-LAT analysis: it writes the FermiPy configuration and Python driver, checks them against guardrails, runs exactly what the scientist approves, and shows every step of the result.
+
+    The platform is designed to be extended by the community — models, rules, validators, data sources and export formats are modules that can be added or replaced. Undergraduate researcher Weber Whelan built an LLM service for Fermi-LAT analysis as a departmental honors thesis (2026), and a Clemson-funded postdoctoral position in AI-enhanced computational astrophysics complements the project.
+  papers: []
+  links:
+    Code: https://github.com/ai4he/fermi-llm-int
+
+- slug: ai-mediated-language
+  title: AI-Mediated Language and Communication
+  short: Personal AI assistants for second-language speakers and learners.
+  status: active
+  years: "2023–present"
+  areas: [inclusive-ai]
+  people: [carlos-toxtli, cecilia-delgado-solorzano, pratyush-singh]
+  stats:
+    - ["14", "bilingual adults in our participatory design sessions"]
+  description: |
+    Second-language speakers navigate work, school and daily life in a language that is not their own. Led by Ph.D. student Cecilia Delgado Solorzano, this project uses participatory design to understand how AI should mediate their communication.
+
+    Participatory sessions with bilingual adults surfaced three candidate mediation patterns — solo, symmetric and relayed assistance — and design considerations such as reply-when-free defaults and role-based privacy profiles for personal AI assistants (CHI 2026). Co-design with advanced learners produced an AI fluency app that exposes users to diverse native and non-native accents (IEEE CAI 2025). Related studies examine structured prompting architectures that support paraphrasing, grammar guidance and conversation practice from a single design, LLM support for students' information seeking (LibRef), and machine perceptions of indigeneity.
+  papers:
+    - "AI-Mediated Second Language Communication"
+    - "AI for Becoming Fluent"
+    - "Expanding the Horizon of Learning Applications"
+    - "LLM-Powered Student Query Support"
+    - "Evaluating Machine Perception of Indigeneity"
+    - "Relevance of Large Language Models in Latin American Education"
+  links:
+    "Code: PAIA Builder": https://github.com/ai4he/paia_builder
+
+- slug: workplace-assistants
+  title: AI Assistants and Self-Quantification at Work
+  short: Privacy-preserving activity sensing and LLM coaching for knowledge workers.
+  status: completed
+  years: "2023–2024"
+  areas: [future-of-work, human-centered-automation]
+  people: [carlos-toxtli, ravindu-perera, wangfan-li, claire-gendron, cecilia-delgado-solorzano, alberto-campos-hernandez, victor-rios-munoz, matthew-rogers, adithya-ravi]
+  description: |
+    Knowledge workers want to understand how they spend their time, but most tracking tools are not goal-oriented and keep raw data from users and researchers. This project built a family of research frameworks for studying AI assistance in the workplace.
+
+    Wellbot tracks computer activity, distinguishes goal-oriented from recreational time and generates LLM-aided recommendations toward users' goals (MexIHC 2024). SmartMonitor passes a computer's HDMI signal through an edge device that analyzes activity on-device and sends only logs to an LLM for feedback, protecting privacy and reducing load on the user's machine. VirtuaScreens explores AI-enhanced arrangements of virtual monitors in extended-reality workspaces, and a companion study assessed the task decomposition, scheduling, delegation and execution capabilities of LLM-powered agents. Four of these systems were presented as demos at ACM CHIWORK 2024.
+  papers:
+    - "AI Assistants in the Workplace"
+    - "SmartMonitor"
+    - "Multi-Screen Interaction in Extended Reality"
+    - "Task Management Capabilities of LLM-Powered Agents"
+    - "Leveraging Artificial Intelligence to Promote Awareness in Augmented Reality"
+  links:
+    "Code: SmartMonitor": https://github.com/ai4he/Hardware_Application
+    "Code: VirtuaScreens": https://github.com/ai4he/VirtuaScreens
+
+- slug: water-ai
+  title: AI for Water and Agriculture
+  short: Physics-informed and reinforcement learning for irrigation and floods.
+  status: active
+  years: "2024–present"
+  areas: [ai-for-science]
+  people: [carlos-toxtli, krishna-panthi, sai-praneeth-dulam]
+  collaborators:
+    - "Vidya Samadi (Clemson University)"
+    - "David Werth (Savannah River National Laboratory)"
+  funding: [srnl-water]
+  description: |
+    Cotton irrigation in the southeastern United States draws heavily on freshwater, and current scheduling relies on sensors and grower experience. With Dr. Vidya Samadi's hydroinformatics group, the lab develops learning systems that account for soil, weather and crop growth stage.
+
+    M.S. student Krishna Panthi coupled the 1-D Richards equation with FAO AquaCrop to model soil-water dynamics, validated against field data (Irrigation and Drainage, 2026), and used the crop model as an environment for deep reinforcement learning of irrigation strategies. Related work applies convolutional and transformer vision models to images from USGS river cameras for flood monitoring, and a Savannah River National Laboratory award supports physics-informed deep learning for water quantity and quality across the Savannah River Basin.
+  papers:
+    - "Coupled AquaCrop"
+    - "Optimizing Irrigation"
+    - "Flood Image Processing"
+
+- slug: secure-authentication
+  title: Usable Secure Authentication
+  short: Making secure authentication usable in everyday life.
+  status: active
+  years: "2025–2028"
+  areas: [inclusive-ai, trustworthy-ai]
+  people: [carlos-toxtli, christopher-kalahiki]
+  collaborators:
+    - "Kelly Caine (Clemson University)"
+    - "Catherine Barwulor (Clemson University)"
+  funding: [nsf-saTC-authentication]
+  description: |
+    Secure authentication only protects people if they can use it. Funded by the NSF Secure and Trustworthy Cyberspace program and led by Dr. Kelly Caine, this project tracks the usability of secure authentication systems. Ph.D. student Christopher Kalahiki contributes to the project, which produced a study of authentication routines among college students presented at HFES ASPIRE 2026.
+  papers:
+    - "Authentication Routines Among College Students"
+
+- slug: aviation-inspection
+  title: "The Future of Aviation Inspection: AI and Mixed Reality"
+  short: AI and mixed reality as agents of transformation for inspectors.
+  status: active
+  years: "2023–2027"
+  areas: [human-autonomy-teaming, future-of-work]
+  people: [carlos-toxtli]
+  collaborators:
+    - "Anand Gramopadhye (Clemson University)"
+  funding: [nsf-aviation-inspection]
+  description: |
+    Part of NSF's Future of Work at the Human-Technology Frontier program, this collaborative project, led by Dr. Anand Gramopadhye, investigates how artificial intelligence and mixed reality can transform the work of aviation maintenance inspectors. The HAIE Lab contributes expertise in human-centered AI and the future of work.
+  papers: []
+
+- slug: creative-workforces
+  title: Generative AI for Creative Workforces
+  short: Supporting end-user driven creative work in technology.
+  status: active
+  years: "2024–2027"
+  areas: [future-of-work, human-centered-automation]
+  people: [carlos-toxtli]
+  collaborators:
+    - "Guo Freeman (Clemson University)"
+  funding: [nsf-creative-workforces]
+  description: |
+    Funded by the NSF Human-Centered Computing program and led by Dr. Guo Freeman, this project investigates how generative AI can support end-user driven creative workforces in technology. The HAIE Lab contributes its research on human-centered automation and human–AI collaboration.
+  papers: []
+
+- slug: vehicle-security
+  title: Resilient Vehicle Network Security
+  short: Security architecture for next-generation military ground vehicles.
+  status: active
+  years: "2026–present"
+  areas: [human-autonomy-teaming, trustworthy-ai]
+  people: [carlos-toxtli]
+  collaborators:
+    - "Pierluigi Pisu (Clemson University)"
+    - "James Jones (George Mason University)"
+  funding: [army-vehicle-security]
+  description: |
+    Through Clemson's Virtual Prototyping of Ground Systems (VIPR-GS) center, funded by the U.S. Army DEVCOM Ground Vehicle Systems Center, this project led by Dr. Pierluigi Pisu develops a resilient network security architecture for next-generation military ground vehicles.
+  papers: []

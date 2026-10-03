@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Worker-Centered AI for Crowd Work · HAIE Lab</title>
+<meta name="description" content="Transparent, culturally aware tools that empower digital workers.">
+<link rel="canonical" href="https://haielab.org/modern/projects/worker-centered-ai/">
+<meta name="theme-color" content="#0d1424">
+<meta property="og:site_name" content="Human-AI Empowerment Lab">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Worker-Centered AI for Crowd Work">
+<meta property="og:description" content="Transparent, culturally aware tools that empower digital workers.">
+<meta property="og:url" content="https://haielab.org/modern/projects/worker-centered-ai/">
+<meta property="og:image" content="https://haielab.org/modern/assets/img/gen/project-worker-centered-ai.svg"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../assets/img/brand/favicon.png">
+<link rel="apple-touch-icon" href="../../assets/img/brand/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Human-AI Empowerment Lab news" href="../../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css?v=559ad714a3">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("haie-theme");
+      if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body class="page-projects">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="../../" aria-label="Human-AI Empowerment Lab home">
+      <svg class="logo-mark" viewBox="0 0 100 76" aria-hidden="true">
+  <rect x="40" y="2" width="22" height="22" rx="6" fill="#2CCBF9"/>
+  <rect x="66" y="9" width="18" height="18" rx="5" fill="#F2B30C"/>
+  <rect x="14" y="13" width="14" height="14" rx="4" fill="#F9604F"/>
+  <rect x="88" y="18" width="10" height="10" rx="3" fill="#6119F9"/>
+  <rect x="1" y="33" width="17" height="17" rx="5" fill="#F2B30C"/>
+  <rect x="22" y="29" width="24" height="24" rx="6.5" fill="#6119F9"/>
+  <rect x="50" y="33" width="15" height="15" rx="4" fill="#0A6BF9"/>
+  <rect x="70" y="33" width="9" height="9" rx="2.5" fill="#E2323F"/>
+  <rect x="83" y="32" width="15" height="15" rx="4" fill="#2CCBF9"/>
+  <rect x="9" y="56" width="9" height="9" rx="2.5" fill="#F9604F"/>
+  <rect x="23" y="58" width="16" height="16" rx="4.5" fill="#2CCBF9"/>
+</svg>
+      <span class="brand-text">
+        <span class="brand-name">Human-AI Empowerment Lab</span>
+        <span class="brand-short">HAIE Lab</span>
+        <span class="brand-sub">Clemson University · School of Computing</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="../../research/">Research</a></li>
+        <li><a href="../../projects/" aria-current="page">Projects</a></li>
+        <li><a href="../../publications/">Publications</a></li>
+        <li><a href="../../people/">People</a></li>
+        <li><a href="../../funding/">Funding</a></li>
+        <li><a href="../../news/">News</a></li>
+        <li><a href="../../join/">Join</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <a class="icon-btn" href="../../publications/#search" aria-label="Search publications"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></a>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg><svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="project-hero">
+  <img class="project-hero-art" src="../../assets/img/gen/project-worker-centered-ai.svg" alt="" aria-hidden="true">
+  <div class="wrap project-hero-inner">
+    <nav class="crumbs crumbs--light" aria-label="Breadcrumb"><a href="../../projects/">Projects</a> <span>/</span> Worker-Centered AI for Crowd Work</nav>
+    <div class="chip-row"><a class="chip tone-cyan" href="../../research/future-of-work/"><span class="chip-dot"></span>Future of Work</a><a class="chip tone-green" href="../../research/inclusive-ai/"><span class="chip-dot"></span>Inclusive AI</a><span class="status-pill status-pill--active">Active · 2022–present</span></div>
+    <h1 class="page-title page-title--light">Worker-Centered AI for Crowd Work</h1>
+    <p class="page-lead page-lead--light">Transparent, culturally aware tools that empower digital workers.</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <dl class="stat-band stat-band--project">
+<div class="stat"><dd>55</dd><dt>workers from 24 countries in the CultureFit field experiment</dt></div><div class="stat"><dd>40</dd><dt>participants in the transparent recommendation study</dt></div>  </dl>
+</div>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div>
+      <div class="prose prose--lead"><p>Crowd work powers machine learning, content moderation and scientific discovery, yet workers face opaque algorithms and interfaces designed for a single culture and language. This project designs AI that works on behalf of workers.</p>
+<p>CultureFit adapts the workplace to monochronic and polychronic work styles; in a field experiment with 55 workers from 24 countries it improved the earnings of workers from cultural backgrounds often overlooked in design (ACM CSCW 2024). A simulated crowd platform showed that transparent, explained task recommendations raise perceived fairness, trust, empowerment and usability without changing the underlying algorithm (IEEE CAI 2026). We study how AI language tools help workers who complete tasks outside their primary language, synthesize the evidence on AI's impact on crowdwork into a multidimensional empowerment framework, and examine power imbalances on digital labor platforms.</p></div>
+      <div class="link-row">
+        <a class="btn btn--ghost" href="https://github.com/ai4he/toloka-cultural-assistant" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 8-5 4 5 4M16 8l5 4-5 4M13.5 5l-3 14"/></svg> Code: CultureFit</a>
+      </div>
+    </div>
+    <aside class="side-card">
+      <h3 class="side-h">Lab team</h3>
+      <ul class="mini-people">
+        <li><a href="../../people/carlos-toxtli/"><img class="avatar avatar--xs" src="../../assets/img/people/carlos-toxtli.jpg" alt="Carlos Toxtli-Hernández" loading="lazy" width="240" height="240">
+<span>Carlos Toxtli-Hernández<small>Assistant Professor of Human-Centered Computing · Lab Director</small></span></a></li>
+        <li><a href="../../people/fateme-mazdarani/"><span class="avatar avatar--xs avatar--initials" aria-hidden="true"><span>FM</span></span>
+<span>Fateme Mazdarani<small>Ph.D. Student, Computer Science</small></span></a></li>
+        <li><a href="../../people/alberto-campos-hernandez/"><img class="avatar avatar--xs" src="../../assets/img/people/alberto-campos-hernandez.jpg" alt="Alberto Campos Hernández" loading="lazy" width="240" height="240">
+<span>Alberto Campos Hernández<small>Researcher</small></span></a></li>
+        <li><a href="../../people/cecilia-delgado-solorzano/"><img class="avatar avatar--xs" src="../../assets/img/people/cecilia-delgado-solorzano.jpg" alt="Cecilia Delgado Solorzano" loading="lazy" width="240" height="240">
+<span>Cecilia Delgado Solorzano<small>Ph.D. Student, Human-Centered Computing</small></span></a></li>
+      </ul>
+      <h3 class="side-h">Collaborators</h3>
+      <ul class="plain-list"><li>Saiph Savage (Northeastern University)</li><li>Christopher Curtis (Northeastern University)</li></ul>
+    </aside>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section-head">
+  <div>
+<p class="eyebrow">Output</p>    <h2 class="section-title">Publications</h2>
+  </div>
+</div>
+    <div class="pub-list">
+<article class="pub" id="2026-worker-centered-ai-transparent-explanations-for-trustworthy"
+  data-year="2026" data-type="conference" data-areas="future-of-work"
+  data-people="fateme-mazdarani alberto-campos-hernandez carlos-toxtli "
+  data-search="worker-centered ai: transparent explanations for trustworthy task recommendation in crowd work fateme mazdarani alberto campos hernández carlos toxtli-hernández 2026 ieee conference on artificial intelligence (cai) ieee cai 2026 task recommendation algorithms in crowd work platforms can erode worker autonomy through strategies such as amplifying the visibility of undesirable or low-paying jobs to meet client demand. we explore whether transparency can shift these systems toward worker-centered values. we built a simulated crowd work platform comparing an opaque baseline interface against a transparent variant with explained recommendations and navigation cues. in a within-subjects lab study capturing an initial thirty-minute interaction (n=40), participants rated the transparent system substantially higher on fairness, trust, empowerment, and usability. behaviorally, transparency supported more strategic task evaluation and increased recommendation alignment. our results suggest that transparency, even in the form of lightweight disclosure, can improve trust and experience without altering the underlying algorithm. therefore, we discuss design implications for worker-centered systems, including explanation scope and deployment trade-offs, while acknowledging that durable empowerment requires pairing transparency with meaningful agency and field validation under real economic constraints.">
+  <a class="pub-thumb" href="../../publications/2026-worker-centered-ai-transparent-explanations-for-trustworthy/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2026-worker-centered-ai-transparent-explanations-for-trustworthy.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">IEEE CAI 2026</span>
+    </div>
+    <h3 class="pub-title"><a href="../../publications/2026-worker-centered-ai-transparent-explanations-for-trustworthy/">Worker-Centered AI: Transparent Explanations for Trustworthy Task Recommendation in Crowd Work</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab" href="../../people/fateme-mazdarani/">Fateme Mazdarani</a>, <a class="author author--lab" href="../../people/alberto-campos-hernandez/">Alberto Campos Hernández</a>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2026-worker-centered-ai-transparent-explanations-for-trustworthy" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2026-worker-centered-ai-transparent-explanations-for-trustworthy" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.1109/cai68641.2026.11536153" target="_blank" rel="noopener">DOI</a>
+      <a class="pill-link" href="https://ieeexplore.ieee.org/abstract/document/11536153" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-cyan" title="Future of Work &amp; Worker-Centered AI"></span>    </div>
+<div class="pub-panel" id="abs-2026-worker-centered-ai-transparent-explanations-for-trustworthy" hidden><p>Task recommendation algorithms in crowd work platforms can erode worker autonomy through strategies such as amplifying the visibility of undesirable or low-paying jobs to meet client demand. We explore whether transparency can shift these systems toward worker-centered values. We built a simulated crowd work platform comparing an opaque Baseline interface against a Transparent variant with explained recommendations and navigation cues. In a within-subjects lab study capturing an initial thirty-minute interaction (n=40), participants rated the transparent system substantially higher on fairness, trust, empowerment, and usability. Behaviorally, transparency supported more strategic task evaluation and increased recommendation alignment. Our results suggest that transparency, even in the form of lightweight disclosure, can improve trust and experience without altering the underlying algorithm. Therefore, we discuss design implications for worker-centered systems, including explanation scope and deployment trade-offs, while acknowledging that durable empowerment requires pairing transparency with meaningful agency and field validation under real economic constraints.</p></div><div class="pub-panel pub-panel--code" id="bib-2026-worker-centered-ai-transparent-explanations-for-trustworthy" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2026-worker-centered-ai-transparent-explanations-for-trustworthy"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2026-worker-centered-ai-transparent-explanations-for-trustworthy">@inproceedings{Mazdarani2026Worker,
+  title = {Worker-Centered AI: Transparent Explanations for Trustworthy Task Recommendation in Crowd Work},
+  url = {http://dx.doi.org/10.1109/CAI68641.2026.11536153},
+  doi = {10.1109/cai68641.2026.11536153},
+  booktitle = {2026 IEEE Conference on Artificial Intelligence (CAI)},
+  publisher = {IEEE},
+  author = {Mazdarani, Fateme and Hernandez, Alberto Campos and Toxtli, Carlos},
+  year = {2026},
+  month = May,
+  pages = {295--302}
+}</pre></div>  </div>
+</article><article class="pub" id="2026-empowering-the-crowd-measuring-the-impact-of-ai-driven"
+  data-year="2026" data-type="chapter" data-areas="future-of-work"
+  data-people="carlos-toxtli cecilia-delgado-solorzano "
+  data-search="empowering the crowd: measuring the impact of ai-driven tools on crowdwork carlos toxtli-hernández cecilia delgado solorzano crowdsourcing - innovations in digital collaboration intechopen 2026 crowdsourcing platforms employ millions of workers worldwide to complete microtasks that fuel machine-learning pipelines, moderate user-generated content, and accelerate scientific discovery. the rapid ascent of large language models and other foundation models has shifted research attention from automation instead of humans to augmentation alongside humans. this chapter addresses a central challenge in this new landscape: understanding how, how much, and for whom ai-driven tools truly empower crowdworkers. we synthesize insights from a diverse body of empirical studies – spanning randomized lab experiments, field a/b tests, trace-log meta-analyses, and qualitative user studies – to evaluate the impact of ai on crowdwork. to structure this analysis, we introduce a multidimensional empowerment framework grounded in psychological and economic theory, focusing on five key dimensions: productivity and earnings, quality and reliability, learning and skill development, agency and autonomy, and well-being and inclusion. our review of the evidence reveals a dual-edged reality: while ai assistance offers significant productivity gains, error reductions, and improvements in worker self-efficacy, it also introduces substantial risks, including automation bias, cultural exclusion, wage depression, and unequal access to tools. by distilling these findings, we formulate eight concrete design principles for creating more equitable and effective human–ai augmentation systems. the chapter concludes by outlining a forward-looking research agenda that treats crowdworkers not as replaceable cogs but as essential partners in designing the future of socio-technical systems.">
+  <a class="pub-thumb" href="../../publications/2026-empowering-the-crowd-measuring-the-impact-of-ai-driven/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2026-empowering-the-crowd-measuring-the-impact-of-ai-driven.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">IntechOpen 2026</span>
+<span class="track-badge">Book chapter</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2026-empowering-the-crowd-measuring-the-impact-of-ai-driven/">Empowering the Crowd: Measuring the Impact of AI-Driven Tools on Crowdwork</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a>, <a class="author author--lab" href="../../people/cecilia-delgado-solorzano/">Cecilia Delgado Solorzano</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2026-empowering-the-crowd-measuring-the-impact-of-ai-driven" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2026-empowering-the-crowd-measuring-the-impact-of-ai-driven" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.5772/intechopen.1014000" target="_blank" rel="noopener">DOI</a>
+      <a class="pill-link" href="https://www.intechopen.com/online-first/1228179" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-cyan" title="Future of Work &amp; Worker-Centered AI"></span>    </div>
+<div class="pub-panel" id="abs-2026-empowering-the-crowd-measuring-the-impact-of-ai-driven" hidden><p>Crowdsourcing platforms employ millions of workers worldwide to complete microtasks that fuel machine-learning pipelines, moderate user-generated content, and accelerate scientific discovery. The rapid ascent of large language models and other foundation models has shifted research attention from automation instead of humans to augmentation alongside humans. This chapter addresses a central challenge in this new landscape: understanding how, how much, and for whom AI-driven tools truly empower crowdworkers. We synthesize insights from a diverse body of empirical studies – spanning randomized lab experiments, field A/B tests, trace-log meta-analyses, and qualitative user studies – to evaluate the impact of AI on crowdwork. To structure this analysis, we introduce a multidimensional empowerment framework grounded in psychological and economic theory, focusing on five key dimensions: productivity and earnings, quality and reliability, learning and skill development, agency and autonomy, and well-being and inclusion. Our review of the evidence reveals a dual-edged reality: while AI assistance offers significant productivity gains, error reductions, and improvements in worker self-efficacy, it also introduces substantial risks, including automation bias, cultural exclusion, wage depression, and unequal access to tools. By distilling these findings, we formulate eight concrete design principles for creating more equitable and effective human–AI augmentation systems. The chapter concludes by outlining a forward-looking research agenda that treats crowdworkers not as replaceable cogs but as essential partners in designing the future of socio-technical systems.</p></div><div class="pub-panel pub-panel--code" id="bib-2026-empowering-the-crowd-measuring-the-impact-of-ai-driven" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2026-empowering-the-crowd-measuring-the-impact-of-ai-driven"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2026-empowering-the-crowd-measuring-the-impact-of-ai-driven">@inbook{Toxtli_2026,
+  title = {Empowering the Crowd: Measuring the Impact of AI-Driven Tools on Crowdwork},
+  isbn = {9781836349464},
+  issn = {2753-894X},
+  url = {http://dx.doi.org/10.5772/intechopen.1014000},
+  doi = {10.5772/intechopen.1014000},
+  booktitle = {Crowdsourcing - Innovations in Digital Collaboration},
+  publisher = {IntechOpen},
+  author = {Toxtli, Carlos and Delgado Solorzano, Cecilia},
+  year = {2026},
+  month = Feb
+}</pre></div>  </div>
+</article><article class="pub" id="2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging"
+  data-year="2024" data-type="conference" data-areas="future-of-work inclusive-ai"
+  data-people="carlos-toxtli "
+  data-search="a culturally-aware ai tool for crowdworkers: leveraging chronemics to support diverse work styles carlos toxtli-hernández christopher curtis saiph savage proceedings of the acm on human-computer interaction cscw 2024 crowdsourcing markets are expanding worldwide, but often feature standardized interfaces that ignore the cultural diversity of their workers, negatively impacting their well-being and productivity. to transform these workplace dynamics, this paper proposes creating culturally-aware workplace tools, specifically designed to adapt to the cultural dimensions of monochronic and polychronic work styles. we illustrate this approach with &#34;culturefit,&#34; a tool that we engineered based on extensive research in chronemics and culture theories. to study and evaluate our tool in the real world, we conducted a field experiment with 55 workers from 24 different countries. our field experiment revealed that culturefit significantly improved the earnings of workers from cultural backgrounds often overlooked in design. our study is among the pioneering efforts to examine culturally aware digital labor interventions. it also provides access to a dataset with over two million data points on culture and digital work, which can be leveraged for future research in this emerging field. the paper concludes by discussing the importance and future possibilities of incorporating cultural insights into the design of tools for digital labor.">
+  <a class="pub-thumb" href="../../publications/2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">CSCW 2024</span>
+<span class="track-badge">PACM HCI</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging/">A Culturally-Aware AI Tool for Crowdworkers: Leveraging Chronemics to Support Diverse Work Styles</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a>, <span class="author">Christopher Curtis</span>, <span class="author">Saiph Savage</span></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.1145/3686899" target="_blank" rel="noopener">DOI</a>
+      <a class="pill-link" href="https://doi.org/10.48550/arXiv.2408.07838" target="_blank" rel="noopener">Website</a>
+      <a class="pill-link" href="https://github.com/ai4he/toloka-cultural-assistant" target="_blank" rel="noopener">Code</a>
+<span class="area-dot tone-cyan" title="Future of Work &amp; Worker-Centered AI"></span><span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging" hidden><p>Crowdsourcing markets are expanding worldwide, but often feature standardized interfaces that ignore the cultural diversity of their workers, negatively impacting their well-being and productivity. To transform these workplace dynamics, this paper proposes creating culturally-aware workplace tools, specifically designed to adapt to the cultural dimensions of monochronic and polychronic work styles. We illustrate this approach with &#34;CultureFit,&#34; a tool that we engineered based on extensive research in Chronemics and culture theories. To study and evaluate our tool in the real world, we conducted a field experiment with 55 workers from 24 different countries. Our field experiment revealed that CultureFit significantly improved the earnings of workers from cultural backgrounds often overlooked in design. Our study is among the pioneering efforts to examine culturally aware digital labor interventions. It also provides access to a dataset with over two million data points on culture and digital work, which can be leveraged for future research in this emerging field. The paper concludes by discussing the importance and future possibilities of incorporating cultural insights into the design of tools for digital labor.</p></div><div class="pub-panel pub-panel--code" id="bib-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging">@article{Toxtli2024Culturally,
+  title = {A Culturally-Aware AI Tool for Crowdworkers: Leveraging Chronemics to Support Diverse Work Styles},
+  volume = {8},
+  issn = {2573-0142},
+  url = {http://dx.doi.org/10.1145/3686899},
+  doi = {10.1145/3686899},
+  number = {CSCW2},
+  journal = {Proceedings of the ACM on Human-Computer Interaction},
+  publisher = {Association for Computing Machinery (ACM)},
+  author = {Toxtli, Carlos and Curtis, Christopher and Savage, Saiph},
+  year = {2024},
+  month = Nov,
+  pages = {1--34}
+}</pre></div>  </div>
+</article><article class="pub" id="2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to"
+  data-year="2024" data-type="conference" data-areas="future-of-work inclusive-ai"
+  data-people="cecilia-delgado-solorzano carlos-toxtli "
+  data-search="the use of ai-powered language tools in crowdsourcing to reduce language barriers cecilia delgado solorzano carlos toxtli-hernández 2024 ieee international conferences on internet of things (ithings) and ieee green computing &amp;amp;amp; communications (greencom) and ieee cyber, physical &amp;amp;amp; social computing (cpscom) and ieee smart data (smartdata) and ieee congress on cybermatics ieee smartdata 2024 crowdsourcing platforms gather people from different backgrounds to work on completing microtasks. the workers on those platforms are presented with tasks defined by requesters from all over the world. the tasks are defined in multiple languages, with english being the predominant language. it is unclear how language barriers can affect workers whose primary language is not english while completing tasks. in this paper, we study their practices and the impact of ai-powered tools on the completion of microtasks. we conduct a pre-test test field experiment in which workers share their current experience with the platform and receive basic training in the use of ai-powered tools. after a week, workers provide feedback on their practices and experiences. we find that workers who complete tasks in their primary language report less confidence in completing english tasks, and in general, workers perceive the use of the tools as a language-learning mechanism. we aim that the understanding of language barriers in crowd markets can promote more inclusive work conditions.">
+  <a class="pub-thumb" href="../../publications/2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">IEEE SmartData 2024</span>
+    </div>
+    <h3 class="pub-title"><a href="../../publications/2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to/">The Use of AI-powered Language Tools in Crowdsourcing to reduce Language Barriers</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab" href="../../people/cecilia-delgado-solorzano/">Cecilia Delgado Solorzano</a>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.1109/ithings-greencom-cpscom-smartdata-cybermatics62450.2024.00110" target="_blank" rel="noopener">DOI</a>
+      <a class="pill-link" href="https://ieee-cybermatics.org/2024/smartdata/remind.php" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-cyan" title="Future of Work &amp; Worker-Centered AI"></span><span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to" hidden><p>Crowdsourcing platforms gather people from different backgrounds to work on completing microtasks. The workers on those platforms are presented with tasks defined by requesters from all over the world. The tasks are defined in multiple languages, with English being the predominant language. It is unclear how language barriers can affect workers whose primary language is not English while completing tasks. In this paper, we study their practices and the impact of AI-powered tools on the completion of microtasks. We conduct a pre-test test field experiment in which workers share their current experience with the platform and receive basic training in the use of AI-powered tools. After a week, workers provide feedback on their practices and experiences. We find that workers who complete tasks in their primary language report less confidence in completing English tasks, and in general, workers perceive the use of the tools as a language-learning mechanism. We aim that the understanding of language barriers in crowd markets can promote more inclusive work conditions.</p></div><div class="pub-panel pub-panel--code" id="bib-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to">@inproceedings{Delgado2024Use,
+  title = {The Use of AI-powered Language Tools in Crowdsourcing to reduce Language Barriers},
+  url = {http://dx.doi.org/10.1109/iThings-GreenCom-CPSCom-SmartData-Cybermatics62450.2024.00110},
+  doi = {10.1109/ithings-greencom-cpscom-smartdata-cybermatics62450.2024.00110},
+  booktitle = {2024 IEEE International Conferences on Internet of Things (iThings) and IEEE Green Computing &amp;amp;amp; Communications (GreenCom) and IEEE Cyber, Physical &amp;amp;amp; Social Computing (CPSCom) and IEEE Smart Data (SmartData) and IEEE Congress on Cybermatics},
+  publisher = {IEEE},
+  author = {Delgado-Solorzano, Cecilia and Toxtli, Carlos},
+  year = {2024},
+  month = Aug,
+  pages = {601--608}
+}</pre></div>  </div>
+</article><article class="pub" id="2023-designing-ai-tools-to-address-power-imbalances-in-digital"
+  data-year="2023" data-type="chapter" data-areas="future-of-work"
+  data-people="carlos-toxtli "
+  data-search="designing ai tools to address power imbalances in digital labor platforms carlos toxtli-hernández saiph savage torn many ways springer 2023 the artificial intelligence industry has been essential in creating new jobs for the deployment of real-world solutions. as a result, the implementation of these new jobs involves the execution of multiple human intelligence micro-tasks, such as data labeling tasks for training machine learning models. the workers who perform those tasks, also known as crowd workers, usually are independent workers within crowdsourcing platforms. these platforms are subject to the free market, where the forces of supply and demand produce various power dynamics among stakeholders. as a result, disassociation between stakeholders often generates unbalanced power dynamics where workers are paid below minimum wage and are intimidated to keep their reputation or face termination. within this chapter, we introduce computational techniques to audit the workplace conditions of crowd workers and design tools to address these power imbalances, as a positive and more efficient alternative for the labor conditions of crowd workers. this chapter develops these objectives through the design and evaluation of three tools in digital labor platforms: “invisible labor tracker,” “reputation agent,” and “culturefit,” which we describe below. we will demonstrate the sustainability of systems that point to a future where ai can be used to audit and address power imbalances in the workplace.">
+  <a class="pub-thumb" href="../../publications/2023-designing-ai-tools-to-address-power-imbalances-in-digital/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2023-designing-ai-tools-to-address-power-imbalances-in-digital.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">Springer 2023</span>
+<span class="track-badge">Book chapter</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2023-designing-ai-tools-to-address-power-imbalances-in-digital/">Designing AI Tools to Address Power Imbalances in Digital Labor Platforms</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a>, <span class="author">Saiph Savage</span></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2023-designing-ai-tools-to-address-power-imbalances-in-digital" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2023-designing-ai-tools-to-address-power-imbalances-in-digital" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.1007/978-3-031-31642-5_9" target="_blank" rel="noopener">DOI</a>
+      <a class="pill-link" href="https://www.amazon.com/Torn-Many-Ways-Human-Computer-Interaction-ebook/dp/B0C8C7ZL5T" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-cyan" title="Future of Work &amp; Worker-Centered AI"></span>    </div>
+<div class="pub-panel" id="abs-2023-designing-ai-tools-to-address-power-imbalances-in-digital" hidden><p>The artificial intelligence industry has been essential in creating new jobs for the deployment of real-world solutions. As a result, the implementation of these new jobs involves the execution of multiple human intelligence micro-tasks, such as data labeling tasks for training machine learning models. The workers who perform those tasks, also known as crowd workers, usually are independent workers within crowdsourcing platforms. These platforms are subject to the free market, where the forces of supply and demand produce various power dynamics among stakeholders. As a result, disassociation between stakeholders often generates unbalanced power dynamics where workers are paid below minimum wage and are intimidated to keep their reputation or face termination. Within this chapter, we introduce computational techniques to audit the workplace conditions of crowd workers and design tools to address these power imbalances, as a positive and more efficient alternative for the labor conditions of crowd workers. This chapter develops these objectives through the design and evaluation of three tools in digital labor platforms: “Invisible Labor Tracker,” “Reputation Agent,” and “CultureFit,” which we describe below. We will demonstrate the sustainability of systems that point to a future where AI can be used to audit and address power imbalances in the workplace.</p></div><div class="pub-panel pub-panel--code" id="bib-2023-designing-ai-tools-to-address-power-imbalances-in-digital" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2023-designing-ai-tools-to-address-power-imbalances-in-digital"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2023-designing-ai-tools-to-address-power-imbalances-in-digital">@inbook{Toxtli_2023,
+  title = {Designing AI Tools to Address Power Imbalances in Digital Labor Platforms},
+  isbn = {9783031316425},
+  issn = {2524-4477},
+  url = {http://dx.doi.org/10.1007/978-3-031-31642-5_9},
+  doi = {10.1007/978-3-031-31642-5_9},
+  booktitle = {Torn Many Ways},
+  publisher = {Springer International Publishing},
+  author = {Toxtli, Carlos and Savage, Saiph},
+  year = {2023},
+  pages = {121--137}
+}</pre></div>  </div>
+</article>    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="../../"><svg class="logo-mark" viewBox="0 0 100 76" aria-hidden="true">
+  <rect x="40" y="2" width="22" height="22" rx="6" fill="#2CCBF9"/>
+  <rect x="66" y="9" width="18" height="18" rx="5" fill="#F2B30C"/>
+  <rect x="14" y="13" width="14" height="14" rx="4" fill="#F9604F"/>
+  <rect x="88" y="18" width="10" height="10" rx="3" fill="#6119F9"/>
+  <rect x="1" y="33" width="17" height="17" rx="5" fill="#F2B30C"/>
+  <rect x="22" y="29" width="24" height="24" rx="6.5" fill="#6119F9"/>
+  <rect x="50" y="33" width="15" height="15" rx="4" fill="#0A6BF9"/>
+  <rect x="70" y="33" width="9" height="9" rx="2.5" fill="#E2323F"/>
+  <rect x="83" y="32" width="15" height="15" rx="4" fill="#2CCBF9"/>
+  <rect x="9" y="56" width="9" height="9" rx="2.5" fill="#F9604F"/>
+  <rect x="23" y="58" width="16" height="16" rx="4.5" fill="#2CCBF9"/>
+</svg><span class="brand-text"><span class="brand-name">Human-AI Empowerment Lab</span><span class="brand-sub">HAIE Lab · est. August 2022</span></span></a>
+      <p class="footer-about">The Human-AI Empowerment (HAIE) Lab at Clemson University studies how artificial intelligence — increasingly autonomous and agentic — can empower people at work, in science, and in society.</p>
+      <address class="footer-address">
+School of Computing, Human-Centered Computing Division<br>McAdams Hall, Clemson University<br>Clemson, SC 29634, USA<br>        <a href="mailto:hello@haielab.org">hello@haielab.org</a>
+      </address>
+    </div>
+    <div>
+      <h3 class="footer-h">Research</h3>
+      <ul class="footer-list">
+<li><a href="../../research/human-centered-automation/">Automation &amp; Agents</a></li><li><a href="../../research/future-of-work/">Future of Work</a></li><li><a href="../../research/ai-for-science/">AI for Science</a></li><li><a href="../../research/human-autonomy-teaming/">Human–Autonomy Teaming</a></li><li><a href="../../research/trustworthy-ai/">Trustworthy AI</a></li><li><a href="../../research/inclusive-ai/">Inclusive AI</a></li>        <li><a href="../../software/">Software &amp; artifacts</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-h">Lab</h3>
+      <ul class="footer-list">
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../people/">People</a></li>
+        <li><a href="../../publications/">Publications</a></li>
+        <li><a href="../../projects/">Projects</a></li>
+        <li><a href="../../funding/">Funding</a></li>
+        <li><a href="../../collaborators/">Collaborations</a></li>
+        <li><a href="../../talks/">Talks &amp; service</a></li>
+        <li><a href="../../teaching/">Teaching &amp; mentoring</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-h">Connect</h3>
+      <ul class="footer-list">
+        <li><a href="../../join/">Join the lab</a></li>
+        <li><a href="../../news/">News</a></li>
+        <li><a href="../../feed.xml"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19h.01M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/></svg> RSS feed</a></li>
+        <li><a href="https://github.com/ai4he" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6.2 0C6.6 2.8 5.6 3.1 5.6 3.1a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg> GitHub</a></li>
+        <li><a href="https://www.clemson.edu" target="_blank" rel="noopener">Clemson University</a></li>
+        <li><a href="https://www.clemson.edu/cecas/departments/computing/" target="_blank" rel="noopener">School of Computing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <p>© 2026 Human-AI Empowerment Lab, Clemson University.</p>
+    <p class="footer-sync">Publications, talks and grants synced from <a href="https://www.carlostoxtli.com" target="_blank" rel="noopener">carlostoxtli.com</a> · last updated 2026-10-02</p>
+  </div>
+</footer>
+<div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+<script src="../../assets/js/site.js?v=559ad714a3" defer></script>
+</body>
+</html>

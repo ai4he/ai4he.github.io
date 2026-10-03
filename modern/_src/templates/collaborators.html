@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Collaborations</p>
+    <h1 class="page-title">Collaborations</h1>
+    <p class="page-lead">Human-centered AI is a team sport. The lab collaborates with human-factors engineers, physicists, mathematicians, hydrologists and security researchers at Clemson, and with partners across the United States, Mexico and Europe.</p>
+  </div>
+</section>
+
+<section class="section section--flush">
+  <div class="wrap">
+    <figure class="map-card">
+      {{ map_svg }}
+      <figcaption class="map-legend">
+        <span><i class="lg lg--home"></i>Clemson University (home)</span>
+        <span><i class="lg lg--partner"></i>Research partners</span>
+        <span><i class="lg lg--network"></i>NSF NRT+ network</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    {{ m.section_head("Partners", "Partner institutions and investigators", None, None, None, root) }}
+    <div class="inst-grid">
+      {% for c in collabs %}
+      <article class="inst-card inst-card--{{ c.kind }}">
+        <h3 class="inst-name">{{ c.name }}</h3>
+        <p class="inst-place">{{ m.icon('pin') }}{{ c.place }}</p>
+        {% if c.people %}<ul class="inst-people">{% for pp in c.people %}<li>{{ pp }}</li>{% endfor %}</ul>{% endif %}
+        {% if c.note %}<p class="inst-note">{{ c.note }}</p>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    {{ m.section_head("Co-authorship", "Who we publish with", "Every node is an author of a lab publication since 2022; lines connect co-authors. Hover a node to highlight its collaborators; click a lab member to open their profile. " ~ net_stats.nodes ~ " authors, " ~ net_stats.external ~ " of them from outside the lab.", None, None, root) }}
+    <figure class="net-card">
+      {{ network_svg }}
+      <figcaption class="map-legend">
+        <span><i class="lg lg--director"></i>Lab director</span>
+        <span><i class="lg lg--current"></i>Current members</span>
+        <span><i class="lg lg--alumni"></i>Alumni</span>
+        <span><i class="lg lg--external"></i>External co-authors</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,420 @@
+# ---------------------------------------------------------------------------
+# HAIE Lab — people
+# ---------------------------------------------------------------------------
+# One entry per person. Each person gets a profile page at people/<slug>/.
+# Publications are attached automatically: any author whose name (or one of
+# the `aliases`) matches this person links to this profile.
+#
+# Fields (all optional except slug, name, group, status):
+#   slug           URL id (lowercase-with-dashes). Photo: assets/img/people/<slug>.jpg
+#   name           Display name
+#   aliases        Other spellings used in author lists
+#   group          director | phd | postdoc | researcher | masters | graduate | undergrad | student
+#   status         current | alumni
+#   title          Line under the name (e.g. "Ph.D. Student, Human-Centered Computing")
+#   program        Degree program
+#   since / until  Years in the lab (e.g. 2023, "Fall 2025")
+#   expected_graduation
+#   affiliation    Home institution (for affiliated researchers)
+#   interests      List of research topics (shown as tags)
+#   bio            A few sentences; markdown allowed
+#   highlights     Bullet list of achievements
+#   education      List of degrees
+#   thesis         {title, year, degree, role}
+#   next           Where an alum went next (shown on the alumni list)
+#   seeking        Short note shown as an "open to opportunities" badge
+#   links          email, website, scholar, linkedin, github, orcid, twitter, cv, dblp, semantic_scholar
+#
+# DRAFT NOTE: bios marked `# draft` were written from the person's publication
+# record. Students should review them and send updates (and missing links).
+# ---------------------------------------------------------------------------
+
+- slug: carlos-toxtli
+  name: Carlos Toxtli-Hernández
+  aliases: [Carlos Toxtli, Carlos Toxtli Hernandez, Carlos Toxtli-Hernandez, Carlos Toxtli Hernández, Carlos Toxli-Hernandez, Carlos Toxtli-Hernández, C. Toxtli]
+  group: director
+  status: current
+  title: Assistant Professor of Human-Centered Computing · Lab Director
+  since: 2022
+  interests: [Human-Centered AI, Human-Centered Automation, Future of Work, Agentic AI, Crowdsourcing, Large Language Models]
+  bio: |
+    Carlos Toxtli-Hernández is an Assistant Professor in the Human-Centered Computing Division of the School of Computing at Clemson University, where he founded and directs the Human-AI Empowerment (HAIE) Lab. His research applies Human-Centered Artificial Intelligence to the design of tools that promote fair and frictionless interactions in the workplace, with a growing focus on how people can supervise, trust and benefit from autonomous and agentic AI systems.
+
+    He is the author of two books with CRC Press / Taylor & Francis, *Human-AI Empowerment: An Interdisciplinary Perspective* (2025) and *Human-Centered Automation* (2026). He leads the NSF AIMing project on AI-assisted mathematical discovery and is co-investigator on research funded by NSF, NASA, the U.S. Navy and the U.S. Army. His work on the invisible labor of crowd workers received an Impact Award at ACM CSCW 2021, and his AI-for-good framework for digital workers was selected among UNESCO IRCAI's Global Top 100 projects.
+
+    Before Clemson, he earned his Ph.D. in Computer Science at Northeastern University and worked at the United Nations, Google, Microsoft Research and Snap Inc., and was an Amazon Twitch Research Fellow. He serves the HCI community as an Associate Chair for ACM CHI (2025, 2026), Senior Program Committee member for ACM CHIWORK 2026 and NSF review panelist, and has given more than a hundred talks worldwide.
+  highlights:
+    - "Author of two single-authored books with CRC Press / Taylor & Francis (2025, 2026)"
+    - "Lead PI, NSF AIMing: Interactive Conjecture Proving ($1.2M)"
+    - "Impact Award, ACM CSCW 2021"
+    - "UNESCO IRCAI Global Top 100 promising AI projects (2022)"
+    - "Associate Chair, ACM CHI 2025 and CHI 2026"
+    - "U.S. Patent US12093703B2 and a published patent application on intelligent document collaboration (with Microsoft Research)"
+  honors:
+    - {year: 2022, text: "IRCAI Global Top 100 promising AI projects, UNESCO International Research Centre on Artificial Intelligence"}
+    - {year: 2021, text: "Impact Award, ACM CSCW — Quantifying the Invisible Labor in Crowd Work"}
+    - {year: 2021, text: "STIR Labs City Innovate Grant ($20,000), NSF"}
+    - {year: 2020, text: "Twitch Research Fellowship ($10,000), Amazon"}
+    - {year: 2018, text: "HCOMP 2018 Travel Award ($3,500)"}
+    - {year: 2013, text: "Cisco Internet of Everything Challenge, 1st prize"}
+    - {year: 2013, text: "Intel Innovation Latin App, 1st prize"}
+    - {year: 2012, text: "Google Apps Developer Challenge winner"}
+    - {year: 2011, text: "Facebook Developers World Hack, 1st prize"}
+    - {year: 2011, text: "Medal of Excellence EGEL (top 1% of graduates nationally), Mexico"}
+  education:
+    - "Ph.D. in Computer Science, Northeastern University, 2022"
+    - "M.S. in Innovation and Technological Entrepreneurship, Tecnológico de Monterrey, 2014"
+    - "B.S. in Computer Science, Universidad del Valle de México, 2011"
+  links:
+    email: ctoxtli@clemson.edu
+    website: https://www.carlostoxtli.com
+    scholar: https://scholar.google.com/citations?hl=en&user=u1PqC9QAAAAJ
+    orcid: https://orcid.org/0000-0002-9430-2661
+    linkedin: https://www.linkedin.com/in/toxtli/
+    github: https://github.com/toxtli
+    dblp: https://dblp.org/pid/126/1998.html
+    semantic_scholar: https://www.semanticscholar.org/author/Carlos-Toxtli/2602469
+    twitter: https://twitter.com/ctoxtli
+
+# ----------------------------- Ph.D. students ------------------------------
+- slug: cecilia-delgado-solorzano
+  name: Cecilia Delgado Solorzano
+  aliases: [Cecilia Delgado, Cecilia Delgado-Solorzano, Cecilia Delgado-Solórzano, Cecilia Delgado Solórzano, Cecilia Solorzano, C. Delgado Solorzano]
+  group: phd
+  status: current
+  title: Ph.D. Student, Human-Centered Computing
+  program: Ph.D. in Human-Centered Computing, Clemson University
+  since: "Fall 2022"
+  expected_graduation: "Summer 2027"
+  interests: [AI-mediated communication, Second-language learning, LLM evaluation, Crowdsourcing, Human-autonomy teaming]
+  bio: |  # draft
+    Cecilia Delgado Solorzano is a Ph.D. student in Human-Centered Computing advised by Dr. Carlos Toxtli. Cecilia's research examines how AI can mediate communication for bilingual and second-language speakers, from participatory design of personal AI assistants for face-to-face conversations (CHI 2026) to AI-supported fluency practice (IEEE CAI 2025) and the effect of AI language tools on crowd workers who complete tasks outside their primary language (IEEE SmartData 2024).
+
+    Cecilia also studies the reliability of large language models — their syllogistic reasoning and fact-checking, and the detection of errors in widely used benchmarks — and contributes to the lab's Navy-funded research on human-autonomy teaming, where Cecilia first-authored a study comparing specialized detectors and multimodal models for underwater search and rescue (ICECET 2026).
+  highlights:
+    - "First author of papers at ACM CHI (EA), IEEE CAI, IEEE SmartData, ICECET and AHFE"
+    - "Co-author of a book chapter on AI-driven tools for crowdwork (IntechOpen, 2026)"
+    - "NSF NRT+ Summit trainee (Cleveland State University, 2025)"
+  links: {}
+
+- slug: wangfan-li
+  name: Wangfan Li
+  aliases: [Wangfan Li, W. Li]
+  group: phd
+  status: current
+  title: Ph.D. Student, Human-Centered Computing
+  program: Ph.D. in Human-Centered Computing, Clemson University
+  since: "Fall 2023"
+  expected_graduation: "Fall 2027"
+  interests: [Human oversight of AI agents, Supervisory control, Human-centered automation, LLM-assisted writing, Fairness in ML workflows]
+  bio: |  # draft
+    Wangfan Li is a Ph.D. student in Human-Centered Computing advised by Dr. Carlos Toxtli. Wangfan's research asks how people can remain in meaningful control of increasingly autonomous AI. The work introduced Prompt-Level Supervisory Alignment (PLSA), which turns Supervisory Control Theory — a framework for human oversight of automated systems — into a structured prompting strategy for LLM revision (ACM CAIS 2026) and anticipatory manuscript revision (HFES 2026).
+
+    Wangfan's earlier projects built a sandboxed environment for human oversight of autonomous task execution (IEEE CAI 2025), retrieval-augmented human–AI co-authoring of software requirements (ACM SAC 2026), LLM-generated BPMN workflows for robotic process automation, and micro-ethics nudges that reduce unfairness in no-code machine-learning tools.
+  highlights:
+    - "First author at ACM CAIS (inaugural edition), ACM SAC, IEEE CAI and HFES"
+    - "Presented the lab's work in person at ACM SAC 2026 (Thessaloniki)"
+    - "NSF NRT+ Summit trainee (Cleveland State University, 2025)"
+  links: {}
+
+- slug: austin-lahue
+  name: Austin LaHue
+  aliases: [Austin LaHue, A. LaHue]
+  group: phd
+  status: current
+  title: Ph.D. Student, Human-Centered Computing
+  program: Ph.D. in Human-Centered Computing, Clemson University
+  since: "Fall 2025"
+  interests: [AI for mathematics, Conjecture generation, Premise retrieval, Human-AI scientific discovery]
+  bio: |  # draft
+    Austin LaHue is a Ph.D. student in Human-Centered Computing and the graduate research assistant of the NSF AIMing project (Interactive Conjecture Proving), advised by Dr. Carlos Toxtli. Austin studies how language models can support research-level mathematics: which forms of mathematical context help a model generate the conjecture a paper actually proves, and how retrieval systems can surface the premise needed for the next step of a natural-language proof. Austin first-authored a paired ablation study of context for target-aligned conjecture generation and co-authored the NaturalPRISM benchmark, both at MathNLP 2026 (EMNLP).
+  links: {}
+
+- slug: fateme-mazdarani
+  name: Fateme Mazdarani
+  aliases: [Fateme Mazdarani, F. Mazdarani]
+  group: phd
+  status: current
+  title: Ph.D. Student, Computer Science
+  program: Ph.D. in Computer Science, Clemson University
+  since: "Fall 2025"
+  interests: [Mathematical reasoning in LLMs, Robust evaluation, Worker-centered AI, Explainable recommendation]
+  bio: |  # draft
+    Fateme Mazdarani is a Ph.D. student in Computer Science advised by Dr. Carlos Toxtli. Fateme's research evaluates whether language models reason robustly when the same mathematics is expressed in different forms — recognizing theorems under equivalence-preserving transformations (TREAT, SYNASC 2026), reconstructing procedural routes between representations (MathNLP 2026) and verifying non-canonical step-by-step solutions (IEEE ICMLA 2026).
+
+    Fateme also led a study of transparent, explained task recommendations in crowd work, showing that lightweight disclosure increased workers' perceived fairness, trust and empowerment (IEEE CAI 2026), and serves as teaching assistant for the lab's online Human-Centered AI course.
+  highlights:
+    - "First author of five 2026 papers (IEEE CAI, IEEE ICMLA, SYNASC, MathNLP at EMNLP, arXiv)"
+  links: {}
+
+- slug: christopher-kalahiki
+  name: Christopher Kalahiki
+  aliases: [Christopher Kalahiki, C. Kalahiki]
+  group: phd
+  status: current
+  title: Ph.D. Student, Computer Science
+  program: Ph.D. in Computer Science, Clemson University
+  since: "Summer 2025"
+  interests: [Trust in large language models, Human-AI teaming, Usable security, Authentication]
+  bio: |  # draft
+    Christopher Kalahiki is a Ph.D. student in Computer Science advised by Dr. Carlos Toxtli and a graduate research assistant on the NSF SaTC 2.0 project *Tracking the Usability of Secure Authentication Systems*. Christopher's dissertation research focuses on trust in large language models for human-AI teaming, and Christopher co-authored a study of authentication routines among college students presented at HFES ASPIRE 2026.
+  links: {}
+
+- slug: colt-doster
+  name: Colt Doster
+  aliases: [Colt Doster]
+  group: phd
+  status: current
+  title: Ph.D. Student
+  since: "May 2026"
+  bio: |  # draft
+    Colt Doster is a Ph.D. student in the Human-AI Empowerment Lab, advised by Dr. Carlos Toxtli, who joined the group in May 2026.
+  links: {}
+
+# ------------------------------- Researchers --------------------------------
+- slug: manuel-delaflor
+  name: Manuel Delaflor
+  aliases: [Manuel Delaflor Rodríguez, Manuel Delaflor Rodriguez, Manuel Delaflor Rodrguez, Manuel DelaFlor, M. Delaflor]
+  group: researcher
+  status: current
+  title: Researcher
+  affiliation: Metacognition Institute (U.K.)
+  interests: [Metacognition, AI epistemics, LLM calibration, Socratic dialogue, Machine consciousness]
+  bio: |  # draft
+    Manuel Delaflor is a researcher in the HAIE Lab, also affiliated with the Metacognition Institute (U.K.), and one of the lab's most prolific contributors. Together with the lab, Manuel studies the epistemics of AI systems: sycophantic metacognition and confidence calibration in LLM self-assessment (ACM CUI 2026), attribution of mental states and consciousness to AI (Frontiers in Psychology 2026), the ethical consistency of LLMs under perturbation, and Socratic-dialogue systems such as Belief Explorer that support reflection on personal beliefs (CHI 2026).
+  links: {}
+
+- slug: alberto-campos-hernandez
+  name: Alberto Campos Hernández
+  aliases: [Alberto Campos Hernandez, Alberto Campos, A. Campos Hernández]
+  group: researcher
+  status: current
+  title: Researcher
+  interests: [Crowd work, Worker-centered AI, Workplace AI assistants]
+  bio: |  # draft
+    Alberto Campos Hernández is a researcher with the HAIE Lab who contributes to the lab's work on AI for the workplace, including goal-oriented workplace assistants (MexIHC 2024) and transparent, worker-centered task recommendation in crowd work (IEEE CAI 2026).
+  links: {}
+
+- slug: david-shapiro
+  name: David Shapiro
+  aliases: [David Shapiro]
+  group: researcher
+  status: alumni
+  title: Researcher
+  interests: [Cognitive architectures, Autonomous agents]
+  bio: |  # draft
+    David Shapiro collaborated with the lab as a researcher and is the lead author of the Autonomous Cognitive Entity (ACE) framework, a layered cognitive architecture for agentic systems built on generative AI (arXiv, 2023).
+  links: {}
+
+- slug: victor-rios-munoz
+  name: Victor Rios Muñoz
+  aliases: [Victor Rios Munoz, Víctor Ríos Muñoz]
+  group: researcher
+  status: alumni
+  title: Researcher
+  interests: [Workplace AI assistants]
+  bio: |  # draft
+    Victor Rios Muñoz collaborated with the lab as a researcher and co-authored *AI Assistants in the Workplace: Goal-Oriented Recommendations Using LLM* (MexIHC 2024).
+  links: {}
+
+# ----------------------- Graduate students & M.S. ---------------------------
+- slug: krishna-panthi
+  name: Krishna Panthi
+  aliases: [Krishna Panthi, K. Panthi]
+  group: masters
+  status: alumni
+  title: M.S. Student (thesis co-advised with Dr. Vidya Samadi)
+  until: 2026
+  interests: [Crop modelling, Deep reinforcement learning, Irrigation optimization]
+  thesis:
+    title: "Development of AquaCrop-Richards for Crop Simulation and Deep Reinforcement Learning for Irrigation Optimization"
+    year: 2026
+    degree: M.S.
+    role: "Thesis committee co-chair (with Dr. Vidya Samadi)"
+  bio: |  # draft
+    Krishna Panthi completed an M.S. thesis, defended in April 2026, co-chaired by Dr. Carlos Toxtli and Dr. Vidya Samadi. Krishna developed AquaCrop–Richards, a crop model coupled with physically based soil-water dynamics (Irrigation and Drainage, 2026), and deep reinforcement learning methods for optimizing irrigation in cotton (EGU 2025, AGU 2024 and 2025).
+  links: {}
+
+- slug: dmitry-lukyanov
+  name: Dmitry Lukyanov
+  aliases: [Dmitry Lukyanov]
+  group: masters
+  status: alumni
+  title: M.S. Student
+  until: 2024
+  interests: [Federated learning]
+  thesis:
+    title: "Heterogeneous Federated Learning at Scale"
+    year: 2024
+    degree: M.S.
+    role: Advisor
+  bio: |  # draft
+    Dmitry Lukyanov completed the M.S. thesis *Heterogeneous Federated Learning at Scale* (April 2024), advised by Dr. Carlos Toxtli.
+  links: {}
+
+- slug: ravindu-perera
+  name: Ravindu Tharanga Perera
+  aliases: [Ravindu Perera, Ravindu Perara, R. Perera]
+  group: graduate
+  status: alumni
+  title: Research Assistant
+  interests: [LLM agents, Extended reality workspaces, Workplace analytics]
+  bio: |  # draft
+    Ravindu Tharanga Perera was a research assistant in the HAIE Lab. Ravindu led the lab's work on goal-oriented AI assistants for the workplace (Wellbot, MexIHC 2024), assessed the task-management capabilities of LLM-powered agents, and built VirtuaScreens, an AI-enhanced multi-screen extended-reality workspace — both presented as demos at ACM CHIWORK 2024.
+  links: {}
+
+- slug: vamsi-krishna-pasam
+  name: Vamsi Krishna Pasam
+  aliases: [Vamsi Krishna Pasam, V. K. Pasam]
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  interests: [NLP, Comment triage, Multimodal LLMs]
+  bio: |  # draft
+    Vamsi Krishna Pasam was a graduate researcher in the HAIE Lab and first author of an AI-powered comment-triage system for collaborative documents presented at ACM SAC 2025, and co-author of a multimodal-LLM framework for customer journey mapping (The Web Conference 2025 Companion).
+  links: {}
+
+- slug: sravani-pati
+  name: Sravani Pati
+  aliases: [Sravani Pati, S. Pati]
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  interests: [Multimodal LLMs, E-commerce analytics, NLP]
+  bio: |  # draft
+    Sravani Pati was a graduate researcher in the HAIE Lab and first author of *Customer Journey Mapping with Multimodal Large Language Models* (The Web Conference 2025 Companion, LLM for E-commerce workshop), and co-author of the comment-triage system presented at ACM SAC 2025.
+  links: {}
+
+- slug: pratyush-singh
+  name: Pratyush Singh
+  aliases: [Pratyush Singh]
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  interests: [AI-mediated communication, Participatory design]
+  bio: |  # draft
+    Pratyush Singh was a graduate researcher in the HAIE Lab and co-author of *Exploring User Expectations for AI-Mediated Second Language Communication* (CHI 2026 Extended Abstracts).
+  links: {}
+
+- slug: matthew-rogers
+  name: Matthew Rogers
+  aliases: [Mathew Rogers, Matthew Rogers]
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  interests: [Workplace AI assistants]
+  bio: |  # draft
+    Matthew Rogers was a graduate researcher in the HAIE Lab and co-author of *AI Assistants in the Workplace: Goal-Oriented Recommendations Using LLM* (MexIHC 2024).
+  links: {}
+
+- {slug: namrata-surve, name: Namrata Surve, group: graduate, status: alumni, title: Graduate Researcher}
+- {slug: manasa-thatipamula, name: Manasa Thatipamula, group: graduate, status: alumni, title: Graduate Researcher}
+- {slug: amogh-singh, name: Amogh Singh, group: graduate, status: alumni, title: Graduate Researcher}
+- {slug: sandali-nemmaniwar, name: Sandali Nemmaniwar, group: graduate, status: alumni, title: Graduate Researcher}
+- {slug: anuja-patil, name: Anuja Patil, group: graduate, status: alumni, title: Graduate Researcher}
+- {slug: shivani-dere, name: Shivani Dashrath Dere, aliases: [Shivani Dere], group: graduate, status: alumni, title: Graduate Researcher}
+- {slug: ashish-chittimilla, name: Ashish Chittimilla, group: graduate, status: alumni, title: Graduate Researcher}
+- {slug: sandya-rani-prasadam, name: Sandya Rani Prasadam, group: graduate, status: alumni, title: Graduate Researcher}
+
+# ----------------------------- Student researchers --------------------------
+- slug: athish-venkatachalam
+  name: Athish Venkatachalam
+  aliases: [Athish Venkatachalam]
+  group: student
+  status: alumni
+  title: Student Researcher
+  interests: [AI-generated workflows, Human oversight of automation]
+  bio: |  # draft
+    Athish Venkatachalam was a student researcher in the HAIE Lab, co-author of *Human Oversight Over Autonomous Task Execution in Sandbox Environments* (IEEE CAI 2025) and lead author of a multi-dimensional evaluation framework for AI-generated workflows (2025).
+  links: {}
+
+- slug: jackson-bowen
+  name: Jackson Bowen
+  aliases: [Jackson Bowen]
+  group: student
+  status: alumni
+  title: Student Researcher
+  bio: |  # draft
+    Jackson Bowen was a student researcher in the HAIE Lab and co-author of *Human Oversight Over Autonomous Task Execution in Sandbox Environments* (IEEE CAI 2025).
+  links: {}
+
+- slug: adithya-ravi
+  name: Adithya Ravi
+  aliases: [Adithya Ravi]
+  group: student
+  status: alumni
+  title: Student Researcher
+  bio: |  # draft
+    Adithya Ravi was a student researcher in the HAIE Lab and co-author of *Assessing the Task Management Capabilities of LLM-Powered Agents* (ACM CHIWORK 2024).
+  links: {}
+
+- slug: sai-praneeth-dulam
+  name: Sai Praneeth Dulam
+  aliases: [Sai Praneeth Dulam, Praneeth Dulam]
+  group: student
+  status: alumni
+  title: Student Collaborator (with Dr. Vidya Samadi)
+  interests: [Computer vision, Flood monitoring]
+  bio: |  # draft
+    Sai Praneeth Dulam collaborated with the lab on deep learning for flood image processing and semantic segmentation of USGS river-camera imagery, presented at the EGU General Assembly 2024 with Dr. Vidya Samadi and Dr. Carlos Toxtli.
+  links: {}
+
+- slug: sofia-campos-hernandez
+  name: Sofia Abilene Campos Hernandez
+  aliases: [Sofia Abilene Campos Hernandez, Sofía Abilene Campos Hernández]
+  group: student
+  status: alumni
+  title: Student Researcher
+  bio: |  # draft
+    Sofia Abilene Campos Hernandez was a student researcher in the HAIE Lab and co-author of *Prompt-Level Supervisory Alignment for Anticipatory Manuscript Revision* (HFES 2026).
+  links: {}
+
+# --------------------------- Undergraduate researchers ----------------------
+- slug: weber-whelan
+  name: Weber Whelan
+  aliases: [Weber Whelan]
+  group: undergrad
+  status: alumni
+  title: Undergraduate Researcher (Departmental Honors)
+  until: 2026
+  interests: [LLM agents for science, Astrophysics data analysis]
+  thesis:
+    title: "Fermi-LLM: An LLM Service for Performing Fermi-LAT Data Analysis"
+    year: 2026
+    degree: Departmental Honors (CPSC 4950)
+    role: Advisor
+  bio: |  # draft
+    Weber Whelan completed the departmental honors thesis *Fermi-LLM: An LLM Service for Performing Fermi-LAT Data Analysis* (presented April 29, 2026), advised by Dr. Carlos Toxtli as part of the NASA-funded FERMI-LLM project.
+  links: {}
+
+- slug: nicholas-berns
+  name: Nicholas Joseph Berns
+  aliases: [Nicholas Berns, Nicholas J. Berns]
+  group: undergrad
+  status: alumni
+  title: Undergraduate Researcher (Creative Inquiry)
+  since: 2025
+  until: 2026
+  interests: [Digital twins, Remote instruction, Avatars]
+  bio: |  # draft
+    Nicholas Joseph Berns was a Creative Inquiry undergraduate researcher in the HAIE Lab (2025–2026) and co-author of *A Formative Investigation of Student Perceptions of Digital Twin Instructors in Remote Lecture Environments* (CHI 2026 Extended Abstracts).
+  links: {}
+
+- slug: claire-gendron
+  name: Claire Gendron
+  aliases: [Claire Gendron]
+  group: undergrad
+  status: alumni
+  title: Undergraduate Researcher
+  interests: [Human feedback in LLM prompting, Workplace analytics]
+  bio: |  # draft
+    Claire Gendron was an undergraduate researcher in the HAIE Lab and co-authored four of the lab's 2024 papers, including ReActIn, a framework for infusing human feedback into the intermediate prompting steps of LLMs (IHIET-AI 2024, CSCE 2024), the SmartMonitor edge activity-monitoring demo (ACM CHIWORK 2024) and the Wellbot workplace assistant (MexIHC 2024).
+  links: {}
+
+- {slug: ryan-hirt, name: Ryan Philip Hirt, aliases: [Ryan Hirt], group: undergrad, status: alumni, title: Undergraduate Researcher}
+- {slug: uchenna-maduno, name: Uchenna William Maduno, aliases: [Uchenna Maduno], group: undergrad, status: alumni, title: Undergraduate Researcher}
+- {slug: owen-duggan, name: Owen Patrick Duggan, aliases: [Owen Duggan], group: undergrad, status: alumni, title: Undergraduate Researcher}
+- {slug: sumanth-pandiri, name: Sumanth Pandiri, group: undergrad, status: alumni, title: Undergraduate Researcher}
+- {slug: adam-pickeral, name: Adam Pickeral, group: undergrad, status: alumni, title: Undergraduate Researcher}
+- {slug: mary-gurrieri, name: Mary Gurrieri, group: undergrad, status: alumni, title: Undergraduate Researcher}
+- {slug: vincent-hung, name: Vincent Hung, group: undergrad, status: alumni, title: Undergraduate Researcher}

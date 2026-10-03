@@ -1,0 +1,107 @@
+# ---------------------------------------------------------------------------
+# Open-source software, artifacts and research platforms
+# ---------------------------------------------------------------------------
+#   paper   optional title fragment of the related publication
+#   project optional project slug
+# ---------------------------------------------------------------------------
+
+- name: Fermi-LLM
+  kind: Platform
+  url: https://github.com/ai4he/fermi-llm-int
+  project: fermi-llm
+  description: >-
+    A web platform that turns a plain-English request into a real Fermi-LAT
+    gamma-ray analysis: it writes the FermiPy configuration and Python driver,
+    checks them, runs exactly what the scientist approves and shows every step.
+    Every model, rule, validator and data source is a pluggable module.
+  tags: [LLM agents, Astrophysics, Python]
+
+- name: Trust-Calibration Benchmark
+  kind: Benchmark & artifact
+  url: https://github.com/ai4he/qualification-by-calibration
+  paper: Qualification by Calibration
+  project: metacognitive-ai
+  description: >-
+    A small, auditable qualification test for language models used as workers
+    in human-computation pipelines: 60 yes/no items across five domains with
+    independently audited gold labels, plus the evaluation harness.
+  tags: [Benchmark, Calibration, HCOMP 2026]
+
+- name: Sycophantic Metacognition
+  kind: Code & data
+  url: https://github.com/ai4he/kruger
+  paper: Sycophantic Metacognition
+  project: metacognitive-ai
+  description: >-
+    Complete code, data, prompts, results and analysis pipeline for the
+    multi-phase study of metacognitive calibration and sycophancy in LLM
+    self-assessment.
+  tags: [Reproducibility, LLM evaluation, CUI 2026]
+
+- name: Belief Explorer
+  kind: Research system
+  url: https://github.com/ai4he/belief-explorer
+  paper: Belief Explorer
+  project: metacognitive-ai
+  description: >-
+    An AI system that uses Socratic dialogue and multi-perspective analysis to
+    help people examine personally held beliefs.
+  tags: [Socratic dialogue, Epistemic reflection, CHI 2026]
+
+- name: CultureFit
+  kind: Research system
+  url: https://github.com/ai4he/toloka-cultural-assistant
+  paper: Culturally-Aware AI Tool for Crowdworkers
+  project: worker-centered-ai
+  description: >-
+    Code for the CSCW paper on a culturally aware workplace tool that adapts to
+    monochronic and polychronic work styles of crowd workers.
+  tags: [Crowd work, Browser extension, CSCW 2024]
+
+- name: AIMing research code
+  kind: Code
+  url: https://github.com/ai4he/AIMing
+  project: aiming
+  description: >-
+    Dataset generation from arXiv mathematics, embedding-space experiments,
+    automated judge agents and prompt experimentation for the NSF AIMing
+    project.
+  tags: [AI for math, Retrieval, Evaluation]
+
+- name: LitRevTools
+  kind: Tool
+  url: https://github.com/ai4he/litrevtools
+  description: >-
+    A cross-platform tool for systematic literature reviews following the
+    PRISMA methodology, with Semantic Scholar integration; one codebase for
+    CLI, web, desktop and mobile.
+  tags: [PRISMA, Research tooling, TypeScript]
+
+- name: SmartMonitor
+  kind: Hardware + AI
+  url: https://github.com/ai4he/Hardware_Application
+  paper: SmartMonitor
+  project: workplace-assistants
+  description: >-
+    Embedded image capture and on-device object detection for privacy-
+    preserving analysis of workplace activity (RK3588 edge device, HDMI
+    capture).
+  tags: [Edge AI, Computer vision, CHIWORK 2024]
+
+- name: VirtuaScreens
+  kind: XR system
+  url: https://github.com/ai4he/VirtuaScreens
+  paper: Multi-Screen Interaction in Extended Reality
+  project: workplace-assistants
+  description: >-
+    A Unity-based extended-reality workspace for adding and arranging virtual
+    monitors, with a screencast server.
+  tags: [Extended reality, Unity, CHIWORK 2024]
+
+- name: PAIA Builder
+  kind: Tool
+  url: https://github.com/ai4he/paia_builder
+  project: ai-mediated-language
+  description: >-
+    A web interface to generate Personal AI Assistant (PAIA) schemas.
+  tags: [Personal AI assistants, Web]

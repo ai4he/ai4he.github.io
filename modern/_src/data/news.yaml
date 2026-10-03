@@ -1,0 +1,237 @@
+# ---------------------------------------------------------------------------
+# News
+# ---------------------------------------------------------------------------
+# Newest first is not required — the build sorts by date.
+#   date   YYYY-MM-DD, YYYY-MM or YYYY
+#   kind   paper | grant | book | people | event | talk | award | service
+#   text   one or two sentences; markdown links allowed
+#   link   optional URL or site-relative path (e.g. publications/...)
+#   people optional list of people slugs (shown on their profile pages)
+#   pinned true to keep it on the home page
+# ---------------------------------------------------------------------------
+
+- date: 2026-10
+  kind: paper
+  text: "Three papers from the NSF AIMing project will appear at **MathNLP 2026**, co-located with EMNLP 2026 in Budapest: the NaturalPRISM premise-retrieval benchmark, a context ablation for conjecture generation, and robust procedural mathematical reasoning."
+  link: projects/aiming/
+  people: [austin-lahue, fateme-mazdarani]
+  pinned: true
+
+- date: 2026-09-27
+  kind: paper
+  text: "*Qualification by Calibration*, a readable benchmark for admitting language models to human-computation tasks, is presented at **HCOMP 2026** in Alexandria, VA."
+  people: [manuel-delaflor]
+
+- date: 2026-09-15
+  kind: paper
+  text: "Perspective article *AI Consciousness? Attribution and Cognitive Biases* accepted in **Frontiers in Psychology**."
+  people: [manuel-delaflor]
+
+- date: 2026-07-21
+  kind: paper
+  text: "*Sycophantic Metacognition* — on the Dunning-Kruger effect in LLM self-assessment — is presented as a full paper at **ACM CUI 2026** in Bremen, Germany."
+  people: [manuel-delaflor]
+
+- date: 2026-07
+  kind: paper
+  text: "Cecilia Delgado Solorzano presents our Navy-funded study of narrow vs. general-purpose AI models for underwater search and rescue at **ICECET 2026** in Rome."
+  people: [cecilia-delgado-solorzano]
+
+- date: 2026-05-26
+  kind: paper
+  text: "Wangfan Li's *Supervisory Control Theory for LLM Revision* is published at the inaugural **ACM Conference on AI and Agentic Systems (CAIS 2026)**."
+  people: [wangfan-li]
+  pinned: true
+
+- date: 2026-05-08
+  kind: book
+  text: "The director's second book, **Human-Centered Automation**, is published by CRC Press / Taylor & Francis."
+  link: https://doi.org/10.1201/9781003666400
+  pinned: true
+
+- date: 2026-05-08
+  kind: paper
+  text: "Fateme Mazdarani's *Worker-Centered AI: Transparent Explanations for Trustworthy Task Recommendation in Crowd Work* appears at **IEEE CAI 2026** in Granada."
+  people: [fateme-mazdarani, alberto-campos-hernandez]
+
+- date: 2026-05
+  kind: people
+  text: "Colt Doster joins the lab as a Ph.D. student."
+  people: [colt-doster]
+
+- date: 2026-04-29
+  kind: people
+  text: "Weber Whelan presents the departmental honors thesis *Fermi-LLM: An LLM Service for Performing Fermi-LAT Data Analysis*."
+  people: [weber-whelan]
+
+- date: 2026-04-13
+  kind: event
+  text: "The lab presents three extended abstracts at **ACM CHI 2026** in Barcelona, where Dr. Toxtli serves as Associate Chair."
+  people: [cecilia-delgado-solorzano, nicholas-berns, pratyush-singh, manuel-delaflor]
+  pinned: true
+
+- date: 2026-04-02
+  kind: people
+  text: "Krishna Panthi successfully defends the M.S. thesis on AquaCrop–Richards crop simulation and deep reinforcement learning for irrigation, co-chaired with Dr. Vidya Samadi."
+  people: [krishna-panthi]
+
+- date: 2026-03-24
+  kind: event
+  text: "Dr. Toxtli and two Ph.D. students take part in the **NSF NRT+ Summit** at the University of Wisconsin–Madison."
+
+- date: 2026-03-23
+  kind: paper
+  text: "Wangfan Li presents *Requirement Bot* at **ACM SAC 2026** in Thessaloniki, Greece."
+  people: [wangfan-li]
+
+- date: 2026-03-18
+  kind: grant
+  text: "New **U.S. Army** project through Clemson's VIPR-GS center: a resilient network security architecture for next-generation military ground vehicles ($499,898; Co-PI)."
+  link: funding/
+
+- date: 2026-03-09
+  kind: paper
+  text: "*Expanding the Roster*, a needs assessment for autonomous teammates in hazardous environments, appears at **IEEE CogSIMA 2026**."
+
+- date: 2026-02-03
+  kind: paper
+  text: "Open-access book chapter *Empowering the Crowd: Measuring the Impact of AI-Driven Tools on Crowdwork* published by IntechOpen."
+  people: [cecilia-delgado-solorzano]
+
+- date: 2026-01-22
+  kind: grant
+  text: "**Savannah River National Laboratory** award for physics-informed deep learning across the Savannah River Basin, with Dr. Vidya Samadi."
+  link: funding/
+
+- date: 2025-09-24
+  kind: event
+  text: "Cecilia Delgado Solorzano and Wangfan Li join Dr. Toxtli at the **NSF NRT+ Summit** at Cleveland State University."
+  people: [cecilia-delgado-solorzano, wangfan-li]
+
+- date: 2025-09-02
+  kind: book
+  text: "Book **Human-AI Empowerment: An Interdisciplinary Perspective** — the framework behind the lab's name — is published by Chapman & Hall/CRC."
+  link: https://doi.org/10.1201/9781003536628
+  pinned: true
+
+- date: 2025-08
+  kind: people
+  text: "Three Ph.D. students join the lab in 2025: Austin LaHue (HCC), Fateme Mazdarani (CS) and Christopher Kalahiki (CS)."
+  people: [austin-lahue, fateme-mazdarani, christopher-kalahiki]
+
+- date: 2025-08
+  kind: grant
+  text: "**NASA FERMI-LLM** project begins (Fermi Guest Investigator Program, $450,000; Co-PI with Dr. Marco Ajello)."
+  link: projects/fermi-llm/
+
+- date: 2025-07-29
+  kind: grant
+  text: "**NSF SaTC 2.0** award *Tracking the Usability of Secure Authentication Systems* ($650,000; Co-PI with Dr. Kelly Caine)."
+  link: projects/secure-authentication/
+
+- date: 2025-07-20
+  kind: paper
+  text: "*Working in a Heartbeat: Considerations for AI Teammates in Search and Rescue Teams* published in the Proceedings of HFES 2025."
+  people: [cecilia-delgado-solorzano]
+
+- date: 2025-07-09
+  kind: talk
+  text: "Invited talk *LLMs and Health Care* for high-school computer science teachers at the SC EPSCoR Research Experience for Teachers program, College of Charleston."
+
+- date: 2025-05
+  kind: paper
+  text: "Two papers at **IEEE CAI 2025** in Santa Clara: *AI for Becoming Fluent* and *Human Oversight Over Autonomous Task Execution in Sandbox Environments*."
+  people: [cecilia-delgado-solorzano, wangfan-li, athish-venkatachalam, jackson-bowen]
+
+- date: 2025-05
+  kind: paper
+  text: "*Customer Journey Mapping with Multimodal Large Language Models* appears at **The Web Conference 2025** (LLM for E-commerce), Sydney."
+  people: [sravani-pati, vamsi-krishna-pasam]
+
+- date: 2025-03
+  kind: paper
+  text: "*AI-Powered Comment Triage for Efficient Collaboration and Feedback Management* is presented at **ACM SAC 2025** in Sicily."
+  people: [vamsi-krishna-pasam, sravani-pati]
+
+- date: 2025-03-10
+  kind: event
+  text: "Clemson hosts the **NSF NRT+ Summit**; Dr. Toxtli serves on the host team and the *Entrepreneurship in Academia* panel."
+
+- date: 2024-12
+  kind: grant
+  text: "**NSF HCC: Small** award on generative AI for end-user driven creative workforces begins ($599,877; Co-PI with Dr. Guo Freeman)."
+  link: projects/creative-workforces/
+
+- date: 2024-11
+  kind: paper
+  text: "*A Culturally-Aware AI Tool for Crowdworkers* (CultureFit) appears at **ACM CSCW 2024** in San José, Costa Rica."
+  link: projects/worker-centered-ai/
+
+- date: 2024-11
+  kind: paper
+  text: "Two papers at **MexIHC 2024**: the Wellbot workplace assistant and LLM-powered student query support (LibRef)."
+  people: [ravindu-perera, cecilia-delgado-solorzano, claire-gendron]
+
+- date: 2024-09
+  kind: grant
+  text: "The lab is awarded **NSF AIMing: Interactive Conjecture Proving** ($1,198,339), led by Dr. Toxtli as PI."
+  link: projects/aiming/
+  pinned: true
+
+- date: 2024-08
+  kind: paper
+  text: "Two papers by Cecilia Delgado Solorzano at **IEEE SmartData 2024** in Copenhagen, on syllogistic reasoning in LLMs and AI language tools in crowdsourcing."
+  people: [cecilia-delgado-solorzano]
+
+- date: 2024-07
+  kind: paper
+  text: "Four lab papers at **CSCE 2024** in Las Vegas, including ReActIn and LLM-generated BPMN workflows for robotic process automation."
+  people: [wangfan-li, cecilia-delgado-solorzano, claire-gendron]
+
+- date: 2024-06
+  kind: event
+  text: "Four lab demos at **ACM CHIWORK 2024** in Newcastle, UK — SmartMonitor, VirtuaScreens, LLM task-management agents and sandboxed human oversight. Dr. Toxtli serves as Web Chair."
+  link: projects/workplace-assistants/
+  people: [ravindu-perera, wangfan-li, claire-gendron, adithya-ravi]
+
+- date: 2024-06
+  kind: service
+  text: "Dr. Toxtli serves as Tutorials Chair of **AAAI ICWSM 2024** in Buffalo, NY."
+
+- date: 2024-04
+  kind: people
+  text: "Dmitry Lukyanov defends the M.S. thesis *Heterogeneous Federated Learning at Scale*."
+  people: [dmitry-lukyanov]
+
+- date: 2024-04
+  kind: paper
+  text: "Work on deep learning for flood image segmentation is presented at the **EGU General Assembly 2024** in Vienna."
+
+- date: 2023-10
+  kind: event
+  text: "The lab co-organizes the workshop *Conceptualizing Indigeneity in Social Computing* at **ACM CSCW 2023** in Minneapolis, with a workshop paper by Cecilia Delgado Solorzano."
+  people: [cecilia-delgado-solorzano]
+
+- date: 2023-10
+  kind: grant
+  text: "**NSF Future of Work** award on AI and mixed reality for aviation inspection begins ($1,558,433; Co-PI with Dr. Anand Gramopadhye)."
+  link: projects/aviation-inspection/
+
+- date: 2023
+  kind: grant
+  text: "**U.S. Navy** project on human–autonomy teaming in underwater environments begins ($1,095,901; Co-PI with Dr. Nathan McNeese)."
+  link: projects/underwater-hat/
+
+- date: 2023-05-10
+  kind: talk
+  text: "Dr. Toxtli joins the Clemson Research Symposium panel *ChatGPT Use in Higher Education*."
+
+- date: 2023
+  kind: event
+  text: "New course **Human-Centered AI** developed for Clemson's School of Computing; an online Coursera edition follows in 2025."
+  link: teaching/
+
+- date: 2022-08
+  kind: event
+  text: "The **Human-AI Empowerment Lab** is founded in the Human-Centered Computing Division of Clemson University's School of Computing."
+  pinned: true

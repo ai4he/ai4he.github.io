@@ -1,0 +1,134 @@
+# ---------------------------------------------------------------------------
+# Collaborating institutions and investigators
+# ---------------------------------------------------------------------------
+# Source: TPR 2027 "Collaborations" and co-authorship. Coordinates place each
+# institution on the collaboration map (lat, lon). `kind`:
+#   home | university | lab | institute | network
+# ---------------------------------------------------------------------------
+
+- name: Clemson University
+  kind: home
+  place: Clemson, SC, USA
+  lat: 34.6834
+  lon: -82.8374
+  people:
+    - Nathan McNeese
+    - Guo Freeman
+    - Kelly Caine
+    - Christopher Flathmann
+    - Kapil Chalil Madathil
+    - Anand Gramopadhye
+    - Jeff Bertrand
+    - Matias Volonte
+    - Marco Ajello
+    - Vinita Gangaram Jansari
+    - Michael Burr
+    - Vidya Samadi
+    - Pierluigi Pisu
+    - Elias Tzoc Caniz
+    - Jonathan Zrake
+    - Jeffrey Fung
+
+- name: Colorado College
+  kind: university
+  place: Colorado Springs, CO, USA
+  lat: 38.8484
+  lon: -104.8238
+  people: [Luis David Garcia Puente]
+  note: Co-PI, NSF AIMing
+
+- name: Northeastern University
+  kind: university
+  place: Boston, MA, USA
+  lat: 42.3398
+  lon: -71.0892
+  people: [Saiph Savage, Christopher Curtis]
+
+- name: George Mason University
+  kind: university
+  place: Fairfax, VA, USA
+  lat: 38.8315
+  lon: -77.3117
+  people: [James Jones, Khaled Khasawneh]
+
+- name: Savannah River National Laboratory
+  kind: lab
+  place: Aiken, SC, USA
+  lat: 33.34
+  lon: -81.73
+  people: [David Werth]
+
+- name: Medical University of South Carolina
+  kind: university
+  place: Charleston, SC, USA
+  lat: 32.7846
+  lon: -79.9477
+  people: [Christina Pelatti]
+
+- name: Purdue University
+  kind: university
+  place: West Lafayette, IN, USA
+  lat: 40.4237
+  lon: -86.9212
+  people: [Gaurav Nanda]
+
+- name: University of Delaware
+  kind: university
+  place: Newark, DE, USA
+  lat: 39.6780
+  lon: -75.7506
+  people: [Giovanna Morini]
+
+- name: University of Colorado Boulder
+  kind: university
+  place: Boulder, CO, USA
+  lat: 40.0076
+  lon: -105.2659
+  people: [Dipto Das]
+
+- name: Metacognition Institute
+  kind: institute
+  place: United Kingdom
+  lat: 52.5
+  lon: -1.5
+  people: [Manuel Delaflor]
+
+- name: University of Reims Champagne-Ardenne
+  kind: university
+  place: Reims, France
+  lat: 49.2583
+  lon: 4.0317
+  people: [Redha Taïar]
+
+- name: Universidad Nacional Autónoma de México (FES Zaragoza)
+  kind: university
+  place: Mexico City, Mexico
+  lat: 19.3833
+  lon: -99.0617
+  people: []
+  note: Book chapter on LLMs in Latin American education (2026)
+
+# NSF NRT+ network (summits attended with lab Ph.D. students, 2025–2026)
+- name: Rochester Institute of Technology
+  kind: network
+  place: Rochester, NY, USA
+  lat: 43.0848
+  lon: -77.6744
+  people: []
+  note: NSF NRT+ network
+
+- name: University of Wisconsin–Madison
+  kind: network
+  place: Madison, WI, USA
+  lat: 43.0766
+  lon: -89.4125
+  people: []
+  note: NSF NRT+ network
+
+- name: Cleveland State University
+  kind: network
+  place: Cleveland, OH, USA
+  lat: 41.5022
+  lon: -81.6750
+  people: []
+  note: NSF NRT+ network

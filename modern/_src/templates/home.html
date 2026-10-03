@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block head %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ResearchOrganization","name":"{{ site.name }}","alternateName":"HAIE Lab","url":"{{ site.base_url }}/","logo":"{{ site.base_url }}/assets/img/brand/haie-logo.png","email":"{{ site.email }}","foundingDate":"2022-08","parentOrganization":{"@type":"CollegeOrUniversity","name":"Clemson University","url":"https://www.clemson.edu"},"address":{"@type":"PostalAddress","addressLocality":"Clemson","addressRegion":"SC","postalCode":"29634","addressCountry":"US"},"founder":{"@type":"Person","name":"Carlos Toxtli-Hernández","url":"{{ site.base_url }}/people/carlos-toxtli/"}}
+</script>
+{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><div class="hero-tiles" id="hero-tiles"></div></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow eyebrow--hero"><span class="pulse-dot"></span>Clemson University · Human-Centered Computing</p>
+      <h1 class="hero-title">Designing AI that <em>expands</em> what people can achieve.</h1>
+      <p class="hero-lead">The Human-AI Empowerment Lab studies how artificial intelligence — increasingly autonomous and agentic — can empower people at work, in science and in society. We build and evaluate human-centered AI systems with the people who will use them.</p>
+      <div class="hero-cta">
+        <a class="btn btn--primary" href="{{ root }}research/">Explore our research {{ m.icon('arrow') }}</a>
+        <a class="btn btn--ghost" href="{{ root }}publications/">Publications</a>
+        <a class="btn btn--ghost" href="{{ root }}join/">Join the lab</a>
+      </div>
+    </div>
+    <aside class="hero-panel" aria-label="Latest news">
+      <p class="hero-panel-label">Latest from the lab</p>
+      <ul class="hero-news">
+        {% for n in news[:3] %}
+        <li><time>{{ n.date_label }}</time><span>{{ n.html }}</span></li>
+        {% endfor %}
+      </ul>
+      <a class="text-link" href="{{ root }}news/">All news {{ m.icon('arrow') }}</a>
+    </aside>
+  </div>
+  <div class="wrap">
+    <dl class="stat-band">
+      <div class="stat"><dt>Publications since 2022</dt><dd data-count="{{ stats.pubs }}">{{ stats.pubs }}</dd></div>
+      <div class="stat"><dt>Active sponsored research</dt><dd>{{ stats.funding_compact }}</dd><span class="stat-note">{{ stats.awards }} awards · NSF, NASA, Navy, Army</span></div>
+      <div class="stat"><dt>Lab members &amp; alumni</dt><dd data-count="{{ stats.members }}">{{ stats.members }}</dd></div>
+      <div class="stat"><dt>Books published</dt><dd data-count="{{ stats.books }}">{{ stats.books }}</dd><span class="stat-note">CRC Press / Taylor &amp; Francis</span></div>
+      <div class="stat"><dt>Partner institutions</dt><dd data-count="{{ stats.institutions }}">{{ stats.institutions }}</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    {{ m.section_head("Research", "Six thrusts, one question: how can AI empower people?", "Our work spans human-centered automation, the future of work, AI for science, human–autonomy teaming, trustworthy AI and inclusive AI — each grounded in studies with real users and funded by federal sponsors.", "research/", "All research", root) }}
+    <div class="thrust-grid">
+      {% for a in areas %}
+      <a class="thrust-card tone-{{ a.color }}" href="{{ root }}{{ a.url }}">
+        <span class="thrust-icon">{{ m.icon(a.icon) }}</span>
+        <span class="thrust-index">0{{ loop.index }}</span>
+        <h3 class="thrust-name">{{ a.name }}</h3>
+        <p class="thrust-tag">{{ a.tagline }}</p>
+        <span class="thrust-meta">{{ a.pubs|length }} papers · {{ a.projects|length }} projects</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    {{ m.section_head("Projects", "Flagship projects", "Multi-year efforts with dedicated teams, sponsors and collaborators.", "projects/", "All projects", root) }}
+    <div class="card-grid card-grid--3">
+      {% for pr in projects[:6] %}{{ m.project_card(pr, root) }}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    {{ m.section_head("Publications", "Selected recent work", "Peer-reviewed research at venues including ACM CHI, CSCW, CUI, CAIS, IVA, HCOMP, AIES, IEEE CAI and EMNLP workshops.", "publications/", "All " ~ stats.pubs ~ " publications", root) }}
+    <div class="card-grid card-grid--4">
+      {% for p in featured_pubs %}{{ m.pub_card(p, root) }}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--ink">
+  <div class="wrap books">
+    <div class="books-copy">
+      <p class="eyebrow eyebrow--light">Books</p>
+      <h2 class="section-title">The ideas behind the lab, in two books</h2>
+      <p class="section-lead">Lab director Carlos Toxtli-Hernández is the author of two books with CRC Press / Taylor &amp; Francis that frame the lab's agenda: how AI can empower people over the long term, and how automation can be designed with people at its center.</p>
+    </div>
+    <div class="book-row">
+      {% for b in books %}
+      <a class="book" href="{{ root }}{{ b.url }}">
+        <img src="{{ root }}{{ b.image_url }}" alt="Cover of {{ b.title }}" loading="lazy">
+        <span class="book-title">{{ b.title }}</span>
+        <span class="book-meta">{{ b.venue_short }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div>
+      {{ m.section_head("Team", "The people behind the research", "Ph.D. students, researchers and alumni whose work spans HCI, AI and the sciences. Every member has a profile with their publications and projects.", None, None, root) }}
+      <a class="btn btn--primary" href="{{ root }}people/">Meet the team {{ m.icon('arrow') }}</a>
+    </div>
+    <div class="team-mosaic">
+      {% for g in groups %}{% for person in g.people %}
+      <a class="team-tile" href="{{ root }}{{ person.url }}" title="{{ person.name }} — {{ person.title }}">{{ m.avatar(person, root, 'lg') }}<span>{{ person.name.split(' ')[0] }}</span></a>
+      {% endfor %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    {{ m.section_head("Funding", "Supported by", "Active sponsored research totaling " ~ stats.funding_compact ~ " across " ~ stats.awards ~ " awards, with the lab director as PI or Co-PI.", "funding/", "Funding details", root) }}
+    <ul class="sponsor-strip">
+      {% for s in sponsors %}<li class="sponsor">{{ s }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    {{ m.section_head("Collaborations", "A network across disciplines and borders", "We work with human-factors engineers, physicists, mathematicians, hydrologists and security researchers at Clemson, and with partners across the United States, Mexico and Europe.", "collaborators/", "Explore collaborations", root) }}
+    <div class="map-frame map-frame--home">{{ map_svg }}</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>Interested in joining?</h2>
+        <p>We welcome prospective Ph.D. students, M.S. and undergraduate researchers, and visiting collaborators who share our commitment to AI that empowers people.</p>
+      </div>
+      <a class="btn btn--light" href="{{ root }}join/">Opportunities {{ m.icon('arrow') }}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

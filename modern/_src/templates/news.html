@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set kind_labels = {"paper":"Publication","grant":"Funding","book":"Book","people":"People","event":"Event","talk":"Talk","award":"Award","service":"Service"} %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">News</p>
+    <h1 class="page-title">News &amp; milestones</h1>
+    <p class="page-lead">Papers, awards, defenses and events from the Human-AI Empowerment Lab. <a href="{{ root }}feed.xml">Subscribe via RSS</a>.</p>
+    <div class="filter-row" role="group" aria-label="Filter news">
+      <button class="filter-chip is-active" type="button" data-filter-news="all">All</button>
+      {% for k, label in kind_labels.items() if news|selectattr('kind', 'equalto', k)|list %}
+      <button class="filter-chip" type="button" data-filter-news="{{ k }}">{{ label }}</button>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="section section--flush">
+  <div class="wrap">
+    <ol class="timeline" id="news-list">
+      {% set ns = namespace(year=none) %}
+      {% for n in news %}
+      {% if n.sort[0] != ns.year %}{% set ns.year = n.sort[0] %}<li class="timeline-year" data-year="{{ ns.year }}"><span>{{ ns.year }}</span></li>{% endif %}
+      <li class="timeline-item kind-{{ n.kind }}" data-kind="{{ n.kind }}">
+        <time>{{ n.date_label }}</time>
+        <div class="timeline-body">
+          <span class="kind-badge kind-badge--{{ n.kind }}">{{ kind_labels.get(n.kind, n.kind) }}</span>
+          <p>{{ n.html }}</p>
+          {% if n.href %}<a class="text-link" href="{{ n.href if n.href.startswith('http') else root ~ n.href }}"{% if n.href.startswith('http') %} target="_blank" rel="noopener"{% endif %}>Learn more {{ m.icon('arrow') }}</a>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+{% endblock %}

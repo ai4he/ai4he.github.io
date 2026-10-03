@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Outreach</p>
+    <h1 class="page-title">Talks &amp; service</h1>
+    <p class="page-lead">Invited talks, conference presentations and service to the research community by lab director Carlos Toxtli-Hernández since the lab's founding.</p>
+  </div>
+</section>
+<section class="section section--flush">
+  <div class="wrap two-col two-col--even">
+    <div>
+      <h2 class="group-h">Talks <span class="count">{{ talks|length }}</span></h2>
+      {% set ns = namespace(y=none) %}
+      <ul class="talk-list talk-list--lg">
+        {% for t in talks %}
+        {% if t.year != ns.y %}{% set ns.y = t.year %}<li class="talk-yearrow">{{ t.year }}</li>{% endif %}
+        <li>
+          <span class="talk-dot"></span>
+          <span><strong>{% if t.link %}<a href="{{ t.link }}" target="_blank" rel="noopener">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</strong>{% if t.invited %} <span class="track-badge">Invited</span>{% endif %}<br>
+          <span class="muted">{{ t.venue }}{% if t.location %} · {{ t.location }}{% endif %}</span></span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2 class="group-h">Service to the community</h2>
+      <ul class="service-list">
+        {% for s in service %}
+        <li>{% if s.role %}<span class="service-role">{{ s.role }}</span>{% endif %}<span>{{ s.detail }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+{% endblock %}

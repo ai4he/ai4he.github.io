@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Projects</p>
+    <h1 class="page-title">Projects</h1>
+    <p class="page-lead">From NSF- and NASA-funded programs to student-led research lines, each project brings together lab members, collaborators and sponsors around a shared question.</p>
+    <div class="filter-row" role="group" aria-label="Filter projects">
+      <button class="filter-chip is-active" type="button" data-filter-projects="all">All</button>
+      <button class="filter-chip" type="button" data-filter-projects="active">Active</button>
+      <button class="filter-chip" type="button" data-filter-projects="funded">Externally funded</button>
+      <button class="filter-chip" type="button" data-filter-projects="completed">Completed</button>
+    </div>
+  </div>
+</section>
+<section class="section section--flush">
+  <div class="wrap">
+    <div class="card-grid card-grid--3" id="project-grid">
+      {% for pr in projects %}
+      <div class="project-wrap" data-status="{{ pr.status }}" data-funded="{{ 'yes' if pr.funding_list|rejectattr('internal')|list else 'no' }}">{{ m.project_card(pr, root) }}</div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

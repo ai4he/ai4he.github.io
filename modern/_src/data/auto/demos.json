@@ -1,0 +1,77 @@
+[
+ {
+  "title": "Inside Music YouTube Edition",
+  "description": "VR Web 360-degree music with AI. This is a demo that transforms a YouTube video into five stems by using AI and distributing the sounds around a room. It can be tested from a web browser or with Virtual Reality headsets.",
+  "url": "https://3dyt.hcilab.ml"
+ },
+ {
+  "title": "Hum2Song",
+  "description": "AI-powered web application that is able to compose the musical accompaniment of a melody produced by a human voice. This tool is powered by new models ported to tensorflow.js and existing Google Magenta models #MadeWithMagenta.",
+  "url": "https://www.carlostoxtli.com/hum2song/"
+ },
+ {
+  "title": "MusicAroundMe",
+  "description": "This demo separates the instruments from a Youtube song and makes them fly around you. This demo uses spatial audio, and headphones are required to detect the pan of each instrument in the room.",
+  "url": "https://www.musicaround.me/"
+ },
+ {
+  "title": "MultiAffect",
+  "description": "Reproducible Research Framework for Multimodal Affect and Action Recognition at Utterance-Level with Spatio-Temporal Feature Fusion by using Face, Instantaneous Emotions, Audio, Text, and Body Features",
+  "url": "http://bit.ly/multiaffect"
+ },
+ {
+  "title": "AutomEditor",
+  "description": "AutomEditor is an AI-based video editor that helps video bloggers to remove bloopers automatically. It uses multimodal Spatio-temporal blooper recognition and localization approaches. The models were trained in Keras and integrate feature fusion techniques from the face, body gestures (skeleton), emotions progression, and audio features.",
+  "url": "https://github.com/toxtli/AutomEditor"
+ },
+ {
+  "title": "Docs2Web",
+  "description": "Online tool that turns any Google Docs document into a modern website. This is especially helpful for documents that constantly change or collaborative documents where multiple people update them.",
+  "url": "http://www.carlostoxtli.com/docs2web/"
+ },
+ {
+  "title": "VR Web 3D News Visualization",
+  "description": "WebGL application that is able to gather tech news from different sources and show them structured on different 3D arrangements. This tool supports VR headsets for an immersive experience.",
+  "url": "http://www.carlostoxtli.com/VR-3d-news-visualization/"
+ },
+ {
+  "title": "VR Web Music Visualization Game",
+  "description": "This is an enhanced version (Mod) of the popular MoonRider music video game. This demo is compatible with Oculus Quest, Oculus Rift, HTC Vive, Windows Mixed Reality, and modern browsers.",
+  "url": "http://www.carlostoxtli.com/moonrider/"
+ },
+ {
+  "title": "Minimum Fault Detection",
+  "description": "This tool lets users visualize all the possible failures that can happen on an interconnected set of components.",
+  "url": "https://www.carlostoxtli.com/hum2song"
+ },
+ {
+  "title": "Benchmark of web-based face detectors",
+  "description": "This is a collection of web-based face detectors that can be implemented statically. These are the cleanest implementations of existing technologies that let users focus on their processing instead of the camera implementation component.",
+  "url": "https://www.carlostoxtli.com/lightweight-webcam-javascript-face-detection/"
+ },
+ {
+  "title": "Google Play and App Store reviews downloader",
+  "description": "This is an online tool that downloads the reviews from mobile applications from Google and Apple stores. This is an example of how we can run a web browser within a notebook to navigate a website and extract information. It is also an updatable notebook link that does not need to change the code every time that the repository is updated.",
+  "url": "https://colab.research.google.com/github/toxtli/GooglePlay-AppleStore-reviews-scraper/blob/master/notebook.ipynb"
+ },
+ {
+  "title": "Quantum Machine Learning Interactive Paper",
+  "description": "This interactive paper shows how people can migrate classical algorithms to equivalent quantum approaches. It showcases a case study based on Drug Discovery in which it describes the required processes to adapt existing algorithms.",
+  "url": "https://colab.research.google.com/drive/1Rm-AWrzM0m7B3E_gwRfgRZ3S7wDKmtrH"
+ },
+ {
+  "title": "Text Classification AI Workshop",
+  "description": "This Jupyter notebook explains how to extract information from the internet and how to train different types of text classification models. The given example gives an idea of how to detect fairness in reviews. At the end, it provides a playground to try with input data.",
+  "url": "https://colab.research.google.com/drive/1twc5dBjgFLFuv8p-gPfnrscTPcBlkx5q"
+ },
+ {
+  "title": "Awesome Machine Learning Jupyter Notebooks for Colab",
+  "description": "This is a curated list of Machine Learning and Deep Learning notebooks that are adapted to run in Google Colaboratory.",
+  "url": "https://github.com/toxtli/awesome-machine-learning-jupyter-notebooks-for-colab"
+ },
+ {
+  "title": "Lip Phonetics app for ASD children",
+  "description": "This app teaches how to articulate and pronounce a word after touching a pictogram. It shows a video of lips saying the word while singing. After each word, there are funny sounds. it is especially helpful for children with Autism Spectrum Disorder. It is optimized to prevent being closed by kids.",
+  "url": "http://www.carlostoxtli.com/pictogram/"
+ }
+]

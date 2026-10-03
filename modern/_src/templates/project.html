@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% set pr = project %}
+{% block content %}
+<section class="project-hero">
+  <img class="project-hero-art" src="{{ root }}{{ pr.image_url }}" alt="" aria-hidden="true">
+  <div class="wrap project-hero-inner">
+    <nav class="crumbs crumbs--light" aria-label="Breadcrumb"><a href="{{ root }}projects/">Projects</a> <span>/</span> {{ pr.title|truncate(40) }}</nav>
+    <div class="chip-row">{% for a in pr.areas_list %}{{ m.area_chip(a, root) }}{% endfor %}<span class="status-pill status-pill--{{ pr.status }}">{{ pr.status|capitalize }} · {{ pr.years }}</span></div>
+    <h1 class="page-title page-title--light">{{ pr.title }}</h1>
+    <p class="page-lead page-lead--light">{{ pr.short }}</p>
+  </div>
+</section>
+
+{% if pr.stats %}
+<div class="wrap">
+  <dl class="stat-band stat-band--project">
+    {% for v, label in pr.stats %}<div class="stat"><dd>{{ v }}</dd><dt>{{ label }}</dt></div>{% endfor %}
+  </dl>
+</div>
+{% endif %}
+
+<section class="section">
+  <div class="wrap two-col">
+    <div>
+      <div class="prose prose--lead">{{ pr.description_html }}</div>
+      {% if pr.links %}
+      <div class="link-row">
+        {% for label, href in pr.links.items() %}
+        <a class="btn btn--ghost" href="{{ href }}" target="_blank" rel="noopener">{{ m.icon('code' if 'Code' in label else 'external') }} {{ label }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    <aside class="side-card">
+      {% if pr.people_list %}
+      <h3 class="side-h">Lab team</h3>
+      <ul class="mini-people">
+        {% for person in pr.people_list %}
+        <li><a href="{{ root }}{{ person.url }}">{{ m.avatar(person, root, 'xs') }}<span>{{ person.name }}<small>{{ person.title }}</small></span></a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% if pr.collaborators %}
+      <h3 class="side-h">Collaborators</h3>
+      <ul class="plain-list">{% for c in pr.collaborators %}<li>{{ c }}</li>{% endfor %}</ul>
+      {% endif %}
+      {% if pr.funding_list %}
+      <h3 class="side-h">Funding</h3>
+      <ul class="fund-mini">
+        {% for f in pr.funding_list %}
+        <li><span class="sponsor-tag">{{ f.sponsor_short }}</span>{% if f.award_number %}<a href="{{ f.url }}" target="_blank" rel="noopener">Award #{{ f.award_number }}</a>{% else %}{{ f.program or f.sponsor }}{% endif %}{% if f.amount %} · {{ f.amount_fmt }}{% endif %}{% if f.role %} · {{ f.role }}{% endif %}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </aside>
+  </div>
+</section>
+
+{% if pr.pubs %}
+<section class="section section--tint">
+  <div class="wrap">
+    {{ m.section_head("Output", "Publications", None, None, None, root) }}
+    <div class="pub-list">
+      {% for p in pr.pubs %}{{ m.pub_item(p, root) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endblock %}

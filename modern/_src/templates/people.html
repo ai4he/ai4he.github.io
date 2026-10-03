@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">People</p>
+    <h1 class="page-title">The HAIE Lab team</h1>
+    <p class="page-lead">Our lab brings together Ph.D. students in Human-Centered Computing and Computer Science, researchers, and M.S. and undergraduate researchers. Each person has a profile with their research, publications and projects — share it freely.</p>
+  </div>
+</section>
+
+{% for g in groups %}
+{% if g.key == 'director' %}
+<section class="section section--flush">
+  <div class="wrap">
+    {% for person in g.people %}
+    <article class="director-card">
+      <a href="{{ root }}{{ person.url }}" class="director-photo">{{ m.avatar(person, root, 'xl') }}</a>
+      <div>
+        <p class="eyebrow">Lab Director</p>
+        <h2 class="director-name"><a href="{{ root }}{{ person.url }}">{{ person.name }}</a></h2>
+        <p class="director-title">{{ person.title }}</p>
+        <div class="prose prose--sm">{{ person.bio_lead }}</div>
+        <div class="chip-row chip-row--wrap">{% for t in person.interests %}<span class="tag">{{ t }}</span>{% endfor %}</div>
+        <a class="text-link" href="{{ root }}{{ person.url }}">Full profile {{ m.icon('arrow') }}</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% else %}
+<section class="section section--flush people-section">
+  <div class="wrap">
+    <h2 class="group-h">{{ g.label }} <span class="count">{{ g.people|length }}</span></h2>
+    <div class="people-grid{% if g.key == 'phd' %} people-grid--lg{% endif %}">
+      {% for person in g.people %}
+      <a class="person-tile" href="{{ root }}{{ person.url }}">
+        {{ m.avatar(person, root, 'lg') }}
+        <span class="person-tile-body">
+          <span class="person-card-name">{{ person.name }}</span>
+          <span class="person-card-title">{{ person.title }}</span>
+          {% if person.affiliation %}<span class="person-card-meta">{{ person.affiliation }}</span>{% endif %}
+          {% if person.since or person.expected_graduation %}<span class="person-card-meta">{% if person.since %}Since {{ person.since }}{% endif %}{% if person.expected_graduation %} · Expected {{ person.expected_graduation }}{% endif %}</span>{% endif %}
+          {% if person.interests %}<span class="tag-row">{% for t in person.interests[:3] %}<span class="tag tag--sm">{{ t }}</span>{% endfor %}</span>{% endif %}
+          {% if person.pubs %}<span class="person-card-stat">{{ person.pubs|length }} publication{{ 's' if person.pubs|length != 1 }}{% if person.first_author %} · {{ person.first_author|length }} as first author{% endif %}</span>{% endif %}
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+{% endfor %}
+
+<section class="section section--tint">
+  <div class="wrap">
+    {{ m.section_head("Alumni", "Alumni and past members", "Students and researchers who have contributed to the lab's work since 2022.", None, None, root) }}
+    <div class="filter-row" role="group" aria-label="Filter alumni">
+      <button class="filter-chip is-active" type="button" data-filter-alumni="all">All</button>
+      {% for g in alumni_groups %}<button class="filter-chip" type="button" data-filter-alumni="{{ g.key }}">{{ g.label }} <span class="count">{{ g.people|length }}</span></button>{% endfor %}
+    </div>
+    <div class="alumni-grid" id="alumni-grid">
+      {% for g in alumni_groups %}{% for person in g.people %}
+      <a class="alum" href="{{ root }}{{ person.url }}" data-group="{{ g.key }}">
+        {{ m.avatar(person, root, 'sm') }}
+        <span><span class="alum-name">{{ person.name }}</span><span class="alum-role">{{ person.title }}{% if person.until %} · {{ person.until }}{% endif %}</span>{% if person.pubs %}<span class="alum-meta">{{ person.pubs|length }} publication{{ 's' if person.pubs|length != 1 }}</span>{% endif %}{% if person.next %}<span class="alum-meta">Now: {{ person.next }}</span>{% endif %}</span>
+      </a>
+      {% endfor %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if committees %}
+<section class="section">
+  <div class="wrap two-col two-col--even">
+    <div>
+      <h2 class="group-h">Dissertation &amp; thesis committees</h2>
+      <p class="muted">Beyond the lab's own advisees, the director serves on doctoral committees across Clemson's School of Computing and abroad.</p>
+    </div>
+    <div class="committee-cols">
+      {% if committees.current %}<div><h3 class="side-h">Current</h3><ul class="plain-list">{% for c in committees.current %}<li>{{ c }}</li>{% endfor %}</ul></div>{% endif %}
+      {% if committees.completed %}<div><h3 class="side-h">Completed</h3><ul class="plain-list">{% for c in committees.completed %}<li>{{ c }}</li>{% endfor %}</ul></div>{% endif %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band cta-band--soft">
+      <div>
+        <h2>Lab members: keep your profile current</h2>
+        <p>Send your updated bio, photo, links (Google Scholar, LinkedIn, GitHub, personal site, CV) and job-market status to <a href="mailto:{{ site.email }}">{{ site.email }}</a>. Profiles are designed to be shared in applications.</p>
+      </div>
+      <a class="btn btn--ghost" href="{{ root }}join/">Join the lab {{ m.icon('arrow') }}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

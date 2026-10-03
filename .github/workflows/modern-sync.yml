@@ -1,0 +1,56 @@
+# Sync the /modern lab website from carlostoxtli.com, rebuild it, and redeploy.
+# Runs every Monday and on demand (Actions tab → "Sync lab website" → Run workflow).
+# Only files under modern/ are committed. Remove the `schedule` block to keep it
+# manual-only.
+name: Sync lab website (modern)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 * * 1"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: modern-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r modern/_src/requirements.txt
+
+      - name: Sync, build and check
+        run: python3 modern/_src/update.py
+
+      - name: Commit changes
+        id: commit
+        run: |
+          if git status --porcelain -- modern | grep -q .; then
+            git config user.name "haie-lab-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add modern
+            git commit -m "Sync lab website from carlostoxtli.com"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No changes."
+          fi
+
+      # Pushes made with GITHUB_TOKEN do not trigger other workflows, so start
+      # the Pages deployment explicitly.
+      - name: Redeploy GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run jekyll-gh-pages.yml --ref "${{ github.ref_name }}"

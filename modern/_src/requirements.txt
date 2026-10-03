@@ -1,0 +1,6 @@
+# Python packages needed to sync and build the HAIE Lab website
+beautifulsoup4>=4.12
+lxml>=4.9
+Jinja2>=3.1
+Markdown>=3.5
+PyYAML>=6.0

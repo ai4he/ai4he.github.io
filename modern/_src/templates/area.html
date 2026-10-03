@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="area-hero tone-{{ area.color }}">
+  <img class="area-hero-art" src="{{ root }}{{ area.image_url }}" alt="" aria-hidden="true">
+  <div class="wrap area-hero-inner">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="{{ root }}research/">Research</a> <span>/</span> {{ area.short }}</nav>
+    <span class="area-hero-icon">{{ m.icon(area.icon) }}</span>
+    <h1 class="page-title page-title--light">{{ area.name }}</h1>
+    <p class="page-lead page-lead--light">{{ area.tagline }}</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div class="prose">
+      {{ area.description_html }}
+      <h3>Guiding questions</h3>
+      <ul class="question-list tone-{{ area.color }}">
+        {% for q in area.questions %}<li>{{ q }}</li>{% endfor %}
+      </ul>
+    </div>
+    <aside class="side-card">
+      <h3 class="side-h">At a glance</h3>
+      <dl class="kv">
+        <div><dt>Publications</dt><dd>{{ area.pubs|length }}</dd></div>
+        <div><dt>Projects</dt><dd>{{ area.projects|length }}</dd></div>
+        <div><dt>Lab contributors</dt><dd>{{ area.people_list|length }}</dd></div>
+      </dl>
+      {% if area.people_list %}
+      <h3 class="side-h">People</h3>
+      <ul class="mini-people">
+        {% for person in area.people_list[:10] %}
+        <li><a href="{{ root }}{{ person.url }}">{{ m.avatar(person, root, 'xs') }}<span>{{ person.name }}</span></a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </aside>
+  </div>
+</section>
+
+{% if area.projects %}
+<section class="section section--tint">
+  <div class="wrap">
+    {{ m.section_head("Projects", "Projects in this thrust", None, None, None, root) }}
+    <div class="card-grid card-grid--3">
+      {% for pr in area.projects %}{{ m.project_card(pr, root) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  <div class="wrap">
+    {{ m.section_head("Publications", area.pubs|length ~ " publications", None, "publications/?area=" ~ area.slug, "Filter in the full list", root) }}
+    <div class="pub-list">
+      {% for p in area.pubs %}{{ m.pub_item(p, root) }}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

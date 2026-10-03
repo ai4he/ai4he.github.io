@@ -1,0 +1,153 @@
+# ---------------------------------------------------------------------------
+# Sponsored research (awarded)
+# ---------------------------------------------------------------------------
+# Source: TPR 2027 dossier (CV, Research Activities) and the Grants & Funding
+# section of the personal website. `sync.py` also extracts the website list to
+# data/auto/grants.json; `build.py` warns when a grant appears there but not
+# here, so new awards are not forgotten.
+#
+# role: PI | Co-PI        amount: total award in USD
+# project: slug in projects.yaml (optional)
+# ---------------------------------------------------------------------------
+
+- slug: nsf-aiming
+  title: "AIMing: Interactive Conjecture Proving"
+  sponsor: National Science Foundation
+  sponsor_short: NSF
+  program: "AI, Formal Methods, and Mathematical Reasoning (AIMing)"
+  award_number: "2434704"
+  url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2434704
+  role: PI
+  pi: Carlos Toxtli-Hernández
+  team: "Co-PIs: Luis David Garcia Puente (Colorado College), Michael Burr and Vinita Gangaram Jansari (Clemson University)"
+  amount: 1198339
+  start: 2024-09
+  end: 2027-08
+  project: aiming
+  summary: >-
+    Human–AI collaboration for research-level mathematics: conjecture
+    generation, premise retrieval and robust mathematical reasoning with
+    language models. The largest project led by the lab.
+
+- slug: nsf-aviation-inspection
+  title: "Collaborative Research: FW-HTF-RL: The Future of Aviation Inspection: Artificial Intelligence and Mixed Reality as Agents of Transformation"
+  sponsor: National Science Foundation
+  sponsor_short: NSF
+  program: Future of Work at the Human-Technology Frontier (FW-HTF)
+  award_number: "2326185"
+  url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2326185
+  role: Co-PI
+  pi: Anand Gramopadhye
+  amount: 1558433
+  start: 2023-10
+  end: 2027-09
+  project: aviation-inspection
+  summary: >-
+    How artificial intelligence and mixed reality can transform the work of
+    aviation maintenance inspectors.
+
+- slug: navy-underwater-hat
+  title: "Minimizing the Impact of Cognitive and Physical Limitations from Humans and Autonomy Through the Development, Training, and Implementation of Human-Autonomy Teaming in Underwater Environments"
+  sponsor: U.S. Department of the Navy
+  sponsor_short: U.S. Navy
+  role: Co-PI
+  pi: Nathan McNeese
+  amount: 1095901
+  start: 2023
+  duration: 3 years
+  project: underwater-hat
+  summary: >-
+    Human–autonomy teaming for underwater search and rescue, from team needs
+    assessments to vision models for autonomous underwater vehicles.
+
+- slug: nsf-saTC-authentication
+  title: "SaTC 2.0: RES: Tracking the Usability of Secure Authentication Systems"
+  sponsor: National Science Foundation
+  sponsor_short: NSF
+  program: Secure and Trustworthy Cyberspace (SaTC 2.0)
+  award_number: "2521037"
+  url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2521037
+  role: Co-PI
+  pi: Kelly Caine
+  amount: 650000
+  start: 2025-10
+  end: 2028-09
+  project: secure-authentication
+  summary: >-
+    Measuring and tracking the usability of secure authentication systems
+    as people use them.
+
+- slug: nsf-creative-workforces
+  title: "HCC: Small: Towards Leveraging Generative AI to Support End-User Driven Creative Workforces in Technology"
+  sponsor: National Science Foundation
+  sponsor_short: NSF
+  program: Human-Centered Computing (HCC)
+  award_number: "2342393"
+  url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2342393
+  role: Co-PI
+  pi: Guo Freeman
+  amount: 599877
+  start: 2024-12
+  end: 2027-11
+  project: creative-workforces
+  summary: >-
+    How generative AI can support end-user driven creative workforces in
+    technology.
+
+- slug: nasa-fermi-llm
+  title: "FERMI-LLM: A Large Language Model for the Analysis of FERMI-LAT Data"
+  sponsor: National Aeronautics and Space Administration
+  sponsor_short: NASA
+  program: Fermi Guest Investigator Program, Cycle 17
+  role: Co-PI
+  pi: Marco Ajello
+  amount: 450000
+  start: 2025-08
+  end: 2028
+  project: fermi-llm
+  summary: >-
+    A language-model platform that turns plain-English requests into
+    verifiable Fermi Large Area Telescope gamma-ray analyses.
+
+- slug: army-vehicle-security
+  title: "Resilient Vehicle Network Security Architecture for Next-Generation Military Ground Vehicle"
+  sponsor: U.S. Army DEVCOM Ground Vehicle Systems Center
+  sponsor_short: U.S. Army
+  program: Virtual Prototyping of Ground Systems (VIPR-GS) Center, project 1.25.25
+  role: Co-PI
+  pi: Pierluigi Pisu
+  team: "With James Jones (George Mason University)"
+  amount: 499898
+  start: 2026-03
+  project: vehicle-security
+  summary: >-
+    A resilient network security architecture for next-generation military
+    ground vehicles.
+
+- slug: srnl-water
+  title: "CU-SRNL GSS: Physics-informed deep learning for water quantity and quality simulations across Savannah River Basin"
+  sponsor: Clemson University – Savannah River National Laboratory
+  sponsor_short: SRNL
+  program: Graduate Student Support Program
+  role: Co-PI
+  pi: Vidya Samadi
+  team: "With David Werth (Savannah River National Laboratory)"
+  amount: 75580
+  start: 2026-01
+  project: water-ai
+  summary: >-
+    A graduate position at the interface of machine learning and hydrology,
+    developing physics-informed deep learning for water simulations.
+
+# Internal support
+- slug: cu-fellows-postdoc
+  title: "Clemson University Research Faculty and Postdoctoral Researcher Support Grant (CU Fellows)"
+  sponsor: Clemson University
+  sponsor_short: Clemson
+  team: "In coordination with Marco Ajello, Jonathan Zrake and Jeffrey Fung (Physics and Astronomy)"
+  start: 2024-12
+  duration: 2 years
+  internal: true
+  summary: >-
+    A two-year postdoctoral position in AI-enhanced computational
+    astrophysics.

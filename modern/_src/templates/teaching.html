@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Teaching &amp; mentoring</p>
+    <h1 class="page-title">Teaching &amp; mentoring</h1>
+    <p class="page-lead">{{ teaching.philosophy }}</p>
+  </div>
+</section>
+<section class="section section--flush">
+  <div class="wrap">
+    <div class="course-grid">
+      {% for c in teaching.courses %}
+      <article class="course-card">
+        <p class="course-code">{{ c.code }}</p>
+        <h3 class="course-title">{{ c.title }}</h3>
+        <p>{{ c.description }}</p>
+        {% if c.note %}<p class="muted small">{{ c.note }}</p>{% endif %}
+        <p class="course-terms">{{ m.icon('calendar') }}{{ c.terms }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% if teaching.quotes %}
+<section class="section section--ink">
+  <div class="wrap quote-grid">
+    {% for q in teaching.quotes %}
+    <figure class="quote"><blockquote>“{{ q.text }}”</blockquote><figcaption>{{ q.source }}</figcaption></figure>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+<section class="section">
+  <div class="wrap two-col two-col--even">
+    <div>
+      <h2 class="group-h">Research mentoring</h2>
+      <p class="muted">Students join the lab's research through several formats, and course projects frequently grow into co-authored publications.</p>
+      <ul class="highlight-list">{% for x in teaching.mentoring %}<li>{{ x }}</li>{% endfor %}</ul>
+      <a class="btn btn--primary" href="{{ root }}join/">How to get involved {{ m.icon('arrow') }}</a>
+    </div>
+    <div class="committee-cols">
+      {% if teaching.committees.current %}<div><h3 class="side-h">Current committees</h3><ul class="plain-list">{% for c in teaching.committees.current %}<li>{{ c }}</li>{% endfor %}</ul></div>{% endif %}
+      {% if teaching.committees.completed %}<div><h3 class="side-h">Completed committees</h3><ul class="plain-list">{% for c in teaching.committees.completed %}<li>{{ c }}</li>{% endfor %}</ul></div>{% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}

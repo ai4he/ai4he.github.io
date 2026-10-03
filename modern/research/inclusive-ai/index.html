@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inclusive AI for Language, Learning &amp; Health · HAIE Lab</title>
+<meta name="description" content="We co-design AI with bilingual speakers, students, patients and other communities that mainstream technology often overlooks.">
+<link rel="canonical" href="https://haielab.org/modern/research/inclusive-ai/">
+<meta name="theme-color" content="#0d1424">
+<meta property="og:site_name" content="Human-AI Empowerment Lab">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Inclusive AI for Language, Learning &amp; Health">
+<meta property="og:description" content="We co-design AI with bilingual speakers, students, patients and other communities that mainstream technology often overlooks.">
+<meta property="og:url" content="https://haielab.org/modern/research/inclusive-ai/">
+<meta property="og:image" content="https://haielab.org/modern/assets/img/brand/haie-logo.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../../assets/img/brand/favicon.png">
+<link rel="apple-touch-icon" href="../../assets/img/brand/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Human-AI Empowerment Lab news" href="../../feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/css/site.css?v=559ad714a3">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("haie-theme");
+      if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body class="page-research">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="../../" aria-label="Human-AI Empowerment Lab home">
+      <svg class="logo-mark" viewBox="0 0 100 76" aria-hidden="true">
+  <rect x="40" y="2" width="22" height="22" rx="6" fill="#2CCBF9"/>
+  <rect x="66" y="9" width="18" height="18" rx="5" fill="#F2B30C"/>
+  <rect x="14" y="13" width="14" height="14" rx="4" fill="#F9604F"/>
+  <rect x="88" y="18" width="10" height="10" rx="3" fill="#6119F9"/>
+  <rect x="1" y="33" width="17" height="17" rx="5" fill="#F2B30C"/>
+  <rect x="22" y="29" width="24" height="24" rx="6.5" fill="#6119F9"/>
+  <rect x="50" y="33" width="15" height="15" rx="4" fill="#0A6BF9"/>
+  <rect x="70" y="33" width="9" height="9" rx="2.5" fill="#E2323F"/>
+  <rect x="83" y="32" width="15" height="15" rx="4" fill="#2CCBF9"/>
+  <rect x="9" y="56" width="9" height="9" rx="2.5" fill="#F9604F"/>
+  <rect x="23" y="58" width="16" height="16" rx="4.5" fill="#2CCBF9"/>
+</svg>
+      <span class="brand-text">
+        <span class="brand-name">Human-AI Empowerment Lab</span>
+        <span class="brand-short">HAIE Lab</span>
+        <span class="brand-sub">Clemson University · School of Computing</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="../../research/" aria-current="page">Research</a></li>
+        <li><a href="../../projects/">Projects</a></li>
+        <li><a href="../../publications/">Publications</a></li>
+        <li><a href="../../people/">People</a></li>
+        <li><a href="../../funding/">Funding</a></li>
+        <li><a href="../../news/">News</a></li>
+        <li><a href="../../join/">Join</a></li>
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <a class="icon-btn" href="../../publications/#search" aria-label="Search publications"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></a>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode"><svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg><svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav"><svg class="icon icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="area-hero tone-green">
+  <img class="area-hero-art" src="../../assets/img/gen/area-inclusive-ai.svg" alt="" aria-hidden="true">
+  <div class="wrap area-hero-inner">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../../research/">Research</a> <span>/</span> Inclusive AI</nav>
+    <span class="area-hero-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><path d="M5 9h14M12 9v6M12 15l-3.5 6M12 15l3.5 6"/></svg></span>
+    <h1 class="page-title page-title--light">Inclusive AI for Language, Learning &amp; Health</h1>
+    <p class="page-lead page-lead--light">AI that bridges language, education and access gaps.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div class="prose">
+      <p>Many of the people who could benefit most from AI are least considered in its design. Our lab uses participatory methods to build AI with — not only for — these communities. We study how second-language speakers envision personal AI assistants for face-to-face conversations (CHI 2026), co-design AI fluency practice for advanced bilingual speakers (IEEE CAI 2025), and examine how AI language tools affect crowd workers completing tasks outside their primary language.</p>
+<p>In education, we developed prompting architectures and LibRef, an LLM-powered assistant that supports students' information seeking and library literacy, reviewed the role of LLMs in Latin American education, and studied digital-twin avatars for remote instruction (CHI 2026). In health and security, we examine how an embodied agent's body type shapes dietary counseling outcomes (Computer Animation and Virtual Worlds, 2026) and how college students manage authentication in everyday life (HFES 2026).</p>
+      <h3>Guiding questions</h3>
+      <ul class="question-list tone-green">
+<li>How should AI mediate conversations between speakers of different languages?</li><li>How can LLM tools strengthen — not replace — students&#39; information-seeking skills?</li><li>How do embodiment and interface choices shape trust in health and security technology?</li>      </ul>
+    </div>
+    <aside class="side-card">
+      <h3 class="side-h">At a glance</h3>
+      <dl class="kv">
+        <div><dt>Publications</dt><dd>13</dd></div>
+        <div><dt>Projects</dt><dd>3</dd></div>
+        <div><dt>Lab contributors</dt><dd>6</dd></div>
+      </dl>
+      <h3 class="side-h">People</h3>
+      <ul class="mini-people">
+        <li><a href="../../people/carlos-toxtli/"><img class="avatar avatar--xs" src="../../assets/img/people/carlos-toxtli.jpg" alt="Carlos Toxtli-Hernández" loading="lazy" width="240" height="240">
+<span>Carlos Toxtli-Hernández</span></a></li>
+        <li><a href="../../people/cecilia-delgado-solorzano/"><img class="avatar avatar--xs" src="../../assets/img/people/cecilia-delgado-solorzano.jpg" alt="Cecilia Delgado Solorzano" loading="lazy" width="240" height="240">
+<span>Cecilia Delgado Solorzano</span></a></li>
+        <li><a href="../../people/christopher-kalahiki/"><span class="avatar avatar--xs avatar--initials" aria-hidden="true"><span>CK</span></span>
+<span>Christopher Kalahiki</span></a></li>
+        <li><a href="../../people/manuel-delaflor/"><img class="avatar avatar--xs" src="../../assets/img/people/manuel-delaflor.jpg" alt="Manuel Delaflor" loading="lazy" width="240" height="240">
+<span>Manuel Delaflor</span></a></li>
+        <li><a href="../../people/pratyush-singh/"><img class="avatar avatar--xs" src="../../assets/img/people/pratyush-singh.jpg" alt="Pratyush Singh" loading="lazy" width="240" height="240">
+<span>Pratyush Singh</span></a></li>
+        <li><a href="../../people/nicholas-berns/"><img class="avatar avatar--xs" src="../../assets/img/people/nicholas-berns.jpg" alt="Nicholas Joseph Berns" loading="lazy" width="240" height="240">
+<span>Nicholas Joseph Berns</span></a></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section-head">
+  <div>
+<p class="eyebrow">Projects</p>    <h2 class="section-title">Projects in this thrust</h2>
+  </div>
+</div>
+    <div class="card-grid card-grid--3">
+<article class="card project-card">
+  <a class="card-media" href="../../projects/worker-centered-ai/" tabindex="-1" aria-hidden="true"><img src="../../assets/img/gen/project-worker-centered-ai.svg" alt="" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="chip-row"><a class="chip tone-cyan chip--sm" href="../../research/future-of-work/"><span class="chip-dot"></span>Future of Work</a><a class="chip tone-green chip--sm" href="../../research/inclusive-ai/"><span class="chip-dot"></span>Inclusive AI</a></div>
+    <h3 class="card-title"><a href="../../projects/worker-centered-ai/">Worker-Centered AI for Crowd Work</a></h3>
+    <p class="card-text">Transparent, culturally aware tools that empower digital workers.</p>
+    <div class="card-foot">
+      <span class="facepile"><img class="avatar avatar--xs" src="../../assets/img/people/carlos-toxtli.jpg" alt="Carlos Toxtli-Hernández" loading="lazy" width="240" height="240">
+<span class="avatar avatar--xs avatar--initials" aria-hidden="true"><span>FM</span></span>
+<img class="avatar avatar--xs" src="../../assets/img/people/alberto-campos-hernandez.jpg" alt="Alberto Campos Hernández" loading="lazy" width="240" height="240">
+<img class="avatar avatar--xs" src="../../assets/img/people/cecilia-delgado-solorzano.jpg" alt="Cecilia Delgado Solorzano" loading="lazy" width="240" height="240">
+</span>
+      <span class="card-foot-meta">5 papers · 2022–present</span>
+    </div>
+  </div>
+</article><article class="card project-card">
+  <a class="card-media" href="../../projects/ai-mediated-language/" tabindex="-1" aria-hidden="true"><img src="../../assets/img/gen/project-ai-mediated-language.svg" alt="" loading="lazy">
+  </a>
+  <div class="card-body">
+    <div class="chip-row"><a class="chip tone-green chip--sm" href="../../research/inclusive-ai/"><span class="chip-dot"></span>Inclusive AI</a></div>
+    <h3 class="card-title"><a href="../../projects/ai-mediated-language/">AI-Mediated Language and Communication</a></h3>
+    <p class="card-text">Personal AI assistants for second-language speakers and learners.</p>
+    <div class="card-foot">
+      <span class="facepile"><img class="avatar avatar--xs" src="../../assets/img/people/carlos-toxtli.jpg" alt="Carlos Toxtli-Hernández" loading="lazy" width="240" height="240">
+<img class="avatar avatar--xs" src="../../assets/img/people/cecilia-delgado-solorzano.jpg" alt="Cecilia Delgado Solorzano" loading="lazy" width="240" height="240">
+<img class="avatar avatar--xs" src="../../assets/img/people/pratyush-singh.jpg" alt="Pratyush Singh" loading="lazy" width="240" height="240">
+</span>
+      <span class="card-foot-meta">6 papers · 2023–present</span>
+    </div>
+  </div>
+</article><article class="card project-card">
+  <a class="card-media" href="../../projects/secure-authentication/" tabindex="-1" aria-hidden="true"><img src="../../assets/img/gen/project-secure-authentication.svg" alt="" loading="lazy">
+<span class="media-badge">NSF</span>  </a>
+  <div class="card-body">
+    <div class="chip-row"><a class="chip tone-green chip--sm" href="../../research/inclusive-ai/"><span class="chip-dot"></span>Inclusive AI</a><a class="chip tone-coral chip--sm" href="../../research/trustworthy-ai/"><span class="chip-dot"></span>Trustworthy AI</a></div>
+    <h3 class="card-title"><a href="../../projects/secure-authentication/">Usable Secure Authentication</a></h3>
+    <p class="card-text">Making secure authentication usable in everyday life.</p>
+    <div class="card-foot">
+      <span class="facepile"><img class="avatar avatar--xs" src="../../assets/img/people/carlos-toxtli.jpg" alt="Carlos Toxtli-Hernández" loading="lazy" width="240" height="240">
+<span class="avatar avatar--xs avatar--initials" aria-hidden="true"><span>CK</span></span>
+</span>
+      <span class="card-foot-meta">1 paper · 2025–2028</span>
+    </div>
+  </div>
+</article>    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+  <div>
+<p class="eyebrow">Publications</p>    <h2 class="section-title">13 publications</h2>
+  </div>
+<a class="text-link" href="../../publications/?area=inclusive-ai">Filter in the full list <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    <div class="pub-list">
+<article class="pub" id="2026-authentication-routines-among-college-students"
+  data-year="2026" data-type="poster" data-areas="inclusive-ai trustworthy-ai"
+  data-people="christopher-kalahiki carlos-toxtli "
+  data-search="authentication routines among college students catherine barwulor christopher kalahiki e. sidnam-mauch carlos toxtli-hernández kelly caine proceedings of the human factors and ergonomics society annual meeting (aspire 2026) hfes 2026 ">
+  <a class="pub-thumb" href="../../publications/2026-authentication-routines-among-college-students/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2026-authentication-routines-among-college-students.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">HFES 2026</span>
+<span class="track-badge">Poster</span><span class="status-badge">Forthcoming</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2026-authentication-routines-among-college-students/">Authentication Routines Among College Students</a></h3>
+    <p class="pub-authors"><span class="authors"><span class="author">Catherine Barwulor</span>, <a class="author author--lab" href="../../people/christopher-kalahiki/">Christopher Kalahiki</a>, <span class="author">E. Sidnam-Mauch</span>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a>, <span class="author">Kelly Caine</span></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="bib-2026-authentication-routines-among-college-students" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://www.hfes.org/Events/ASPIRE-International-Annual-Meeting/ASPIRE-Home" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span><span class="area-dot tone-coral" title="Trustworthy, Metacognitive &amp; Responsible AI"></span>    </div>
+<div class="pub-panel pub-panel--code" id="bib-2026-authentication-routines-among-college-students" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2026-authentication-routines-among-college-students"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2026-authentication-routines-among-college-students">@inproceedings{Barwulor2026Authentication,
+  title = {Authentication Routines Among College Students},
+  author = {Barwulor, Catherine and Kalahiki, Christopher and Sidnam-Mauch, E. and Toxtli-Hernandez, Carlos and Caine, Kelly},
+  booktitle = {Proceedings of the Human Factors and Ergonomics Society Annual Meeting (ASPIRE 2026)},
+  publisher = {SAGE Publications},
+  year = {2026},
+  note = {Poster; forthcoming},
+  url = {https://www.hfes.org/Events/ASPIRE-International-Annual-Meeting/ASPIRE-Home}
+}</pre></div>  </div>
+</article><article class="pub" id="2026-auditing-llm-portrayals-of-neurodivergent-people"
+  data-year="2026" data-type="conference" data-areas="trustworthy-ai inclusive-ai"
+  data-people="carlos-toxtli manuel-delaflor "
+  data-search="auditing llm portrayals of neurodivergent people: quantifying the asymmetry between deficit framing and neurodiversity affirmation carlos toxtli-hernández manuel delaflor proceedings of the ninth aaai/acm conference on ai, ethics, and society (aies ’26) aaai/acm aies 2026 open-weight large language models are increasingly used in education, hiring, and information-seeking contexts that touch neurodivergent people, yet we lack a clear empirical map of how their portrayals of neurodiversity shift under everyday prompt variation. we present a multi-condition, multi-model audit of llm portrayals of eight neurodivergent identities (autism, adhd, dyslexia, dyspraxia, dyscalculia, tourette syndrome, ocd, and sensory-processing differences) plus a non-stigmatized medical control. six open-weight models answer a pre-registered prompt bank that crosses seed items with seven perturbation families, including paraphrase, identity-first versus person-first language, system personas, plausible versus obviously fictional authority citations, multi-turn social pushback, leading questions, and two mitigation arms. held-out llm judges score each generation on three ordinal axes. baseline portrayals are remarkably homogeneous across models, so the inconsistency observed under prompt variation is prompt-driven, not model-driven. steering toward deficit framing is several times easier than steering toward neurodiversity affirmation. emotional pushback shifts outputs more than evidence-laden pushback. plausible-sounding fake citations slip past safety filters while obviously fictional ones do not. a single-line system-prompt mitigation recovers a meaningful share of the steering range at near-zero refusal cost on neutral prompts, though refusal rises sharply under adversarial pressure. the governance question for disability-relevant llm deployment is therefore not whether the model is biased but who controls the steering, and with what accountability.">
+  <a class="pub-thumb" href="../../publications/2026-auditing-llm-portrayals-of-neurodivergent-people/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2026-auditing-llm-portrayals-of-neurodivergent-people.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">AAAI/ACM AIES 2026</span>
+<span class="status-badge">Forthcoming</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2026-auditing-llm-portrayals-of-neurodivergent-people/">Auditing LLM Portrayals of Neurodivergent People: Quantifying the Asymmetry Between Deficit Framing and Neurodiversity Affirmation</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a>, <a class="author author--lab" href="../../people/manuel-delaflor/">Manuel Delaflor</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2026-auditing-llm-portrayals-of-neurodivergent-people" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2026-auditing-llm-portrayals-of-neurodivergent-people" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://www.aies-conference.com/2026/" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-coral" title="Trustworthy, Metacognitive &amp; Responsible AI"></span><span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2026-auditing-llm-portrayals-of-neurodivergent-people" hidden><p>Open-weight large language models are increasingly used in education, hiring, and information-seeking contexts that touch neurodivergent people, yet we lack a clear empirical map of how their portrayals of neurodiversity shift under everyday prompt variation. We present a multi-condition, multi-model audit of LLM portrayals of eight neurodivergent identities (autism, ADHD, dyslexia, dyspraxia, dyscalculia, Tourette syndrome, OCD, and sensory-processing differences) plus a non-stigmatized medical control. Six open-weight models answer a pre-registered prompt bank that crosses seed items with seven perturbation families, including paraphrase, identity-first versus person-first language, system personas, plausible versus obviously fictional authority citations, multi-turn social pushback, leading questions, and two mitigation arms. Held-out LLM judges score each generation on three ordinal axes. Baseline portrayals are remarkably homogeneous across models, so the inconsistency observed under prompt variation is prompt-driven, not model-driven. Steering toward deficit framing is several times easier than steering toward neurodiversity affirmation. Emotional pushback shifts outputs more than evidence-laden pushback. Plausible-sounding fake citations slip past safety filters while obviously fictional ones do not. A single-line system-prompt mitigation recovers a meaningful share of the steering range at near-zero refusal cost on neutral prompts, though refusal rises sharply under adversarial pressure. The governance question for disability-relevant LLM deployment is therefore not whether the model is biased but who controls the steering, and with what accountability.</p></div><div class="pub-panel pub-panel--code" id="bib-2026-auditing-llm-portrayals-of-neurodivergent-people" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2026-auditing-llm-portrayals-of-neurodivergent-people"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2026-auditing-llm-portrayals-of-neurodivergent-people">@inproceedings{Toxtli2026Auditing,
+  title = {Auditing LLM Portrayals of Neurodivergent People: Quantifying the Asymmetry Between Deficit Framing and Neurodiversity Affirmation},
+  author = {Carlos Toxtli and Manuel Delaflor},
+  booktitle = {Proceedings of the Ninth AAAI/ACM Conference on AI, Ethics, and Society (AIES ’26)},
+  year = {2026},
+  url = {https://www.aies-conference.com/2026/}
+}</pre></div>  </div>
+</article><article class="pub" id="2026-exploring-user-expectations-for-ai-mediated-second-language"
+  data-year="2026" data-type="poster" data-areas="inclusive-ai"
+  data-people="cecilia-delgado-solorzano pratyush-singh carlos-toxtli "
+  data-search="exploring user expectations for ai-mediated second language communication: a formative participatory design study cecilia delgado solorzano pratyush singh carlos toxtli-hernández proceedings of the extended abstracts of the 2026 chi conference on human factors in computing systems chi 2026 this formative study explores how second-language (l2) speakers envision personal ai assistants (paias) supporting face-to-face communication with native speakers. through participatory sessions with 14 bilingual adults combining scenario generation, role-play, and diagramming, we surfaced preliminary tensions in ai-mediated l2 interaction: managing conversational flow, balancing transparency with naturalness, and navigating context-dependent privacy. our exploratory findings suggest three candidate mediation patterns (solo, symmetric, and relayed assistance), each with distinct trade-offs that warrant further investigation. we contribute initial design considerations including reply-when-free defaults and role-based privacy profiles, alongside a replicable protocol for eliciting ai behavior expectations. these preliminary insights establish a foundation for future empirical work on paias in multilingual communication contexts.">
+  <a class="pub-thumb" href="../../publications/2026-exploring-user-expectations-for-ai-mediated-second-language/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2026-exploring-user-expectations-for-ai-mediated-second-language.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">CHI 2026</span>
+<span class="track-badge">Extended Abstract</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2026-exploring-user-expectations-for-ai-mediated-second-language/">Exploring User Expectations for AI-Mediated Second Language Communication: A Formative Participatory Design Study</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab" href="../../people/cecilia-delgado-solorzano/">Cecilia Delgado Solorzano</a>, <a class="author author--lab" href="../../people/pratyush-singh/">Pratyush Singh</a>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2026-exploring-user-expectations-for-ai-mediated-second-language" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2026-exploring-user-expectations-for-ai-mediated-second-language" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.1145/3772363.3799390" target="_blank" rel="noopener">DOI</a>
+<span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2026-exploring-user-expectations-for-ai-mediated-second-language" hidden><p>This formative study explores how second-language (L2) speakers envision personal AI assistants (PAIAs) supporting face-to-face communication with native speakers. Through participatory sessions with 14 bilingual adults combining scenario generation, role-play, and diagramming, we surfaced preliminary tensions in AI-mediated L2 interaction: managing conversational flow, balancing transparency with naturalness, and navigating context-dependent privacy. Our exploratory findings suggest three candidate mediation patterns (solo, symmetric, and relayed assistance), each with distinct trade-offs that warrant further investigation. We contribute initial design considerations including reply-when-free defaults and role-based privacy profiles, alongside a replicable protocol for eliciting AI behavior expectations. These preliminary insights establish a foundation for future empirical work on PAIAs in multilingual communication contexts.</p></div><div class="pub-panel pub-panel--code" id="bib-2026-exploring-user-expectations-for-ai-mediated-second-language" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2026-exploring-user-expectations-for-ai-mediated-second-language"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2026-exploring-user-expectations-for-ai-mediated-second-language">@inproceedings{Delgado_Solorzano_2026,
+  series = {CHI EA ’26},
+  title = {Exploring User Expectations for AI-Mediated Second Language Communication: A Formative Participatory Design Study},
+  url = {http://dx.doi.org/10.1145/3772363.3799390},
+  doi = {10.1145/3772363.3799390},
+  booktitle = {Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems},
+  publisher = {ACM},
+  author = {Delgado Solorzano, Cecilia and Singh, Pratyush and Toxtli, Carlos},
+  year = {2026},
+  month = Apr,
+  pages = {1--4},
+  collection = {CHI EA ’26}
+}</pre></div>  </div>
+</article><article class="pub" id="2026-effects-of-embodied-agent-body-type-on-perceptions-and"
+  data-year="2026" data-type="journal" data-areas="inclusive-ai"
+  data-people="carlos-toxtli "
+  data-search="effects of embodied agent body type on perceptions and dietary intentions in digital health counseling sagar ashok vankit nafisa sabnam shama jay ashish kadam carlos toxtli-hernández matias volonte computer animation and virtual worlds computer animation &amp; virtual worlds 2026 embodied conversational agents (ecas) are increasingly used for health education, yet the role of an agent&#39;s physical embodiment remains relatively underexplored. this study examines how body mass index (bmi) cues in an embodied agent relate to user perceptions, trust in medical content, and health‐related intentions during a brief dietary counseling interaction focused on diabetes prevention. in a between‐subjects experiment, participants interacted with one of three visually distinct versions of the same healthcare coach, representing underweight, normal‐weight, or obese body types. across conditions, participants demonstrated improvements in dietary intentions, while significant increases in diabetes memory outcomes were observed only in the underweight and normal‐weight conditions. increases in overall behavior change intention were observed only in the underweight condition. subjective evaluations indicated that the normal‐weight agent was rated higher on realism, likability, and interaction quality, while post‐interaction perception ratings suggested that more extreme body representations were sometimes perceived as less comfortable or less appropriate for a health advisory role. together, these results suggest that visual body type cues may be associated with differences in users&#39; subjective experiences of embodied health counseling agents, while evidence for broader differences in learning and motivation‐related outcomes should be interpreted cautiously.">
+  <a class="pub-thumb" href="../../publications/2026-effects-of-embodied-agent-body-type-on-perceptions-and/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2026-effects-of-embodied-agent-body-type-on-perceptions-and.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">Computer Animation &amp; Virtual Worlds 2026</span>
+<span class="track-badge">CASA 2026</span><span class="status-badge">Forthcoming</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2026-effects-of-embodied-agent-body-type-on-perceptions-and/">Effects of Embodied Agent Body Type on Perceptions and Dietary Intentions in Digital Health Counseling</a></h3>
+    <p class="pub-authors"><span class="authors"><span class="author">Sagar Ashok Vankit</span>, <span class="author">Nafisa Sabnam Shama</span>, <span class="author">Jay Ashish Kadam</span>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a>, <span class="author">Matias Volonte</span></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2026-effects-of-embodied-agent-body-type-on-perceptions-and" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2026-effects-of-embodied-agent-body-type-on-perceptions-and" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.1002/cav.70146" target="_blank" rel="noopener">DOI</a>
+<span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2026-effects-of-embodied-agent-body-type-on-perceptions-and" hidden><p>Embodied Conversational Agents (ECAs) are increasingly used for health education, yet the role of an agent&#39;s physical embodiment remains relatively underexplored. This study examines how body mass index (BMI) cues in an embodied agent relate to user perceptions, trust in medical content, and health‐related intentions during a brief dietary counseling interaction focused on diabetes prevention. In a between‐subjects experiment, participants interacted with one of three visually distinct versions of the same healthcare coach, representing underweight, normal‐weight, or obese body types. Across conditions, participants demonstrated improvements in dietary intentions, while significant increases in diabetes memory outcomes were observed only in the underweight and normal‐weight conditions. Increases in overall behavior change intention were observed only in the underweight condition. Subjective evaluations indicated that the normal‐weight agent was rated higher on realism, likability, and interaction quality, while post‐interaction perception ratings suggested that more extreme body representations were sometimes perceived as less comfortable or less appropriate for a health advisory role. Together, these results suggest that visual body type cues may be associated with differences in users&#39; subjective experiences of embodied health counseling agents, while evidence for broader differences in learning and motivation‐related outcomes should be interpreted cautiously.</p></div><div class="pub-panel pub-panel--code" id="bib-2026-effects-of-embodied-agent-body-type-on-perceptions-and" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2026-effects-of-embodied-agent-body-type-on-perceptions-and"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2026-effects-of-embodied-agent-body-type-on-perceptions-and">@article{Ashok_Vankit_2026,
+  title = {Effects of Embodied Agent Body Type on Perceptions and Dietary Intentions in Digital Health Counseling},
+  volume = {37},
+  issn = {1546-427X},
+  url = {http://dx.doi.org/10.1002/cav.70146},
+  doi = {10.1002/cav.70146},
+  number = {3},
+  journal = {Computer Animation and Virtual Worlds},
+  publisher = {Wiley},
+  author = {Ashok Vankit, Sagar and Sabnam Shama, Nafisa and Ashish Kadam, Jay and Toxtli Hernandez, Carlos and Volonte, Matias},
+  year = {2026},
+  month = May
+}</pre></div>  </div>
+</article><article class="pub" id="2026-a-formative-investigation-of-student-perceptions-of-digital"
+  data-year="2026" data-type="poster" data-areas="inclusive-ai"
+  data-people="nicholas-berns carlos-toxtli "
+  data-search="a formative investigation of student perceptions of digital twin instructors in remote lecture environments matias volonte nicholas joseph berns carlos toxtli-hernández proceedings of the extended abstracts of the 2026 chi conference on human factors in computing systems chi 2026 the prevalence of remote instruction has heightened the need to understand how emerging avatar technologies might support instructor presence in virtual classrooms. digital twins, defined here as animated avatars that mirror a speaker’s facial expressions and movements in real time, represent a potential alternative to standard webcam video. this formative study examines student perceptions following exposure to a digital twin instructor during live zoom lectures. twenty-four students completed a post-session survey assessing perceived realism, emotional engagement, and willingness to attend future sessions. spearman correlation analysis revealed that affective qualities such as likeability and enjoyment showed strong positive associations with receptivity, while perceptions of awkwardness and weirdness showed strong negative associations. perceived natural movement was strongly associated with human resemblance and inversely associated with eeriness, consistent with uncanny valley theory. these exploratory findings identify candidate factors for future controlled investigations and offer preliminary design guidance emphasizing behavioral fidelity and emotional warmth over photorealism alone.">
+  <a class="pub-thumb" href="../../publications/2026-a-formative-investigation-of-student-perceptions-of-digital/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2026-a-formative-investigation-of-student-perceptions-of-digital.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">CHI 2026</span>
+<span class="track-badge">Extended Abstract</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2026-a-formative-investigation-of-student-perceptions-of-digital/">A Formative Investigation of Student Perceptions of Digital Twin Instructors in Remote Lecture Environments</a></h3>
+    <p class="pub-authors"><span class="authors"><span class="author">Matias Volonte</span>, <a class="author author--lab" href="../../people/nicholas-berns/">Nicholas Joseph Berns</a>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2026-a-formative-investigation-of-student-perceptions-of-digital" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2026-a-formative-investigation-of-student-perceptions-of-digital" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.1145/3772363.3798975" target="_blank" rel="noopener">DOI</a>
+<span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2026-a-formative-investigation-of-student-perceptions-of-digital" hidden><p>The prevalence of remote instruction has heightened the need to understand how emerging avatar technologies might support instructor presence in virtual classrooms. Digital twins, defined here as animated avatars that mirror a speaker’s facial expressions and movements in real time, represent a potential alternative to standard webcam video. This formative study examines student perceptions following exposure to a digital twin instructor during live Zoom lectures. Twenty-four students completed a post-session survey assessing perceived realism, emotional engagement, and willingness to attend future sessions. Spearman correlation analysis revealed that affective qualities such as likeability and enjoyment showed strong positive associations with receptivity, while perceptions of awkwardness and weirdness showed strong negative associations. Perceived natural movement was strongly associated with human resemblance and inversely associated with eeriness, consistent with uncanny valley theory. These exploratory findings identify candidate factors for future controlled investigations and offer preliminary design guidance emphasizing behavioral fidelity and emotional warmth over photorealism alone.</p></div><div class="pub-panel pub-panel--code" id="bib-2026-a-formative-investigation-of-student-perceptions-of-digital" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2026-a-formative-investigation-of-student-perceptions-of-digital"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2026-a-formative-investigation-of-student-perceptions-of-digital">@inproceedings{Volonte_2026,
+  series = {CHI EA ’26},
+  title = {A Formative Investigation of Student Perceptions of Digital Twin Instructors in Remote Lecture Environments},
+  url = {http://dx.doi.org/10.1145/3772363.3798975},
+  doi = {10.1145/3772363.3798975},
+  booktitle = {Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems},
+  publisher = {ACM},
+  author = {Volonte, Matias and Joseph Berns, Nicholas and Toxtli, Carlos},
+  year = {2026},
+  month = Apr,
+  pages = {1--4},
+  collection = {CHI EA ’26}
+}</pre></div>  </div>
+</article><article class="pub" id="2026-relevance-of-large-language-models-in-latin-american"
+  data-year="2026" data-type="chapter" data-areas="inclusive-ai"
+  data-people="carlos-toxtli "
+  data-search="relevance of large language models in latin american education: a systematic review carlos toxtli-hernández relevancia de la inteligencia artificial en la educación unam 2026 this article presents a systematic literature review, following the prisma methodology, on the relevance of large language models (llms) such as chatgpt in education in latin america between january 2023 and april 2025. more than one hundred academic sources from recognized databases (scopus, scielo, redalyc, arxiv, ieee xplore, and google scholar) were analyzed, prioritizing empirical studies (quantitative, qualitative, and mixed methods), as well as theoretical articles, previous systematic reviews, and relevant regulatory or technical frameworks. the review covers all educational levels (basic, secondary, and higher education, and teacher training) and includes literature in both spanish and english focused on latin american contexts. the results reveal a rapid increase in research on llms in latin american educational settings, with findings showing largely positive perceptions of the potential of tools such as chatgpt to personalize teaching, improve learning, and foster skills such as critical and creative thinking, while also highlighting significant concerns regarding academic integrity, gaps in access, language bias, and the need for teacher training. the implications of these findings for educational practice in the region are discussed, including pedagogical strategies, ethical considerations, and public policy. finally, recommendations are proposed for the responsible integration of generative ai into latin american education, emphasizing the importance of approaches that harness its benefits while mitigating its risks.">
+  <a class="pub-thumb" href="../../publications/2026-relevance-of-large-language-models-in-latin-american/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2026-relevance-of-large-language-models-in-latin-american.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">UNAM 2026</span>
+<span class="track-badge">Book chapter</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2026-relevance-of-large-language-models-in-latin-american/">Relevance of Large Language Models in Latin American Education: A Systematic Review</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2026-relevance-of-large-language-models-in-latin-american" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2026-relevance-of-large-language-models-in-latin-american" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://www.zaragoza.unam.mx/relevancia-ia-educacion/" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2026-relevance-of-large-language-models-in-latin-american" hidden><p>This article presents a systematic literature review, following the PRISMA methodology, on the relevance of large language models (LLMs) such as ChatGPT in education in Latin America between January 2023 and April 2025. More than one hundred academic sources from recognized databases (Scopus, SciELO, Redalyc, ArXiv, IEEE Xplore, and Google Scholar) were analyzed, prioritizing empirical studies (quantitative, qualitative, and mixed methods), as well as theoretical articles, previous systematic reviews, and relevant regulatory or technical frameworks. The review covers all educational levels (basic, secondary, and higher education, and teacher training) and includes literature in both Spanish and English focused on Latin American contexts. The results reveal a rapid increase in research on LLMs in Latin American educational settings, with findings showing largely positive perceptions of the potential of tools such as ChatGPT to personalize teaching, improve learning, and foster skills such as critical and creative thinking, while also highlighting significant concerns regarding academic integrity, gaps in access, language bias, and the need for teacher training. The implications of these findings for educational practice in the region are discussed, including pedagogical strategies, ethical considerations, and public policy. Finally, recommendations are proposed for the responsible integration of generative AI into Latin American education, emphasizing the importance of approaches that harness its benefits while mitigating its risks.</p></div><div class="pub-panel pub-panel--code" id="bib-2026-relevance-of-large-language-models-in-latin-american" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2026-relevance-of-large-language-models-in-latin-american"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2026-relevance-of-large-language-models-in-latin-american">@incollection{Toxtli2026Relevance,
+  title = {Relevance of Large Language Models in Latin American Education: A Systematic Review},
+  author = {Toxtli, Carlos},
+  editor = {Hernández Abad, Vicente Jesús and Mora Guevara, José Luis Alfredo and Palestino Escoto, Feliciano and Reyes Iriar, Gloria Margarita},
+  booktitle = {Relevancia de la Inteligencia Artificial en la Educación},
+  pages = {7--34},
+  publisher = {Universidad Nacional Autónoma de México, Facultad de Estudios Superiores Zaragoza},
+  address = {Ciudad de México},
+  year = {2026},
+  isbn = {978-607-642-729-3},
+  url = {https://www.zaragoza.unam.mx/relevancia-ia-educacion/}
+}</pre></div>  </div>
+</article><article class="pub" id="2025-ai-for-becoming-fluent-designing-an-app-for-advanced"
+  data-year="2025" data-type="conference" data-areas="inclusive-ai"
+  data-people="cecilia-delgado-solorzano carlos-toxtli "
+  data-search="ai for becoming fluent: designing an app for advanced bilingual speakers cecilia delgado solorzano sara mendoza fernando morales-flores jesus martinez-garcia néstor e. briones-ramirez emmanuel a. zarazua-rubio ventura rivera-robles asis h. rangel-ortiz carlos toxtli-hernández 2025 ieee conference on artificial intelligence (cai) ieee cai 2025 this research explores the difficulties advanced second-language learners face in becoming fluent and the poten-tial of ai to enhance language learning apps. through surveys, focus groups, and collaborative design sessions, we investigated learners&#39; difficulties and practice habits. the participants created paper prototypes for an app targeting speaking and listening skills at an advanced level. key findings suggest that fluency de-velopment requires exposure to diverse accents from both native and non-native speakers. the resulting design incorporates ai in the form of a chatbot with voice recognition capabilities. this study contributes to our understanding of advanced language learning needs and the potential of ai to address them, paving the way for innovative language learning solutions. our findings highlight opportunities to develop more effective tools for learners striving to achieve fluency in their target languages.">
+  <a class="pub-thumb" href="../../publications/2025-ai-for-becoming-fluent-designing-an-app-for-advanced/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2025-ai-for-becoming-fluent-designing-an-app-for-advanced.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">IEEE CAI 2025</span>
+    </div>
+    <h3 class="pub-title"><a href="../../publications/2025-ai-for-becoming-fluent-designing-an-app-for-advanced/">AI for Becoming Fluent: Designing an App for Advanced Bilingual Speakers</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab" href="../../people/cecilia-delgado-solorzano/">Cecilia Delgado Solorzano</a>, <span class="author">Sara Mendoza</span>, <span class="author">Fernando Morales-Flores</span>, <span class="author">Jesus Martinez-Garcia</span>, <span class="author">Néstor E. Briones-Ramirez</span>, <span class="author">Emmanuel A. Zarazua-Rubio</span>, <span class="author">Ventura Rivera-Robles</span>, <span class="author">Asis H. Rangel-Ortiz</span>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2025-ai-for-becoming-fluent-designing-an-app-for-advanced" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2025-ai-for-becoming-fluent-designing-an-app-for-advanced" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.1109/cai64502.2025.00044" target="_blank" rel="noopener">DOI</a>
+      <a class="pill-link" href="http://doi.org/10.13140/RG.2.2.23188.21128" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2025-ai-for-becoming-fluent-designing-an-app-for-advanced" hidden><p>This research explores the difficulties advanced second-language learners face in becoming fluent and the poten-tial of AI to enhance language learning apps. Through surveys, focus groups, and collaborative design sessions, we investigated learners&#39; difficulties and practice habits. The participants created paper prototypes for an app targeting speaking and listening skills at an advanced level. Key findings suggest that fluency de-velopment requires exposure to diverse accents from both native and non-native speakers. The resulting design incorporates AI in the form of a chatbot with voice recognition capabilities. This study contributes to our understanding of advanced language learning needs and the potential of AI to address them, paving the way for innovative language learning solutions. Our findings highlight opportunities to develop more effective tools for learners striving to achieve fluency in their target languages.</p></div><div class="pub-panel pub-panel--code" id="bib-2025-ai-for-becoming-fluent-designing-an-app-for-advanced" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2025-ai-for-becoming-fluent-designing-an-app-for-advanced"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2025-ai-for-becoming-fluent-designing-an-app-for-advanced">@inproceedings{DelgadoSolorzano2025Becoming,
+  title = {AI for Becoming Fluent: Designing an App for Advanced Bilingual Speakers},
+  url = {http://dx.doi.org/10.1109/CAI64502.2025.00044},
+  doi = {10.1109/cai64502.2025.00044},
+  booktitle = {2025 IEEE Conference on Artificial Intelligence (CAI)},
+  publisher = {IEEE},
+  author = {Delgado-Solorzano, Cecilia and Mendoza, Sara and Morales-Flores, Fernando and Martinez-Garcia, Jesus and Briones-Ramirez, Néstor E. and Zarazua-Rubio, Emmanuel A. and Rivera-Robles, Ventura and Rangel-Ortiz, Asis H. and Toxtli, Carlos},
+  year = {2025},
+  month = May,
+  pages = {236--243}
+}</pre></div>  </div>
+</article><article class="pub" id="2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging"
+  data-year="2024" data-type="conference" data-areas="future-of-work inclusive-ai"
+  data-people="carlos-toxtli "
+  data-search="a culturally-aware ai tool for crowdworkers: leveraging chronemics to support diverse work styles carlos toxtli-hernández christopher curtis saiph savage proceedings of the acm on human-computer interaction cscw 2024 crowdsourcing markets are expanding worldwide, but often feature standardized interfaces that ignore the cultural diversity of their workers, negatively impacting their well-being and productivity. to transform these workplace dynamics, this paper proposes creating culturally-aware workplace tools, specifically designed to adapt to the cultural dimensions of monochronic and polychronic work styles. we illustrate this approach with &#34;culturefit,&#34; a tool that we engineered based on extensive research in chronemics and culture theories. to study and evaluate our tool in the real world, we conducted a field experiment with 55 workers from 24 different countries. our field experiment revealed that culturefit significantly improved the earnings of workers from cultural backgrounds often overlooked in design. our study is among the pioneering efforts to examine culturally aware digital labor interventions. it also provides access to a dataset with over two million data points on culture and digital work, which can be leveraged for future research in this emerging field. the paper concludes by discussing the importance and future possibilities of incorporating cultural insights into the design of tools for digital labor.">
+  <a class="pub-thumb" href="../../publications/2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">CSCW 2024</span>
+<span class="track-badge">PACM HCI</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging/">A Culturally-Aware AI Tool for Crowdworkers: Leveraging Chronemics to Support Diverse Work Styles</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a>, <span class="author">Christopher Curtis</span>, <span class="author">Saiph Savage</span></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.1145/3686899" target="_blank" rel="noopener">DOI</a>
+      <a class="pill-link" href="https://doi.org/10.48550/arXiv.2408.07838" target="_blank" rel="noopener">Website</a>
+      <a class="pill-link" href="https://github.com/ai4he/toloka-cultural-assistant" target="_blank" rel="noopener">Code</a>
+<span class="area-dot tone-cyan" title="Future of Work &amp; Worker-Centered AI"></span><span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging" hidden><p>Crowdsourcing markets are expanding worldwide, but often feature standardized interfaces that ignore the cultural diversity of their workers, negatively impacting their well-being and productivity. To transform these workplace dynamics, this paper proposes creating culturally-aware workplace tools, specifically designed to adapt to the cultural dimensions of monochronic and polychronic work styles. We illustrate this approach with &#34;CultureFit,&#34; a tool that we engineered based on extensive research in Chronemics and culture theories. To study and evaluate our tool in the real world, we conducted a field experiment with 55 workers from 24 different countries. Our field experiment revealed that CultureFit significantly improved the earnings of workers from cultural backgrounds often overlooked in design. Our study is among the pioneering efforts to examine culturally aware digital labor interventions. It also provides access to a dataset with over two million data points on culture and digital work, which can be leveraged for future research in this emerging field. The paper concludes by discussing the importance and future possibilities of incorporating cultural insights into the design of tools for digital labor.</p></div><div class="pub-panel pub-panel--code" id="bib-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2024-a-culturally-aware-ai-tool-for-crowdworkers-leveraging">@article{Toxtli2024Culturally,
+  title = {A Culturally-Aware AI Tool for Crowdworkers: Leveraging Chronemics to Support Diverse Work Styles},
+  volume = {8},
+  issn = {2573-0142},
+  url = {http://dx.doi.org/10.1145/3686899},
+  doi = {10.1145/3686899},
+  number = {CSCW2},
+  journal = {Proceedings of the ACM on Human-Computer Interaction},
+  publisher = {Association for Computing Machinery (ACM)},
+  author = {Toxtli, Carlos and Curtis, Christopher and Savage, Saiph},
+  year = {2024},
+  month = Nov,
+  pages = {1--34}
+}</pre></div>  </div>
+</article><article class="pub" id="2024-a-study-of-llm-powered-student-query-support"
+  data-year="2024" data-type="conference" data-areas="inclusive-ai"
+  data-people="cecilia-delgado-solorzano carlos-toxtli "
+  data-search="a study of llm-powered student query support cecilia delgado solorzano elias tzoc suzanne rook christopher vinson carlos toxtli-hernández avances en interacción humano-computadora mexihc 2024 in this paper, we explore the use of large language models (llms) to help students improve their information-seeking skills while encouraging the use of references to aid library literacy efforts. this study aims to expand the reach of library support by introducing an approach that leverages the capabilities of llms and well-structured prompts. our approach begins with surveying the current changes students have faced in the last two years concerning their study habits and how they search for information. we subsequently propose a multi-step system prompt, referred as prompting architecture, for foundational and instructed llms. the proposed prompt architecture powers a web application named libref. we explore the adaptability of the prompting architecture to different information retrieval needs by refining search prompts and providing academic references. a field experiment is conducted using libref in academic settings. our results suggest that the use of libref enhances students’ academic information-seeking experience. our research underscores the potential of prompting architectures in procedural refinement of academic queries from students. we believe our findings can provide valuable insights on the current capabilities of llms for instructing students to provide more targeted prompts as well as incentivize the use of references.">
+  <a class="pub-thumb" href="../../publications/2024-a-study-of-llm-powered-student-query-support/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2024-a-study-of-llm-powered-student-query-support.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">MexIHC 2024</span>
+    </div>
+    <h3 class="pub-title"><a href="../../publications/2024-a-study-of-llm-powered-student-query-support/">A Study of LLM-Powered Student Query Support</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab" href="../../people/cecilia-delgado-solorzano/">Cecilia Delgado Solorzano</a>, <span class="author">Elias Tzoc</span>, <span class="author">Suzanne Rook</span>, <span class="author">Christopher Vinson</span>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2024-a-study-of-llm-powered-student-query-support" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2024-a-study-of-llm-powered-student-query-support" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.47756/aihc.y9i1.141" target="_blank" rel="noopener">DOI</a>
+      <a class="pill-link" href="https://docs.google.com/document/d/1kAJrDEdbdhvDCJBBiOPizUwRTCJ2ISliejlryv82sWU/edit?pli=1#" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2024-a-study-of-llm-powered-student-query-support" hidden><p>In this paper, we explore the use of Large Language Models (LLMs) to help students improve their information-seeking skills while encouraging the use of references to aid library literacy efforts. This study aims to expand the reach of library support by introducing an approach that leverages the capabilities of LLMs and well-structured prompts. Our approach begins with surveying the current changes students have faced in the last two years concerning their study habits and how they search for information. We subsequently propose a multi-step system prompt, referred as prompting architecture, for foundational and instructed LLMs. The proposed prompt architecture powers a web application named LibRef. We explore the adaptability of the prompting architecture to different information retrieval needs by refining search prompts and providing academic references. A field experiment is conducted using LibRef in academic settings. Our results suggest that the use of LibRef enhances students’ academic information-seeking experience. Our research underscores the potential of prompting architectures in procedural refinement of academic queries from students. We believe our findings can provide valuable insights on the current capabilities of LLMs for instructing students to provide more targeted prompts as well as incentivize the use of references.</p></div><div class="pub-panel pub-panel--code" id="bib-2024-a-study-of-llm-powered-student-query-support" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2024-a-study-of-llm-powered-student-query-support"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2024-a-study-of-llm-powered-student-query-support">@article{Delgado_Solorzano_2024a,
+  title = {A Study of LLM-Powered Student Query Support},
+  volume = {9},
+  issn = {2594-2352},
+  url = {http://dx.doi.org/10.47756/aihc.y9i1.141},
+  doi = {10.47756/aihc.y9i1.141},
+  number = {1},
+  journal = {Avances en Interacción Humano-Computadora},
+  publisher = {Asociacion Mexicana de Interaccion humano-Computadora (AMexIHC)},
+  author = {Delgado-Solorzano, Cecilia and Tzoc, Elias and Rook, Suzanne and Vinson, Christopher and Toxtli, Carlos},
+  year = {2024},
+  month = Nov,
+  pages = {21--25}
+}</pre></div>  </div>
+</article><article class="pub" id="2024-expanding-the-horizon-of-learning-applications-a-study-on"
+  data-year="2024" data-type="conference" data-areas="inclusive-ai"
+  data-people="cecilia-delgado-solorzano carlos-toxtli "
+  data-search="expanding the horizon of learning applications: a study on the versatility of prompting architectures in large language models cecilia delgado solorzano carlos toxtli-hernández human interaction and emerging technologies (ihiet-ai 2024): artificial intelligence and future applications ahfe ihiet-ai 2024 this paper presents an exploration of the versatility of prompting architectures in large language models (llms), expanding the horizons of their application in learning and language interfaces. by leveraging the expansive capabilities of llms, this research probes the potential for creating structured prompts that can simultaneously support multiple use cases, namely paraphrasing, grammatical syntax guidance for introductory sentences, and conducting experiential conversations in a foreign language. in this study, we delve into the specifics of enabling such technology, including the design of the prompting architecture, the deployment process, and the intricacies of applying the same structure across diverse applications. an extensive field experiment incorporating interfaces powered by llms using this structured prompt has been conducted to evaluate the model&#39;s efficiency in real-world scenarios. results from the field experiment highlight the promising adaptability of these prompting architectures, revealing remarkable efficiency across the multiple use cases explored. furthermore, this research uncovers a new dimension of flexibility in the design and deployment of learning applications using llms, potentially revolutionizing language learning interfaces by establishing a one-size-fits-all solution. this paper aims to stimulate further research into refining and expanding the potential of llms, encouraging the exploration of how artificial intelligence can optimally benefit language learning and related applications.">
+  <a class="pub-thumb" href="../../publications/2024-expanding-the-horizon-of-learning-applications-a-study-on/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2024-expanding-the-horizon-of-learning-applications-a-study-on.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">AHFE IHIET-AI 2024</span>
+    </div>
+    <h3 class="pub-title"><a href="../../publications/2024-expanding-the-horizon-of-learning-applications-a-study-on/">Expanding the Horizon of Learning Applications: A Study on the Versatility of Prompting Architectures in Large Language Models</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab" href="../../people/cecilia-delgado-solorzano/">Cecilia Delgado Solorzano</a>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2024-expanding-the-horizon-of-learning-applications-a-study-on" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2024-expanding-the-horizon-of-learning-applications-a-study-on" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.54941/ahfe1004606" target="_blank" rel="noopener">DOI</a>
+      <a class="pill-link" href="https://openaccess.cms-conferences.org/publications/book/978-1-958651-96-4/article/978-1-958651-96-4_53" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2024-expanding-the-horizon-of-learning-applications-a-study-on" hidden><p>This paper presents an exploration of the versatility of prompting architectures in large language models (LLMs), expanding the horizons of their application in learning and language interfaces. By leveraging the expansive capabilities of LLMs, this research probes the potential for creating structured prompts that can simultaneously support multiple use cases, namely paraphrasing, grammatical syntax guidance for introductory sentences, and conducting experiential conversations in a foreign language. In this study, we delve into the specifics of enabling such technology, including the design of the prompting architecture, the deployment process, and the intricacies of applying the same structure across diverse applications. An extensive field experiment incorporating interfaces powered by LLMs using this structured prompt has been conducted to evaluate the model&#39;s efficiency in real-world scenarios. Results from the field experiment highlight the promising adaptability of these prompting architectures, revealing remarkable efficiency across the multiple use cases explored. Furthermore, this research uncovers a new dimension of flexibility in the design and deployment of learning applications using LLMs, potentially revolutionizing language learning interfaces by establishing a one-size-fits-all solution. This paper aims to stimulate further research into refining and expanding the potential of LLMs, encouraging the exploration of how artificial intelligence can optimally benefit language learning and related applications.</p></div><div class="pub-panel pub-panel--code" id="bib-2024-expanding-the-horizon-of-learning-applications-a-study-on" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2024-expanding-the-horizon-of-learning-applications-a-study-on"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2024-expanding-the-horizon-of-learning-applications-a-study-on">@inproceedings{Delgado_Solorzano_2024b,
+  series = {IHIET-AI},
+  title = {Expanding the Horizon of Learning Applications: A Study on the Versatility of Prompting Architectures in Large Language Models},
+  issn = {2771-0718},
+  url = {http://dx.doi.org/10.54941/ahfe1004606},
+  doi = {10.54941/ahfe1004606},
+  booktitle = {Human Interaction and Emerging Technologies (IHIET-AI 2024): Artificial Intelligence and Future Applications},
+  publisher = {AHFE International},
+  author = {Delgado Solorzano, Cecilia and Toxtli, Carlos},
+  year = {2024},
+  collection = {IHIET-AI}
+}</pre></div>  </div>
+</article><article class="pub" id="2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to"
+  data-year="2024" data-type="conference" data-areas="future-of-work inclusive-ai"
+  data-people="cecilia-delgado-solorzano carlos-toxtli "
+  data-search="the use of ai-powered language tools in crowdsourcing to reduce language barriers cecilia delgado solorzano carlos toxtli-hernández 2024 ieee international conferences on internet of things (ithings) and ieee green computing &amp;amp;amp; communications (greencom) and ieee cyber, physical &amp;amp;amp; social computing (cpscom) and ieee smart data (smartdata) and ieee congress on cybermatics ieee smartdata 2024 crowdsourcing platforms gather people from different backgrounds to work on completing microtasks. the workers on those platforms are presented with tasks defined by requesters from all over the world. the tasks are defined in multiple languages, with english being the predominant language. it is unclear how language barriers can affect workers whose primary language is not english while completing tasks. in this paper, we study their practices and the impact of ai-powered tools on the completion of microtasks. we conduct a pre-test test field experiment in which workers share their current experience with the platform and receive basic training in the use of ai-powered tools. after a week, workers provide feedback on their practices and experiences. we find that workers who complete tasks in their primary language report less confidence in completing english tasks, and in general, workers perceive the use of the tools as a language-learning mechanism. we aim that the understanding of language barriers in crowd markets can promote more inclusive work conditions.">
+  <a class="pub-thumb" href="../../publications/2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">IEEE SmartData 2024</span>
+    </div>
+    <h3 class="pub-title"><a href="../../publications/2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to/">The Use of AI-powered Language Tools in Crowdsourcing to reduce Language Barriers</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab" href="../../people/cecilia-delgado-solorzano/">Cecilia Delgado Solorzano</a>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://doi.org/10.1109/ithings-greencom-cpscom-smartdata-cybermatics62450.2024.00110" target="_blank" rel="noopener">DOI</a>
+      <a class="pill-link" href="https://ieee-cybermatics.org/2024/smartdata/remind.php" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-cyan" title="Future of Work &amp; Worker-Centered AI"></span><span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to" hidden><p>Crowdsourcing platforms gather people from different backgrounds to work on completing microtasks. The workers on those platforms are presented with tasks defined by requesters from all over the world. The tasks are defined in multiple languages, with English being the predominant language. It is unclear how language barriers can affect workers whose primary language is not English while completing tasks. In this paper, we study their practices and the impact of AI-powered tools on the completion of microtasks. We conduct a pre-test test field experiment in which workers share their current experience with the platform and receive basic training in the use of AI-powered tools. After a week, workers provide feedback on their practices and experiences. We find that workers who complete tasks in their primary language report less confidence in completing English tasks, and in general, workers perceive the use of the tools as a language-learning mechanism. We aim that the understanding of language barriers in crowd markets can promote more inclusive work conditions.</p></div><div class="pub-panel pub-panel--code" id="bib-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2024-the-use-of-ai-powered-language-tools-in-crowdsourcing-to">@inproceedings{Delgado2024Use,
+  title = {The Use of AI-powered Language Tools in Crowdsourcing to reduce Language Barriers},
+  url = {http://dx.doi.org/10.1109/iThings-GreenCom-CPSCom-SmartData-Cybermatics62450.2024.00110},
+  doi = {10.1109/ithings-greencom-cpscom-smartdata-cybermatics62450.2024.00110},
+  booktitle = {2024 IEEE International Conferences on Internet of Things (iThings) and IEEE Green Computing &amp;amp;amp; Communications (GreenCom) and IEEE Cyber, Physical &amp;amp;amp; Social Computing (CPSCom) and IEEE Smart Data (SmartData) and IEEE Congress on Cybermatics},
+  publisher = {IEEE},
+  author = {Delgado-Solorzano, Cecilia and Toxtli, Carlos},
+  year = {2024},
+  month = Aug,
+  pages = {601--608}
+}</pre></div>  </div>
+</article><article class="pub" id="2023-conceptualizing-indigeneity-in-social-computing"
+  data-year="2023" data-type="workshop" data-areas="inclusive-ai"
+  data-people="carlos-toxtli "
+  data-search="conceptualizing indigeneity in social computing dipto das parboti roy carlos toxtli-hernández kagonya awori awori morgan vigil-hayes monojit choudhury neha kumar syed ishtiaque ahmed bryan semaan computer supported cooperative work and social computing cscw 2023 there has been little effort in conceptualizing indigeneity in social computing, despite the concept being central to decolonial and postcolonial perspectives, which scholars have increasingly used in computing research for over a decade. it is crucial to reflect on who can be considered indigenous in the spirit of inclusion and reclamation since the underdevelopment of this concept and the nuances, differences, relationships, and overlaps between indigeneity and colonial marginalization may silence different populations in research. the workshop aims to bring together scholars whose works are associated with different local and indigenous cultures and their technology practices and experiences to initiate conversations around three themes: (a) defining indigeneity and identifying indigenous communities in social computing, (b) recognition in different sociopolitical contexts, and (c) contributions to social computing.">
+  <a class="pub-thumb" href="../../publications/2023-conceptualizing-indigeneity-in-social-computing/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2023-conceptualizing-indigeneity-in-social-computing.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">CSCW 2023</span>
+<span class="track-badge">Workshop (organizers)</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2023-conceptualizing-indigeneity-in-social-computing/">Conceptualizing Indigeneity in Social Computing</a></h3>
+    <p class="pub-authors"><span class="authors"><span class="author">Dipto Das</span>, <span class="author">Parboti Roy</span>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a>, <span class="author">Kagonya Awori Awori</span>, <span class="author">Morgan Vigil-Hayes</span>, <span class="author">Monojit Choudhury</span>, <span class="author">Neha Kumar</span>, <span class="author">Syed Ishtiaque Ahmed</span>, <span class="author">Bryan Semaan</span></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2023-conceptualizing-indigeneity-in-social-computing" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2023-conceptualizing-indigeneity-in-social-computing" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://drive.google.com/file/d/1jtXFF_wW8jxNAcbjWyJS6NGNQ3-XZyFe/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
+      <a class="pill-link" href="https://doi.org/10.1145/3584931.3611286" target="_blank" rel="noopener">DOI</a>
+      <a class="pill-link" href="https://sites.google.com/view/indigeneity-social-computing/" target="_blank" rel="noopener">Website</a>
+<span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span>    </div>
+<div class="pub-panel" id="abs-2023-conceptualizing-indigeneity-in-social-computing" hidden><p>There has been little effort in conceptualizing indigeneity in social computing, despite the concept being central to decolonial and postcolonial perspectives, which scholars have increasingly used in computing research for over a decade. It is crucial to reflect on who can be considered indigenous in the spirit of inclusion and reclamation since the underdevelopment of this concept and the nuances, differences, relationships, and overlaps between indigeneity and colonial marginalization may silence different populations in research. The workshop aims to bring together scholars whose works are associated with different local and indigenous cultures and their technology practices and experiences to initiate conversations around three themes: (a) defining indigeneity and identifying indigenous communities in social computing, (b) recognition in different sociopolitical contexts, and (c) contributions to social computing.</p></div><div class="pub-panel pub-panel--code" id="bib-2023-conceptualizing-indigeneity-in-social-computing" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2023-conceptualizing-indigeneity-in-social-computing"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2023-conceptualizing-indigeneity-in-social-computing">@inproceedings{Das_2023,
+  series = {CSCW ’23},
+  title = {Conceptualizing Indigeneity in Social Computing},
+  url = {http://dx.doi.org/10.1145/3584931.3611286},
+  doi = {10.1145/3584931.3611286},
+  booktitle = {Computer Supported Cooperative Work and Social Computing},
+  publisher = {ACM},
+  author = {Das, Dipto and Roy, Parboti and Toxtli, Carlos and Awori, Kagonya Awori and Vigil-Hayes, Morgan and Choudhury, Monojit and Kumar, Neha and Ahmed, Syed Ishtiaque and Semaan, Bryan},
+  year = {2023},
+  month = Oct,
+  pages = {501--505},
+  collection = {CSCW ’23}
+}</pre></div>  </div>
+</article><article class="pub" id="2023-evaluating-machine-perception-of-indigeneity-an-analysis-of"
+  data-year="2023" data-type="workshop" data-areas="inclusive-ai trustworthy-ai"
+  data-people="cecilia-delgado-solorzano carlos-toxtli "
+  data-search="evaluating machine perception of indigeneity: an analysis of chatgpt&#39;s perceptions of indigenous roles in diverse scenarios cecilia delgado solorzano carlos toxtli-hernández workshop on conceptualizing indigeneity in social computing, acm cscw 2023, minneapolis, usa cscw 2023 large language models (llms), like chatgpt, are fundamentally tools trained on vast data, reflecting diverse societal impressions. this paper aims to investigate llms&#39; self-perceived bias concerning indigeneity when simulating scenarios of indigenous people performing various roles. through generating and analyzing multiple scenarios, this work offers a unique perspective on how technology perceives and potentially amplifies societal biases related to indigeneity in social computing. the findings offer insights into the broader implications of indigeneity in critical computing.">
+  <a class="pub-thumb" href="../../publications/2023-evaluating-machine-perception-of-indigeneity-an-analysis-of/" tabindex="-1" aria-hidden="true">
+    <img src="../../assets/img/gen/pub-2023-evaluating-machine-perception-of-indigeneity-an-analysis-of.svg" alt="" loading="lazy">
+  </a>
+  <div class="pub-body">
+    <div class="pub-meta">
+      <span class="venue-badge">CSCW 2023</span>
+<span class="track-badge">Workshop</span>    </div>
+    <h3 class="pub-title"><a href="../../publications/2023-evaluating-machine-perception-of-indigeneity-an-analysis-of/">Evaluating Machine Perception of Indigeneity: An Analysis of ChatGPT&#39;s Perceptions of Indigenous Roles in Diverse Scenarios</a></h3>
+    <p class="pub-authors"><span class="authors"><a class="author author--lab" href="../../people/cecilia-delgado-solorzano/">Cecilia Delgado Solorzano</a>, <a class="author author--lab author--director" href="../../people/carlos-toxtli/">Carlos Toxtli-Hernández</a></span></p>
+    <div class="pub-actions">
+<button class="pill-btn" type="button" data-toggle="abs-2023-evaluating-machine-perception-of-indigeneity-an-analysis-of" aria-expanded="false">Abstract</button><button class="pill-btn" type="button" data-toggle="bib-2023-evaluating-machine-perception-of-indigeneity-an-analysis-of" aria-expanded="false">BibTeX</button>      <a class="pill-link" href="https://drive.google.com/file/d/1TNdXU4murGSYeXHqfYVfTz_Gl0VA8tC-/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
+      <a class="pill-link" href="https://doi.org/10.13140/RG.2.2.30617.39520" target="_blank" rel="noopener">DOI</a>
+<span class="area-dot tone-green" title="Inclusive AI for Language, Learning &amp; Health"></span><span class="area-dot tone-coral" title="Trustworthy, Metacognitive &amp; Responsible AI"></span>    </div>
+<div class="pub-panel" id="abs-2023-evaluating-machine-perception-of-indigeneity-an-analysis-of" hidden><p>Large Language Models (LLMs), like ChatGPT, are fundamentally tools trained on vast data, reflecting diverse societal impressions. This paper aims to investigate LLMs&#39; self-perceived bias concerning indigeneity when simulating scenarios of indigenous people performing various roles. Through generating and analyzing multiple scenarios, this work offers a unique perspective on how technology perceives and potentially amplifies societal biases related to indigeneity in social computing. The findings offer insights into the broader implications of indigeneity in critical computing.</p></div><div class="pub-panel pub-panel--code" id="bib-2023-evaluating-machine-perception-of-indigeneity-an-analysis-of" hidden><button class="copy-btn" type="button" data-copy="#bibcode-2023-evaluating-machine-perception-of-indigeneity-an-analysis-of"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg> Copy</button><pre id="bibcode-2023-evaluating-machine-perception-of-indigeneity-an-analysis-of">@misc{Delgado2023Evaluating,
+  doi = {10.13140/RG.2.2.30617.39520},
+  url = {https://www.researchgate.net/doi/10.13140/RG.2.2.30617.39520},
+  author = {Delgado, Cecilia and Toxtli, Carlos},
+  language = {en},
+  title = {Evaluating Machine Perception of Indigeneity: An Analysis of ChatGPT&#39;s Perceptions of Indigenous Roles in Diverse Scenarios},
+  publisher = {Unpublished},
+  year = {2023},
+  howpublished = {Preprint, ResearchGate},
+  note = {Preprint}
+}</pre></div>  </div>
+</article>    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="../../"><svg class="logo-mark" viewBox="0 0 100 76" aria-hidden="true">
+  <rect x="40" y="2" width="22" height="22" rx="6" fill="#2CCBF9"/>
+  <rect x="66" y="9" width="18" height="18" rx="5" fill="#F2B30C"/>
+  <rect x="14" y="13" width="14" height="14" rx="4" fill="#F9604F"/>
+  <rect x="88" y="18" width="10" height="10" rx="3" fill="#6119F9"/>
+  <rect x="1" y="33" width="17" height="17" rx="5" fill="#F2B30C"/>
+  <rect x="22" y="29" width="24" height="24" rx="6.5" fill="#6119F9"/>
+  <rect x="50" y="33" width="15" height="15" rx="4" fill="#0A6BF9"/>
+  <rect x="70" y="33" width="9" height="9" rx="2.5" fill="#E2323F"/>
+  <rect x="83" y="32" width="15" height="15" rx="4" fill="#2CCBF9"/>
+  <rect x="9" y="56" width="9" height="9" rx="2.5" fill="#F9604F"/>
+  <rect x="23" y="58" width="16" height="16" rx="4.5" fill="#2CCBF9"/>
+</svg><span class="brand-text"><span class="brand-name">Human-AI Empowerment Lab</span><span class="brand-sub">HAIE Lab · est. August 2022</span></span></a>
+      <p class="footer-about">The Human-AI Empowerment (HAIE) Lab at Clemson University studies how artificial intelligence — increasingly autonomous and agentic — can empower people at work, in science, and in society.</p>
+      <address class="footer-address">
+School of Computing, Human-Centered Computing Division<br>McAdams Hall, Clemson University<br>Clemson, SC 29634, USA<br>        <a href="mailto:hello@haielab.org">hello@haielab.org</a>
+      </address>
+    </div>
+    <div>
+      <h3 class="footer-h">Research</h3>
+      <ul class="footer-list">
+<li><a href="../../research/human-centered-automation/">Automation &amp; Agents</a></li><li><a href="../../research/future-of-work/">Future of Work</a></li><li><a href="../../research/ai-for-science/">AI for Science</a></li><li><a href="../../research/human-autonomy-teaming/">Human–Autonomy Teaming</a></li><li><a href="../../research/trustworthy-ai/">Trustworthy AI</a></li><li><a href="../../research/inclusive-ai/">Inclusive AI</a></li>        <li><a href="../../software/">Software &amp; artifacts</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-h">Lab</h3>
+      <ul class="footer-list">
+        <li><a href="../../about/">About</a></li>
+        <li><a href="../../people/">People</a></li>
+        <li><a href="../../publications/">Publications</a></li>
+        <li><a href="../../projects/">Projects</a></li>
+        <li><a href="../../funding/">Funding</a></li>
+        <li><a href="../../collaborators/">Collaborations</a></li>
+        <li><a href="../../talks/">Talks &amp; service</a></li>
+        <li><a href="../../teaching/">Teaching &amp; mentoring</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-h">Connect</h3>
+      <ul class="footer-list">
+        <li><a href="../../join/">Join the lab</a></li>
+        <li><a href="../../news/">News</a></li>
+        <li><a href="../../feed.xml"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19h.01M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/></svg> RSS feed</a></li>
+        <li><a href="https://github.com/ai4he" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6.2 0C6.6 2.8 5.6 3.1 5.6 3.1a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg> GitHub</a></li>
+        <li><a href="https://www.clemson.edu" target="_blank" rel="noopener">Clemson University</a></li>
+        <li><a href="https://www.clemson.edu/cecas/departments/computing/" target="_blank" rel="noopener">School of Computing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <p>© 2026 Human-AI Empowerment Lab, Clemson University.</p>
+    <p class="footer-sync">Publications, talks and grants synced from <a href="https://www.carlostoxtli.com" target="_blank" rel="noopener">carlostoxtli.com</a> · last updated 2026-10-02</p>
+  </div>
+</footer>
+<div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+<script src="../../assets/js/site.js?v=559ad714a3" defer></script>
+</body>
+</html>

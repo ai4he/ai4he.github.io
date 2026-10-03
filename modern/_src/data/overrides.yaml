@@ -1,0 +1,172 @@
+# ---------------------------------------------------------------------------
+# Corrections and enrichment on top of the synced data (data/auto/*.json)
+# ---------------------------------------------------------------------------
+# Publications are matched by a case-insensitive fragment of their title, so
+# entries survive edits to the BibTeX keys in the Google Doc.
+#
+# Publication fields you can set:
+#   areas        research thrust slugs; the first one is the primary thrust
+#   featured     true -> shown in "Selected publications" on the home page
+#   type         book | chapter | journal | conference | workshop | poster | abstract | preprint
+#   venue_short  short venue label, e.g. "CHI 2026"
+#   track        small badge, e.g. "Extended Abstract", "Demo", "Workshop"
+#   doi / url    override links
+#   links        extra links {Code: ..., Video: ..., Slides: ..., Demo: ...}
+#   award        e.g. "Best Paper Award"
+#   image        teaser image file in assets/img/papers/ (else generated art)
+#   include      true to force-include an item dated before the lab started
+#   exclude      true to hide an item
+# ---------------------------------------------------------------------------
+
+publications:
+  # -------------------------------- Books ---------------------------------
+  - match: "Human-AI Empowerment: An Interdisciplinary"
+    areas: [future-of-work, human-centered-automation]
+    featured: true
+    image: ../covers/book-human-ai-empowerment.jpg
+    venue_short: "CRC Press 2025"
+    links: {Publisher: "https://www.routledge.com/9781032882024"}
+  - match: "Human-Centered Automation"
+    type_is: book
+    areas: [human-centered-automation, future-of-work]
+    featured: true
+    image: ../covers/book-human-centered-automation.jpg
+    venue_short: "CRC Press 2026"
+    links: {Publisher: "https://www.routledge.com/Human-Centered-Automation/Toxli-Hernandez/p/book/9781041120247"}
+
+  # --------------------------------- 2026 ---------------------------------
+  - {match: "AI Consciousness? Attribution", areas: [trustworthy-ai], featured: true, venue_short: "Frontiers in Psychology 2026", track: "Perspective"}
+  - {match: "Authentication Routines Among College Students", areas: [inclusive-ai, trustworthy-ai], venue_short: "HFES 2026", track: "Poster"}
+  - {match: "NaturalPRISM", areas: [ai-for-science], featured: true, venue_short: "MathNLP @ EMNLP 2026", track: "Workshop"}
+  - {match: "Which Mathematical Context Supports", areas: [ai-for-science], venue_short: "MathNLP @ EMNLP 2026", track: "Workshop"}
+  - {match: "From Recognition to Reconstruction", areas: [ai-for-science, trustworthy-ai], venue_short: "MathNLP @ EMNLP 2026", track: "Workshop"}
+  - {match: "Beyond the Answer Key", areas: [ai-for-science, trustworthy-ai], venue_short: "IEEE ICMLA 2026"}
+  - {match: "TREAT: Evaluating Access", areas: [ai-for-science], venue_short: "SYNASC 2026"}
+  - {match: "Randomized SVD Approximations", areas: [ai-for-science], venue_short: "arXiv 2026"}
+  - {match: "Coupled AquaCrop", areas: [ai-for-science], venue_short: "Irrigation and Drainage 2026"}
+  - {match: "Eliciting Fairness via Micro-Ethics", areas: [trustworthy-ai, human-centered-automation], venue_short: "AHFE 2026"}
+  - {match: "Automating Underwater Search and Rescue", areas: [human-autonomy-teaming], featured: true, venue_short: "IEEE ICECET 2026"}
+  - {match: "Supervisory Control Theory for LLM Revision", areas: [human-centered-automation], featured: true, venue_short: "ACM CAIS 2026"}
+  - {match: "Personality-Profiled Virtual Agents", areas: [trustworthy-ai, human-centered-automation], featured: true, venue_short: "ACM IVA 2026"}
+  - {match: "Hidden Profile Decision Making", areas: [human-centered-automation, trustworthy-ai], venue_short: "CSCW 2026", track: "Companion"}
+  - {match: "Qualification by Calibration", areas: [future-of-work, trustworthy-ai], featured: true, venue_short: "HCOMP 2026", links: {Code: "https://github.com/ai4he/qualification-by-calibration"}}
+  - {match: "Sycophantic Metacognition", areas: [trustworthy-ai], featured: true, venue_short: "ACM CUI 2026", links: {Code: "https://github.com/ai4he/kruger"}}
+  - {match: "Auditing LLM Portrayals of Neurodivergent", areas: [trustworthy-ai, inclusive-ai], featured: true, venue_short: "AAAI/ACM AIES 2026"}
+  - {match: "LLM-Judge Behavioral Coding Scheme", areas: [human-autonomy-teaming, trustworthy-ai], venue_short: "ACM HAI 2026"}
+  - {match: "AI-Mediated Second Language Communication", areas: [inclusive-ai], featured: true, venue_short: "CHI 2026", track: "Extended Abstract"}
+  - {match: "Effects of Embodied Agent Body Type", areas: [inclusive-ai], venue_short: "Computer Animation & Virtual Worlds 2026", track: "CASA 2026"}
+  - {match: "Digital Twin Instructors", areas: [inclusive-ai], venue_short: "CHI 2026", track: "Extended Abstract"}
+  - {match: "Belief Explorer", areas: [trustworthy-ai], venue_short: "CHI 2026", track: "Extended Abstract", links: {Code: "https://github.com/ai4he/belief-explorer"}}
+  - {match: "Expanding the Roster", areas: [human-autonomy-teaming], venue_short: "IEEE CogSIMA 2026"}
+  - {match: "Requirement Bot", areas: [human-centered-automation], venue_short: "ACM SAC 2026"}
+  - {match: "Worker-Centered AI: Transparent", areas: [future-of-work], featured: true, venue_short: "IEEE CAI 2026"}
+  - {match: "Prompt-Level Supervisory Alignment", areas: [human-centered-automation], type: conference, venue_short: "HFES 2026"}
+  - {match: "Empowering the Crowd", areas: [future-of-work], venue_short: "IntechOpen 2026", track: "Book chapter"}
+  - {match: "Relevance of Large Language Models in Latin American", areas: [inclusive-ai], venue_short: "UNAM 2026", track: "Book chapter"}
+
+  # --------------------------------- 2025 ---------------------------------
+  - {match: "Optimizing Irrigation through a Novel Framework", areas: [ai-for-science], venue_short: "AGU 2025", track: "Abstract"}
+  - {match: "Assessing AI-Generated Workflows", areas: [human-centered-automation], type: preprint, venue_short: "Manuscript 2025"}
+  - {match: "AI-Powered Comment Triage", areas: [future-of-work], venue_short: "ACM SAC 2025"}
+  - {match: "Customer Journey Mapping", areas: [future-of-work], venue_short: "WWW 2025", track: "Companion"}
+  - {match: "AI for Becoming Fluent", areas: [inclusive-ai], venue_short: "IEEE CAI 2025"}
+  - {match: "Human Oversight Over Autonomous Task Execution", areas: [human-centered-automation], venue_short: "IEEE CAI 2025"}
+  - {match: "Working in a Heartbeat", areas: [human-autonomy-teaming], type: conference, venue_short: "HFES 2025"}
+  - {match: "Can We Trust Them", areas: [trustworthy-ai], venue_short: "AHFE IHIET-AI 2025"}
+  - {match: "Self-Instantiated, Temporally Continuous", areas: [trustworthy-ai], venue_short: "AHFE IHIET-FS 2025"}
+  - {match: "Multi-Perspective AI Framework for Mitigating Disinformation", areas: [trustworthy-ai], venue_short: "AHFE IHIET 2025"}
+  - {match: "Optimizing Irrigation for Cotton Crops", areas: [ai-for-science], venue_short: "EGU 2025", track: "Abstract"}
+  - {match: "Resonant Attractor Networks", areas: [trustworthy-ai], type: workshop, venue_short: "Ernst Mach Workshop 2025", venue: "Ernst Mach Workshop XIII 2025: Conscious AI? Functionalism and its Alternatives, Prague, Czech Republic"}
+
+  # --------------------------------- 2024 ---------------------------------
+  - {match: "Culturally-Aware AI Tool for Crowdworkers", areas: [future-of-work, inclusive-ai], featured: true, type: conference, venue_short: "CSCW 2024", track: "PACM HCI", links: {Code: "https://github.com/ai4he/toloka-cultural-assistant"}}
+  - {match: "LLM-Powered Student Query Support", areas: [inclusive-ai], type: conference, venue_short: "MexIHC 2024"}
+  - {match: "Optimizing Irrigation through Deep Reinforcement", areas: [ai-for-science], venue_short: "AGU 2024", track: "Abstract"}
+  - {match: "Assessing the Syllogistic Logic", areas: [trustworthy-ai], venue_short: "IEEE SmartData 2024"}
+  - match: "Leveraging Artificial Intelligence to Promote Awareness"
+    areas: [human-autonomy-teaming]
+    type: workshop
+    venue_short: "CHI 2024"
+    track: Workshop
+    venue: "Novel Approaches for Understanding and Mitigating Emerging New Harms in Immersive and Embodied Virtual Spaces: A Workshop of the CHI Conference on Human Factors in Computing Systems"
+    authors: [Wangfan Li, Rohit Mallick, Christopher Flathmann, Nathan McNeese, Carlos Toxtli]
+  - match: "Intermediate Prompting Steps of Large Language Models"
+    areas: [human-centered-automation]
+    type: conference
+    venue_short: "CSCE 2024"
+    venue: "The 8th International Conference on Applied Cognitive Computing (ACC'24), World Congress in Computer Science, Computer Engineering & Applied Computing (CSCE 2024). Springer Nature, Cham."
+    doi: 10.1007/978-3-031-85628-0_4
+  - match: "Task Management Capabilities of LLM-Powered Agents"
+    areas: [human-centered-automation, future-of-work]
+    type: poster
+    venue_short: "ACM CHIWORK 2024"
+    track: Demo
+    venue: "CHIWORK '24: 3rd Annual Meeting of the Symposium on Human-Computer Interaction for Work, Demo Track"
+  - {match: "AI Assistants in the Workplace", areas: [future-of-work], type: conference, venue_short: "MexIHC 2024"}
+  - match: "Automating Automation: Using LLMs"
+    areas: [human-centered-automation]
+    type: conference
+    venue_short: "CSCE 2024"
+    venue: "Artificial Intelligence and Applications (ICAI'24), CSCE 2024. Communications in Computer and Information Science, vol. 2252. Springer, Cham."
+    doi: 10.1007/978-3-031-86623-4_18
+  - {match: "Expanding the Horizon of Learning Applications", areas: [inclusive-ai], venue_short: "AHFE IHIET-AI 2024"}
+  - {match: "Flood Image Processing", areas: [ai-for-science], venue_short: "EGU 2024", track: "Abstract"}
+  - {match: "AI-powered Language Tools in Crowdsourcing", areas: [future-of-work, inclusive-ai], type: conference, venue_short: "IEEE SmartData 2024"}
+  - match: "Automatic Detection of Errors in LLM"
+    areas: [trustworthy-ai]
+    type: conference
+    venue_short: "CSCE 2024"
+    venue: "The 26th International Conference on Artificial Intelligence (ICAI'24), World Congress in Computer Science, Computer Engineering & Applied Computing (CSCE 2024). Springer Nature, Cham."
+    doi: 10.1007/978-3-031-86623-4_16
+  - match: "Human Oversight Mechanisms over Autonomous"
+    areas: [human-centered-automation]
+    type: poster
+    venue_short: "ACM CHIWORK 2024"
+    track: Demo
+    venue: "CHIWORK '24: 3rd Annual Meeting of the Symposium on Human-Computer Interaction for Work, Demo Track"
+  - {match: "ReActIn: Infusing Human Feedback", areas: [human-centered-automation, trustworthy-ai], venue_short: "AHFE IHIET-AI 2024"}
+  - match: "SmartMonitor"
+    areas: [future-of-work]
+    type: poster
+    venue_short: "ACM CHIWORK 2024"
+    track: Demo
+    venue: "CHIWORK '24: 3rd Annual Meeting of the Symposium on Human-Computer Interaction for Work, Demo Track"
+    links: {Code: "https://github.com/ai4he/Hardware_Application"}
+  - {match: "Human-Centered Automation", type_is: preprint, areas: [human-centered-automation], venue_short: "arXiv 2024", track: "Position paper"}
+  - match: "Multi-Screen Interaction in Extended Reality"
+    areas: [future-of-work, human-centered-automation]
+    type: poster
+    venue_short: "ACM CHIWORK 2024"
+    track: Demo
+    venue: "CHIWORK '24: 3rd Annual Meeting of the Symposium on Human-Computer Interaction for Work, Demo Track"
+    links: {Code: "https://github.com/ai4he/VirtuaScreens"}
+
+  # --------------------------------- 2023 ---------------------------------
+  - {match: "Conceptualizing Indigeneity in Social Computing", areas: [inclusive-ai], type: workshop, venue_short: "CSCW 2023", track: "Workshop (organizers)"}
+  - {match: "Designing AI Tools to Address Power Imbalances", areas: [future-of-work], venue_short: "Springer 2023", track: "Book chapter"}
+  - match: "Evaluating Machine Perception of Indigeneity"
+    areas: [inclusive-ai, trustworthy-ai]
+    type: workshop
+    venue_short: "CSCW 2023"
+    track: Workshop
+    venue: "Workshop on Conceptualizing Indigeneity in Social Computing, ACM CSCW 2023, Minneapolis, USA"
+  - {match: "Conceptual Framework for Autonomous Cognitive Entities", areas: [human-centered-automation], venue_short: "arXiv 2023"}
+
+# ---------------------------------------------------------------------------
+# Talks: everything from 2023 onward is included automatically. 2022 talks are
+# included only when listed here (the lab started in August 2022).
+# ---------------------------------------------------------------------------
+talks:
+  include_2022:
+    - "The life in the Metaverse"
+    - "Human-AI Empowerment"
+    - "Tools for the Design of AI Solutions"
+  exclude: []
+
+# ---------------------------------------------------------------------------
+# Authors who are known collaborators (not lab members). Listing them here
+# silences the build's "new student?" hint.
+# ---------------------------------------------------------------------------
+known_external:
+  - Matias Volonte
+  - Benjamin Sleeper

@@ -1,0 +1,119 @@
+{% import "macros.html" as m with context %}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% set page_title = (title ~ " · " ~ site.short_name) if title else (site.name ~ " · Clemson University") %}
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ (description or site.description)|striptags|truncate(300) }}">
+<link rel="canonical" href="{{ canonical }}">
+<meta name="theme-color" content="#0d1424">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:type" content="{{ og_type or 'website' }}">
+<meta property="og:title" content="{{ title or site.name }}">
+<meta property="og:description" content="{{ (description or site.description)|striptags|truncate(300) }}">
+<meta property="og:url" content="{{ canonical }}">
+{% if og_image %}<meta property="og:image" content="{{ site.base_url }}/{{ og_image }}">{% else %}<meta property="og:image" content="{{ site.base_url }}/assets/img/brand/haie-logo.png">{% endif %}
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="{{ root }}assets/img/brand/favicon.png">
+<link rel="apple-touch-icon" href="{{ root }}assets/img/brand/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }} news" href="{{ root }}feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ root }}assets/css/site.css?v={{ asset_hash }}">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("haie-theme");
+      if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+{% block head %}{% endblock %}
+</head>
+<body class="page-{{ active or 'home' }}">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ root }}" aria-label="{{ site.name }} home">
+      {{ m.logo_mark() }}
+      <span class="brand-text">
+        <span class="brand-name">Human-AI Empowerment Lab</span>
+        <span class="brand-short">HAIE Lab</span>
+        <span class="brand-sub">Clemson University · School of Computing</span>
+      </span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <ul>
+        {% for label, href in nav %}
+        {% set key = href.rstrip('/') %}
+        <li><a href="{{ root }}{{ href }}"{% if active == key %} aria-current="page"{% endif %}>{{ label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <div class="header-tools">
+      <a class="icon-btn" href="{{ root }}publications/#search" aria-label="Search publications">{{ m.icon('search') }}</a>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode">{{ m.icon('moon', 'icon icon-moon') }}{{ m.icon('sun', 'icon icon-sun') }}</button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">{{ m.icon('menu', 'icon icon-menu') }}{{ m.icon('close', 'icon icon-close') }}</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand brand--footer" href="{{ root }}">{{ m.logo_mark() }}<span class="brand-text"><span class="brand-name">Human-AI Empowerment Lab</span><span class="brand-sub">HAIE Lab · est. {{ site.founded }}</span></span></a>
+      <p class="footer-about">{{ site.description }}</p>
+      <address class="footer-address">
+        {% for line in site.address %}{{ line }}<br>{% endfor %}
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </address>
+    </div>
+    <div>
+      <h3 class="footer-h">Research</h3>
+      <ul class="footer-list">
+        {% for a in areas %}<li><a href="{{ root }}{{ a.url }}">{{ a.short }}</a></li>{% endfor %}
+        <li><a href="{{ root }}software/">Software &amp; artifacts</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-h">Lab</h3>
+      <ul class="footer-list">
+        <li><a href="{{ root }}about/">About</a></li>
+        <li><a href="{{ root }}people/">People</a></li>
+        <li><a href="{{ root }}publications/">Publications</a></li>
+        <li><a href="{{ root }}projects/">Projects</a></li>
+        <li><a href="{{ root }}funding/">Funding</a></li>
+        <li><a href="{{ root }}collaborators/">Collaborations</a></li>
+        <li><a href="{{ root }}talks/">Talks &amp; service</a></li>
+        <li><a href="{{ root }}teaching/">Teaching &amp; mentoring</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-h">Connect</h3>
+      <ul class="footer-list">
+        <li><a href="{{ root }}join/">Join the lab</a></li>
+        <li><a href="{{ root }}news/">News</a></li>
+        <li><a href="{{ root }}feed.xml">{{ m.icon('rss') }} RSS feed</a></li>
+        <li><a href="{{ site.github }}" target="_blank" rel="noopener">{{ m.icon('github') }} GitHub</a></li>
+        <li><a href="{{ site.university_url }}" target="_blank" rel="noopener">Clemson University</a></li>
+        <li><a href="{{ site.school_url }}" target="_blank" rel="noopener">School of Computing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-base">
+    <p>© {{ year }} Human-AI Empowerment Lab, Clemson University.</p>
+    <p class="footer-sync">Publications, talks and grants synced from <a href="{{ source.personal_site }}" target="_blank" rel="noopener">carlostoxtli.com</a>{% if synced %} · last updated {{ synced }}{% endif %}</p>
+  </div>
+</footer>
+<div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+<script src="{{ root }}assets/js/site.js?v={{ asset_hash }}" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

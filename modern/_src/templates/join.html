@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Join</p>
+    <h1 class="page-title">Join the lab</h1>
+    <p class="page-lead">We are always interested in motivated people who want to build AI that empowers people. Our students publish at leading venues, work on federally funded projects, and collaborate across disciplines and institutions.</p>
+  </div>
+</section>
+
+<section class="section section--flush">
+  <div class="wrap join-grid">
+    <article class="join-card">
+      <span class="join-icon">{{ m.icon('grad') }}</span>
+      <h2>Prospective Ph.D. students</h2>
+      <p>Apply to the Ph.D. program in <strong>Human-Centered Computing</strong> or <strong>Computer Science</strong> at Clemson University's School of Computing and mention the HAIE Lab and Dr. Toxtli in your statement. The lab recruits students to work on its active funded projects in agentic AI, AI for science, human–autonomy teaming, trustworthy AI and the future of work.</p>
+      <a class="text-link" href="{{ site.school_url }}" target="_blank" rel="noopener">School of Computing graduate programs {{ m.icon('external') }}</a>
+    </article>
+    <article class="join-card">
+      <span class="join-icon">{{ m.icon('flask') }}</span>
+      <h2>M.S. students</h2>
+      <p>Master's students can join through thesis research, directed research projects (CPSC/HCC 8880) or course projects that grow into publications. Several of the lab's papers are first-authored by M.S. researchers.</p>
+    </article>
+    <article class="join-card">
+      <span class="join-icon">{{ m.icon('users') }}</span>
+      <h2>Undergraduates</h2>
+      <p>Clemson undergraduates can participate through Creative Inquiry, departmental honors theses (CPSC 4950) and independent study (CPSC 4810). Undergraduate researchers in the lab have co-authored papers at venues such as ACM CHI.</p>
+    </article>
+    <article class="join-card">
+      <span class="join-icon">{{ m.icon('globe') }}</span>
+      <h2>Visitors &amp; collaborators</h2>
+      <p>We welcome collaborations with researchers in academia, national laboratories and industry, and visiting students and scholars interested in human-centered AI.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap two-col">
+    <div class="prose prose--lead">
+      <h2>How to reach out</h2>
+      <p>Email <a href="mailto:{{ site.email }}">{{ site.email }}</a> with:</p>
+      <ol>
+        <li>Your CV and, if available, transcripts.</li>
+        <li>A short paragraph on the research questions that excite you and which of our <a href="{{ root }}projects/">projects</a> or <a href="{{ root }}research/">thrusts</a> they connect to.</li>
+        <li>Links to relevant work — papers, code, portfolios or demos.</li>
+      </ol>
+      <p>Use a subject line like <code>[HAIE Prospective Ph.D.] Your Name — Topic</code> so your message reaches the right place.</p>
+    </div>
+    <aside class="side-card">
+      <h3 class="side-h">What students gain</h3>
+      <ul class="highlight-list">
+        <li>Mentored first-author publications</li>
+        <li>Work on NSF-, NASA- and DoD-funded research</li>
+        <li>Collaborators across Clemson and partner universities</li>
+        <li>A public profile page showcasing your research</li>
+        <li>Conference travel and NSF NRT+ summits</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    {{ m.section_head("Current projects", "Where you could contribute", None, "projects/", "All projects", root) }}
+    <div class="card-grid card-grid--3">
+      {% for pr in projects if pr.status == 'active' %}{% if loop.index <= 6 %}{{ m.project_card(pr, root) }}{% endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
