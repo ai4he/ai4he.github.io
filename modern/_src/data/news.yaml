@@ -1,7 +1,7 @@
 # ---------------------------------------------------------------------------
 # News
 # ---------------------------------------------------------------------------
-# Newest first is not required — the build sorts by date.
+# Newest first is not required; the build sorts by date.
 #   date   YYYY-MM-DD, YYYY-MM or YYYY
 #   kind   paper | grant | book | people | event | talk | award | service
 #   text   one or two sentences; markdown links allowed
@@ -29,7 +29,7 @@
 
 - date: 2026-07-21
   kind: paper
-  text: "*Sycophantic Metacognition* — on the Dunning-Kruger effect in LLM self-assessment — is presented as a full paper at **ACM CUI 2026** in Bremen, Germany."
+  text: "*Sycophantic Metacognition*, on the Dunning-Kruger effect in LLM self-assessment, is presented as a full paper at **ACM CUI 2026** in Bremen, Germany."
   people: [manuel-delaflor]
 
 - date: 2026-07
@@ -72,12 +72,12 @@
 
 - date: 2026-04-02
   kind: people
-  text: "Krishna Panthi successfully defends the M.S. thesis on AquaCrop–Richards crop simulation and deep reinforcement learning for irrigation, co-chaired with Dr. Vidya Samadi."
+  text: "Krishna Panthi successfully defends the M.S. thesis on AquaCrop-Richards crop simulation and deep reinforcement learning for irrigation, co-chaired with Dr. Vidya Samadi."
   people: [krishna-panthi]
 
 - date: 2026-03-24
   kind: event
-  text: "Dr. Toxtli and two Ph.D. students take part in the **NSF NRT+ Summit** at the University of Wisconsin–Madison."
+  text: "Dr. Toxtli and two Ph.D. students take part in the **NSF NRT+ Summit** at the University of Wisconsin-Madison."
 
 - date: 2026-03-23
   kind: paper
@@ -110,7 +110,7 @@
 
 - date: 2025-09-02
   kind: book
-  text: "Book **Human-AI Empowerment: An Interdisciplinary Perspective** — the framework behind the lab's name — is published by Chapman & Hall/CRC."
+  text: "Book **Human-AI Empowerment: An Interdisciplinary Perspective**, the framework behind the lab's name, is published by Chapman & Hall/CRC."
   link: https://doi.org/10.1201/9781003536628
   pinned: true
 
@@ -168,6 +168,13 @@
   link: projects/worker-centered-ai/
 
 - date: 2024-11
+  kind: award
+  text: "Cecilia Delgado Solorzano's *A Study of LLM-Powered Student Query Support*, developed with Clemson University Libraries, receives the **Best Paper Award** at ACM MexIHC 2024."
+  link: publications/2024-a-study-of-llm-powered-student-query-support/
+  people: [cecilia-delgado-solorzano]
+  pinned: true
+
+- date: 2024-11
   kind: paper
   text: "Two papers at **MexIHC 2024**: the Wellbot workplace assistant and LLM-powered student query support (LibRef)."
   people: [ravindu-perera, cecilia-delgado-solorzano, claire-gendron]
@@ -190,7 +197,7 @@
 
 - date: 2024-06
   kind: event
-  text: "Four lab demos at **ACM CHIWORK 2024** in Newcastle, UK — SmartMonitor, VirtuaScreens, LLM task-management agents and sandboxed human oversight. Dr. Toxtli serves as Web Chair."
+  text: "Four lab demos at **ACM CHIWORK 2024** in Newcastle, UK: SmartMonitor, VirtuaScreens, LLM task-management agents and sandboxed human oversight. Dr. Toxtli serves as Web Chair."
   link: projects/workplace-assistants/
   people: [ravindu-perera, wangfan-li, claire-gendron, adithya-ravi]
 
@@ -219,7 +226,7 @@
 
 - date: 2023
   kind: grant
-  text: "**U.S. Navy** project on human–autonomy teaming in underwater environments begins ($1,095,901; Co-PI with Dr. Nathan McNeese)."
+  text: "**U.S. Navy** project on human-autonomy teaming in underwater environments begins ($1,095,901; Co-PI with Dr. Nathan McNeese)."
   link: projects/underwater-hat/
 
 - date: 2023-05-10

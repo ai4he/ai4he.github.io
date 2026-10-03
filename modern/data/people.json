@@ -58,7 +58,7 @@
   "slug": "colt-doster",
   "group": "phd",
   "status": "current",
-  "title": "Ph.D. Student",
+  "title": "Ph.D. Student, Human-Centered Computing",
   "url": "https://haielab.org/modern/people/colt-doster/",
   "publications": 0
  },
@@ -99,11 +99,20 @@
   "publications": 1
  },
  {
+  "name": "Ravindu Tharanga Perera",
+  "slug": "ravindu-perera",
+  "group": "graduate",
+  "status": "current",
+  "title": "Research Assistant",
+  "url": "https://haielab.org/modern/people/ravindu-perera/",
+  "publications": 4
+ },
+ {
   "name": "Krishna Panthi",
   "slug": "krishna-panthi",
   "group": "masters",
   "status": "alumni",
-  "title": "M.S. Student (thesis co-advised with Dr. Vidya Samadi)",
+  "title": "M.S. in Computer Science (thesis co-advised with Dr. Vidya Samadi)",
   "url": "https://haielab.org/modern/people/krishna-panthi/",
   "publications": 4
  },
@@ -117,20 +126,11 @@
   "publications": 0
  },
  {
-  "name": "Ravindu Tharanga Perera",
-  "slug": "ravindu-perera",
-  "group": "graduate",
-  "status": "alumni",
-  "title": "Research Assistant",
-  "url": "https://haielab.org/modern/people/ravindu-perera/",
-  "publications": 4
- },
- {
   "name": "Vamsi Krishna Pasam",
   "slug": "vamsi-krishna-pasam",
   "group": "graduate",
   "status": "alumni",
-  "title": "Graduate Researcher",
+  "title": "AI Research Assistant",
   "url": "https://haielab.org/modern/people/vamsi-krishna-pasam/",
   "publications": 2
  },
@@ -139,7 +139,7 @@
   "slug": "sravani-pati",
   "group": "graduate",
   "status": "alumni",
-  "title": "Graduate Researcher",
+  "title": "AI Engineer and Researcher",
   "url": "https://haielab.org/modern/people/sravani-pati/",
   "publications": 2
  },
@@ -238,7 +238,7 @@
   "slug": "athish-venkatachalam",
   "group": "student",
   "status": "alumni",
-  "title": "Student Researcher",
+  "title": "Graduate Research Assistant",
   "url": "https://haielab.org/modern/people/athish-venkatachalam/",
   "publications": 2
  },
@@ -256,7 +256,7 @@
   "slug": "adithya-ravi",
   "group": "student",
   "status": "alumni",
-  "title": "Student Researcher",
+  "title": "AI Researcher",
   "url": "https://haielab.org/modern/people/adithya-ravi/",
   "publications": 1
  },
@@ -274,7 +274,7 @@
   "slug": "sofia-campos-hernandez",
   "group": "student",
   "status": "alumni",
-  "title": "Student Researcher",
+  "title": "Student Collaborator",
   "url": "https://haielab.org/modern/people/sofia-campos-hernandez/",
   "publications": 1
  },
@@ -306,33 +306,6 @@
   "publications": 4
  },
  {
-  "name": "Ryan Philip Hirt",
-  "slug": "ryan-hirt",
-  "group": "undergrad",
-  "status": "alumni",
-  "title": "Undergraduate Researcher",
-  "url": "https://haielab.org/modern/people/ryan-hirt/",
-  "publications": 0
- },
- {
-  "name": "Uchenna William Maduno",
-  "slug": "uchenna-maduno",
-  "group": "undergrad",
-  "status": "alumni",
-  "title": "Undergraduate Researcher",
-  "url": "https://haielab.org/modern/people/uchenna-maduno/",
-  "publications": 0
- },
- {
-  "name": "Owen Patrick Duggan",
-  "slug": "owen-duggan",
-  "group": "undergrad",
-  "status": "alumni",
-  "title": "Undergraduate Researcher",
-  "url": "https://haielab.org/modern/people/owen-duggan/",
-  "publications": 0
- },
- {
   "name": "Sumanth Pandiri",
   "slug": "sumanth-pandiri",
   "group": "undergrad",
@@ -348,6 +321,33 @@
   "status": "alumni",
   "title": "Undergraduate Researcher",
   "url": "https://haielab.org/modern/people/adam-pickeral/",
+  "publications": 0
+ },
+ {
+  "name": "Uchenna William Maduno",
+  "slug": "uchenna-maduno",
+  "group": "undergrad",
+  "status": "alumni",
+  "title": "Undergraduate Researcher",
+  "url": "https://haielab.org/modern/people/uchenna-maduno/",
+  "publications": 0
+ },
+ {
+  "name": "Ryan Philip Hirt",
+  "slug": "ryan-hirt",
+  "group": "undergrad",
+  "status": "alumni",
+  "title": "Undergraduate Researcher",
+  "url": "https://haielab.org/modern/people/ryan-hirt/",
+  "publications": 0
+ },
+ {
+  "name": "Owen Patrick Duggan",
+  "slug": "owen-duggan",
+  "group": "undergrad",
+  "status": "alumni",
+  "title": "Undergraduate Researcher",
+  "url": "https://haielab.org/modern/people/owen-duggan/",
   "publications": 0
  },
  {

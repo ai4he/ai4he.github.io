@@ -16,15 +16,15 @@
   tagline: Keeping people in meaningful control of increasingly autonomous AI.
   summary: >-
     We design and evaluate automation and AI agents that people can specify,
-    supervise, correct and trust — before they act on live systems.
+    supervise, correct and trust before they act on live systems.
   description: |
     Generative AI is turning software automation from scripted bots into agents that plan and act on their own. Our lab studies what it takes for that shift to empower rather than sideline the people involved. We ground agent design in theories of human supervisory control, and we build environments where humans can observe, steer and correct autonomous behavior.
 
-    Our work includes Prompt-Level Supervisory Alignment (PLSA), which operationalizes Supervisory Control Theory as a structured prompting strategy for LLM revision; sandboxed virtual machines for human oversight of autonomous task execution; LLM-generated BPMN workflows for robotic process automation; retrieval-augmented human–AI co-authoring of software requirements; and empirical studies of how teams of LLM agents pool information, coordinate and fail. This agenda is synthesized in the book *Human-Centered Automation* (CRC Press, 2026).
+    Our work includes Prompt-Level Supervisory Alignment (PLSA), which operationalizes Supervisory Control Theory as a structured prompting strategy for LLM revision; sandboxed virtual machines for human oversight of autonomous task execution; LLM-generated BPMN workflows for robotic process automation; retrieval-augmented human-AI co-authoring of software requirements; and empirical studies of how teams of LLM agents pool information, coordinate and fail. This agenda is synthesized in the book *Human-Centered Automation* (CRC Press, 2026).
   questions:
     - How should people supervise AI agents whose actions they cannot fully anticipate?
     - What makes automation inspectable, correctable and trustworthy before deployment?
-    - When do teams of LLM agents coordinate well — and when do they fail like human groups?
+    - When do teams of LLM agents coordinate well, and when do they fail like human groups?
   keywords: [automation, automating, agentic, agent, supervisory, oversight, robotic process, rpa, bpmn, workflow, multi-agent, sandbox, requirement, cognitive entit, self-refinement, revision]
 
 - slug: future-of-work
@@ -51,10 +51,10 @@
   short: AI for Science
   color: amber
   icon: science
-  tagline: Human–AI partnerships for mathematics, astrophysics and the environment.
+  tagline: Human-AI partnerships for mathematics, astrophysics and the environment.
   summary: >-
     We develop AI that helps researchers conjecture, retrieve, reason and run
-    analyses — with humans validating every step.
+    analyses, with humans validating every step.
   description: |
     Through the NSF AIMing program, which the lab leads, we study how language models can participate in research-level mathematics: generating conjectures from the context of a paper, retrieving the premise needed for the next step of a proof, and recognizing known results under equivalent representations. Our benchmarks include NaturalPRISM, with 1.7 million pairs of intermediate proof states and premises drawn from arXiv mathematics, and TREAT, which tests access to formal knowledge across equivalent mathematical forms.
 
@@ -66,8 +66,8 @@
   keywords: [mathematical, mathematics, theorem, conjecture, proof, premise, fermi, astrophysic, gamma-ray, irrigation, crop, flood, hydrolog, soil, spectral, svd, co-clustering, scientific discovery]
 
 - slug: human-autonomy-teaming
-  name: Human–Autonomy Teaming in High-Stakes Environments
-  short: Human–Autonomy Teaming
+  name: Human-Autonomy Teaming in High-Stakes Environments
+  short: Human-Autonomy Teaming
   color: blue
   icon: teaming
   tagline: Autonomous teammates for search and rescue, inspection and defense.
@@ -75,7 +75,7 @@
     With partners in human factors and engineering, we study how autonomous
     systems can become effective teammates where the stakes are highest.
   description: |
-    Search-and-rescue divers, aviation inspectors and military operators work in dynamic, hazardous settings where an AI teammate could help — or dangerously distract. Funded by the U.S. Navy, the National Science Foundation and the U.S. Army, the lab collaborates with Clemson's human factors and industrial engineering groups to understand what these teams need and to engineer autonomy that meets them.
+    Search-and-rescue divers, aviation inspectors and military operators work in dynamic, hazardous settings where an AI teammate could help, or dangerously distract. Funded by the U.S. Navy, the National Science Foundation and the U.S. Army, the lab collaborates with Clemson's human factors and industrial engineering groups to understand what these teams need and to engineer autonomy that meets them.
 
     Our studies interview search-and-rescue professionals and hazardous-environment teams about the roles autonomous teammates should play (HFES 2025, IEEE CogSIMA 2026), compare specialized detectors and multimodal vision-language models for underwater search under varying visibility (ICECET 2026), examine how AI can preserve situation awareness in augmented reality, and validate LLM judges for rating the teammate quality of AI agents.
   questions:
@@ -92,9 +92,9 @@
   tagline: Calibrated, honest and fair AI that people can reason about.
   summary: >-
     We audit how language models reason, report confidence, portray people and
-    make ethical choices — and design interfaces that help users think critically.
+    make ethical choices, and design interfaces that help users think critically.
   description: |
-    People increasingly calibrate their trust in AI against what models say about themselves. Our lab, in close collaboration with the Metacognition Institute (U.K.), investigates whether that trust is warranted. We introduced *sycophantic metacognition* — confidence reports that mimic metacognitive judgment without being linked to accuracy (ACM CUI 2026) — and a dual-route account of why users attribute minds and consciousness to AI (Frontiers in Psychology, 2026).
+    People increasingly calibrate their trust in AI against what models say about themselves. Our lab, in close collaboration with the Metacognition Institute (U.K.), investigates whether that trust is warranted. We introduced *sycophantic metacognition*, meaning confidence reports that mimic metacognitive judgment without being linked to accuracy (ACM CUI 2026), and a dual-route account of why users attribute minds and consciousness to AI (Frontiers in Psychology, 2026).
 
     We also audit the ethical consistency of 24 LLMs across 25,200 queries, their syllogistic reasoning and fact-checking against human baselines, errors hidden in popular benchmarks, and how models portray neurodivergent people (AAAI/ACM AIES 2026). On the design side, we build Belief Explorer, a Socratic-dialogue system for epistemic reflection (CHI 2026), embed micro-ethics nudges that reduce unfairness in no-code ML tools, and show that persona profiles make virtual agents measurably more predictable (ACM IVA 2026).
   questions:
@@ -113,11 +113,11 @@
     We co-design AI with bilingual speakers, students, patients and other
     communities that mainstream technology often overlooks.
   description: |
-    Many of the people who could benefit most from AI are least considered in its design. Our lab uses participatory methods to build AI with — not only for — these communities. We study how second-language speakers envision personal AI assistants for face-to-face conversations (CHI 2026), co-design AI fluency practice for advanced bilingual speakers (IEEE CAI 2025), and examine how AI language tools affect crowd workers completing tasks outside their primary language.
+    Many of the people who could benefit most from AI are least considered in its design. Our lab uses participatory methods to build AI with, not only for, these communities. We study how second-language speakers envision personal AI assistants for face-to-face conversations (CHI 2026), co-design AI fluency practice for advanced bilingual speakers (IEEE CAI 2025), and examine how AI language tools affect crowd workers completing tasks outside their primary language.
 
     In education, we developed prompting architectures and LibRef, an LLM-powered assistant that supports students' information seeking and library literacy, reviewed the role of LLMs in Latin American education, and studied digital-twin avatars for remote instruction (CHI 2026). In health and security, we examine how an embodied agent's body type shapes dietary counseling outcomes (Computer Animation and Virtual Worlds, 2026) and how college students manage authentication in everyday life (HFES 2026).
   questions:
     - How should AI mediate conversations between speakers of different languages?
-    - How can LLM tools strengthen — not replace — students' information-seeking skills?
+    - How can LLM tools strengthen, not replace, students' information-seeking skills?
     - How do embodiment and interface choices shape trust in health and security technology?
   keywords: [language, bilingual, second-language, second language, fluent, learning, student, education, instructor, lecture, health, dietary, authentication, library, latin america]

@@ -1,5 +1,5 @@
 # ---------------------------------------------------------------------------
-# HAIE Lab — people
+# HAIE Lab, people
 # ---------------------------------------------------------------------------
 # One entry per person. Each person gets a profile page at people/<slug>/.
 # Publications are attached automatically: any author whose name (or one of
@@ -25,8 +25,9 @@
 #   seeking        Short note shown as an "open to opportunities" badge
 #   links          email, website, scholar, linkedin, github, orcid, twitter, cv, dblp, semantic_scholar
 #
-# DRAFT NOTE: bios marked `# draft` were written from the person's publication
-# record. Students should review them and send updates (and missing links).
+# SOURCES: bios were compiled in October 2026 from publications, the lab's
+# records and each person's public profiles (personal sites, ORCID, GitHub,
+# LinkedIn). Members should review their entry and send updates.
 # ---------------------------------------------------------------------------
 
 - slug: carlos-toxtli
@@ -52,7 +53,7 @@
     - "U.S. Patent US12093703B2 and a published patent application on intelligent document collaboration (with Microsoft Research)"
   honors:
     - {year: 2022, text: "IRCAI Global Top 100 promising AI projects, UNESCO International Research Centre on Artificial Intelligence"}
-    - {year: 2021, text: "Impact Award, ACM CSCW — Quantifying the Invisible Labor in Crowd Work"}
+    - {year: 2021, text: "Impact Award, ACM CSCW, for Quantifying the Invisible Labor in Crowd Work"}
     - {year: 2021, text: "STIR Labs City Innovate Grant ($20,000), NSF"}
     - {year: 2020, text: "Twitch Research Fellowship ($10,000), Amazon"}
     - {year: 2018, text: "HCOMP 2018 Travel Award ($3,500)"}
@@ -87,15 +88,24 @@
   since: "Fall 2022"
   expected_graduation: "Summer 2027"
   interests: [AI-mediated communication, Second-language learning, LLM evaluation, Crowdsourcing, Human-autonomy teaming]
-  bio: |  # draft
-    Cecilia Delgado Solorzano is a Ph.D. student in Human-Centered Computing advised by Dr. Carlos Toxtli. Cecilia's research examines how AI can mediate communication for bilingual and second-language speakers, from participatory design of personal AI assistants for face-to-face conversations (CHI 2026) to AI-supported fluency practice (IEEE CAI 2025) and the effect of AI language tools on crowd workers who complete tasks outside their primary language (IEEE SmartData 2024).
+  bio: |
+    Cecilia Delgado Solorzano is a Ph.D. student in Human-Centered Computing at Clemson University, advised by Dr. Carlos Toxtli. Cecilia's research examines how AI can mediate communication for bilingual and second-language speakers, from participatory design of personal AI assistants for face-to-face conversations (CHI 2026) to AI-supported fluency practice for advanced learners (IEEE CAI 2025) and the effect of AI language tools on crowd workers who complete tasks outside their primary language (IEEE SmartData 2024). With Clemson University Libraries, Cecilia developed LibRef, an LLM-powered assistant for student information seeking that received the Best Paper Award at ACM MexIHC 2024.
 
-    Cecilia also studies the reliability of large language models — their syllogistic reasoning and fact-checking, and the detection of errors in widely used benchmarks — and contributes to the lab's Navy-funded research on human-autonomy teaming, where Cecilia first-authored a study comparing specialized detectors and multimodal models for underwater search and rescue (ICECET 2026).
+    Cecilia also studies the reliability of large language models, including syllogistic reasoning, fact-checking and errors hidden in widely used benchmarks, and contributes to the lab's Navy-funded human-autonomy teaming project, where Cecilia led a study comparing specialized detectors and multimodal models for underwater search and rescue (ICECET 2026). Before Clemson, Cecilia earned an M.Eng. and a B.S. from the Universidad Nacional Autónoma de México (UNAM) and worked as a digital signal processing engineer in UNAM's Biorobotics Laboratory, designing audio recognition algorithms.
   highlights:
-    - "First author of papers at ACM CHI (EA), IEEE CAI, IEEE SmartData, ICECET and AHFE"
-    - "Co-author of a book chapter on AI-driven tools for crowdwork (IntechOpen, 2026)"
-    - "NSF NRT+ Summit trainee (Cleveland State University, 2025)"
-  links: {}
+    - "Best Paper Award, ACM MexIHC 2024, for *A Study of LLM-Powered Student Query Support*"
+    - "Robert M. Geist Endowed Fellowship, Clemson University"
+    - "First author of papers at ACM CHI (Extended Abstracts), IEEE CAI, IEEE SmartData, IEEE ICECET, MexIHC and AHFE"
+    - "Co-chair, IHIET-AI 2025; reviewer, ACM IUI 2025 Posters and Demos"
+    - "CONACYT-SENER master's scholarship (2017-2018)"
+  education:
+    - "Ph.D. in Human-Centered Computing, Clemson University (in progress)"
+    - "M.Eng., Universidad Nacional Autónoma de México (UNAM), 2018"
+    - "B.S., Universidad Nacional Autónoma de México (UNAM), 2010"
+  links:
+    linkedin: https://www.linkedin.com/in/cecilia-d-4240b6100
+    github: https://github.com/cecilid
+    orcid: https://orcid.org/0009-0006-8239-0621
 
 - slug: wangfan-li
   name: Wangfan Li
@@ -107,15 +117,16 @@
   since: "Fall 2023"
   expected_graduation: "Fall 2027"
   interests: [Human oversight of AI agents, Supervisory control, Human-centered automation, LLM-assisted writing, Fairness in ML workflows]
-  bio: |  # draft
-    Wangfan Li is a Ph.D. student in Human-Centered Computing advised by Dr. Carlos Toxtli. Wangfan's research asks how people can remain in meaningful control of increasingly autonomous AI. The work introduced Prompt-Level Supervisory Alignment (PLSA), which turns Supervisory Control Theory — a framework for human oversight of automated systems — into a structured prompting strategy for LLM revision (ACM CAIS 2026) and anticipatory manuscript revision (HFES 2026).
+  bio: |
+    Wangfan Li is a Ph.D. student in Human-Centered Computing at Clemson University, advised by Dr. Carlos Toxtli. Wangfan's research asks how people can remain in meaningful control of increasingly autonomous AI. The work introduced Prompt-Level Supervisory Alignment (PLSA), which turns Supervisory Control Theory, a framework for human oversight of automated systems, into a structured prompting strategy for LLM revision (ACM CAIS 2026) and anticipatory manuscript revision across multiple rounds of peer review (HFES 2026).
 
-    Wangfan's earlier projects built a sandboxed environment for human oversight of autonomous task execution (IEEE CAI 2025), retrieval-augmented human–AI co-authoring of software requirements (ACM SAC 2026), LLM-generated BPMN workflows for robotic process automation, and micro-ethics nudges that reduce unfairness in no-code machine-learning tools.
+    Wangfan's earlier projects built a sandboxed environment for human oversight of autonomous task execution (IEEE CAI 2025), retrieval-augmented human-AI co-authoring of software requirements (ACM SAC 2026), LLM-generated BPMN workflows for robotic process automation, ReActIn, a framework for infusing human feedback into the intermediate reasoning steps of LLMs, and micro-ethics nudges that reduce unfairness in no-code machine-learning tools (AHFE 2026). Wangfan also co-authored the Autonomous Cognitive Entity (ACE) framework and work on AI for situation awareness in augmented reality with Clemson's human factors researchers.
   highlights:
-    - "First author at ACM CAIS (inaugural edition), ACM SAC, IEEE CAI and HFES"
+    - "First author at ACM CAIS (inaugural edition), ACM SAC, IEEE CAI, HFES and AHFE"
     - "Presented the lab's work in person at ACM SAC 2026 (Thessaloniki)"
     - "NSF NRT+ Summit trainee (Cleveland State University, 2025)"
-  links: {}
+  links:
+    orcid: https://orcid.org/0009-0002-1098-4261
 
 - slug: austin-lahue
   name: Austin LaHue
@@ -125,10 +136,26 @@
   title: Ph.D. Student, Human-Centered Computing
   program: Ph.D. in Human-Centered Computing, Clemson University
   since: "Fall 2025"
-  interests: [AI for mathematics, Conjecture generation, Premise retrieval, Human-AI scientific discovery]
-  bio: |  # draft
-    Austin LaHue is a Ph.D. student in Human-Centered Computing and the graduate research assistant of the NSF AIMing project (Interactive Conjecture Proving), advised by Dr. Carlos Toxtli. Austin studies how language models can support research-level mathematics: which forms of mathematical context help a model generate the conjecture a paper actually proves, and how retrieval systems can surface the premise needed for the next step of a natural-language proof. Austin first-authored a paired ablation study of context for target-aligned conjecture generation and co-authored the NaturalPRISM benchmark, both at MathNLP 2026 (EMNLP).
-  links: {}
+  expected_graduation: "Spring 2029"
+  interests: [AI for mathematics, Conjecture generation, AI-mediated journaling, Trust and safety, Data science]
+  bio: |
+    Austin LaHue is a Ph.D. student in Human-Centered Computing at Clemson University and a graduate research assistant on the NSF AIMing project, advised by Dr. Carlos Toxtli. Austin studies how language models can support research-level mathematics, including which forms of mathematical context let a model generate the conjecture a paper actually proves (MathNLP 2026 at EMNLP) and how retrieval can surface the premise needed for the next step of a natural-language proof (NaturalPRISM). Austin also designs AI-mediated journaling systems and ran a 15-day field study of AI-mediated peer journaling, published as SHARE at ACM HAI 2026.
+
+    Before Clemson, Austin worked as a data scientist and business intelligence analyst at The Walt Disney Company, building predictive models and data pipelines, and as a research assistant at Brigham Young University's Marriott School of Business, where Austin co-authored a study of the mental-health benefits of a daily one-hour social media break (ECIS 2024). Austin holds an M.S. in Data Science from The University of Texas at Austin and a B.S. in Global Supply Chain Management from Brigham Young University.
+  highlights:
+    - "First author of SHARE (ACM HAI 2026) and a context ablation for conjecture generation (MathNLP 2026 at EMNLP)"
+    - "1st Place, Dataiku Everyday AI Data Visualization Challenge (2025)"
+    - "Treasurer, School of Computing Graduate Student Association"
+    - "Reviewer for PACIS 2024 and the HAI 2026 poster session"
+  education:
+    - "Ph.D. in Human-Centered Computing, Clemson University (in progress)"
+    - "M.S. in Data Science, The University of Texas at Austin, 2024"
+    - "B.S. in Global Supply Chain Management, Brigham Young University, 2021"
+  links:
+    linkedin: https://www.linkedin.com/in/austinlahue/
+    github: https://github.com/alahue
+    orcid: https://orcid.org/0009-0003-0708-4286
+    cv: https://alahue.github.io/resume/Austin_LaHue_Resume.pdf
 
 - slug: fateme-mazdarani
   name: Fateme Mazdarani
@@ -138,38 +165,65 @@
   title: Ph.D. Student, Computer Science
   program: Ph.D. in Computer Science, Clemson University
   since: "Fall 2025"
-  interests: [Mathematical reasoning in LLMs, Robust evaluation, Worker-centered AI, Explainable recommendation]
-  bio: |  # draft
-    Fateme Mazdarani is a Ph.D. student in Computer Science advised by Dr. Carlos Toxtli. Fateme's research evaluates whether language models reason robustly when the same mathematics is expressed in different forms — recognizing theorems under equivalence-preserving transformations (TREAT, SYNASC 2026), reconstructing procedural routes between representations (MathNLP 2026) and verifying non-canonical step-by-step solutions (IEEE ICMLA 2026).
+  interests: [Reliability and robustness of AI, LLMs and mathematical reasoning, Retrieval-augmented reasoning, Worker-centered AI, Scalable machine learning]
+  bio: |
+    Fateme Mazdarani is a second-year Ph.D. student in Computer Science at Clemson University, working in the Human-AI Empowerment Lab under the supervision of Dr. Carlos Toxtli. Fateme's research focuses on the reliability, robustness and interpretability of AI systems, especially how large language models access, evaluate and verify mathematical knowledge across equivalent representations and how retrieval can support more reliable reasoning. This work includes the TREAT benchmark for recognizing theorems under equivalent mathematical forms (SYNASC 2026), robust procedural mathematical reasoning (MathNLP 2026 at EMNLP) and step-level verification of non-canonical solutions (IEEE ICMLA 2026).
 
-    Fateme also led a study of transparent, explained task recommendations in crowd work, showing that lightweight disclosure increased workers' perceived fairness, trust and empowerment (IEEE CAI 2026), and serves as teaching assistant for the lab's online Human-Centered AI course.
+    Fateme also led a study showing that transparent, explained task recommendations raise crowd workers' perceived fairness, trust and empowerment (IEEE CAI 2026), developed randomized SVD methods for spectral co-clustering of text, and contributes to the lab's Navy-funded research on autonomous underwater vehicle navigation with vision-language-action models. Fateme holds a B.Sc. in Computer Engineering from the University of Tehran and received the Dr. Robert M. Geist III Endowed Fellowship in Computing.
   highlights:
+    - "Dr. Robert M. Geist III Endowed Fellowship in Computing, Clemson University (2025-2026)"
     - "First author of five 2026 papers (IEEE CAI, IEEE ICMLA, SYNASC, MathNLP at EMNLP, arXiv)"
-  links: {}
+    - "Social Chair, School of Computing Graduate Student Association; Delegate, Clemson Graduate Student Government"
+    - "Graduate teaching assistant for algorithms and human-centered computing courses"
+  education:
+    - "Ph.D. in Computer Science, Clemson University (in progress)"
+    - "B.Sc. in Computer Engineering, University of Tehran, 2023"
+  links:
+    website: https://mazdarani.github.io/
+    scholar: https://scholar.google.com/citations?user=Ev2ADcIAAAAJ
+    github: https://github.com/mazdarani
+    orcid: https://orcid.org/0009-0008-8013-3458
+    cv: https://mazdarani.github.io/cv.pdf
 
 - slug: christopher-kalahiki
   name: Christopher Kalahiki
-  aliases: [Christopher Kalahiki, C. Kalahiki]
+  aliases: [Christopher Kalahiki, Chris Kalahiki, Christopher Bradley Kalahiki, C. Kalahiki]
   group: phd
   status: current
   title: Ph.D. Student, Computer Science
   program: Ph.D. in Computer Science, Clemson University
   since: "Summer 2025"
-  interests: [Trust in large language models, Human-AI teaming, Usable security, Authentication]
-  bio: |  # draft
-    Christopher Kalahiki is a Ph.D. student in Computer Science advised by Dr. Carlos Toxtli and a graduate research assistant on the NSF SaTC 2.0 project *Tracking the Usability of Secure Authentication Systems*. Christopher's dissertation research focuses on trust in large language models for human-AI teaming, and Christopher co-authored a study of authentication routines among college students presented at HFES ASPIRE 2026.
-  links: {}
+  interests: [Trust in large language models, Human-AI teaming, Usable security, Machine learning, High-performance computing]
+  bio: |
+    Christopher (Chris) Kalahiki is a Ph.D. student in Computer Science at Clemson University who joined the Human-AI Empowerment Lab in 2025, advised by Dr. Carlos Toxtli. As a graduate research assistant on the NSF SaTC 2.0 project *Tracking the Usability of Secure Authentication Systems*, Chris studies how people manage authentication in everyday life (HFES ASPIRE 2026). Chris's dissertation research examines trust in large language models for human-AI teaming, including a study of how novice programmers team with AI assistants when "vibe coding".
+
+    Chris's background is in machine learning and high-performance computing, with projects in computer vision, explainable machine learning, natural language processing, graph learning and AI for games, and a 2023 study of breast tumor morphologies in the Computational and Structural Biotechnology Journal. Chris holds B.S. (2018) and M.S. (2020) degrees in Computer Science from Louisiana Tech University, where the master's thesis applied computer vision to inventory management systems, and previously worked as an associate consultant at Fenway Group.
+  education:
+    - "Ph.D. in Computer Science, Clemson University (in progress)"
+    - "M.S. in Computer Science, Louisiana Tech University, 2020"
+    - "B.S. in Computer Science, Louisiana Tech University, 2018"
+  links:
+    website: https://www.chriskalahiki.info/
+    linkedin: https://www.linkedin.com/in/chriskalahiki
+    scholar: https://scholar.google.com/citations?user=Y-Zcnf0AAAAJ
+    github: https://github.com/ChrisKalahiki
+    orcid: https://orcid.org/0000-0003-1513-5656
 
 - slug: colt-doster
   name: Colt Doster
-  aliases: [Colt Doster]
+  aliases: [Colt Doster, S. Colt Doster, Samuel Colt Doster]
   group: phd
   status: current
-  title: Ph.D. Student
+  title: Ph.D. Student, Human-Centered Computing
+  program: Ph.D. in Human-Centered Computing, Clemson University
   since: "May 2026"
-  bio: |  # draft
-    Colt Doster is a Ph.D. student in the Human-AI Empowerment Lab, advised by Dr. Carlos Toxtli, who joined the group in May 2026.
-  links: {}
+  interests: [Human-centered computing, In-vehicle and automotive HCI, Human-AI teaming, Technology in small-scale agriculture]
+  bio: |
+    Colt Doster is a Ph.D. student in Human-Centered Computing at Clemson University and a graduate research assistant in the Human-AI Empowerment Lab, which Colt joined in 2026, advised by Dr. Carlos Toxtli. Colt contributes to the lab's U.S. Army VIPR-GS project on a resilient network security architecture for next-generation military ground vehicles, leading its human-centered computing tasks with collaborators at Clemson and George Mason University. Colt also leads a formative study of how people perceive technology in small-scale agricultural practices.
+
+    Before joining the lab, Colt conducted human-computer interaction research in Clemson's Design and Research of In-Vehicle Experiences (DRIVE) Lab and has served as a graduate teaching assistant for School of Computing courses.
+  links:
+    orcid: https://orcid.org/0009-0009-2862-9453
 
 # ------------------------------- Researchers --------------------------------
 - slug: manuel-delaflor
@@ -179,10 +233,17 @@
   status: current
   title: Researcher
   affiliation: Metacognition Institute (U.K.)
-  interests: [Metacognition, AI epistemics, LLM calibration, Socratic dialogue, Machine consciousness]
-  bio: |  # draft
-    Manuel Delaflor is a researcher in the HAIE Lab, also affiliated with the Metacognition Institute (U.K.), and one of the lab's most prolific contributors. Together with the lab, Manuel studies the epistemics of AI systems: sycophantic metacognition and confidence calibration in LLM self-assessment (ACM CUI 2026), attribution of mental states and consciousness to AI (Frontiers in Psychology 2026), the ethical consistency of LLMs under perturbation, and Socratic-dialogue systems such as Belief Explorer that support reflection on personal beliefs (CHI 2026).
-  links: {}
+  interests: [Metacognition, AI epistemics, LLM calibration, Socratic dialogue, Philosophy of science, Machine consciousness]
+  bio: |
+    Manuel Delaflor is a researcher in the Human-AI Empowerment Lab and the director and main researcher of the Metacognition Institute (U.K.). An epistemologist and philosopher of science, Manuel began a research career with six years of work alongside Jacobo Grinberg at the National Autonomous University of Mexico (UNAM) and is developing Model Dependent Ontology, an epistemic framework that informs the lab's research on AI epistemics.
+
+    With the lab, Manuel studies sycophantic metacognition and confidence calibration in LLM self-assessment (ACM CUI 2026), the attribution of mental states and consciousness to AI (Frontiers in Psychology, 2026), the ethical consistency of LLMs under perturbation, their logic and fact-checking capabilities, and Socratic-dialogue systems such as Belief Explorer that support reflection on personal beliefs (CHI 2026). Manuel previously developed financial algorithms at Liv Capital and is also an award-winning photographer and digital artist.
+  highlights:
+    - "Co-author of 15 lab publications (2023-2026), including ACM CUI, ACM IVA, HCOMP, AAAI/ACM AIES and CHI"
+    - "Director and Main Researcher, Metacognition Institute (U.K.), since 2023"
+  links:
+    website: https://www.metacognitioninstitute.com/team
+    orcid: https://orcid.org/0009-0003-0465-5848
 
 - slug: alberto-campos-hernandez
   name: Alberto Campos Hernández
@@ -190,10 +251,18 @@
   group: researcher
   status: current
   title: Researcher
-  interests: [Crowd work, Worker-centered AI, Workplace AI assistants]
-  bio: |  # draft
-    Alberto Campos Hernández is a researcher with the HAIE Lab who contributes to the lab's work on AI for the workplace, including goal-oriented workplace assistants (MexIHC 2024) and transparent, worker-centered task recommendation in crowd work (IEEE CAI 2026).
-  links: {}
+  interests: [Worker-centered AI, Crowd work platforms, Workplace AI assistants, Applied AI and LLM integration, Full-stack engineering]
+  bio: |
+    Alberto Campos Hernández is a researcher with the Human-AI Empowerment Lab and a senior software engineer with more than nine years of experience building production software across the full stack. With the lab, Alberto co-developed the Wellbot workplace assistant (MexIHC 2024) and the simulated crowd work platform behind the lab's study of transparent, worker-centered task recommendation (IEEE CAI 2026). Alberto is a long-time collaborator of Dr. Toxtli, with whom Alberto co-authored research on the crowd markets that workers and requesters imagine (ACM Collective Intelligence 2019).
+
+    Alberto is a Senior Front-End Engineer and practice lead at Svitla Systems, previously taught programming for artificial intelligence and cloud databases at the Universidad Tecnológica Metropolitana de Aguascalientes, and holds a Master's in Applied Artificial Intelligence from Tecnológico de Monterrey and a B.Eng. in Information Technologies Engineering from the Universidad Tecnológica de Aguascalientes.
+  education:
+    - "Master's in Applied Artificial Intelligence, Tecnológico de Monterrey, 2026"
+    - "B.Eng. in Information Technologies Engineering, Universidad Tecnológica de Aguascalientes, 2020"
+  links:
+    website: https://albertocampos.vercel.app/
+    linkedin: https://linkedin.com/in/acamposhd
+    github: https://github.com/acamposhd
 
 - slug: david-shapiro
   name: David Shapiro
@@ -201,10 +270,13 @@
   group: researcher
   status: alumni
   title: Researcher
-  interests: [Cognitive architectures, Autonomous agents]
-  bio: |  # draft
-    David Shapiro collaborated with the lab as a researcher and is the lead author of the Autonomous Cognitive Entity (ACE) framework, a layered cognitive architecture for agentic systems built on generative AI (arXiv, 2023).
-  links: {}
+  interests: [Cognitive architectures, Autonomous agents, AI alignment]
+  bio: |
+    David Shapiro collaborated with the lab as a researcher and is the lead author of the Autonomous Cognitive Entity (ACE) framework, a six-layer cognitive architecture for autonomous agents built on generative AI (arXiv, 2023), written with Wangfan Li, Manuel Delaflor and Carlos Toxtli. An independent AI researcher, author and creator, David has written three books on LLM-based cognitive architectures and AI alignment, proposed the Heuristic Imperatives framework, and started widely used open-source projects including the ACE Framework.
+  links:
+    website: https://daveshap.substack.com
+    github: https://github.com/daveshap
+    linkedin: https://www.linkedin.com/in/dshap-automator/
 
 - slug: victor-rios-munoz
   name: Victor Rios Muñoz
@@ -213,27 +285,59 @@
   status: alumni
   title: Researcher
   interests: [Workplace AI assistants]
-  bio: |  # draft
-    Victor Rios Muñoz collaborated with the lab as a researcher and co-authored *AI Assistants in the Workplace: Goal-Oriented Recommendations Using LLM* (MexIHC 2024).
+  bio: |
+    Victor Rios Muñoz collaborated with the lab as a researcher and co-authored *AI Assistants in the Workplace: Goal-Oriented Recommendations Using LLM* (MexIHC 2024), which introduced the Wellbot workplace assistant.
   links: {}
 
 # ----------------------- Graduate students & M.S. ---------------------------
+- slug: ravindu-perera
+  name: Ravindu Tharanga Perera
+  aliases: [Ravindu Perera, Ravindu Perara, R. Perera]
+  group: graduate
+  status: current
+  title: Research Assistant
+  since: "Fall 2022"
+  interests: [Human-AI collaboration, LLM-powered assistants, Extended reality workspaces, NLP for thematic analysis, Data visualization]
+  bio: |
+    Ravindu Tharanga Perera is a research assistant in the HAIE Lab, which Ravindu first joined as a volunteer researcher in 2022 before becoming a graduate research assistant in 2023. Ravindu led the lab's work on goal-oriented AI assistants for the workplace (Wellbot, MexIHC 2024), assessed the task-management capabilities of LLM-powered agents, and built VirtuaScreens, an AI-enhanced multi-screen extended-reality workspace, presenting two demos at ACM CHIWORK 2024 in Newcastle, UK. Ravindu also designed and maintained the lab's website, mentored undergraduate researchers, and now fine-tunes language models for thematic analysis of AI-focused communities of practice.
+
+    Ravindu earned an M.S. in Computer Science, with a concentration in data science and machine learning, from Clemson University in 2025 and a B.S. in Chemistry from the Institute of Chemistry Ceylon, Sri Lanka. Ravindu has worked as a software engineer in Colombo and at the Data Visualization Lab of Clemson University Libraries, where Ravindu built an LLM chatbot for the library website and taught data visualization workshops.
+  highlights:
+    - "First author of four 2024 papers and demos (MexIHC 2024, ACM CHIWORK 2024)"
+    - "Designed and maintained the HAIE Lab website (2023-2024)"
+  education:
+    - "M.S. in Computer Science, Clemson University, 2025"
+    - "B.S. in Chemistry, Institute of Chemistry Ceylon, Sri Lanka, 2020"
+  links:
+    linkedin: https://www.linkedin.com/in/ravindu-tharanga-perera
+    scholar: https://scholar.google.com/citations?user=ygzgv78AAAAJ
+    github: https://github.com/RavinduTharanga
+
 - slug: krishna-panthi
   name: Krishna Panthi
   aliases: [Krishna Panthi, K. Panthi]
   group: masters
   status: alumni
-  title: M.S. Student (thesis co-advised with Dr. Vidya Samadi)
+  title: M.S. in Computer Science (thesis co-advised with Dr. Vidya Samadi)
   until: 2026
-  interests: [Crop modelling, Deep reinforcement learning, Irrigation optimization]
+  interests: [Deep reinforcement learning, Crop simulation and irrigation optimization, Flood forecasting, Machine learning for hydrology]
   thesis:
-    title: "Development of AquaCrop-Richards for Crop Simulation and Deep Reinforcement Learning for Irrigation Optimization"
+    title: "Coupling the Richards Equation with AquaCrop and Deep Reinforcement Learning for Irrigation Scheduling Optimization"
     year: 2026
-    degree: M.S.
+    degree: M.S. in Computer Science
     role: "Thesis committee co-chair (with Dr. Vidya Samadi)"
-  bio: |  # draft
-    Krishna Panthi completed an M.S. thesis, defended in April 2026, co-chaired by Dr. Carlos Toxtli and Dr. Vidya Samadi. Krishna developed AquaCrop–Richards, a crop model coupled with physically based soil-water dynamics (Irrigation and Drainage, 2026), and deep reinforcement learning methods for optimizing irrigation in cotton (EGU 2025, AGU 2024 and 2025).
-  links: {}
+  bio: |
+    Krishna Panthi earned an M.S. in Computer Science from Clemson University in 2026 with a thesis co-chaired by Dr. Carlos Toxtli and Dr. Vidya Samadi. Working in Clemson's Hydroinformatics Lab, Krishna built AquaCrop-Richards, an open-source crop model that couples the Richards equation for soil-water dynamics with FAO AquaCrop (Irrigation and Drainage, 2026), and used it as an environment to compare deep reinforcement learning algorithms for irrigation scheduling. Krishna also contributed to deep learning for riverine flood forecasting and to HydroQuantum, a quantum-driven package for hydrological simulation.
+
+    Krishna's team won the Most Viable Product award at LPL Financial's 2026 multi-university AI hackathon. Before Clemson, Krishna worked as a software engineer at MutualArt and PensionPro and earned a B.E. in Computer Engineering from Tribhuvan University (Pulchowk Campus), Nepal.
+  education:
+    - "M.S. in Computer Science, Clemson University, 2026"
+    - "B.E. in Computer Engineering, Tribhuvan University (Pulchowk Campus), 2021"
+  links:
+    website: https://krishnapanthi.com
+    linkedin: https://linkedin.com/in/krishnapanthi
+    github: https://github.com/kp-square
+    orcid: https://orcid.org/0009-0004-4587-9503
 
 - slug: dmitry-lukyanov
   name: Dmitry Lukyanov
@@ -242,48 +346,60 @@
   status: alumni
   title: M.S. Student
   until: 2024
-  interests: [Federated learning]
+  interests: [Federated learning, Distributed machine learning, AI task agents]
   thesis:
     title: "Heterogeneous Federated Learning at Scale"
     year: 2024
     degree: M.S.
     role: Advisor
-  bio: |  # draft
-    Dmitry Lukyanov completed the M.S. thesis *Heterogeneous Federated Learning at Scale* (April 2024), advised by Dr. Carlos Toxtli.
-  links: {}
-
-- slug: ravindu-perera
-  name: Ravindu Tharanga Perera
-  aliases: [Ravindu Perera, Ravindu Perara, R. Perera]
-  group: graduate
-  status: alumni
-  title: Research Assistant
-  interests: [LLM agents, Extended reality workspaces, Workplace analytics]
-  bio: |  # draft
-    Ravindu Tharanga Perera was a research assistant in the HAIE Lab. Ravindu led the lab's work on goal-oriented AI assistants for the workplace (Wellbot, MexIHC 2024), assessed the task-management capabilities of LLM-powered agents, and built VirtuaScreens, an AI-enhanced multi-screen extended-reality workspace — both presented as demos at ACM CHIWORK 2024.
-  links: {}
+  bio: |
+    Dmitry Lukyanov completed the M.S. thesis *Heterogeneous Federated Learning at Scale* (April 2024) in Clemson's School of Computing, advised by Dr. Carlos Toxtli, and later contributed to the lab's AI task agent software.
+  links:
+    github: https://github.com/dvlukyanov
 
 - slug: vamsi-krishna-pasam
   name: Vamsi Krishna Pasam
   aliases: [Vamsi Krishna Pasam, V. K. Pasam]
   group: graduate
   status: alumni
-  title: Graduate Researcher
-  interests: [NLP, Comment triage, Multimodal LLMs]
-  bio: |  # draft
-    Vamsi Krishna Pasam was a graduate researcher in the HAIE Lab and first author of an AI-powered comment-triage system for collaborative documents presented at ACM SAC 2025, and co-author of a multimodal-LLM framework for customer journey mapping (The Web Conference 2025 Companion).
-  links: {}
+  title: AI Research Assistant
+  since: 2024
+  until: 2025
+  next: "Software Engineer (AI), Red Hat"
+  interests: [Large language models, Retrieval-augmented generation, NLP and feedback triage, Multimodal AI]
+  bio: |
+    Vamsi Krishna Pasam was an AI research assistant in the HAIE Lab (2024-2025) and first author of an AI-powered comment-triage system for collaborative documents presented at ACM SAC 2025, which combined fine-tuned transformers, hierarchical models and LLMs to categorize and prioritize feedback. Vamsi also co-authored a multimodal-LLM framework for customer journey mapping (The Web Conference 2025 Companion) and built Fund Navigator, an NLP tool for classifying federal grants, with Clemson Engineers for Developing Communities.
+
+    Vamsi earned an M.S. in Computer Science from Clemson University (2024) and a B.Tech. in Electronics and Communication Engineering from Lovely Professional University, and now builds enterprise retrieval-augmented generation systems as an AI software engineer at Red Hat.
+  education:
+    - "M.S. in Computer Science, Clemson University, 2024"
+    - "B.Tech. in Electronics and Communication Engineering, Lovely Professional University, 2021"
+  links:
+    website: https://my-portfolio-woad-mu-32.vercel.app
+    linkedin: https://www.linkedin.com/in/vamsipasam/
+    github: https://github.com/vamsipasam2000
+    orcid: https://orcid.org/0009-0007-0431-8672
 
 - slug: sravani-pati
   name: Sravani Pati
   aliases: [Sravani Pati, S. Pati]
   group: graduate
   status: alumni
-  title: Graduate Researcher
-  interests: [Multimodal LLMs, E-commerce analytics, NLP]
-  bio: |  # draft
-    Sravani Pati was a graduate researcher in the HAIE Lab and first author of *Customer Journey Mapping with Multimodal Large Language Models* (The Web Conference 2025 Companion, LLM for E-commerce workshop), and co-author of the comment-triage system presented at ACM SAC 2025.
-  links: {}
+  title: AI Engineer and Researcher
+  since: 2024
+  interests: [Multimodal LLMs, NLP, Retrieval-augmented tutoring, Multimodal AI safety, Data science]
+  bio: |
+    Sravani Pati was an AI engineer and researcher in the HAIE Lab and first author of *Customer Journey Mapping with Multimodal Large Language Models* (The Web Conference 2025 Companion), which maps user reviews, product images and videos to stages of the customer journey. Sravani also co-authored the AI-powered comment-triage system presented at ACM SAC 2025 and worked on retrieval-augmented tutoring with textbooks.
+
+    Sravani earned an M.S. in Computer Science (data science) from Clemson University (2024) and a B.E. in Computer Science from Visvesvaraya Technological University, previously worked as a data scientist on fraud detection, and holds the AWS Certified Solutions Architect (Associate) credential.
+  education:
+    - "M.S. in Computer Science (Data Science), Clemson University, 2024"
+    - "B.E. in Computer Science, Visvesvaraya Technological University, 2021"
+  links:
+    website: https://sravanipati.netlify.app/
+    linkedin: https://www.linkedin.com/in/sravani09/
+    github: https://github.com/sravani0189
+    orcid: https://orcid.org/0009-0003-3528-439X
 
 - slug: pratyush-singh
   name: Pratyush Singh
@@ -292,9 +408,10 @@
   status: alumni
   title: Graduate Researcher
   interests: [AI-mediated communication, Participatory design]
-  bio: |  # draft
-    Pratyush Singh was a graduate researcher in the HAIE Lab and co-author of *Exploring User Expectations for AI-Mediated Second Language Communication* (CHI 2026 Extended Abstracts).
-  links: {}
+  bio: |
+    Pratyush Singh was a graduate researcher in Clemson's School of Computing and co-author of *Exploring User Expectations for AI-Mediated Second Language Communication: A Formative Participatory Design Study* (CHI 2026 Extended Abstracts).
+  links:
+    orcid: https://orcid.org/0009-0002-1159-1793
 
 - slug: matthew-rogers
   name: Matthew Rogers
@@ -302,18 +419,97 @@
   group: graduate
   status: alumni
   title: Graduate Researcher
-  interests: [Workplace AI assistants]
-  bio: |  # draft
-    Matthew Rogers was a graduate researcher in the HAIE Lab and co-author of *AI Assistants in the Workplace: Goal-Oriented Recommendations Using LLM* (MexIHC 2024).
+  interests: [Workplace AI assistants, Activity tracking applications, NLP]
+  bio: |
+    Matthew Rogers was a graduate researcher in the HAIE Lab who built parts of the lab's desktop activity-tracking application in 2023 and co-authored *AI Assistants in the Workplace: Goal-Oriented Recommendations Using LLM* (MexIHC 2024).
+  links:
+    github: https://github.com/mrog9
+
+- slug: namrata-surve
+  name: Namrata Surve
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  interests: [Information retrieval, Deep learning, Machine learning]
+  bio: |
+    Namrata Surve was a graduate researcher in the HAIE Lab who contributed to the lab's desktop activity-analysis application (2023) and served as a teaching assistant in Clemson's School of Computing, with graduate projects in information retrieval and generative deep learning.
+  links:
+    github: https://github.com/namrata18s
+    orcid: https://orcid.org/0009-0000-4671-7160
+
+- slug: manasa-thatipamula
+  name: Manasa Thatipamula
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  interests: [Machine learning, Medical imaging]
+  bio: |
+    Manasa Thatipamula was a graduate researcher in the HAIE Lab at Clemson University's School of Computing and co-authored a 2024 study using machine learning and 3D neuroimaging to predict hearing loss.
   links: {}
 
-- {slug: namrata-surve, name: Namrata Surve, group: graduate, status: alumni, title: Graduate Researcher}
-- {slug: manasa-thatipamula, name: Manasa Thatipamula, group: graduate, status: alumni, title: Graduate Researcher}
 - {slug: amogh-singh, name: Amogh Singh, group: graduate, status: alumni, title: Graduate Researcher}
-- {slug: sandali-nemmaniwar, name: Sandali Nemmaniwar, group: graduate, status: alumni, title: Graduate Researcher}
-- {slug: anuja-patil, name: Anuja Patil, group: graduate, status: alumni, title: Graduate Researcher}
-- {slug: shivani-dere, name: Shivani Dashrath Dere, aliases: [Shivani Dere], group: graduate, status: alumni, title: Graduate Researcher}
-- {slug: ashish-chittimilla, name: Ashish Chittimilla, group: graduate, status: alumni, title: Graduate Researcher}
+
+- slug: sandali-nemmaniwar
+  name: Sandali Nemmaniwar
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  next: "Software Engineer, ZF Group"
+  interests: [Machine learning, Computer vision, Software engineering]
+  bio: |
+    Sandali Nemmaniwar was a graduate researcher in the HAIE Lab and a graduate teaching assistant at Clemson University while completing an M.S. in Computer Science. Before graduate school, Sandali worked on image fusion techniques for remote-sensing optical payloads at India's Advanced Data Processing Research Institute (ADRIN), and earned a B.E. from Vasavi College of Engineering. Sandali is now a software engineer at ZF Group.
+  education:
+    - "M.S. in Computer Science, Clemson University"
+    - "B.E., Vasavi College of Engineering"
+  links:
+    linkedin: https://www.linkedin.com/in/sandali-nemmaniwar/
+    github: https://github.com/sandalinemmaniwar
+
+- slug: anuja-patil
+  name: Anuja Patil
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  next: "Software Developer, Strong Crypto Innovations"
+  interests: [Machine learning, Computer vision, Cloud and distributed computing]
+  bio: |
+    Anuja Patil was a graduate researcher in the HAIE Lab while completing an M.S. in Computer Science at Clemson University (2022-2024), with coursework in machine learning for computer vision, cloud computing and distributed computing. Anuja is now a software developer at Strong Crypto Innovations.
+  education:
+    - "M.S. in Computer Science, Clemson University, 2024"
+  links:
+    linkedin: https://www.linkedin.com/in/anujapatil11/
+
+- slug: shivani-dere
+  name: Shivani Dashrath Dere
+  aliases: [Shivani Dere]
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  next: "Software Engineer and Data Scientist, Virufy"
+  interests: [Deep learning and computer vision, Data engineering, AI for healthcare]
+  bio: |
+    Shivani Dashrath Dere was a graduate researcher and research assistant in the HAIE Lab (2023) while completing an M.S. in Computer Science at Clemson University (2022-2024). Shivani then worked as a data engineer at BMW of North America and as a software engineer and data scientist at Virufy, developing AI technology for healthcare, and holds a B.Tech. in Computer Science from MIT ADT University.
+  education:
+    - "M.S. in Computer Science, Clemson University, 2024"
+    - "B.Tech. in Computer Science, MIT ADT University, 2021"
+  links:
+    linkedin: https://www.linkedin.com/in/shivani-dere/
+
+- slug: ashish-chittimilla
+  name: Ashish Chittimilla
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  next: "Senior Embedded Software Engineer"
+  interests: [Embedded systems, Robotics and UAVs, Edge AI, Computer vision]
+  bio: |
+    Ashish Chittimilla was a graduate researcher in the HAIE Lab and earned an M.S. in Computer Engineering, with a concentration in embedded systems and robotics, from Clemson University in 2023, including UAV research in Dr. Fatemeh Afghah's lab. Ashish is a senior embedded software engineer working across wireless connectivity, robotics, medical devices and edge AI.
+  education:
+    - "M.S. in Computer Engineering, Clemson University, 2023"
+  links:
+    linkedin: https://www.linkedin.com/in/ashishchittimilla/
+    github: https://github.com/AshishChittimilla
+
 - {slug: sandya-rani-prasadam, name: Sandya Rani Prasadam, group: graduate, status: alumni, title: Graduate Researcher}
 
 # ----------------------------- Student researchers --------------------------
@@ -322,11 +518,23 @@
   aliases: [Athish Venkatachalam]
   group: student
   status: alumni
-  title: Student Researcher
-  interests: [AI-generated workflows, Human oversight of automation]
-  bio: |  # draft
-    Athish Venkatachalam was a student researcher in the HAIE Lab, co-author of *Human Oversight Over Autonomous Task Execution in Sandbox Environments* (IEEE CAI 2025) and lead author of a multi-dimensional evaluation framework for AI-generated workflows (2025).
-  links: {}
+  title: Graduate Research Assistant
+  since: 2024
+  until: 2025
+  next: "DevOps Engineer, SentiLink"
+  interests: [Cloud architecture and DevOps, Sandboxed environments for AI oversight, AI workflow automation, Human-AI interaction]
+  bio: |
+    Athish Venkatachalam was a graduate research assistant in the HAIE Lab who built the multi-user, browser-accessible sandboxed Linux desktop environments used to study human oversight of autonomous task execution (IEEE CAI 2025), and led a multi-dimensional evaluation framework for AI-generated workflows (2025). Athish also served in Clemson's Graduate Student Government, including as its president.
+
+    Athish earned an M.S. in Computer Science from Clemson University (2025) and a B.Tech. in Computer Science and Business Systems from SRM Institute of Science and Technology, where Athish received the Best Outgoing Student award, and is now a DevOps engineer at SentiLink.
+  education:
+    - "M.S. in Computer Science, Clemson University, 2025"
+    - "B.Tech. in Computer Science and Business Systems, SRM Institute of Science and Technology, 2023"
+  links:
+    website: https://athishv.me/
+    linkedin: https://www.linkedin.com/in/athishv/
+    github: https://github.com/athish-v
+    orcid: https://orcid.org/0000-0001-6258-5188
 
 - slug: jackson-bowen
   name: Jackson Bowen
@@ -334,7 +542,7 @@
   group: student
   status: alumni
   title: Student Researcher
-  bio: |  # draft
+  bio: |
     Jackson Bowen was a student researcher in the HAIE Lab and co-author of *Human Oversight Over Autonomous Task Execution in Sandbox Environments* (IEEE CAI 2025).
   links: {}
 
@@ -343,10 +551,19 @@
   aliases: [Adithya Ravi]
   group: student
   status: alumni
-  title: Student Researcher
-  bio: |  # draft
-    Adithya Ravi was a student researcher in the HAIE Lab and co-author of *Assessing the Task Management Capabilities of LLM-Powered Agents* (ACM CHIWORK 2024).
-  links: {}
+  title: AI Researcher
+  until: 2024
+  next: "SAP Business Systems Analyst, LivaNova"
+  interests: [Data analytics, Machine learning, LLM-powered agents, Enterprise systems]
+  bio: |
+    Adithya Ravi was an AI researcher in the HAIE Lab in 2024, building automated data collection and processing for studies with survey participants worldwide, and co-authored *Assessing the Task Management Capabilities of LLM-Powered Agents* (ACM CHIWORK 2024). Adithya earned an M.S. in Computer Science from Clemson University (2023) and a B.E. in Computer Science and Engineering from Easwari Engineering College, Anna University, and is now an SAP business systems analyst at LivaNova.
+  education:
+    - "M.S. in Computer Science, Clemson University, 2023"
+    - "B.E. in Computer Science and Engineering, Easwari Engineering College (Anna University), 2021"
+  links:
+    website: https://adithyaravi12.github.io/adithya-sap-portfolio/
+    linkedin: https://www.linkedin.com/in/adithyaravi12/
+    github: https://github.com/adithyaravi12
 
 - slug: sai-praneeth-dulam
   name: Sai Praneeth Dulam
@@ -354,20 +571,24 @@
   group: student
   status: alumni
   title: Student Collaborator (with Dr. Vidya Samadi)
-  interests: [Computer vision, Flood monitoring]
-  bio: |  # draft
-    Sai Praneeth Dulam collaborated with the lab on deep learning for flood image processing and semantic segmentation of USGS river-camera imagery, presented at the EGU General Assembly 2024 with Dr. Vidya Samadi and Dr. Carlos Toxtli.
-  links: {}
+  interests: [Computer vision, Flood monitoring, Object detection and segmentation]
+  bio: |
+    Sai Praneeth Dulam, a student in Clemson's School of Computing, collaborated with the lab on deep learning for flood image processing and semantic segmentation of USGS river-camera imagery with Faster R-CNN, YOLOv3 and vision transformers, presented at the EGU General Assembly 2024 with Dr. Vidya Samadi and Dr. Carlos Toxtli.
+  links:
+    github: https://github.com/Saipraneeth99
 
 - slug: sofia-campos-hernandez
   name: Sofia Abilene Campos Hernandez
   aliases: [Sofia Abilene Campos Hernandez, Sofía Abilene Campos Hernández]
   group: student
   status: alumni
-  title: Student Researcher
-  bio: |  # draft
-    Sofia Abilene Campos Hernandez was a student researcher in the HAIE Lab and co-author of *Prompt-Level Supervisory Alignment for Anticipatory Manuscript Revision* (HFES 2026).
-  links: {}
+  title: Student Collaborator
+  affiliation: Universidad Tecnológica Metropolitana de Aguascalientes, Mexico
+  interests: [LLM-assisted writing, Software development]
+  bio: |
+    Sofia Abilene Campos Hernandez, a student at the Universidad Tecnológica Metropolitana de Aguascalientes in Mexico, collaborated with the lab on *Prompt-Level Supervisory Alignment for Anticipatory Manuscript Revision* (HFES 2026) with Wangfan Li and Carlos Toxtli, and has built hackathon projects on cybersecurity and water-quality monitoring.
+  links:
+    github: https://github.com/SofiaCamposH
 
 # --------------------------- Undergraduate researchers ----------------------
 - slug: weber-whelan
@@ -381,11 +602,13 @@
   thesis:
     title: "Fermi-LLM: An LLM Service for Performing Fermi-LAT Data Analysis"
     year: 2026
-    degree: Departmental Honors (CPSC 4950)
+    degree: Departmental Honors in Computer Science (CPSC 4950)
     role: Advisor
-  bio: |  # draft
-    Weber Whelan completed the departmental honors thesis *Fermi-LLM: An LLM Service for Performing Fermi-LAT Data Analysis* (presented April 29, 2026), advised by Dr. Carlos Toxtli as part of the NASA-funded FERMI-LLM project.
-  links: {}
+  bio: |
+    Weber Whelan is a Computer Science student in the Clemson Honors College who completed the departmental honors thesis *Fermi-LLM: An LLM Service for Performing Fermi-LAT Data Analysis* (presented April 29, 2026), advised by Dr. Carlos Toxtli as part of the NASA-funded FERMI-LLM project. Weber began research as part of the Honors College's EUREKA! program in 2023, studying agricultural biotechnology with Dr. Hong Luo, and has been named to Clemson's President's List.
+  links:
+    website: https://sites.google.com/g.clemson.edu/weber-whelan/
+    github: https://github.com/Wwhelan725
 
 - slug: nicholas-berns
   name: Nicholas Joseph Berns
@@ -393,12 +616,16 @@
   group: undergrad
   status: alumni
   title: Undergraduate Researcher (Creative Inquiry)
-  since: 2025
+  since: 2023
   until: 2026
-  interests: [Digital twins, Remote instruction, Avatars]
-  bio: |  # draft
-    Nicholas Joseph Berns was a Creative Inquiry undergraduate researcher in the HAIE Lab (2025–2026) and co-author of *A Formative Investigation of Student Perceptions of Digital Twin Instructors in Remote Lecture Environments* (CHI 2026 Extended Abstracts).
-  links: {}
+  next: "Software Developer, Schaeffler"
+  interests: [Digital twins, Remote instruction, Extended reality]
+  bio: |
+    Nicholas Joseph Berns was an undergraduate researcher in the HAIE Lab, first on a team building AI tools that integrate with virtual reality hardware for multi-screen work in the metaverse (2023) and later as a Creative Inquiry researcher (2025-2026). Nicholas co-authored *A Formative Investigation of Student Perceptions of Digital Twin Instructors in Remote Lecture Environments* (CHI 2026 Extended Abstracts), studied Computer Science with a minor in Business Administration at Clemson, and now works in digitalization at Schaeffler.
+  links:
+    linkedin: https://www.linkedin.com/in/nicholas-berns/
+    github: https://github.com/NicholasBerns
+    orcid: https://orcid.org/0009-0003-9533-0255
 
 - slug: claire-gendron
   name: Claire Gendron
@@ -406,15 +633,100 @@
   group: undergrad
   status: alumni
   title: Undergraduate Researcher
-  interests: [Human feedback in LLM prompting, Workplace analytics]
-  bio: |  # draft
-    Claire Gendron was an undergraduate researcher in the HAIE Lab and co-authored four of the lab's 2024 papers, including ReActIn, a framework for infusing human feedback into the intermediate prompting steps of LLMs (IHIET-AI 2024, CSCE 2024), the SmartMonitor edge activity-monitoring demo (ACM CHIWORK 2024) and the Wellbot workplace assistant (MexIHC 2024).
-  links: {}
+  since: 2023
+  until: 2024
+  next: "Business Technology Solutions Analyst, Deloitte"
+  interests: [Human-computer interaction, Human feedback in LLM prompting, Workplace analytics, Usable security]
+  bio: |
+    Claire Gendron was an undergraduate researcher in the HAIE Lab (2023-2024) and co-authored four of the lab's 2024 papers, including ReActIn, a framework for infusing human feedback into the intermediate prompting steps of LLMs (IHIET-AI 2024, CSCE 2024), the SmartMonitor edge activity-monitoring demo (ACM CHIWORK 2024) and the Wellbot workplace assistant (MexIHC 2024). Claire earned a B.S. in Psychology with a minor in Computer Science focused on human-computer interaction, also completed an NSF REU in Clemson's Humans and Technology Lab, and is now a business technology solutions analyst at Deloitte.
+  education:
+    - "B.S. in Psychology, minor in Computer Science, Clemson University"
+  links:
+    linkedin: https://www.linkedin.com/in/claire-gendron/
+    github: https://github.com/gendronclaire
+    orcid: https://orcid.org/0009-0000-0961-3944
 
-- {slug: ryan-hirt, name: Ryan Philip Hirt, aliases: [Ryan Hirt], group: undergrad, status: alumni, title: Undergraduate Researcher}
-- {slug: uchenna-maduno, name: Uchenna William Maduno, aliases: [Uchenna Maduno], group: undergrad, status: alumni, title: Undergraduate Researcher}
-- {slug: owen-duggan, name: Owen Patrick Duggan, aliases: [Owen Duggan], group: undergrad, status: alumni, title: Undergraduate Researcher}
-- {slug: sumanth-pandiri, name: Sumanth Pandiri, group: undergrad, status: alumni, title: Undergraduate Researcher}
-- {slug: adam-pickeral, name: Adam Pickeral, group: undergrad, status: alumni, title: Undergraduate Researcher}
-- {slug: mary-gurrieri, name: Mary Gurrieri, group: undergrad, status: alumni, title: Undergraduate Researcher}
+- slug: sumanth-pandiri
+  name: Sumanth Pandiri
+  group: undergrad
+  status: alumni
+  title: Undergraduate Researcher
+  since: 2023
+  next: "Consultant, Capgemini Invent"
+  interests: [AI education, Full-stack engineering, Robotics]
+  bio: |
+    Sumanth Pandiri was an undergraduate researcher in the HAIE Lab on its 2023 project for AI-assisted multi-screen interaction in virtual reality. Sumanth earned a B.S. in Computer Science from Clemson University in 2024, a year early, after research that included a teachable image-recognition app introducing elementary students to AI, a robotics REU on multi-agent navigation and deep learning for newborn heart ultrasounds. Sumanth worked as a staff software engineer at Mercer Engineering Research Center and is now a consultant at Capgemini Invent.
+  education:
+    - "B.S. in Computer Science, Clemson University, 2024"
+  links:
+    website: https://sumanth-pandiri.vercel.app/
+    linkedin: https://www.linkedin.com/in/sumanth-pandiri
+    github: https://github.com/SumanthPandiri
+
+- slug: adam-pickeral
+  name: Adam Pickeral
+  group: undergrad
+  status: alumni
+  title: Undergraduate Researcher
+  since: 2023
+  interests: [Computer vision, Machine learning, Edge computing]
+  bio: |
+    Adam Pickeral was an undergraduate researcher in the HAIE Lab on its 2023 edge-device project for privacy-preserving analysis of workplace activity. Adam earned a B.S. (2023) and an M.S. (2024) in Computer Engineering from Clemson University, with graduate work in computer vision.
+  education:
+    - "M.S. in Computer Engineering, Clemson University, 2024"
+    - "B.S. in Computer Engineering, Clemson University, 2023"
+  links:
+    website: https://earth2adam.github.io/
+    linkedin: https://www.linkedin.com/in/adam-pickeral
+    github: https://github.com/Earth2Adam
+
+- slug: uchenna-maduno
+  name: Uchenna William Maduno
+  aliases: [Uchenna Maduno]
+  group: undergrad
+  status: alumni
+  title: Undergraduate Researcher
+  since: 2023
+  interests: [Virtual reality, Mobile app development]
+  bio: |
+    Uchenna William Maduno was an undergraduate researcher in the HAIE Lab on its 2023 project for AI-assisted multi-screen interaction in virtual reality, and studied Computer Science with a minor in Music at Clemson University.
+  links:
+    linkedin: https://www.linkedin.com/in/uchenna-maduno-979b2028a/
+    github: https://github.com/Diitto
+
+- slug: ryan-hirt
+  name: Ryan Philip Hirt
+  aliases: [Ryan Hirt]
+  group: undergrad
+  status: alumni
+  title: Undergraduate Researcher
+  since: 2023
+  interests: [Edge computer vision]
+  bio: |
+    Ryan Philip Hirt was an undergraduate researcher in the HAIE Lab on its 2023 edge-device project, which captures video on an embedded board and detects activity in the workplace on-device.
+  links:
+    github: https://github.com/rhirt98
+
+- slug: owen-duggan
+  name: Owen Patrick Duggan
+  aliases: [Owen Duggan]
+  group: undergrad
+  status: alumni
+  title: Undergraduate Researcher
+  since: 2023
+  bio: |
+    Owen Patrick Duggan was an undergraduate researcher in the HAIE Lab who worked on its 2023 desktop activity-analysis project at Clemson University.
+  links:
+    github: https://github.com/sagerreal
+
+- slug: mary-gurrieri
+  name: Mary Gurrieri
+  group: undergrad
+  status: alumni
+  title: Undergraduate Researcher
+  bio: |
+    Mary Gurrieri was an undergraduate researcher in the HAIE Lab while studying computing at Clemson University.
+  links:
+    github: https://github.com/mgurrie
+
 - {slug: vincent-hung, name: Vincent Hung, group: undergrad, status: alumni, title: Undergraduate Researcher}

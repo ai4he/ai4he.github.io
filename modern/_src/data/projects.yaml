@@ -15,9 +15,9 @@
 
 - slug: aiming
   title: "AIMing: Interactive Conjecture Proving"
-  short: Human–AI collaboration for research-level mathematics.
+  short: Human-AI collaboration for research-level mathematics.
   status: active
-  years: "2024–2027"
+  years: "2024-2027"
   featured: true
   areas: [ai-for-science, trustworthy-ai]
   people: [carlos-toxtli, austin-lahue, fateme-mazdarani]
@@ -33,7 +33,7 @@
   description: |
     Mathematicians increasingly ask language models for help, but a model is only useful if it is given the right context and reasons consistently. AIMing, funded by the National Science Foundation and led by the HAIE Lab, studies interactive conjecture proving: how humans and AI can work together to propose, retrieve and verify mathematical results.
 
-    The project contributes benchmarks and empirical studies. NaturalPRISM is a premise-retrieval task with 1.7 million pairs of intermediate proof states and the premise used in the next step, extracted from arXiv papers across all 32 mathematics categories. A paired ablation over 61 theorems shows which kinds of mathematical context — definitions, objects, assumptions, constructions — let a model recover the result a paper actually proves. TREAT and related studies test whether models recognize known theorems and reconstruct procedural routes when the same mathematics is written in equivalent forms, and whether LLM judges can verify valid but non-canonical solution steps.
+    The project contributes benchmarks and empirical studies. NaturalPRISM is a premise-retrieval task with 1.7 million pairs of intermediate proof states and the premise used in the next step, extracted from arXiv papers across all 32 mathematics categories. A paired ablation over 61 theorems shows which kinds of mathematical context (definitions, objects, assumptions, constructions) let a model recover the result a paper actually proves. TREAT and related studies test whether models recognize known theorems and reconstruct procedural routes when the same mathematics is written in equivalent forms, and whether LLM judges can verify valid but non-canonical solution steps.
   papers:
     - "NaturalPRISM"
     - "Which Mathematical Context Supports"
@@ -48,7 +48,7 @@
   title: Supervisory Control for LLMs and Autonomous Agents
   short: Grounding AI oversight in the science of human supervisory control.
   status: active
-  years: "2023–present"
+  years: "2023-present"
   featured: true
   areas: [human-centered-automation, trustworthy-ai]
   people: [carlos-toxtli, wangfan-li, athish-venkatachalam, jackson-bowen, claire-gendron, sofia-campos-hernandez]
@@ -56,9 +56,9 @@
     - ["23,256", "revision plans scored in RevPlan-Bench"]
     - ["10", "venue-years of real peer reviews analyzed"]
   description: |
-    As LLMs revise documents, operate computers and execute workflows, users need principled ways to plan, monitor and intervene. This line of work, led by Ph.D. student Wangfan Li, imports Supervisory Control Theory — developed to describe how humans oversee automated systems — into the design of LLM prompting and agent interfaces.
+    As LLMs revise documents, operate computers and execute workflows, users need principled ways to plan, monitor and intervene. This line of work, led by Ph.D. student Wangfan Li, imports Supervisory Control Theory, which describes how humans oversee automated systems, into the design of LLM prompting and agent interfaces.
 
-    Prompt-Level Supervisory Alignment (PLSA) structures LLM revision as planning, monitoring and intervention, producing revisions with higher fidelity to real author revisions across ICLR, NeurIPS and CoRL review cycles (ACM CAIS 2026), and extends to anticipating concerns raised in later review rounds with RevPlan-Bench (HFES 2026). Earlier systems include a sandboxed virtual machine for human oversight of autonomous task execution (IEEE CAI 2025, ACM CHIWORK 2024), ReActIn for infusing human feedback into intermediate reasoning steps, LLM-generated BPMN workflows for robotic process automation, Requirement Bot for human–AI co-authoring of software requirements (ACM SAC 2026), and micro-ethics nudges that reduce unfair models in no-code ML tools.
+    Prompt-Level Supervisory Alignment (PLSA) structures LLM revision as planning, monitoring and intervention, producing revisions with higher fidelity to real author revisions across ICLR, NeurIPS and CoRL review cycles (ACM CAIS 2026), and extends to anticipating concerns raised in later review rounds with RevPlan-Bench (HFES 2026). Earlier systems include a sandboxed virtual machine for human oversight of autonomous task execution (IEEE CAI 2025, ACM CHIWORK 2024), ReActIn for infusing human feedback into intermediate reasoning steps, LLM-generated BPMN workflows for robotic process automation, Requirement Bot for human-AI co-authoring of software requirements (ACM SAC 2026), and micro-ethics nudges that reduce unfair models in no-code ML tools.
   papers:
     - "Supervisory Control Theory for LLM Revision"
     - "Prompt-Level Supervisory Alignment"
@@ -74,9 +74,9 @@
 
 - slug: metacognitive-ai
   title: Metacognition, Calibration and Trust in Language Models
-  short: Do language models know what they know — and should we believe them?
+  short: Do language models know what they know, and should we believe them?
   status: active
-  years: "2023–present"
+  years: "2023-present"
   featured: true
   areas: [trustworthy-ai, human-centered-automation]
   people: [carlos-toxtli, manuel-delaflor, cecilia-delgado-solorzano]
@@ -114,7 +114,7 @@
   title: Worker-Centered AI for Crowd Work
   short: Transparent, culturally aware tools that empower digital workers.
   status: active
-  years: "2022–present"
+  years: "2022-present"
   featured: true
   areas: [future-of-work, inclusive-ai]
   people: [carlos-toxtli, fateme-mazdarani, alberto-campos-hernandez, cecilia-delgado-solorzano]
@@ -138,13 +138,13 @@
     "Code: CultureFit": https://github.com/ai4he/toloka-cultural-assistant
 
 - slug: underwater-hat
-  title: Human–Autonomy Teaming in Underwater Environments
+  title: Human-Autonomy Teaming in Underwater Environments
   short: Autonomous teammates for underwater search and rescue.
   status: active
-  years: "2023–present"
+  years: "2023-present"
   featured: true
   areas: [human-autonomy-teaming]
-  people: [carlos-toxtli, cecilia-delgado-solorzano]
+  people: [carlos-toxtli, cecilia-delgado-solorzano, fateme-mazdarani]
   collaborators:
     - "Nathan McNeese (Clemson University)"
     - "Christopher Flathmann (Clemson University)"
@@ -158,7 +158,7 @@
     - ["20", "hazardous-environment team interviews"]
     - ["3", "visibility levels in our underwater vision benchmark"]
   description: |
-    Underwater search and rescue combines extreme physical demands, poor visibility and high stakes. Funded by the U.S. Department of the Navy, this interdisciplinary project develops human–autonomy teams in which autonomous systems relieve the cognitive and physical limitations of human divers — and humans compensate for the limitations of autonomy.
+    Underwater search and rescue combines extreme physical demands, poor visibility and high stakes. Funded by the U.S. Department of the Navy, this interdisciplinary project develops human-autonomy teams in which autonomous systems relieve the cognitive and physical limitations of human divers, and humans compensate for the limitations of autonomy.
 
     Qualitative studies with search-and-rescue professionals and hazardous-environment teams identify where autonomous teammates are needed and how tasks should be delineated (HFES 2025, IEEE CogSIMA 2026). Led by Ph.D. student Cecilia Delgado Solorzano, the lab compared a specialized open-vocabulary detector (YOLO-World) with a multimodal vision-language model (Gemini 2.5 Pro) for object presence detection across low, medium and high visibility in a synthetic underwater simulator, showing when each paradigm should be deployed (ICECET 2026).
   papers:
@@ -170,7 +170,7 @@
   title: "FERMI-LLM: Language Models for Gamma-Ray Astrophysics"
   short: From a plain-English request to a verified Fermi-LAT analysis.
   status: active
-  years: "2025–2028"
+  years: "2025-2028"
   featured: true
   areas: [ai-for-science, human-centered-automation]
   people: [carlos-toxtli, weber-whelan]
@@ -180,7 +180,7 @@
   description: |
     Analyzing data from NASA's Fermi Large Area Telescope requires expert knowledge of specialized tools. Funded by NASA's Fermi Guest Investigator Program, FERMI-LLM builds a language-model platform that turns a plain-English request into a real Fermi-LAT analysis: it writes the FermiPy configuration and Python driver, checks them against guardrails, runs exactly what the scientist approves, and shows every step of the result.
 
-    The platform is designed to be extended by the community — models, rules, validators, data sources and export formats are modules that can be added or replaced. Undergraduate researcher Weber Whelan built an LLM service for Fermi-LAT analysis as a departmental honors thesis (2026), and a Clemson-funded postdoctoral position in AI-enhanced computational astrophysics complements the project.
+    The platform is designed to be extended by the community: models, rules, validators, data sources and export formats are modules that can be added or replaced. Undergraduate researcher Weber Whelan built an LLM service for Fermi-LAT analysis as a departmental honors thesis (2026), and a Clemson-funded postdoctoral position in AI-enhanced computational astrophysics complements the project.
   papers: []
   links:
     Code: https://github.com/ai4he/fermi-llm-int
@@ -189,7 +189,7 @@
   title: AI-Mediated Language and Communication
   short: Personal AI assistants for second-language speakers and learners.
   status: active
-  years: "2023–present"
+  years: "2023-present"
   areas: [inclusive-ai]
   people: [carlos-toxtli, cecilia-delgado-solorzano, pratyush-singh]
   stats:
@@ -197,7 +197,7 @@
   description: |
     Second-language speakers navigate work, school and daily life in a language that is not their own. Led by Ph.D. student Cecilia Delgado Solorzano, this project uses participatory design to understand how AI should mediate their communication.
 
-    Participatory sessions with bilingual adults surfaced three candidate mediation patterns — solo, symmetric and relayed assistance — and design considerations such as reply-when-free defaults and role-based privacy profiles for personal AI assistants (CHI 2026). Co-design with advanced learners produced an AI fluency app that exposes users to diverse native and non-native accents (IEEE CAI 2025). Related studies examine structured prompting architectures that support paraphrasing, grammar guidance and conversation practice from a single design, LLM support for students' information seeking (LibRef), and machine perceptions of indigeneity.
+    Participatory sessions with bilingual adults surfaced three candidate mediation patterns (solo, symmetric and relayed assistance) and design considerations such as reply-when-free defaults and role-based privacy profiles for personal AI assistants (CHI 2026). Co-design with advanced learners produced an AI fluency app that exposes users to diverse native and non-native accents (IEEE CAI 2025). Related studies examine structured prompting architectures that support paraphrasing, grammar guidance and conversation practice from a single design, LLM support for students' information seeking (LibRef), and machine perceptions of indigeneity.
   papers:
     - "AI-Mediated Second Language Communication"
     - "AI for Becoming Fluent"
@@ -212,7 +212,7 @@
   title: AI Assistants and Self-Quantification at Work
   short: Privacy-preserving activity sensing and LLM coaching for knowledge workers.
   status: completed
-  years: "2023–2024"
+  years: "2023-2024"
   areas: [future-of-work, human-centered-automation]
   people: [carlos-toxtli, ravindu-perera, wangfan-li, claire-gendron, cecilia-delgado-solorzano, alberto-campos-hernandez, victor-rios-munoz, matthew-rogers, adithya-ravi]
   description: |
@@ -233,7 +233,7 @@
   title: AI for Water and Agriculture
   short: Physics-informed and reinforcement learning for irrigation and floods.
   status: active
-  years: "2024–present"
+  years: "2024-present"
   areas: [ai-for-science]
   people: [carlos-toxtli, krishna-panthi, sai-praneeth-dulam]
   collaborators:
@@ -253,7 +253,7 @@
   title: Usable Secure Authentication
   short: Making secure authentication usable in everyday life.
   status: active
-  years: "2025–2028"
+  years: "2025-2028"
   areas: [inclusive-ai, trustworthy-ai]
   people: [carlos-toxtli, christopher-kalahiki]
   collaborators:
@@ -269,7 +269,7 @@
   title: "The Future of Aviation Inspection: AI and Mixed Reality"
   short: AI and mixed reality as agents of transformation for inspectors.
   status: active
-  years: "2023–2027"
+  years: "2023-2027"
   areas: [human-autonomy-teaming, future-of-work]
   people: [carlos-toxtli]
   collaborators:
@@ -283,23 +283,23 @@
   title: Generative AI for Creative Workforces
   short: Supporting end-user driven creative work in technology.
   status: active
-  years: "2024–2027"
+  years: "2024-2027"
   areas: [future-of-work, human-centered-automation]
   people: [carlos-toxtli]
   collaborators:
     - "Guo Freeman (Clemson University)"
   funding: [nsf-creative-workforces]
   description: |
-    Funded by the NSF Human-Centered Computing program and led by Dr. Guo Freeman, this project investigates how generative AI can support end-user driven creative workforces in technology. The HAIE Lab contributes its research on human-centered automation and human–AI collaboration.
+    Funded by the NSF Human-Centered Computing program and led by Dr. Guo Freeman, this project investigates how generative AI can support end-user driven creative workforces in technology. The HAIE Lab contributes its research on human-centered automation and human-AI collaboration.
   papers: []
 
 - slug: vehicle-security
   title: Resilient Vehicle Network Security
   short: Security architecture for next-generation military ground vehicles.
   status: active
-  years: "2026–present"
+  years: "2026-present"
   areas: [human-autonomy-teaming, trustworthy-ai]
-  people: [carlos-toxtli]
+  people: [carlos-toxtli, colt-doster]
   collaborators:
     - "Pierluigi Pisu (Clemson University)"
     - "James Jones (George Mason University)"

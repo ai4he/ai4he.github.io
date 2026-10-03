@@ -15,7 +15,7 @@
       <ul class="profile-facts">
         {% if p.program %}<li>{{ m.icon('grad') }}{{ p.program }}</li>{% endif %}
         {% if p.affiliation %}<li>{{ m.icon('pin') }}{{ p.affiliation }}</li>{% else %}<li>{{ m.icon('pin') }}Human-AI Empowerment Lab, Clemson University</li>{% endif %}
-        {% if p.since %}<li>{{ m.icon('calendar') }}In the lab since {{ p.since }}{% if p.until %} – {{ p.until }}{% endif %}</li>{% elif p.until %}<li>{{ m.icon('calendar') }}Lab member until {{ p.until }}</li>{% endif %}
+        {% if p.since %}<li>{{ m.icon('calendar') }}{% if p.until %}In the lab from {{ p.since }} to {{ p.until }}{% else %}In the lab since {{ p.since }}{% endif %}</li>{% elif p.until %}<li>{{ m.icon('calendar') }}Lab member until {{ p.until }}</li>{% endif %}
         {% if p.expected_graduation %}<li>{{ m.icon('award') }}Expected graduation: {{ p.expected_graduation }}</li>{% endif %}
         {% if p.group not in ['director', 'researcher'] and p.status == 'current' %}<li>{{ m.icon('users') }}Advisor: <a href="{{ root }}people/carlos-toxtli/">Dr. Carlos Toxtli-Hernández</a></li>{% endif %}
       </ul>

@@ -12,7 +12,7 @@
     <div class="hero-copy">
       <p class="eyebrow eyebrow--hero"><span class="pulse-dot"></span>Clemson University · Human-Centered Computing</p>
       <h1 class="hero-title">Designing AI that <em>expands</em> what people can achieve.</h1>
-      <p class="hero-lead">The Human-AI Empowerment Lab studies how artificial intelligence — increasingly autonomous and agentic — can empower people at work, in science and in society. We build and evaluate human-centered AI systems with the people who will use them.</p>
+      <p class="hero-lead">The Human-AI Empowerment Lab studies how artificial intelligence, increasingly autonomous and agentic, can empower people at work, in science and in society. We build and evaluate human-centered AI systems with the people who will use them.</p>
       <div class="hero-cta">
         <a class="btn btn--primary" href="{{ root }}research/">Explore our research {{ m.icon('arrow') }}</a>
         <a class="btn btn--ghost" href="{{ root }}publications/">Publications</a>
@@ -42,7 +42,7 @@
 
 <section class="section">
   <div class="wrap">
-    {{ m.section_head("Research", "Six thrusts, one question: how can AI empower people?", "Our work spans human-centered automation, the future of work, AI for science, human–autonomy teaming, trustworthy AI and inclusive AI — each grounded in studies with real users and funded by federal sponsors.", "research/", "All research", root) }}
+    {{ m.section_head("Research", "Six thrusts, one question: how can AI empower people?", "Our work spans human-centered automation, the future of work, AI for science, human-autonomy teaming, trustworthy AI and inclusive AI, each grounded in studies with real users and funded by federal sponsors.", "research/", "All research", root) }}
     <div class="thrust-grid">
       {% for a in areas %}
       <a class="thrust-card tone-{{ a.color }}" href="{{ root }}{{ a.url }}">
@@ -102,7 +102,7 @@
     </div>
     <div class="team-mosaic">
       {% for g in groups %}{% for person in g.people %}
-      <a class="team-tile" href="{{ root }}{{ person.url }}" title="{{ person.name }} — {{ person.title }}">{{ m.avatar(person, root, 'lg') }}<span>{{ person.name.split(' ')[0] }}</span></a>
+      <a class="team-tile" href="{{ root }}{{ person.url }}" title="{{ person.name }}, {{ person.title }}">{{ m.avatar(person, root, 'lg') }}<span>{{ person.name.split(' ')[0] }}</span></a>
       {% endfor %}{% endfor %}
     </div>
   </div>

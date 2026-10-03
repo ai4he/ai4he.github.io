@@ -80,7 +80,7 @@ publications:
 
   # --------------------------------- 2024 ---------------------------------
   - {match: "Culturally-Aware AI Tool for Crowdworkers", areas: [future-of-work, inclusive-ai], featured: true, type: conference, venue_short: "CSCW 2024", track: "PACM HCI", links: {Code: "https://github.com/ai4he/toloka-cultural-assistant"}}
-  - {match: "LLM-Powered Student Query Support", areas: [inclusive-ai], type: conference, venue_short: "MexIHC 2024"}
+  - {match: "LLM-Powered Student Query Support", areas: [inclusive-ai], type: conference, venue_short: "MexIHC 2024", award: "Best Paper Award", featured: true}
   - {match: "Optimizing Irrigation through Deep Reinforcement", areas: [ai-for-science], venue_short: "AGU 2024", track: "Abstract"}
   - {match: "Assessing the Syllogistic Logic", areas: [trustworthy-ai], venue_short: "IEEE SmartData 2024"}
   - match: "Leveraging Artificial Intelligence to Promote Awareness"

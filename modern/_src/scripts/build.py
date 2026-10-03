@@ -32,6 +32,9 @@ import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from undash import DASHES, undash  # noqa: E402
+
 SRC = Path(__file__).resolve().parents[1]
 OUT = SRC.parent
 DATA = SRC / "data"
@@ -376,7 +379,7 @@ def process_publications(raw, overrides, areas, people, cfg):
     for idx, p in enumerate(raw):
         p = dict(p)
         p["doc_index"] = idx
-        p["title"] = p["title"].replace("--", "–")
+        p["title"] = p["title"].replace("--", "-")
         p["type_orig"] = p["type"]
         ov = {}
         for o in overrides:
@@ -450,6 +453,9 @@ def process_publications(raw, overrides, areas, people, cfg):
         else:
             p["image_url"] = write_art(f"pub-{s}", s, cols + ([PALETTE_KEY(areas, p['areas'][1])] if len(p['areas']) > 1 else []))
             p["has_photo"] = False
+        if p.get("abstract"):
+            # Drop LaTeX emphasis that leaked into abstracts (e.g. "\\textit{x}").
+            p["abstract"] = re.sub(r"[\\\t]?t?extit\{([^{}]*)\}", r"\1", p["abstract"])
         p["cite_text"] = cite_text(p)
         p["bibtex"] = clean_bibtex(p.get("bibtex", ""), p)
         out.append(p)
@@ -613,7 +619,7 @@ def build_map(collabs, view=(-128, 14, 12, 58), step=1.15):
                 cxp, cyp = mx + dy / dist * bend, my - dx / dist * bend
             arcs.append(f'<path class="map-arc map-arc--{kind}" d="M{hx:.1f} {hy:.1f}Q{cxp:.1f} {cyp:.1f} {x:.1f} {y:.1f}"/>')
         people_txt = ", ".join(c.get("people") or [])
-        tip = esc(c["name"] + (" — " + people_txt if people_txt else "") + (" (" + c["note"] + ")" if c.get("note") else ""))
+        tip = esc(c["name"] + (": " + people_txt if people_txt else "") + (" (" + c["note"] + ")" if c.get("note") else ""))
         pins.append(f'<g class="map-pin map-pin--{kind}" transform="translate({x:.1f} {y:.1f})" data-tip="{tip}" tabindex="0">'
                     f'<circle r="{12 if kind == "home" else 7.5}"/><title>{tip}</title></g>')
     svg = (f'<svg class="collab-map" viewBox="0 0 {W:.0f} {H:.0f}" role="img" aria-label="Map of collaborating institutions">'
@@ -624,7 +630,7 @@ def build_map(collabs, view=(-128, 14, 12, 58), step=1.15):
 
 
 # =========================================================================== #
-# Co-authorship network (Fruchterman–Reingold, deterministic)
+# Co-authorship network (Fruchterman-Reingold, deterministic)
 # =========================================================================== #
 def build_network(pubs, people):
     count = Counter()
@@ -812,7 +818,7 @@ def main():
     for f in funding:
         f["amount_fmt"] = money(f.get("amount"))
         f["amount_compact"] = money(f.get("amount"), compact=True)
-        f["period"] = (f"{f['start']}".split("-")[0] + (f"–{str(f['end']).split('-')[0]}" if f.get("end") else ("" if not f.get("duration") else f" · {f['duration']}"))) if f.get("start") else ""
+        f["period"] = (f"{f['start']}".split("-")[0] + (f"-{str(f['end']).split('-')[0]}" if f.get("end") else ("" if not f.get("duration") else f" · {f['duration']}"))) if f.get("start") else ""
         fund_by[f["slug"]] = f
     external = [f for f in funding if not f.get("internal")]
     fund_total = sum(f.get("amount") or 0 for f in external)
@@ -879,7 +885,7 @@ def main():
         person["areas_list"] = [area_by[k] for k, _ in ar.most_common() if k in area_by]
         person["venues"] = sorted({re.sub(r"\s+\d{4}$", "", p["venue_short"]) for p in person["pubs"]})
         years = [p["year"] for p in person["pubs"] if p.get("year")]
-        person["pub_years"] = f"{min(years)}–{max(years)}" if years else ""
+        person["pub_years"] = f"{min(years)}-{max(years)}" if years else ""
         if not person.get("interests") and person["areas_list"]:
             person["interests"] = [a["short"] for a in person["areas_list"][:3]]
 
@@ -899,7 +905,7 @@ def main():
     # ------------------------------------------------------------ stats
     years = sorted({p["year"] for p in pubs if p.get("year")})
     per_year = [(str(y), sum(1 for p in pubs if p["year"] == y),
-                 f"{y}: {sum(1 for p in pubs if p['year'] == y)} publications" + (" (Aug–Dec)" if y == 2022 else "")) for y in years]
+                 f"{y}: {sum(1 for p in pubs if p['year'] == y)} publications" + (" (Aug-Dec)" if y == 2022 else "")) for y in years]
     type_counts = [(TYPE_LABELS[t], sum(1 for p in pubs if p["type"] == t), t) for t in TYPE_ORDER if any(p["type"] == t for p in pubs)]
     lab_members = [p for p in people.list if p["group"] != "director"]
     venues = sorted({re.sub(r"\s+\d{4}$", "", p["venue_short"]) for p in pubs if p["type"] in PEER_REVIEWED and p["type"] != "book"})
@@ -989,7 +995,7 @@ def main():
            description="Faculty, students, researchers and alumni of the Human-AI Empowerment Lab at Clemson University.")
     for person in people.list:
         render("person.html", f"people/{person['slug']}/index.html", title=person["name"], active="people",
-               person=person, description=(person.get("title") or "") + " — Human-AI Empowerment Lab, Clemson University.",
+               person=person, description=(person.get("title") or "") + ", Human-AI Empowerment Lab, Clemson University.",
                og_image=person["photo"], talks=talks if person["group"] == "director" else [],
                service=service if person["group"] == "director" else [],
                patents=patents if person["group"] == "director" else [],
@@ -1035,7 +1041,15 @@ def main():
         link = n["href"] if n.get("href", "") and n["href"].startswith("http") else base + "/" + (n.get("href") or "news/")
         text = re.sub(r"<[^>]+>", "", str(n["html"]))
         items.append(f"<item><title>{esc(text[:110])}</title><link>{esc(link)}</link><description>{esc(text)}</description><pubDate>{pub}</pubDate><guid isPermaLink=\"false\">{esc(n['date'])}-{hashlib.md5(text.encode()).hexdigest()[:8]}</guid></item>")
-    (OUT / "feed.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>{esc(cfg["site"]["name"])} — News</title><link>{base}/</link><description>{esc(cfg["site"]["description"])}</description>{"".join(items)}</channel></rss>\n', encoding="utf-8")
+    (OUT / "feed.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>{esc(cfg["site"]["name"])}: News</title><link>{base}/</link><description>{esc(cfg["site"]["description"])}</description>{"".join(items)}</channel></rss>\n', encoding="utf-8")
+
+    # No em or en dashes anywhere on the site: normalize every generated text
+    # file, including content synced from the personal website.
+    for f in OUT.rglob("*"):
+        if f.is_file() and "_src" not in f.parts and f.suffix in (".html", ".xml", ".json", ".bib", ".txt"):
+            text = f.read_text(encoding="utf-8")
+            if any(ch in text for ch in DASHES):
+                f.write_text(undash(text), encoding="utf-8")
 
     # Clean generated art that is no longer referenced
     used_art = {p["image_url"].split("/")[-1] for p in pubs if not p["has_photo"]}
@@ -1061,7 +1075,7 @@ def main():
     for n in (overrides.get("known_external") or []):
         unmatched.pop(n, None)
     if unmatched:
-        print("  First authors on lab papers (director last) who are not in people.yaml — new students?")
+        print("  First authors on lab papers (director last) who are not in people.yaml (new students?)")
         for n, c in unmatched.most_common():
             print(f"    - {n} ({c})")
 

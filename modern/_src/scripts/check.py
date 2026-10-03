@@ -4,6 +4,7 @@ Quality checks for the generated site:
   * every internal link / image / script / stylesheet resolves to a file
   * every page has a <title> and a meta description
   * people listed in projects.yaml / news.yaml exist in people.yaml
+  * no em or en dashes appear anywhere on the site
 Exit code 1 if anything is broken.
 
 Usage:  python3 check.py
@@ -49,6 +50,8 @@ def main():
             errors.append(f"{rel}: missing <title>")
         if not parser.desc:
             errors.append(f"{rel}: missing meta description")
+        if re.search("[\u2012\u2013\u2014\u2015]", page.read_text(encoding="utf-8")):
+            errors.append(f"{rel}: contains an em/en dash")
         for ref in parser.refs:
             u = urlparse(ref)
             if u.scheme or ref.startswith(("mailto:", "tel:", "#", "//", "data:")):

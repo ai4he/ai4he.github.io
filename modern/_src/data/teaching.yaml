@@ -41,7 +41,7 @@ mentoring:
   - "Undergraduate independent study (CPSC 4810) and Creative Inquiry teams"
 
 quotes:
-  - text: "I will forever build applications with a different thought pattern because of this course — much more human-centered."
+  - text: "I will forever build applications with a different thought pattern because of this course, much more human-centered."
     source: "Student, Human-Centered AI (Coursera)"
   - text: "The discussions were some of the best I've had in a course."
     source: "Student, Human-Centered AI"
@@ -51,10 +51,10 @@ quotes:
 # Dissertation and thesis committees served on by the director
 committees:
   completed:
-    - "Allyson Hauptman, Ph.D. (2024) — The Human Side of Adaptive Autonomy: Design Considerations for Adaptive Autonomous Teammates"
-    - "James Dominic, Ph.D. (2024) — Examining Software Developer Onboarding Efficiency"
+    - "Allyson Hauptman, Ph.D. (2024): The Human Side of Adaptive Autonomy: Design Considerations for Adaptive Autonomous Teammates"
+    - "James Dominic, Ph.D. (2024): Examining Software Developer Onboarding Efficiency"
     - "Rohit Mallick, Ph.D."
-    - "Jorge Luis Morton Gutiérrez, Ph.D. (2025), Universidad Autónoma Metropolitana–Cuajimalpa, Mexico (external member)"
+    - "Jorge Luis Morton Gutiérrez, Ph.D. (2025), Universidad Autónoma Metropolitana-Cuajimalpa, Mexico (external member)"
   current:
     - "Catherine Barwulor (Ph.D.)"
     - "Nushrat Humaira (Ph.D.)"

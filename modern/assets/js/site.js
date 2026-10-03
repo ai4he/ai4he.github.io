@@ -1,4 +1,4 @@
-/* Human-AI Empowerment Lab — site interactions (no dependencies) */
+/* Human-AI Empowerment Lab, site interactions (no dependencies) */
 (function () {
   "use strict";
   var $ = function (s, r) { return (r || document).querySelector(s); };

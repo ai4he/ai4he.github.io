@@ -25,7 +25,7 @@
   end: 2027-08
   project: aiming
   summary: >-
-    Human–AI collaboration for research-level mathematics: conjecture
+    Human-AI collaboration for research-level mathematics: conjecture
     generation, premise retrieval and robust mathematical reasoning with
     language models. The largest project led by the lab.
 
@@ -57,7 +57,7 @@
   duration: 3 years
   project: underwater-hat
   summary: >-
-    Human–autonomy teaming for underwater search and rescue, from team needs
+    Human-autonomy teaming for underwater search and rescue, from team needs
     assessments to vision models for autonomous underwater vehicles.
 
 - slug: nsf-saTC-authentication
@@ -126,7 +126,7 @@
 
 - slug: srnl-water
   title: "CU-SRNL GSS: Physics-informed deep learning for water quantity and quality simulations across Savannah River Basin"
-  sponsor: Clemson University – Savannah River National Laboratory
+  sponsor: Clemson University and Savannah River National Laboratory
   sponsor_short: SRNL
   program: Graduate Student Support Program
   role: Co-PI

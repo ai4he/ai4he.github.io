@@ -1,5 +1,5 @@
 # --------------------------------------------------------------------------
-# HAIE Lab website — global configuration
+# HAIE Lab website, global configuration
 # --------------------------------------------------------------------------
 # Edit this file for site-wide settings. Content lives in data/*.yaml.
 
@@ -9,7 +9,7 @@ site:
   tagline: "Designing AI that expands what people can achieve."
   description: >-
     The Human-AI Empowerment (HAIE) Lab at Clemson University studies how
-    artificial intelligence — increasingly autonomous and agentic — can empower
+    artificial intelligence, increasingly autonomous and agentic, can empower
     people at work, in science, and in society.
   # Public base URL of this version of the site (used for canonical links,
   # sitemaps and social cards). Change to https://haielab.org if it is

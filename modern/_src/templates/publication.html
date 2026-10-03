@@ -27,7 +27,7 @@
         </div>
         <h1 class="paper-title">{{ p.title }}</h1>
         <p class="paper-authors">{{ m.authors(p, root) }}</p>
-        <p class="paper-venue">{{ p.venue }}{% if p.year %}, {{ p.year }}{% endif %}{% if p.pages %} · pp. {{ p.pages|replace('--', '–') }}{% endif %}</p>
+        <p class="paper-venue">{{ p.venue }}{% if p.year %}, {{ p.year }}{% endif %}{% if p.pages %} · pp. {{ p.pages|replace('--', '-') }}{% endif %}</p>
         <div class="link-row">
           {% for label, href in p.link_list %}
           <a class="btn {{ 'btn--primary' if loop.first else 'btn--ghost' }}" href="{{ href }}" target="_blank" rel="noopener">{{ m.icon({'PDF':'pdf','DOI':'doi','Code':'code'}.get(label, 'external')) }} {{ label }}</a>

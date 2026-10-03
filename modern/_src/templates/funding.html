@@ -25,7 +25,7 @@
       {% set fmax = external|map(attribute='amount')|max %}
       <ul class="hbar-chart" role="list">
         {% for f in external|sort(attribute='amount', reverse=true) %}
-        <li class="hbar" data-tip="{{ f.title }} — {{ f.amount_fmt }} ({{ f.role }})" tabindex="0">
+        <li class="hbar" data-tip="{{ f.title }}, {{ f.amount_fmt }} ({{ f.role }})" tabindex="0">
           <span class="hbar-label"><span class="sponsor-tag">{{ f.sponsor_short }}</span>{% if f.project_obj %}<a href="{{ root }}{{ f.project_obj.url }}">{{ f.project_obj.title|truncate(46) }}</a>{% else %}{{ f.title|truncate(46) }}{% endif %}</span>
           <span class="hbar-track"><span class="hbar-fill{% if f.role == 'PI' %} hbar-fill--pi{% endif %}" style="width: {{ (f.amount / fmax * 100)|round(1) }}%"></span><span class="hbar-value">{{ f.amount_compact }} · {{ f.role }}</span></span>
         </li>

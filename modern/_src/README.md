@@ -1,4 +1,4 @@
-# HAIE Lab website (`/modern`) — maintenance guide
+# HAIE Lab website (`/modern`), maintenance guide
 
 This folder builds the website served at **https://haielab.org/modern/**.
 Everything in `modern/` except `_src/` is generated; edit only the files in
@@ -41,14 +41,14 @@ python3 modern/_src/update.py                 # sync → build → check
 `update.py` prints what changed since the last sync (new/removed/updated
 publications, new talks and grants) followed by curation hints:
 
-* **"publication(s) have no entry in overrides.yaml"** — new papers were
+* **"publication(s) have no entry in overrides.yaml"**, new papers were
   auto-tagged by keyword. Add an entry in `data/overrides.yaml` to set the
   research thrusts, a short venue label (e.g. `"CHI 2027"`), a track badge,
   `featured: true` for the home page, and code/video links.
-* **"First authors … not in people.yaml — new students?"** — add the person
+* **"First authors … not in people.yaml, new students?"**, add the person
   to `data/people.yaml` (or to `known_external` in `overrides.yaml` if they are
   an outside collaborator).
-* **"grant on personal site not in funding.yaml"** — add the award to
+* **"grant on personal site not in funding.yaml"**, add the award to
   `data/funding.yaml`.
 
 Then add a line to `data/news.yaml` for anything worth announcing, rebuild with
@@ -80,10 +80,16 @@ update weekly or on demand from the repository's **Actions** tab.
 | Navigation / address / email | `config.yaml` |
 | Colors, fonts, spacing | tokens at the top of `assets/css/site.css` |
 
-Profile pages live at `https://haielab.org/modern/people/<slug>/` — stable URLs
+Profile pages live at `https://haielab.org/modern/people/<slug>/`, stable URLs
 students can put on CVs and applications. Each profile shows the person's
 publications (matched automatically from author names and `aliases`),
 projects, co-authors and news, and prints cleanly to PDF.
+
+## Archived site
+
+`old/` (served at https://haielab.org/old/) is a static snapshot of the
+original site exactly as GitHub Pages built it on 2026-10-03. It needs no build
+step and keeps working after the versions are switched.
 
 ## What the build produces
 
@@ -93,6 +99,10 @@ projects, co-authors and news, and prints cleanly to PDF.
   (`publications.bib`), JSON exports (`data/*.json`)
 * collaboration map and co-authorship network (computed at build time)
 * `sitemap.xml` and an RSS feed of news (`feed.xml`)
+
+Style rule: the site never uses em or en dashes. `build.py` normalizes any that
+arrive from synced content (ranges and compounds become hyphens, parenthetical
+dashes become commas) and `check.py` fails if one appears in the output.
 
 The research-thrust colors are a colorblind-validated categorical palette;
 keep thrusts in the order of `research.yaml` if you add or rename one.
