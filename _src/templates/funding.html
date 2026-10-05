@@ -10,12 +10,6 @@
 </section>
 
 <div class="wrap">
-  <dl class="stat-band">
-    <div class="stat"><dt>Active awards</dt><dd>{{ stats.awards }}</dd></div>
-    <div class="stat"><dt>Led by the lab as PI</dt><dd>{{ stats.awards_pi }}</dd><span class="stat-note">{% for f in external if f.role == 'PI' %}{{ f.sponsor_short }} {{ (f.project_obj.title if f.project_obj else f.title).split(':')[0] }}{% if not loop.last %} · {% endif %}{% endfor %}</span></div>
-    <div class="stat"><dt>Co-PI awards</dt><dd>{{ stats.awards_copi }}</dd><span class="stat-note">with Clemson and partner investigators</span></div>
-    <div class="stat"><dt>Sponsors</dt><dd>{{ sponsors|length }}</dd><span class="stat-note">{{ sponsors|map(attribute='short')|join(' · ') }}</span></div>
-  </dl>
   <div class="funding-logos">{{ m.logo_wall(sponsors, root, 'sponsors') }}</div>
 </div>
 
