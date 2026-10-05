@@ -21,7 +21,7 @@ folders that start with `_`, so nothing here is published).
     │   ├── auto/*.json    ← synced from carlostoxtli.com (never edit by hand)
     │   ├── people.yaml    ← team, alumni, bios, links, photos
     │   ├── projects.yaml  ← project pages
-    │   ├── research.yaml  ← the six research thrusts
+    │   ├── research.yaml  ← the research thrusts (pages and counts follow this list)
     │   ├── funding.yaml   ← awarded grants
     │   ├── news.yaml      ← news & milestones
     │   ├── overrides.yaml ← per-publication curation (thrusts, featured, venue label, code links)
@@ -101,7 +101,7 @@ site's page URLs redirect to their new locations.
 
 ## What the build produces
 
-* 6 research-thrust pages, 13 project pages, a page per publication (with
+* a page per research thrust, 13 project pages, a page per publication (with
   Google Scholar `citation_*` metadata and JSON-LD) and a page per person
 * searchable/filterable publication list, per-year chart, BibTeX export
   (`publications.bib`), JSON exports (`data/*.json`)
