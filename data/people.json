@@ -234,6 +234,24 @@
   "publications": 0
  },
  {
+  "name": "Sohini Mazumder",
+  "slug": "sohini-mazumder",
+  "group": "graduate",
+  "status": "current",
+  "title": "Graduate Researcher",
+  "url": "https://haielab.org/people/sohini-mazumder/",
+  "publications": 0
+ },
+ {
+  "name": "Tejdeep Uckoo",
+  "slug": "tejdeep-uckoo",
+  "group": "graduate",
+  "status": "alumni",
+  "title": "Graduate Researcher",
+  "url": "https://haielab.org/people/tejdeep-uckoo/",
+  "publications": 0
+ },
+ {
   "name": "Fujaila Shahnaj",
   "slug": "fujaila-shahnaj",
   "group": "graduate",
@@ -304,6 +322,33 @@
   "title": "Student Collaborator",
   "url": "https://haielab.org/people/sofia-campos-hernandez/",
   "publications": 1
+ },
+ {
+  "name": "Menadi Dharmabandu",
+  "slug": "menadi-dharmabandu",
+  "group": "student",
+  "status": "alumni",
+  "title": "High School Research Volunteer",
+  "url": "https://haielab.org/people/menadi-dharmabandu/",
+  "publications": 0
+ },
+ {
+  "name": "Sarah Mendoza",
+  "slug": "sarah-mendoza",
+  "group": "undergrad",
+  "status": "alumni",
+  "title": "Undergraduate Researcher",
+  "url": "https://haielab.org/people/sarah-mendoza/",
+  "publications": 1
+ },
+ {
+  "name": "Edison Hong",
+  "slug": "edison-hong",
+  "group": "undergrad",
+  "status": "alumni",
+  "title": "Visiting Undergraduate Researcher",
+  "url": "https://haielab.org/people/edison-hong/",
+  "publications": 0
  },
  {
   "name": "Weber Whelan",
