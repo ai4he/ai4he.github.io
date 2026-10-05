@@ -832,6 +832,9 @@ def main():
     fund_by = {}
     for f in funding:
         f["period"] = (f"{f['start']}".split("-")[0] + (f"-{str(f['end']).split('-')[0]}" if f.get("end") else ("" if not f.get("duration") else f" · {f['duration']}"))) if f.get("start") else ""
+        # team lists investigators with the PI first; profile pages still name the PI
+        f["team"] = f.get("team") or []
+        f["pi"] = f["team"][0] if f.get("role") and f["team"] else None
         fund_by[f["slug"]] = f
     external = [f for f in funding if not f.get("internal")]
     for f in funding:

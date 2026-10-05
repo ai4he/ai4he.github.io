@@ -6,7 +6,8 @@
 # data/auto/grants.json; `build.py` warns when a grant appears there but not
 # here, so new awards are not forgotten.
 #
-# role: PI | Co-PI
+# role: PI | Co-PI (kept for records; the Funding page does not show roles)
+# team: investigators in order, PI first; affiliations only for people outside Clemson
 # amount: total award in USD, kept for records only; the site does not show it
 # project: slug in projects.yaml (optional)
 # ---------------------------------------------------------------------------
@@ -19,8 +20,11 @@
   award_number: "2434704"
   url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2434704
   role: PI
-  pi: Carlos Toxtli-Hernández
-  team: "Co-PIs: Luis David Garcia Puente (Colorado College), Michael Burr and Vinita Gangaram Jansari (Clemson University)"
+  team:
+    - "Carlos Toxtli-Hernández"
+    - "Luis David Garcia Puente (Colorado College)"
+    - "Michael Burr"
+    - "Vinita Gangaram Jansari"
   amount: 1198339
   start: 2024-09
   end: 2027-08
@@ -38,7 +42,11 @@
   award_number: "2326185"
   url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2326185
   role: Co-PI
-  pi: Anand Gramopadhye
+  team:
+    - "Anand Gramopadhye"
+    - "Kapil Chalil Madathil"
+    - "Nathan McNeese"
+    - "Carlos Toxtli-Hernández"
   amount: 1558433
   start: 2023-10
   end: 2027-09
@@ -52,7 +60,9 @@
   sponsor: U.S. Department of the Navy, Office of Naval Research (ONR)
   sponsor_short: U.S. Navy
   role: Co-PI
-  pi: Nathan McNeese
+  team:
+    - "Nathan McNeese"
+    - "Carlos Toxtli-Hernández"
   amount: 1095901
   start: 2023
   duration: 3 years
@@ -69,7 +79,9 @@
   award_number: "2521037"
   url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2521037
   role: Co-PI
-  pi: Kelly Caine
+  team:
+    - "Kelly Caine"
+    - "Carlos Toxtli-Hernández"
   amount: 650000
   start: 2025-10
   end: 2028-09
@@ -86,7 +98,9 @@
   award_number: "2342393"
   url: https://www.nsf.gov/awardsearch/showAward?AWD_ID=2342393
   role: Co-PI
-  pi: Guo Freeman
+  team:
+    - "Guo Freeman"
+    - "Carlos Toxtli-Hernández"
   amount: 599877
   start: 2024-12
   end: 2027-11
@@ -101,7 +115,9 @@
   sponsor_short: NASA
   program: Fermi Guest Investigator Program, Cycle 17
   role: Co-PI
-  pi: Marco Ajello
+  team:
+    - "Marco Ajello"
+    - "Carlos Toxtli-Hernández"
   amount: 450000
   start: 2025-08
   end: 2028
@@ -116,8 +132,10 @@
   sponsor_short: U.S. Army
   program: Virtual Prototyping of Ground Systems (VIPR-GS) Center, project 1.25.25
   role: Co-PI
-  pi: Pierluigi Pisu
-  team: "With James Jones (George Mason University)"
+  team:
+    - "Pierluigi Pisu"
+    - "Carlos Toxtli-Hernández"
+    - "James Jones (George Mason University)"
   amount: 499898
   start: 2026-03
   project: vehicle-security
@@ -131,8 +149,10 @@
   sponsor_short: SRNL
   program: Graduate Student Support Program
   role: Co-PI
-  pi: Vidya Samadi
-  team: "With David Werth (Savannah River National Laboratory)"
+  team:
+    - "Vidya Samadi"
+    - "Carlos Toxtli-Hernández"
+    - "David Werth (Savannah River National Laboratory)"
   amount: 75580
   start: 2026-01
   project: water-ai
@@ -145,7 +165,11 @@
   title: "Clemson University Research Faculty and Postdoctoral Researcher Support Grant (CU Fellows)"
   sponsor: Clemson University
   sponsor_short: Clemson
-  team: "In coordination with Marco Ajello, Jonathan Zrake and Jeffrey Fung (Physics and Astronomy)"
+  team:
+    - "Marco Ajello"
+    - "Jonathan Zrake"
+    - "Jeffrey Fung"
+    - "Carlos Toxtli-Hernández"
   start: 2024-12
   duration: 2 years
   internal: true

@@ -18,18 +18,16 @@
   <div class="wrap">
     <div class="grant-grid">
       {% for f in funding %}
-      <article class="grant-card{% if f.role == 'PI' %} grant-card--pi{% endif %}">
+      <article class="grant-card">
         <div class="grant-head">
           {{ m.sponsor_mark(f, root, 'lg') }}
-          {% if f.role %}<span class="role-badge{% if f.role == 'PI' %} role-badge--pi{% endif %}">{{ f.role }}</span>{% endif %}
         </div>
         <h3 class="grant-title">{{ f.title }}</h3>
         <p class="grant-summary">{{ f.summary }}</p>
         <dl class="kv kv--grant">
           <div><dt>Sponsor</dt><dd>{{ f.sponsor }}{% if f.program %}<br><span class="muted">{{ f.program }}</span>{% endif %}</dd></div>
           {% if f.period %}<div><dt>Period</dt><dd>{{ f.period }}</dd></div>{% endif %}
-          {% if f.pi and f.role != 'PI' %}<div><dt>PI</dt><dd>{{ f.pi }}</dd></div>{% endif %}
-          {% if f.team %}<div><dt>Team</dt><dd>{{ f.team }}</dd></div>{% endif %}
+          {% if f.team %}<div><dt>Team</dt><dd>{% for t in f.team %}{{ t }}{% if not loop.last %}{{ ' and ' if loop.revindex == 2 else ', ' }}{% endif %}{% endfor %}</dd></div>{% endif %}
         </dl>
         <div class="grant-links">
           {% if f.project_obj %}<a class="text-link" href="{{ root }}{{ f.project_obj.url }}">Project page {{ m.icon('arrow') }}</a>{% endif %}
