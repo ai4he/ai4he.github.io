@@ -670,6 +670,103 @@
   links: {}
 
 # --------------------------- Undergraduate researchers ----------------------
+- slug: fernando-morales-flores
+  name: Fernando Morales Flores
+  aliases: [Fernando Morales Flores, Fernando Morales-Flores, F. Morales-Flores]
+  group: undergrad
+  status: alumni
+  title: Visiting Undergraduate Researcher
+  affiliation: SABES, Guanajuato, Mexico
+  since: "Summer 2024"
+  until: 2024
+  interests: [Language learning, Bilingual speakers, AI-assisted feedback]
+  bio: |
+    Fernando Morales Flores was a visiting undergraduate researcher with the HAIE Lab in summer 2024, part of a team of students from SABES in Guanajuato, Mexico, that worked remotely with Cecilia Delgado Solorzano on an AI app for advanced bilingual speakers and co-authored *AI for Becoming Fluent: Designing an App for Advanced Bilingual Speakers* (IEEE CAI 2025).
+  links: {}
+
+- slug: jesus-martinez-garcia
+  name: Jesús Martínez García
+  aliases: [Jesús Martínez García, Jesus Martinez Garcia, Jesus Martinez-Garcia, J. Martinez-Garcia]
+  group: undergrad
+  status: alumni
+  title: Visiting Undergraduate Researcher
+  affiliation: SABES, Guanajuato, Mexico
+  since: "Summer 2024"
+  until: 2025
+  interests: [Language learning, Bilingual speakers, AI-assisted feedback, Personal AI assistants]
+  bio: |
+    Jesús Martínez García was a visiting undergraduate researcher with the HAIE Lab in summer 2024, part of a team of students from SABES in Guanajuato, Mexico, that worked remotely with Cecilia Delgado Solorzano on an AI app for advanced bilingual speakers and co-authored *AI for Becoming Fluent: Designing an App for Advanced Bilingual Speakers* (IEEE CAI 2025). Jesús returned in summer 2025 to work on PAIA, the lab's simulator of personal AI assistants.
+  links: {}
+
+- slug: nestor-briones-ramirez
+  name: Néstor Emmanuel Briones Ramírez
+  aliases: [Néstor Emmanuel Briones Ramírez, Nestor Emmanuel Briones Ramirez, Néstor E. Briones-Ramirez, Nestor E. Briones-Ramirez]
+  group: undergrad
+  status: alumni
+  title: Visiting Undergraduate Researcher
+  affiliation: SABES, Guanajuato, Mexico
+  since: "Summer 2024"
+  until: 2024
+  interests: [Language learning, Bilingual speakers, AI-assisted feedback]
+  bio: |
+    Néstor Emmanuel Briones Ramírez was a visiting undergraduate researcher with the HAIE Lab in summer 2024, part of a team of students from SABES in Guanajuato, Mexico, that worked remotely with Cecilia Delgado Solorzano on an AI app for advanced bilingual speakers and co-authored *AI for Becoming Fluent: Designing an App for Advanced Bilingual Speakers* (IEEE CAI 2025).
+  links: {}
+
+- slug: emmanuel-zarazua-rubio
+  name: Emmanuel Alexis Zarazúa Rubio
+  aliases: [Emmanuel Alexis Zarazúa Rubio, Emmanuel Alexis Zarazua Rubio, Emmanuel A. Zarazua-Rubio]
+  group: undergrad
+  status: alumni
+  title: Visiting Undergraduate Researcher
+  affiliation: SABES, Guanajuato, Mexico
+  since: "Summer 2024"
+  until: 2024
+  interests: [Language learning, Bilingual speakers, AI-assisted feedback]
+  bio: |
+    Emmanuel Alexis Zarazúa Rubio was a visiting undergraduate researcher with the HAIE Lab in summer 2024, part of a team of students from SABES in Guanajuato, Mexico, that worked remotely with Cecilia Delgado Solorzano on an AI app for advanced bilingual speakers and co-authored *AI for Becoming Fluent: Designing an App for Advanced Bilingual Speakers* (IEEE CAI 2025).
+  links: {}
+
+- slug: ventura-rivera-robles
+  name: Ventura Rivera Robles
+  aliases: [Ventura Rivera Robles, Ventura Rivera-Robles]
+  group: undergrad
+  status: alumni
+  title: Visiting Undergraduate Researcher
+  affiliation: SABES, Guanajuato, Mexico
+  since: "Summer 2024"
+  until: 2024
+  interests: [Language learning, Bilingual speakers, AI-assisted feedback]
+  bio: |
+    Ventura Rivera Robles was a visiting undergraduate researcher with the HAIE Lab in summer 2024, part of a team of students from SABES in Guanajuato, Mexico, that worked remotely with Cecilia Delgado Solorzano on an AI app for advanced bilingual speakers and co-authored *AI for Becoming Fluent: Designing an App for Advanced Bilingual Speakers* (IEEE CAI 2025).
+  links: {}
+
+- slug: asis-rangel-ortiz
+  name: Asís Heriberto Rangel Ortiz
+  aliases: [Asís Heriberto Rangel Ortiz, Asis Heriberto Rangel Ortiz, Asis H. Rangel-Ortiz, Asís H. Rangel-Ortiz]
+  group: undergrad
+  status: alumni
+  title: Visiting Undergraduate Researcher
+  affiliation: SABES, Guanajuato, Mexico
+  since: "Summer 2024"
+  until: 2025
+  interests: [Language learning, Bilingual speakers, AI-assisted feedback, Personal AI assistants]
+  bio: |
+    Asís Heriberto Rangel Ortiz was a visiting undergraduate researcher with the HAIE Lab in summer 2024, part of a team of students from SABES in Guanajuato, Mexico, that worked remotely with Cecilia Delgado Solorzano on an AI app for advanced bilingual speakers and co-authored *AI for Becoming Fluent: Designing an App for Advanced Bilingual Speakers* (IEEE CAI 2025). Asís returned in summer 2025 to work on PAIA, the lab's simulator of personal AI assistants.
+  links: {}
+
+- slug: benjamin-sleeper
+  name: Benjamin Sleeper
+  aliases: [Benjamin Sleeper, Ben Sleeper, B. Sleeper]
+  group: undergrad
+  status: alumni
+  title: Undergraduate Researcher
+  since: "Spring 2025"
+  until: 2025
+  interests: [AI and consciousness, Dynamical systems, Philosophy of mind]
+  bio: |
+    Benjamin Sleeper was an undergraduate researcher in the HAIE Lab in 2025. A course project grew into a collaboration with Manuel Delaflor on artificial intelligence and consciousness, which Ben presented as first author of *Resonant Attractor Networks: A Dynamical Blueprint for Consciousness* at the Ernst Mach Workshop XIII in Prague before continuing the work as a directed study.
+  links: {}
+
 - slug: sarah-mendoza
   name: Sarah Mendoza
   aliases: [Sarah Mendoza, Sara Mendoza, Sarah V. Mendoza, S. Mendoza]
