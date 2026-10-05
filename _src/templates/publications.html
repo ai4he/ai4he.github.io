@@ -5,7 +5,7 @@
   <div class="wrap">
     <p class="eyebrow">Publications</p>
     <h1 class="page-title">Publications</h1>
-    <p class="page-lead">{{ pubs|length }} publications since the lab's founding in August 2022: books, journal articles, conference and workshop papers, posters and demos. Lab members are highlighted; every entry links to an abstract, BibTeX and the paper.</p>
+    <p class="page-lead">Books, journal articles, conference and workshop papers, posters and demos. Lab members are highlighted; every entry links to an abstract, BibTeX and the paper.</p>
     <div class="pub-types">
       {% for label, n, key in type_counts %}<button type="button" class="filter-chip" data-set-type="{{ key }}" aria-pressed="false">{{ label }}<span class="filter-chip-n">{{ n }}</span></button>{% endfor %}
       <a class="text-link pub-types-bib" href="{{ root }}publications.bib" download>{{ m.icon('quote') }} Download all BibTeX</a>
