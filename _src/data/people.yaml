@@ -295,12 +295,12 @@
   name: Ravindu Tharanga Perera
   aliases: [Ravindu Perera, Ravindu Perara, R. Perera]
   group: graduate
-  status: current
+  status: alumni
   title: Research Assistant
   since: "Fall 2022"
   interests: [Human-AI collaboration, LLM-powered assistants, Extended reality workspaces, NLP for thematic analysis, Data visualization]
   bio: |
-    Ravindu Tharanga Perera is a research assistant in the HAIE Lab, which Ravindu first joined as a volunteer researcher in 2022 before becoming a graduate research assistant in 2023. Ravindu led the lab's work on goal-oriented AI assistants for the workplace (Wellbot, MexIHC 2024), assessed the task-management capabilities of LLM-powered agents, and built VirtuaScreens, an AI-enhanced multi-screen extended-reality workspace, presenting two demos at ACM CHIWORK 2024 in Newcastle, UK. Ravindu also designed and maintained the lab's website, mentored undergraduate researchers, and now fine-tunes language models for thematic analysis of AI-focused communities of practice.
+    Ravindu Tharanga Perera was a research assistant in the HAIE Lab, which Ravindu first joined as a volunteer researcher in 2022 before becoming a graduate research assistant in 2023. Ravindu led the lab's work on goal-oriented AI assistants for the workplace (Wellbot, MexIHC 2024), assessed the task-management capabilities of LLM-powered agents, and built VirtuaScreens, an AI-enhanced multi-screen extended-reality workspace, presenting two demos at ACM CHIWORK 2024 in Newcastle, UK. Ravindu also designed and maintained the lab's website, mentored undergraduate researchers, and fine-tuned language models for thematic analysis of AI-focused communities of practice.
 
     Ravindu earned an M.S. in Computer Science, with a concentration in data science and machine learning, from Clemson University in 2025 and a B.S. in Chemistry from the Institute of Chemistry Ceylon, Sri Lanka. Ravindu has worked as a software engineer in Colombo and at the Data Visualization Lab of Clemson University Libraries, where Ravindu built an LLM chatbot for the library website and taught data visualization workshops.
   highlights:
@@ -541,10 +541,10 @@
   name: Jackson Bowen
   aliases: [Jackson Bowen]
   group: student
-  status: alumni
+  status: current
   title: Student Researcher
   bio: |
-    Jackson Bowen was a student researcher in the HAIE Lab and co-author of *Human Oversight Over Autonomous Task Execution in Sandbox Environments* (IEEE CAI 2025).
+    Jackson Bowen is a student researcher in the HAIE Lab and co-author of *Human Oversight Over Autonomous Task Execution in Sandbox Environments* (IEEE CAI 2025).
   links:
     linkedin: https://www.linkedin.com/in/jackson-bowen-83a002274/
 
