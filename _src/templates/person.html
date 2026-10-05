@@ -91,7 +91,7 @@
       {% if p.pubs %}
       <section class="profile-section">
         <h2 class="paper-h">Publications <span class="count">{{ p.pubs|length }}</span></h2>
-        {% if p.group == 'director' %}<p class="muted">Publications since the lab's founding (August 2022). For earlier work see <a href="{{ p.links.website }}" target="_blank" rel="noopener">carlostoxtli.com</a>.</p>{% endif %}
+        {% if p.group == 'director' %}<p class="muted">Lab publications only. For the complete publication record, see <a href="{{ p.links.website }}" target="_blank" rel="noopener">carlostoxtli.com</a>.</p>{% endif %}
         <div class="pub-list">
           {% for pub in p.pubs %}{{ m.pub_item(pub, root) }}{% endfor %}
         </div>

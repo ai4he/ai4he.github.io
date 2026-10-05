@@ -56,7 +56,7 @@
 
 <section class="section section--tint">
   <div class="wrap">
-    {{ m.section_head("Alumni", "Alumni and past members", "Students and researchers who have contributed to the lab's work since 2022.", None, None, root) }}
+    {{ m.section_head("Alumni", "Alumni and past members", "Students and researchers who have contributed to the lab's work.", None, None, root) }}
     <div class="filter-row" role="group" aria-label="Filter alumni">
       <button class="filter-chip is-active" type="button" data-filter-alumni="all">All</button>
       {% for g in alumni_groups %}<button class="filter-chip" type="button" data-filter-alumni="{{ g.key }}">{{ g.label }} <span class="count">{{ g.people|length }}</span></button>{% endfor %}

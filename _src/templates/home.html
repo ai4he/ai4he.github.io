@@ -59,7 +59,7 @@
 
 <section class="section">
   <div class="wrap">
-    {{ m.section_head("Publications", "Selected recent work", "Peer-reviewed research at venues including ACM CHI, CSCW, CUI, CAIS, IVA, HCOMP, AIES and IEEE CAI, and at NeurIPS and EMNLP workshops.", "publications/", "All " ~ stats.pubs ~ " publications", root) }}
+    {{ m.section_head("Publications", "Selected recent work", "Peer-reviewed research at venues including ACM CHI, CSCW, CUI, CAIS, IVA, HCOMP, AIES and IEEE CAI, and at NeurIPS and EMNLP workshops.", "publications/", "All publications", root) }}
     <div class="card-grid card-grid--4">
       {% for p in featured_pubs %}{{ m.pub_card(p, root) }}{% endfor %}
     </div>
