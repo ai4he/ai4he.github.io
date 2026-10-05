@@ -161,6 +161,27 @@
     developing physics-informed deep learning for water simulations.
 
 # Internal support
+- slug: mfh-spot-the-sextortionist
+  title: "Spot the Sextortionist: Detecting and Inoculating Against AI-Enabled Deceptive Personas Targeting Youth"
+  sponsor: Clemson University Media Forensics Hub
+  sponsor_short: Clemson
+  program: Seed Grant (2026)
+  role: PI
+  team:
+    - "Carlos Toxtli-Hernández"
+    - "Jinkyung Katie Park"
+  amount: 10000
+  start: 2026-10
+  end: 2027-04
+  internal: true
+  summary: >-
+    Generative AI is making the fake personas behind financially motivated
+    sextortion harder to spot. The project builds an open corpus of authentic,
+    human-authored and AI-generated approach personas, tests how well adults,
+    including parents of teens, detect them and whether a brief training
+    module modeled on the Hub's Spot the Troll improves detection, and
+    interviews practitioners who work with targeted teens.
+
 - slug: cu-fellows-postdoc
   title: "Clemson University Research Faculty and Postdoctoral Researcher Support Grant (CU Fellows)"
   sponsor: Clemson University
