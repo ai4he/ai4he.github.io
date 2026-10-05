@@ -513,6 +513,45 @@
 
 - {slug: sandya-rani-prasadam, name: Sandya Rani Prasadam, group: graduate, status: alumni, title: Graduate Researcher}
 
+- slug: fujaila-shahnaj
+  name: Fujaila Shahnaj
+  aliases: [Fujaila Shahnaj, F. Shahnaj]
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  since: "Summer 2025"
+  until: 2026
+  interests: [Online communities, AI innovation, Thematic analysis, Data analysis]
+  bio: |
+    Fujaila Shahnaj was a volunteer graduate researcher in the HAIE Lab from 2025 to 2026 while completing a master's degree in Clemson University's School of Computing. Fujaila helped build the lab's Product Hunt dataset of AI products and analyzed discourse in an AI-focused online community of practice for the lab's studies of grassroots AI innovation.
+  links: {}
+
+- slug: siddharth-kandlakunta
+  name: Siddharth Kandlakunta
+  aliases: [Siddharth Kandlakunta, S. Kandlakunta]
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  since: "Fall 2024"
+  until: 2025
+  interests: [Data visualization, Mental health data, AI-generated reports, Survey research]
+  bio: |
+    Siddharth Kandlakunta was a volunteer graduate researcher in the HAIE Lab from 2024 to 2025. Siddharth prototyped a tool that processes and visualizes mental-health data from industry sources, analyzed large e-commerce product datasets, and prepared a survey study on AI-generated reports.
+  links: {}
+
+- slug: charan-chowdary-daruvuru
+  name: Charan Chowdary Daruvuru
+  aliases: [Charan Chowdary Daruvuru, Charan Daruvuru, C. C. Daruvuru]
+  group: graduate
+  status: alumni
+  title: Graduate Researcher
+  since: "Fall 2025"
+  until: 2025
+  interests: [Machine learning, Text classification, Data science]
+  bio: |
+    Charan Chowdary Daruvuru was a graduate student researcher in the HAIE Lab in fall 2025, building and benchmarking machine-learning models, from linear baselines to BERT, that predict which AI products earn Product Hunt badges for the lab's Product Hunt study.
+  links: {}
+
 # ----------------------------- Student researchers --------------------------
 - slug: athish-venkatachalam
   name: Athish Venkatachalam
