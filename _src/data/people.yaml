@@ -545,7 +545,8 @@
   title: Student Researcher
   bio: |
     Jackson Bowen was a student researcher in the HAIE Lab and co-author of *Human Oversight Over Autonomous Task Execution in Sandbox Environments* (IEEE CAI 2025).
-  links: {}
+  links:
+    linkedin: https://www.linkedin.com/in/jackson-bowen-83a002274/
 
 - slug: adithya-ravi
   name: Adithya Ravi
