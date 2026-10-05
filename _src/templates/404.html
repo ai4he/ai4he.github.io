@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% import "macros.html" as m with context %}
+{% block head %}<meta name="robots" content="noindex">{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">404</p>
+    <h1 class="page-title">Page not found</h1>
+    <p class="page-lead">The page you were looking for is not here. The lab website was redesigned in October 2026, so an older link may point to a page that moved.</p>
+    <div class="hero-cta">
+      <a class="btn btn--primary" href="{{ root }}">Go to the home page {{ m.icon('arrow') }}</a>
+      <a class="btn btn--ghost" href="{{ root }}publications/">Publications</a>
+      <a class="btn btn--ghost" href="{{ root }}people/">People</a>
+    </div>
+    <p class="page-lead">The previous version of the website, including its papers and files, is archived at <a class="text-link" href="{{ root }}old/">haielab.org/old</a>.</p>
+  </div>
+</section>
+{% endblock %}

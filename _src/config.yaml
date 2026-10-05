@@ -1,0 +1,90 @@
+# --------------------------------------------------------------------------
+# HAIE Lab website, global configuration
+# --------------------------------------------------------------------------
+# Edit this file for site-wide settings. Content lives in data/*.yaml.
+
+site:
+  name: "Human-AI Empowerment Lab"
+  short_name: "HAIE Lab"
+  tagline: "Designing AI that expands what people can achieve."
+  description: >-
+    The Human-AI Empowerment (HAIE) Lab at Clemson University studies how
+    artificial intelligence, increasingly autonomous and agentic, can empower
+    people at work, in science, and in society.
+  # Public base URL of the site (used for canonical links, sitemaps and
+  # social cards). The site is served from the root of the domain.
+  base_url: "https://haielab.org"
+  email: "hello@haielab.org"
+  address:
+    - "School of Computing, Human-Centered Computing Division"
+    - "McAdams Hall, Clemson University"
+    - "Clemson, SC 29634, USA"
+  university: "Clemson University"
+  university_url: "https://www.clemson.edu"
+  school: "School of Computing"
+  school_url: "https://www.clemson.edu/cecas/departments/computing/"
+  department: "Human-Centered Computing"
+  department_url: "https://www.clemson.edu/cecas/departments/computing/academics/divisions/hcc.html"
+  founded: "August 2022"
+  github: "https://github.com/ai4he"
+
+# The personal website renders this published Google Doc; it is the single
+# source of truth for publications, talks, grants, patents and service.
+source:
+  personal_site: "https://www.carlostoxtli.com"
+  google_doc_url: "https://docs.google.com/document/d/e/2PACX-1vRHNwLVVLO8rNZVzNOos8r1bav8k2CDDkv1wXrz7hS5XTvrShOpoq3R1axgGUR7MShB0M90t3OKczKD/pub"
+  # Everything from this date onward belongs to the lab. Earlier items are
+  # the director's prior work and are not listed as lab output.
+  lab_start: { year: 2022, month: 8 }
+
+# Navigation (label, path)
+nav:
+  - ["Research", "research/"]
+  - ["Projects", "projects/"]
+  - ["Publications", "publications/"]
+  - ["People", "people/"]
+  - ["Funding", "funding/"]
+  - ["News", "news/"]
+  - ["Join", "join/"]
+
+# Old addresses that keep working through small redirect pages (path -> new
+# path, both relative to the domain root). The original site's pages now live
+# in old/; its main pages point to their counterparts here, the rest to their
+# archived copies. Pages formerly under /modern/ are redirected automatically.
+redirects:
+  team.html: "people/"
+  index-team.html: "people/"
+  index_team_details.html: "people/"
+  areas_of_research.html: "research/"
+  index-Areas_of_research.html: "research/"
+  empowerment.html: "about/"
+  index.empowerment.html: "about/"
+  about-us1.html: "about/"
+  about-us2.html: "about/"
+  contact.html: "about/"
+  contact-us.html: "about/"
+  index-2.html: "old/index-2.html"
+  index-3.html: "old/index-3.html"
+  index-5.html: "old/index-5.html"
+  blog-details.html: "old/blog-details.html"
+  blog-V1.html: "old/blog-V1.html"
+  blog-V2.html: "old/blog-V2.html"
+  blog-V3.html: "old/blog-V3.html"
+  blog-V4.html: "old/blog-V4.html"
+  faq.html: "old/faq.html"
+  header.html: "old/header.html"
+  portfolio-details-V1.html: "old/portfolio-details-V1.html"
+  portfolio-V1.html: "old/portfolio-V1.html"
+  portfolio-V2.html: "old/portfolio-V2.html"
+  portfolio-V3.html: "old/portfolio-V3.html"
+  pricing.html: "old/pricing.html"
+  service-details-V1.html: "old/service-details-V1.html"
+  service-V1.html: "old/service-V1.html"
+  service-V2.html: "old/service-V2.html"
+  signin.html: "old/signin.html"
+  sign-up.html: "old/sign-up.html"
+  testimonial.html: "old/testimonial.html"
+  papers/index.html: "old/papers/"
+  files/index.html: "old/files/"
+  poc-logq/index.html: "old/poc-logq/"
+  jekyll/update/2022/10/12/welcome-to-jekyll.html: "old/jekyll/update/2022/10/12/welcome-to-jekyll.html"

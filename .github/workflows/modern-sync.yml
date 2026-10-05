@@ -1,8 +1,8 @@
-# Sync the /modern lab website from carlostoxtli.com, rebuild it, and redeploy.
-# Runs every Monday and on demand (Actions tab → "Sync lab website" → Run workflow).
-# Only files under modern/ are committed. Remove the `schedule` block to keep it
-# manual-only.
-name: Sync lab website (modern)
+# Sync the lab website (served from the repository root) from carlostoxtli.com,
+# rebuild it, and redeploy. Runs every Monday and on demand (Actions tab →
+# "Sync lab website" → Run workflow). The build never touches old/ (the archived
+# original site). Remove the `schedule` block to keep it manual-only.
+name: Sync lab website
 
 on:
   workflow_dispatch:
@@ -28,18 +28,18 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r modern/_src/requirements.txt
+        run: pip install -r _src/requirements.txt
 
       - name: Sync, build and check
-        run: python3 modern/_src/update.py
+        run: python3 _src/update.py
 
       - name: Commit changes
         id: commit
         run: |
-          if git status --porcelain -- modern | grep -q .; then
+          if git status --porcelain -- . ':!old' | grep -q .; then
             git config user.name "haie-lab-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add modern
+            git add -A -- . ':!old'
             git commit -m "Sync lab website from carlostoxtli.com"
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
