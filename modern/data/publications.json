@@ -17,6 +17,24 @@
   "abstract": "Human-Centered Automation (HCA) is becoming indispensable for organizations seeking to implement AI-driven systems, robotic process automation, and other advanced tools while keeping human needs at the core. Despite the widespread adoption of automation, many initiatives fall short due to a lack of alignment between technical capabilities and real-world user and organizational needs. This book unites insights from cognitive science, software engineering, business strategy, and human factors that view automation as something that works for people and not just systems. This book provides the tools and strategies to ensure efforts with automation succeed with people at the center. It takes readers through the entire HCA lifecycle; from process discovery and planning to system design, testing, and long-term oversight. With easy-to-understand frameworks and real-world examples across sectors, including healthcare, finance, and manufacturing, readers will gain tools to assess risk, define measurable outcomes, involve stakeholders, and build automation that is trustworthy, explainable, and effective. It offers the methodologies needed to drive meaningful, lasting impact through automation. Human-Centered Automation is essential for ergonomics and human factors professionals, researchers, and organizational leaders involved in designing or managing automation initiatives. Its appeal extends to professionals in AI and machine learning, UX design, process engineering, business operations, and policy development."
  },
  {
+  "title": "SHARE: A Formative Probe of AI-Mediated Disclosure in Peer Journaling",
+  "authors": [
+   "Austin LaHue",
+   "Carlos Toxtli-Hernández"
+  ],
+  "year": 2026,
+  "type": "poster",
+  "venue": "Proceedings of the 14th International Conference on Human-Agent Interaction (HAI ’26)",
+  "venue_short": "ACM HAI 2026",
+  "doi": null,
+  "areas": [
+   "trustworthy-ai",
+   "inclusive-ai"
+  ],
+  "url": "https://haielab.org/modern/publications/2026-share-a-formative-probe-of-ai-mediated-disclosure-in-peer/",
+  "abstract": null
+ },
+ {
   "title": "Evidence Before Rankings: An Executable Audit Contract for Stateful Tool-Agent Evaluations",
   "authors": [
    "Carlos Toxtli-Hernández",

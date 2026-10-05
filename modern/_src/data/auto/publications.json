@@ -50,6 +50,34 @@
   "section": "Books"
  },
  {
+  "key": "LaHue2026SHARE",
+  "title": "SHARE: A Formative Probe of AI-Mediated Disclosure in Peer Journaling",
+  "authors": [
+   "Austin LaHue",
+   "Carlos Toxtli"
+  ],
+  "year": 2026,
+  "month": 11,
+  "type": "poster",
+  "status": "forthcoming",
+  "venue": "Proceedings of the 14th International Conference on Human-Agent Interaction (HAI ’26)",
+  "publisher": "Association for Computing Machinery",
+  "volume": "",
+  "pages": "",
+  "address": "Osaka, Japan",
+  "note": "Poster; forthcoming",
+  "isbn": "",
+  "doi": null,
+  "url": "https://hai-conference.net/hai2026/program-schedule/",
+  "links": {
+   "website": "https://hai-conference.net/hai2026/program-schedule/"
+  },
+  "citation": "LaHue, Austin, and Carlos Toxtli. “SHARE: A Formative Probe of AI-Mediated Disclosure in Peer Journaling.” Poster, 14th International Conference on Human-Agent Interaction (HAI ’26), Osaka, Japan, November 2026. In Proceedings of the 14th International Conference on Human-Agent Interaction. New York: Association for Computing Machinery, forthcoming.",
+  "abstract": null,
+  "bibtex": "@inproceedings{LaHue2026SHARE,\ntitle = {SHARE: A Formative Probe of AI-Mediated Disclosure in Peer Journaling},\nauthor = {LaHue, Austin and Toxtli, Carlos},\nbooktitle = {Proceedings of the 14th International Conference on Human-Agent Interaction (HAI ’26)},\naddress = {Osaka, Japan},\npublisher = {Association for Computing Machinery},\nyear = {2026},\nmonth = nov,\nnote = {Poster; forthcoming},\nurl = {https://hai-conference.net/hai2026/program-schedule/}\n}",
+  "section": "Scientific"
+ },
+ {
   "key": "Toxtli2026Evidence",
   "title": "Evidence Before Rankings: An Executable Audit Contract for Stateful Tool-Agent Evaluations",
   "authors": [

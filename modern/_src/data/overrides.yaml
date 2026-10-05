@@ -64,6 +64,7 @@ publications:
   - {match: "Sycophantic Metacognition", areas: [trustworthy-ai], featured: true, venue_short: "ACM CUI 2026", links: {Code: "https://github.com/ai4he/kruger"}}
   - {match: "Auditing LLM Portrayals of Neurodivergent", areas: [trustworthy-ai, inclusive-ai], featured: true, venue_short: "AAAI/ACM AIES 2026"}
   - {match: "LLM-Judge Behavioral Coding Scheme", areas: [human-autonomy-teaming, trustworthy-ai], venue_short: "ACM HAI 2026"}
+  - {match: "SHARE: A Formative Probe", areas: [trustworthy-ai, inclusive-ai], venue_short: "ACM HAI 2026", track: "Poster"}
   - {match: "AI-Mediated Second Language Communication", areas: [inclusive-ai], featured: true, venue_short: "CHI 2026", track: "Extended Abstract"}
   - {match: "Effects of Embodied Agent Body Type", areas: [inclusive-ai], venue_short: "Computer Animation & Virtual Worlds 2026", track: "CASA 2026"}
   - {match: "Digital Twin Instructors", areas: [inclusive-ai], venue_short: "CHI 2026", track: "Extended Abstract"}

@@ -139,7 +139,7 @@
   expected_graduation: "Spring 2029"
   interests: [AI for mathematics, Conjecture generation, AI-mediated journaling, Trust and safety, Data science]
   bio: |
-    Austin LaHue is a Ph.D. student in Human-Centered Computing at Clemson University and a graduate research assistant on the NSF AIMing project, advised by Dr. Carlos Toxtli. Austin studies how language models can support research-level mathematics, including which forms of mathematical context let a model generate the conjecture a paper actually proves (MathNLP 2026 at EMNLP) and how retrieval can surface the premise needed for the next step of a natural-language proof (NaturalPRISM). Austin also designs AI-mediated journaling systems and ran a 15-day field study of AI-mediated peer journaling, published as SHARE at ACM HAI 2026.
+    Austin LaHue is a Ph.D. student in Human-Centered Computing at Clemson University and a graduate research assistant on the NSF AIMing project, advised by Dr. Carlos Toxtli. Austin studies how language models can support research-level mathematics, including which forms of mathematical context let a model generate the conjecture a paper actually proves (MathNLP 2026 at EMNLP). Austin also designs AI-mediated journaling systems and created SHARE, a prototype of an AI-mediated peer journaling platform, published at ACM HAI 2026.
 
     Before Clemson, Austin worked as a data scientist and business intelligence analyst at The Walt Disney Company, building predictive models and data pipelines, and as a research assistant at Brigham Young University's Marriott School of Business, where Austin co-authored a study of the mental-health benefits of a daily one-hour social media break (ECIS 2024). Austin holds an M.S. in Data Science from The University of Texas at Austin and a B.S. in Global Supply Chain Management from Brigham Young University.
   highlights:
@@ -155,7 +155,7 @@
     linkedin: https://www.linkedin.com/in/austinlahue/
     github: https://github.com/alahue
     orcid: https://orcid.org/0009-0003-0708-4286
-    cv: https://alahue.github.io/resume/Austin_LaHue_Resume.pdf
+    cv: https://alahue.github.io/cv/Austin_LaHue_CV.pdf
 
 - slug: fateme-mazdarani
   name: Fateme Mazdarani
