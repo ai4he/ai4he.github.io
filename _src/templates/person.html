@@ -27,10 +27,10 @@
       </div>
     </div>
   </div>
-  {% if p.pubs or p.projects %}
+  {% if p.pub_count or p.projects %}
   <div class="wrap">
     <dl class="stat-band stat-band--profile">
-      <div class="stat"><dt>Publications</dt><dd>{{ p.pubs|length }}</dd></div>
+      <div class="stat"><dt>Publications</dt><dd>{{ p.pub_count }}</dd></div>
       {% if p.group != 'director' %}<div class="stat"><dt>First-authored</dt><dd>{{ p.first_author|length }}</dd></div>{% else %}<div class="stat"><dt>With lab students</dt><dd>{{ stats.student_pubs }}</dd></div>{% endif %}
       <div class="stat"><dt>Projects</dt><dd>{{ p.projects|length }}</dd></div>
       <div class="stat"><dt>Lab co-authors</dt><dd>{{ p.coauthors|length }}</dd></div>
@@ -73,7 +73,7 @@
       <section class="profile-section">
         <h2 class="paper-h">Thesis</h2>
         <div class="thesis-card">
-          <p class="thesis-title">{{ p.thesis.title }}</p>
+          <p class="thesis-title">{% if p.thesis.url %}<a href="{{ p.thesis.url }}" target="_blank" rel="noopener">{{ p.thesis.title }}</a>{% else %}{{ p.thesis.title }}{% endif %}</p>
           <p class="muted">{{ p.thesis.degree }}{% if p.thesis.year %} · {{ p.thesis.year }}{% endif %}{% if p.thesis.role %} · Dr. Toxtli's role: {{ p.thesis.role }}{% endif %}</p>
         </div>
       </section>
@@ -95,6 +95,13 @@
         <div class="pub-list">
           {% for pub in p.pubs %}{{ m.pub_item(pub, root) }}{% endfor %}
         </div>
+      </section>
+      {% endif %}
+
+      {%- if p.other_pubs %}
+      <section class="profile-section">
+        <h2 class="paper-h">Other publications</h2>
+        <ul class="honor-list">{% for o in p.other_pubs %}<li><span class="talk-year">{{ o.year }}</span><span>{{ o.text|imd }}</span></li>{% endfor %}</ul>
       </section>
       {% endif %}
 

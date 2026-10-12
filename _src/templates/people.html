@@ -43,7 +43,7 @@
           {% if person.affiliation %}<span class="person-card-meta">{{ person.affiliation }}</span>{% endif %}
           {% if person.since or person.expected_graduation %}<span class="person-card-meta">{% if person.since %}Since {{ person.since }}{% endif %}{% if person.expected_graduation %} · Expected {{ person.expected_graduation }}{% endif %}</span>{% endif %}
           {% if person.interests %}<span class="tag-row">{% for t in person.interests[:3] %}<span class="tag tag--sm">{{ t }}</span>{% endfor %}</span>{% endif %}
-          {% if person.pubs %}<span class="person-card-stat">{{ person.pubs|length }} publication{{ 's' if person.pubs|length != 1 }}{% if person.first_author %} · {{ person.first_author|length }} as first author{% endif %}</span>{% endif %}
+          {% if person.pub_count %}<span class="person-card-stat">{{ person.pub_count }} publication{{ 's' if person.pub_count != 1 }}{% if person.first_author %} · {{ person.first_author|length }} as first author{% endif %}</span>{% endif %}
           {{ m.net_icons(person.links, person.name) }}
         </span>
       </article>
@@ -65,7 +65,7 @@
       {% for g in alumni_groups %}{% for person in g.people %}
       <article class="alum" data-group="{{ g.key }}">
         {{ m.avatar(person, root, 'sm') }}
-        <span><a class="alum-name stretched-link" href="{{ root }}{{ person.url }}">{{ person.name }}</a><span class="alum-role">{{ person.title }}{% if person.until %} · {{ person.until }}{% endif %}</span>{% if person.pubs %}<span class="alum-meta">{{ person.pubs|length }} publication{{ 's' if person.pubs|length != 1 }}</span>{% endif %}{% if person.next %}<span class="alum-meta">Now: {{ person.next }}</span>{% endif %}{{ m.net_icons(person.links, person.name, 'net-links--sm') }}</span>
+        <span><a class="alum-name stretched-link" href="{{ root }}{{ person.url }}">{{ person.name }}</a><span class="alum-role">{{ person.title }}{% if person.until %} · {{ person.until }}{% endif %}</span>{% if person.pub_count %}<span class="alum-meta">{{ person.pub_count }} publication{{ 's' if person.pub_count != 1 }}</span>{% endif %}{% if person.next %}<span class="alum-meta">Now: {{ person.next }}</span>{% endif %}{{ m.net_icons(person.links, person.name, 'net-links--sm') }}</span>
       </article>
       {% endfor %}{% endfor %}
     </div>

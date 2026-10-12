@@ -146,7 +146,7 @@
   <span class="person-card-title">{{ person.title }}</span>
   {% if show_meta %}
   {% if person.affiliation %}<span class="person-card-meta">{{ person.affiliation }}</span>{% endif %}
-  {% if person.pubs %}<span class="person-card-meta">{{ person.pubs|length }} publication{{ 's' if person.pubs|length != 1 }}</span>{% endif %}
+  {% if person.pub_count %}<span class="person-card-meta">{{ person.pub_count }} publication{{ 's' if person.pub_count != 1 }}</span>{% endif %}
   {% endif %}
 </a>
 {%- endmacro %}

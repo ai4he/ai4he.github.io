@@ -895,6 +895,7 @@ def main():
         s = person["slug"]
         person["pubs"] = [p for p in pubs if any(a["slug"] == s for a in p["authors_list"])]
         person["first_author"] = [p for p in person["pubs"] if p["authors_list"] and p["authors_list"][0]["slug"] == s]
+        person["pub_count"] = len(person["pubs"]) + len(person.get("other_pubs") or [])
         person["projects"] = [pr for pr in projects if s in pr.get("people", [])]
         person["news"] = [n for n in news if s in (n.get("people") or [])]
         co = Counter()
@@ -1084,7 +1085,7 @@ def main():
         indent=1, ensure_ascii=False), encoding="utf-8")
     (OUT / "data" / "people.json").write_text(json.dumps([{
         "name": p["name"], "slug": p["slug"], "group": p["group"], "status": p["status"],
-        "title": p.get("title"), "url": base + "/" + p["url"], "publications": len(p["pubs"])} for p in people.list],
+        "title": p.get("title"), "url": base + "/" + p["url"], "publications": p["pub_count"]} for p in people.list],
         indent=1, ensure_ascii=False), encoding="utf-8")
     urls = "".join(f"<url><loc>{base}/{pg.replace('index.html', '')}</loc><lastmod>{build_date}</lastmod></url>" for pg in pages)
     (OUT / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n')

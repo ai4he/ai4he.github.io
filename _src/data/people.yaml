@@ -20,7 +20,8 @@
 #   bio            A few sentences; markdown allowed
 #   highlights     Bullet list of achievements
 #   education      List of degrees
-#   thesis         {title, year, degree, role}
+#   thesis         {title, year, degree, role, url}
+#   other_pubs     Publications outside the lab record: [{year, text}] (markdown)
 #   next           Where an alum went next (shown on the alumni list)
 #   seeking        Short note shown as an "open to opportunities" badge
 #   links          email, website, scholar, linkedin, github, orcid, twitter, cv, dblp, semantic_scholar
@@ -202,6 +203,14 @@
     - "Ph.D. in Computer Science, Clemson University (in progress)"
     - "M.S. in Computer Science, Louisiana Tech University, 2020"
     - "B.S. in Computer Science, Louisiana Tech University, 2018"
+  thesis:
+    title: "Computer Vision for Inventory Management"
+    year: 2020
+    url: https://digitalcommons.latech.edu/theses/40/
+    degree: M.S. in Computer Science, Louisiana Tech University
+  other_pubs:
+    - year: 2023
+      text: "A. Stone, C. Kalahiki, L. Li, N. Hubig, F. Iuricich, H. Dunn. [Evaluation of breast tumor morphologies from African American and Caucasian patients](https://doi.org/10.1016/j.csbj.2023.06.019). *Computational and Structural Biotechnology Journal* 21, 3459–3465."
   links:
     website: https://www.chriskalahiki.info/
     linkedin: https://www.linkedin.com/in/chriskalahiki
@@ -325,6 +334,7 @@
   thesis:
     title: "Coupling the Richards Equation with AquaCrop and Deep Reinforcement Learning for Irrigation Scheduling Optimization"
     year: 2026
+    url: https://open.clemson.edu/all_theses/4695/
     degree: M.S. in Computer Science
     role: "Thesis committee co-chair (with Dr. Vidya Samadi)"
   bio: |
@@ -351,6 +361,7 @@
   thesis:
     title: "Heterogeneous Federated Learning at Scale"
     year: 2024
+    url: https://open.clemson.edu/all_theses/4211/
     degree: M.S.
     role: Advisor
   bio: |
