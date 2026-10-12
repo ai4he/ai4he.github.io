@@ -1,5 +1,11 @@
 [
  {
+  "title": "Spot the Sextortionist: Detecting and Inoculating Against AI-Enabled Deceptive Personas Targeting Youth",
+  "sponsor": "Clemson University Media Forensics Hub (seed grant)",
+  "amount": 10000,
+  "period": "2026–2027"
+ },
+ {
   "title": "Resilient Vehicle Network Security Architecture for Next-Generation Military Ground Vehicle",
   "sponsor": "U.S. Army DEVCOM Ground Vehicle Systems Center (Clemson VIPR-GS)",
   "amount": 499898,
@@ -34,6 +40,12 @@
   "sponsor": "National Science Foundation",
   "amount": 1198339,
   "period": "2024–2027"
+ },
+ {
+  "title": "Clemson University Research Faculty and Postdoctoral Researcher Support Grant (CU Fellows) — Clemson University, a two-year postdoctoral position in AI-enhanced computational astrophysics, with Marco Ajello, Jonathan Zrake and Jeffrey Fung (2024–2026).",
+  "sponsor": "",
+  "amount": null,
+  "period": ""
  },
  {
   "title": "FW-HTF-RL: The Future of Aviation Inspection: Artificial Intelligence and Mixed Reality as Agents of Transformation",

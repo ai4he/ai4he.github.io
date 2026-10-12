@@ -1,5 +1,55 @@
 [
  {
+  "title": "Fermi-LLM",
+  "description": "A web platform that turns a plain-English request into a real Fermi-LAT gamma-ray analysis: it writes the FermiPy configuration and Python driver, checks them, runs exactly what the scientist approves and shows every step. Every model, rule, validator and data source is a pluggable module.",
+  "url": "https://github.com/ai4he/fermi-llm-int"
+ },
+ {
+  "title": "Trust-Calibration Benchmark",
+  "description": "A small, auditable qualification test for language models used as workers in human-computation pipelines: 60 yes/no items across five domains with independently audited gold labels, plus the evaluation harness.",
+  "url": "https://github.com/ai4he/qualification-by-calibration"
+ },
+ {
+  "title": "Sycophantic Metacognition",
+  "description": "Complete code, data, prompts, results and analysis pipeline for the multi-phase study of metacognitive calibration and sycophancy in LLM self-assessment.",
+  "url": "https://github.com/ai4he/kruger"
+ },
+ {
+  "title": "Belief Explorer",
+  "description": "An AI system that uses Socratic dialogue and multi-perspective analysis to help people examine personally held beliefs.",
+  "url": "https://github.com/ai4he/belief-explorer"
+ },
+ {
+  "title": "CultureFit",
+  "description": "Code for the CSCW paper on a culturally aware workplace tool that adapts to monochronic and polychronic work styles of crowd workers.",
+  "url": "https://github.com/ai4he/toloka-cultural-assistant"
+ },
+ {
+  "title": "AIMing research code",
+  "description": "Dataset generation from arXiv mathematics, embedding-space experiments, automated judge agents and prompt experimentation for the NSF AIMing project.",
+  "url": "https://github.com/ai4he/AIMing"
+ },
+ {
+  "title": "LitRevTools",
+  "description": "A cross-platform tool for systematic literature reviews following the PRISMA methodology, with Semantic Scholar integration; one codebase for CLI, web, desktop and mobile.",
+  "url": "https://github.com/ai4he/litrevtools"
+ },
+ {
+  "title": "SmartMonitor",
+  "description": "Embedded image capture and on-device object detection for privacy-preserving analysis of workplace activity (RK3588 edge device, HDMI capture).",
+  "url": "https://github.com/ai4he/Hardware_Application"
+ },
+ {
+  "title": "VirtuaScreens",
+  "description": "A Unity-based extended-reality workspace for adding and arranging virtual monitors, with a screencast server.",
+  "url": "https://github.com/ai4he/VirtuaScreens"
+ },
+ {
+  "title": "PAIA Builder",
+  "description": "A web interface to generate Personal AI Assistant (PAIA) schemas.",
+  "url": "https://github.com/ai4he/paia_builder"
+ },
+ {
   "title": "Inside Music YouTube Edition",
   "description": "VR Web 360-degree music with AI. This is a demo that transforms a YouTube video into five stems by using AI and distributing the sounds around a room. It can be tested from a web browser or with Virtual Reality headsets.",
   "url": "https://3dyt.hcilab.ml"

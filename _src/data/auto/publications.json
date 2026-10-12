@@ -774,7 +774,8 @@
   "doi": "10.1145/3834580.3838735",
   "url": "https://camps.aptaracorp.com/ACM_PMS/PMS/ACM/HCOMP2026/1/7b5f5907-910b-11f1-949e-16ffef0ebbf1/OUT/hcomp2026-1.html",
   "links": {
-   "website": "https://camps.aptaracorp.com/ACM_PMS/PMS/ACM/HCOMP2026/1/7b5f5907-910b-11f1-949e-16ffef0ebbf1/OUT/hcomp2026-1.html"
+   "website": "https://camps.aptaracorp.com/ACM_PMS/PMS/ACM/HCOMP2026/1/7b5f5907-910b-11f1-949e-16ffef0ebbf1/OUT/hcomp2026-1.html",
+   "code": "https://github.com/ai4he/qualification-by-calibration"
   },
   "citation": "Carlos Toxtli, and Manuel Delaflor. “Qualification by Calibration: A Readable Benchmark for Admitting Language Models to Human-Computation Tasks.” In 2026 ACM Conference on Human-AI Complementarity and Alignment (HCOMP 2026). New York: Association for Computing Machinery, 2026. https://doi.org/10.1145/3834580.3838735",
   "abstract": "When several language models are wired together into a human-computation pipeline, the system routes, arbitrates, and escalates work according to how confident each model says it is, so a team builder needs a way to screen candidate models the way crowdsourcing has long screened human contributors: with a small, inspectable qualification test. We present such an instrument, a compact battery of yes-or-no questions across everyday domains on which a model reports an answer and a confidence, with every gold label independently audited. Our central contribution, however, is the audited harness and the interface properties it measures, not accuracy discrimination: qualification verdicts for model workers are only as valid as the harness that administers them. Evaluating a diverse panel of contemporary models under three administration protocols, we show that a naive harness, with a fixed token budget and an unaudited parser, manufactures failing workers out of competent ones, misreading a model that answers essentially every item correctly as badly inaccurate, answer-biased, and overconfident. Properly administered, every model in the panel proves admissible on accuracy for these common-knowledge items, and the differentiators that remain, and that transfer to disjoint downstream tasks, are interface properties: calibration of stated confidence, format discipline, and availability under budget. A controlled manipulation further shows the calibration axis is dissociable from accuracy. We release the items, the audited protocol, all per-trial responses under every protocol, and the scoring code, so the check, and the audit of the check, are each a single command.",
@@ -802,7 +803,8 @@
   "doi": "10.1145/3816046.3816233",
   "url": "https://camps.aptaracorp.com/ACM_PMS/PMS/ACM/CUI26/35/b374f7b0-5a64-11f1-b513-16ffd757ba29/OUT/cui26-35.html",
   "links": {
-   "website": "https://camps.aptaracorp.com/ACM_PMS/PMS/ACM/CUI26/35/b374f7b0-5a64-11f1-b513-16ffd757ba29/OUT/cui26-35.html"
+   "website": "https://camps.aptaracorp.com/ACM_PMS/PMS/ACM/CUI26/35/b374f7b0-5a64-11f1-b513-16ffd757ba29/OUT/cui26-35.html",
+   "code": "https://github.com/ai4he/kruger"
   },
   "citation": "Manuel Delaflor, and Carlos Toxtli. “Sycophantic Metacognition: Investigating the Dunning-Kruger Effect in Large Language Model Self-Assessment.” In ACM Conversational User Interfaces 2026 (CUI ’26), July 21-24, 2026, Bremen, Germany. New York: Association for Computing Machinery, 2026. Forthcoming. https://doi.org/10.1145/3816046.3816233",
   "abstract": "As large language models are deployed in conversational settings where users calibrate trust against model-reported confidence, the reliability of that self-report becomes a central question for conversational user interface design. This paper introduces sycophantic metacognition, the production of confidence outputs that mimic the surface form of metacognitive judgment without any operational process linking them to accuracy. Drawing on Model Dependent Ontology, we identify a double unmooring in LLM self-assessment, arising from the simultaneous absence of an operational ground linking confidence to accuracy and a stable self-model accumulated across interactions. The framework yields four falsifiable predictions, supported by experiments spanning six LLMs, four domains, three difficulty levels, and multiple pressure conditions. Confidence tracks the surface form of authority rather than evidential content, and we derive concrete design implications for conversational interfaces.",
@@ -976,7 +978,8 @@
   "doi": "10.1145/3772363.3799391",
   "url": "https://dl.acm.org/doi/full/10.1145/3772363.3799391",
   "links": {
-   "website": "https://dl.acm.org/doi/full/10.1145/3772363.3799391"
+   "website": "https://dl.acm.org/doi/full/10.1145/3772363.3799391",
+   "code": "https://github.com/ai4he/belief-explorer"
   },
   "citation": "Delaflor, Manuel, Cecilia Delgado Solorzano, and Carlos Toxtli. \"Belief Explorer: A Preliminary Evaluation of AI-Mediated Socratic Dialogue for Epistemic Reflection.\" In Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems, pp. 1-5. 2026. https://doi.org/10.1145/3772363.3799391",
   "abstract": "AI chatbots may reinforce existing beliefs and discourage critical examination. This study evaluates Belief Explorer, an AI system that uses Socratic dialogue and multi-perspective analysis to support epistemic reflection. Participants recruited via Prolific used Belief Explorer to examine personally held beliefs in contested domains (e.g., climate change, origin of life). Post-intervention surveys measured system usability, perceived epistemic impact, and self-reported reflection. Participants responded positively: a large majority reported that Belief Explorer felt substantially different from conventional AI chatbots, prompted deep reflection on their beliefs, and increased awareness of underlying assumptions. Thematic analysis of open-ended responses revealed that participants valued the tool’s non-judgmental approach, multi-perspective framing, and analytical feedback mechanisms. Belief change itself was modest and bidirectional, with similar proportions reporting increased and decreased confidence in their initial beliefs. This preliminary study offers proof-of-concept that AI systems with epistemic scaffolding can support critical thinking and self-reflection. Future research should use controlled experimental designs to establish causal relationships and examine long-term effects on epistemic attitudes.",
@@ -1182,7 +1185,8 @@
   "doi": "10.1145/3686899",
   "url": "https://doi.org/10.48550/arXiv.2408.07838",
   "links": {
-   "website": "https://doi.org/10.48550/arXiv.2408.07838"
+   "website": "https://doi.org/10.48550/arXiv.2408.07838",
+   "code": "https://github.com/ai4he/toloka-cultural-assistant"
   },
   "citation": "Carlos Toxtli, Christopher Curtis, Saiph Savage The 27th ACM SIGCHI Conference on Computer-Supported Cooperative Work & Social Computing, In Proceedings of the ACM on human-computer interaction 8, no. CSCW2 (2024), PACMHCI V8, ACM CSCW 2024, Association for Computing Machinery, Costa Rica, San Jose, 2024. https://doi.org/10.1145/3686899",
   "abstract": "Crowdsourcing markets are expanding worldwide, but often feature standardized interfaces that ignore the cultural diversity of their workers, negatively impacting their well-being and productivity. To transform these workplace dynamics, this paper proposes creating culturally-aware workplace tools, specifically designed to adapt to the cultural dimensions of monochronic and polychronic work styles. We illustrate this approach with \"CultureFit,\" a tool that we engineered based on extensive research in Chronemics and culture theories. To study and evaluate our tool in the real world, we conducted a field experiment with 55 workers from 24 different countries. Our field experiment revealed that CultureFit significantly improved the earnings of workers from cultural backgrounds often overlooked in design. Our study is among the pioneering efforts to examine culturally aware digital labor interventions. It also provides access to a dataset with over two million data points on culture and digital work, which can be leveraged for future research in this emerging field. The paper concludes by discussing the importance and future possibilities of incorporating cultural insights into the design of tools for digital labor.",
@@ -1393,7 +1397,7 @@
   "links": {
    "website": "https://docs.google.com/document/d/1kAJrDEdbdhvDCJBBiOPizUwRTCJ2ISliejlryv82sWU/edit?pli=1#"
   },
-  "citation": "Cecilia Delgado Solorzano, Elias Tzoc Caniz, Suzanne Rook, Christopher Vinson, Carlos Toxtli In Tenth Mexican International Conference on Human-Computer Interaction, ACM MexIHC 2024, Association for Computing Machinery, Mexico, Sinaloa, 2024. https://doi.org/10.47756/aihc.y9i1.141",
+  "citation": "Cecilia Delgado Solorzano, Elias Tzoc Caniz, Suzanne Rook, Christopher Vinson, Carlos Toxtli In Tenth Mexican International Conference on Human-Computer Interaction, ACM MexIHC 2024, Association for Computing Machinery, Mexico, Sinaloa, 2024. Best Paper Award. https://doi.org/10.47756/aihc.y9i1.141",
   "abstract": "In this paper, we explore the use of Large Language Models (LLMs) to help students improve their information-seeking skills while encouraging the use of references to aid library literacy efforts. This study aims to expand the reach of library support by introducing an approach that leverages the capabilities of LLMs and well-structured prompts. Our approach begins with surveying the current changes students have faced in the last two years concerning their study habits and how they search for information. We subsequently propose a multi-step system prompt, referred as prompting architecture, for foundational and instructed LLMs. The proposed prompt architecture powers a web application named LibRef. We explore the adaptability of the prompting architecture to different information retrieval needs by refining search prompts and providing academic references. A field experiment is conducted using LibRef in academic settings. Our results suggest that the use of LibRef enhances students’ academic information-seeking experience. Our research underscores the potential of prompting architectures in procedural refinement of academic queries from students. We believe our findings can provide valuable insights on the current capabilities of LLMs for instructing students to provide more targeted prompts as well as incentivize the use of references.",
   "bibtex": "@article{Delgado_Solorzano_2024a,\ntitle = {A Study of LLM-Powered Student Query Support},\nvolume = {9},\nissn = {2594-2352},\nurl = {http://dx.doi.org/10.47756/aihc.y9i1.141},\ndoi = {10.47756/aihc.y9i1.141},\nnumber = {1},\njournal = {Avances en Interacción Humano-Computadora},\npublisher = {Asociacion Mexicana de Interaccion humano-Computadora (AMexIHC)},\nauthor = {Delgado-Solorzano, Cecilia and Tzoc, Elias and Rook, Suzanne and Vinson, Christopher and Toxtli, Carlos},\nyear = {2024},\nmonth = Nov,\npages = {21--25}\n}",
   "section": "Scientific"
@@ -1977,7 +1981,8 @@
   "doi": "10.13140/RG.2.2.20165.46561",
   "url": "https://chiwork.org/",
   "links": {
-   "website": "https://chiwork.org/"
+   "website": "https://chiwork.org/",
+   "code": "https://github.com/ai4he/Hardware_Application"
   },
   "citation": "Wangfan Li, Ravindu Perera, Claire Gendron, Cecilia Delgado Solorzano, Carlos Toxtli In CHIWORK'24: Proceedings of the 3rd Annual Meeting of the Symposium on Human-Computer Interaction for Work. Association for Computing Machinery, Newcastle, UK, 2024. https://doi.org/10.13140/RG.2.2.20165.46561",
   "abstract": "In this paper, we propose SmartMonitor, a system that utilizes an edge hardware device to record, analyze and log user activity while not interfering with said activity. The analysis of the activity can help users identify the time they spend on different tasks and provide real-time feedback from a Large Language Model (LLM) to give better awareness of user activity. The SmartMonitor passes through the HDMI signal from the video card and analyzes the user’s activity on edge using two artificial intelligence models, logs user activity and sends the log for analysis to a Large Language Model for feedback. SmartMonitor enables non-intrusive self-quantifying technology that both records and analyzes user activity while protecting privacy and reducing the processing burden on the user’s device, which can serve as an excellent research framework for behavioral analysis in the workplace and a way to enhance user's work activity.",
@@ -2032,7 +2037,8 @@
   "doi": "10.13140/RG.2.2.31604.36481",
   "url": "https://chiwork.org/",
   "links": {
-   "website": "https://chiwork.org/"
+   "website": "https://chiwork.org/",
+   "code": "https://github.com/ai4he/VirtuaScreens"
   },
   "citation": "Ravindu Perera, Carlos Toxtli In CHIWORK'24: Proceedings of the 3rd Annual Meeting of the Symposium on Human-Computer Interaction for Work. Association for Computing Machinery,, Newcastle, UK, 2024. https://doi.org/10.13140/RG.2.2.31604.36481",
   "abstract": "This demo paper explores AI-enhanced multi-screen interaction within extended reality (XR) workspaces using called VirtuaScreens. The system facilitates the user-centric addition of customized virtual monitors and employs machine learning to understand user preferences for monitor arrangements and application arrangements. We employed Large language and multimedia models to offer context-sensitive feedback and enhance the user experience. We created this research framework called VirtuaScreens for researchers and practitioners to use to understand the interaction of the multiple screens in the XR environment.",
