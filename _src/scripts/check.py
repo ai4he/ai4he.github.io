@@ -79,6 +79,14 @@ def main():
         for s in n.get("people", []) or []:
             if s not in people:
                 errors.append(f"news.yaml [{n['date']}]: unknown person '{s}'")
+    ds_file = SRC / "data" / "datasets.yaml"
+    if ds_file.exists():
+        import json
+        built = json.loads((OUT / "data" / "publications.json").read_text(encoding="utf-8"))
+        for d in yaml.safe_load(ds_file.read_text()) or []:
+            n = sum(1 for p in built if d.get("paper", "").lower() in p["title"].lower())
+            if n != 1:
+                errors.append(f"datasets.yaml [{d.get('name')}]: paper fragment matches {n} publications")
     print(f"Checked {len(pages)} pages.")
     if errors:
         print(f"{len(errors)} problem(s):")

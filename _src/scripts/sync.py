@@ -289,7 +289,7 @@ def parse_publication(e, section):
     title = bib.get("title") or (head[0] if head else "")
     # Citation text = everything after the title, minus bracketed link markers.
     cit = " ".join(head[1:])
-    cit = re.sub(r"\[\s*(Website|PDF|Code|Video|Slides|Demo|Data|Dataset|Poster|Project|Preprint)\s*\]", "", cit)
+    cit = re.sub(r"\[\s*(Website|PDF|Code|Video|Slides|Demo|Data|Dataset|Poster|Project|Preprint|Resources)\s*\]", "", cit)
     cit = re.sub(r"\s+([,.;:])", r"\1", cit)
     cit = clean(cit.lstrip(".").strip())
     year = None

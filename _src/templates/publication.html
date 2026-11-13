@@ -30,7 +30,7 @@
         <p class="paper-venue">{{ p.venue }}{% if p.year %}, {{ p.year }}{% endif %}{% if p.pages %} · pp. {{ p.pages|replace('--', '-') }}{% endif %}</p>
         <div class="link-row">
           {% for label, href in p.link_list %}
-          <a class="btn {{ 'btn--primary' if loop.first else 'btn--ghost' }}" href="{{ href }}" target="_blank" rel="noopener">{{ m.icon({'PDF':'pdf','DOI':'doi','Code':'code'}.get(label, 'external')) }} {{ label }}</a>
+          <a class="btn {{ 'btn--primary' if loop.first else 'btn--ghost' }}" href="{{ href }}" target="_blank" rel="noopener">{{ m.icon({'PDF':'pdf','DOI':'doi','Code':'code'}.get(label, 'database' if label.startswith('Dataset') else 'external')) }} {{ label }}</a>
           {% endfor %}
           <button class="btn btn--ghost" type="button" data-copy="#cite-text">{{ m.icon('quote') }} Copy citation</button>
         </div>
@@ -45,6 +45,32 @@
       <section class="paper-section">
         <h2 class="paper-h">Abstract</h2>
         <p class="paper-abstract">{{ p.abstract }}</p>
+      </section>
+      {% endif %}
+      {% if p.datasets %}
+      <section class="paper-section" id="data">
+        <h2 class="paper-h">Data and resources</h2>
+        {% for d in p.datasets %}
+        <div class="dataset-card">
+          <div class="dataset-head">
+            <span class="dataset-icon">{{ m.icon('database') }}</span>
+            <div>
+              <h3 class="dataset-name">{{ d.name }}</h3>
+              {% if d.description %}<p class="dataset-desc">{{ d.description }}</p>{% endif %}
+            </div>
+          </div>
+          <dl class="kv kv--stack dataset-kv">
+            {% if d.doi %}<div><dt>Dataset DOI</dt><dd><a href="https://doi.org/{{ d.doi }}" target="_blank" rel="noopener">{{ d.doi }}</a></dd></div>{% endif %}
+            {% if d.license %}<div><dt>License</dt><dd>{{ d.license }}</dd></div>{% endif %}
+          </dl>
+          <div class="link-row dataset-links">
+            {% for label, href in (d.links or {}).items() %}<a class="btn btn--ghost btn--sm" href="{{ href }}" target="_blank" rel="noopener">{{ m.icon('external') }} {{ label }}</a>
+            {% endfor %}
+            {% if d.code %}<a class="btn btn--ghost btn--sm" href="{{ d.code }}" target="_blank" rel="noopener">{{ m.icon('code') }} Code</a>{% endif %}
+            {% if d.croissant %}<a class="btn btn--ghost btn--sm" href="{{ d.croissant }}" target="_blank" rel="noopener" title="Machine-readable dataset metadata (MLCommons Croissant)">{{ m.icon('doi') }} Croissant metadata</a>{% endif %}
+          </div>
+        </div>
+        {% endfor %}
       </section>
       {% endif %}
       <section class="paper-section">

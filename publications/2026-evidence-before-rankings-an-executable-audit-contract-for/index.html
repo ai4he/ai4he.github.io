@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../assets/css/site.css?v=a41eeb2952">
+<link rel="stylesheet" href="../../assets/css/site.css?v=5f7ac5b6ed">
 <script>
   (function () {
     try {
@@ -92,6 +92,7 @@
         <p class="paper-venue">Third Workshop on Agents in the Wild: Safety, Security, and Beyond (AIWILD) at NeurIPS 2026, 2026</p>
         <div class="link-row">
           <a class="btn btn--primary" href="https://agentwild-workshop.github.io/neurips2026/" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> Website</a>
+          <a class="btn btn--ghost" href="https://doi.org/10.5281/zenodo.24179013" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.5"/><path d="M4.5 5.5v13c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-13M4.5 12c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5"/></svg> Dataset</a>
           <button class="btn btn--ghost" type="button" data-copy="#cite-text"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h4v4c0 3-2 5-4 6M15 7h4v4c0 3-2 5-4 6"/></svg> Copy citation</button>
         </div>
       </div>
@@ -104,6 +105,24 @@
       <section class="paper-section">
         <h2 class="paper-h">Abstract</h2>
         <p class="paper-abstract">Safety evaluations of tool agents often retain terminal scores without the trajectories needed to explain them. We contribute an executable, claim-scoped evidence contract spanning identity, path, transition, assignment, target, and discrimination, and validate it in a prospectively frozen model-only deployment sandbox with hard preconditions and rollback. The study crosses serving aliases, state dynamics, benign and injected tickets, and repeated seeds while retaining every request, raw response, parse result, retry, state transition, and endpoint. The resulting paths expose mechanisms that terminal scores conflate: generic unsafe transitions can be attempted without reaching the injected exfiltration target, whereas abort instructions mainly cause premature termination. Offline replay reproduces every retained transition. The artifact therefore supports mechanism-level diagnosis on the evaluated finite grid, but not claims about other models, policies, providers, deployments, or people. Because immutable weight and container hashes are unavailable, the identity gate also blocks claims of exact behavioral reproduction. The study uses no human experiment or human-derived label.</p>
+      </section>
+      <section class="paper-section" id="data">
+        <h2 class="paper-h">Data and resources</h2>
+        <div class="dataset-card">
+          <div class="dataset-head">
+            <span class="dataset-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.5"/><path d="M4.5 5.5v13c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-13M4.5 12c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5"/></svg></span>
+            <div>
+              <h3 class="dataset-name">Stateful Tool-Agent Audit Records</h3>
+<p class="dataset-desc">420-episode stateful tool-agent study with traces, gate report and code</p>            </div>
+          </div>
+          <dl class="kv kv--stack dataset-kv">
+<div><dt>Dataset DOI</dt><dd><a href="https://doi.org/10.5281/zenodo.24179013" target="_blank" rel="noopener">10.5281/zenodo.24179013</a></dd></div><div><dt>License</dt><dd>CC BY 4.0 (code: MIT)</dd></div>          </dl>
+          <div class="link-row dataset-links">
+<a class="btn btn--ghost btn--sm" href="https://zenodo.org/records/24179013" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> Zenodo</a>
+<a class="btn btn--ghost btn--sm" href="https://huggingface.co/datasets/ai4he/stateful-tool-agent-audit" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> Hugging Face</a>
+<a class="btn btn--ghost btn--sm" href="https://www.kaggle.com/datasets/clemsonlaboratory/stateful-tool-agent-audit" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> Kaggle</a>
+<a class="btn btn--ghost btn--sm" href="https://huggingface.co/api/datasets/ai4he/stateful-tool-agent-audit/croissant" target="_blank" rel="noopener" title="Machine-readable dataset metadata (MLCommons Croissant)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg> Croissant metadata</a>          </div>
+        </div>
       </section>
       <section class="paper-section">
         <h2 class="paper-h">Cite this work</h2>
@@ -239,6 +258,6 @@ School of Computing, Human-Centered Computing Division<br>McAdams Hall, Clemson 
   </div>
 </footer>
 <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
-<script src="../../assets/js/site.js?v=a41eeb2952" defer></script>
+<script src="../../assets/js/site.js?v=5f7ac5b6ed" defer></script>
 </body>
 </html>

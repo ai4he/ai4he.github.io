@@ -424,7 +424,7 @@ def auto_areas(p, areas):
     return [s for _, s in scores[:2]]
 
 
-def process_publications(raw, overrides, areas, people, cfg):
+def process_publications(raw, overrides, areas, people, cfg, datasets=()):
     start = cfg["source"]["lab_start"]
     out, used = [], set()
     for idx, p in enumerate(raw):
@@ -450,6 +450,12 @@ def process_publications(raw, overrides, areas, people, cfg):
         links = dict(p.get("links") or {})
         links.update({k.lower(): v for k, v in (ov.pop("links", {}) or {}).items()})
         p.update(ov)
+        # Datasets released with the paper (datasets.yaml, generated from the datasets publishing
+        # tooling): shown under "Data and resources"; the code repository fills a missing Code link.
+        p["datasets"] = [d for d in datasets if d.get("paper") and d["paper"].lower() in p["title"].lower()]
+        for d in p["datasets"]:
+            if d.get("code") and not links.get("code"):
+                links["code"] = d["code"]
         p["links"] = links
         if ov.get("authors"):
             p["authors"] = ov["authors"]
@@ -490,6 +496,10 @@ def process_publications(raw, overrides, areas, people, cfg):
             if k in ("pdf", "website", "doi"):
                 continue
             L.append((k[:1].upper() + k[1:], v))
+        for n, d in enumerate(p["datasets"], 1):
+            href = f"https://doi.org/{d['doi']}" if d.get("doi") else next(iter((d.get("links") or {}).values()), None)
+            if href:
+                L.append(("Dataset" if len(p["datasets"]) == 1 else f"Dataset {n}", href))
         p["link_list"] = L
         p["primary_link"] = (f"https://doi.org/{p['doi']}" if p.get("doi") else (links.get("website") or links.get("pdf")))
         # Newest year first; within a year keep the Google Doc's own order,
@@ -813,7 +823,13 @@ def main():
 
     people = People(load_yaml("people.yaml", []))
     overrides = load_yaml("overrides.yaml", {}) or {}
-    pubs = process_publications(load_auto("publications", []), overrides.get("publications", []), areas, people, cfg)
+    datasets = load_yaml("datasets.yaml", []) or []
+    pubs = process_publications(load_auto("publications", []), overrides.get("publications", []), areas, people, cfg,
+                                datasets)
+    for d in datasets:
+        n = sum(1 for p in pubs if d in p["datasets"])
+        if n != 1:
+            print(f"  ! datasets.yaml: {d.get('name')!r} matches {n} publications (paper: {d.get('paper')!r})")
     talks = process_talks(load_auto("talks", []), overrides.get("talks", {}) or {})
     funding = load_yaml("funding.yaml", [])
     projects = load_yaml("projects.yaml", [])
@@ -1081,7 +1097,8 @@ def main():
     (OUT / "data" / "publications.json").write_text(json.dumps([{
         "title": p["title"], "authors": [a["name"] for a in p["authors_list"]], "year": p["year"],
         "type": p["type"], "venue": p["venue"], "venue_short": p["venue_short"], "doi": p.get("doi"),
-        "areas": p["areas"], "url": base + "/" + p["url"], "abstract": p.get("abstract")} for p in pubs],
+        "areas": p["areas"], "url": base + "/" + p["url"], "abstract": p.get("abstract"),
+        "datasets": [f"https://doi.org/{d['doi']}" for d in p["datasets"] if d.get("doi")]} for p in pubs],
         indent=1, ensure_ascii=False), encoding="utf-8")
     (OUT / "data" / "people.json").write_text(json.dumps([{
         "name": p["name"], "slug": p["slug"], "group": p["group"], "status": p["status"],

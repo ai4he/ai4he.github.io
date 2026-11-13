@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../../assets/css/site.css?v=a41eeb2952">
+<link rel="stylesheet" href="../../assets/css/site.css?v=5f7ac5b6ed">
 <script>
   (function () {
     try {
@@ -92,6 +92,7 @@
         <p class="paper-venue">Proceedings of the 14th International Conference on Human-Agent Interaction (HAI ’26), 2026</p>
         <div class="link-row">
           <a class="btn btn--primary" href="https://hai-conference.net/hai2026/program-schedule/" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> Website</a>
+          <a class="btn btn--ghost" href="https://doi.org/10.5281/zenodo.24179034" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.5"/><path d="M4.5 5.5v13c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-13M4.5 12c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5"/></svg> Dataset</a>
           <button class="btn btn--ghost" type="button" data-copy="#cite-text"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h4v4c0 3-2 5-4 6M15 7h4v4c0 3-2 5-4 6"/></svg> Copy citation</button>
         </div>
       </div>
@@ -104,6 +105,24 @@
       <section class="paper-section">
         <h2 class="paper-h">Abstract</h2>
         <p class="paper-abstract">Evaluating whether an AI agent behaves like a good teammate is becoming a bottleneck as multi-agent language-model systems proliferate, because human ratings do not scale to the volume of transcripts these systems generate. We ask whether a language model can stand in for a human rater of teammate quality, and we present a controlled proof-of-concept validation of a measurement instrument for that purpose rather than a large-scale study. Drawing on the autonomous-agent teammate-likeness construct from the human-autonomy-teaming literature, we define a six-dimension behavioral coding scheme, covering altruistic, benevolent, interdependent, emotive, communicative, and synchronized conduct, and adapt it for use by a language-model judge. We validate the adaptation with experiments in which the partner&#39;s lines in team-task transcripts are rewritten as cooperative, neutral, or defective while the rest of the conversation is held fixed. Five judges from five model families (GLM, GPT-OSS, Qwen, Gemma, and Mistral) rate single-turn scenarios and multi-turn dialogues, and a surface-feature audit with length- and politeness-matched registers tests whether the judges read teammate conduct rather than verbosity. Every judge orders the manipulated behavior as intended, most with fully separated confidence intervals between adjacent conditions, and every pair of judges agrees strongly on relative ordering, though absolute calibration differs across judges by up to about a scale point in the middle of the range. On matched registers the judges still separate cooperative from degraded conduct, but resolution at the subtle-defective boundary is limited. A blinded single-rater human pilot on all stimuli corroborates both findings: the rater closely reproduces the judges&#39; orderings and shows the same resolution limit at the subtle-defective boundary. The scheme is therefore valid for relative comparisons, such as ranking systems or versions, but not yet for absolute teammate-quality thresholds applied across judges, and not yet for fine distinctions among subtly poor teammates. We give design implications for building an LLM-judge teaming-evaluation pipeline, and release the scheme, stimuli, judge prompts, and all individual ratings from this version&#39;s experiments.</p>
+      </section>
+      <section class="paper-section" id="data">
+        <h2 class="paper-h">Data and resources</h2>
+        <div class="dataset-card">
+          <div class="dataset-head">
+            <span class="dataset-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.5"/><path d="M4.5 5.5v13c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5v-13M4.5 12c0 1.4 3.4 2.5 7.5 2.5s7.5-1.1 7.5-2.5"/></svg></span>
+            <div>
+              <h3 class="dataset-name">LLM-Judge Teammate Coding Scheme</h3>
+<p class="dataset-desc">Stimuli, judge prompt and 1,338 LLM-judge ratings of agent teammate behavior</p>            </div>
+          </div>
+          <dl class="kv kv--stack dataset-kv">
+<div><dt>Dataset DOI</dt><dd><a href="https://doi.org/10.5281/zenodo.24179034" target="_blank" rel="noopener">10.5281/zenodo.24179034</a></dd></div><div><dt>License</dt><dd>CC BY 4.0 (code: MIT)</dd></div>          </dl>
+          <div class="link-row dataset-links">
+<a class="btn btn--ghost btn--sm" href="https://zenodo.org/records/24179034" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> Zenodo</a>
+<a class="btn btn--ghost btn--sm" href="https://huggingface.co/datasets/ai4he/llm-judge-teammate-coding" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> Hugging Face</a>
+<a class="btn btn--ghost btn--sm" href="https://www.kaggle.com/datasets/clemsonlaboratory/llm-judge-teammate-coding" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg> Kaggle</a>
+<a class="btn btn--ghost btn--sm" href="https://huggingface.co/api/datasets/ai4he/llm-judge-teammate-coding/croissant" target="_blank" rel="noopener" title="Machine-readable dataset metadata (MLCommons Croissant)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg> Croissant metadata</a>          </div>
+        </div>
       </section>
       <section class="paper-section">
         <h2 class="paper-h">Cite this work</h2>
@@ -236,6 +255,6 @@ School of Computing, Human-Centered Computing Division<br>McAdams Hall, Clemson 
   </div>
 </footer>
 <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
-<script src="../../assets/js/site.js?v=a41eeb2952" defer></script>
+<script src="../../assets/js/site.js?v=5f7ac5b6ed" defer></script>
 </body>
 </html>
